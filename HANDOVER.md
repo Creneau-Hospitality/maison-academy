@@ -50,7 +50,7 @@ All three are set up on David's email for now. The shared Creneau mailbox is add
 | --- | --- | --- | --- |
 | GitHub | Organisation `Creneau-Hospitality`, private repository `maison-academy` | David (David-SWR); Gerard invited as Owner | The Claude GitHub app is installed on this one repository so Claude can push. |
 | Supabase | Organisation `Creneau Hospitality`, project `maison-academy` | David; Gerard invited as Owner | Project URL `https://dxipjlkledacoabdhrdg.supabase.co`. Region Central EU (Frankfurt). Free plan; move to Pro before real staff data. The database password is in David's password manager, never in files. |
-| Netlify | Team `Creneau Hospitality`, project `maison-academy`, https://maison-academy.netlify.app | David (only owner on the Free plan) | Builds from `main` on GitHub (`netlify.toml`: `npm run build`, publishes `dist`). Team protection is on: only signed-in team members can view. Turn it off in Phase 4. Move to Pro and add Gerard and the shared mailbox as owners in Phase 4. |
+| Netlify | Team `Creneau Hospitality`, project `maison-academy`, https://maison-academy.netlify.app | David (only owner on the Free plan) | Builds from `main` on GitHub (`netlify.toml`: `npm run build`, publishes `dist`). Linked through the Netlify GitHub app, which has access to this one repository (set up by David on 16 October after the repository went private; deploys between 20:56 and 22:15 failed with "Unsupported repository type" until then). Team protection is on: only signed-in team members can view. Turn it off in Phase 4. Move to Pro and add Gerard and the shared mailbox as owners in Phase 4. |
 
 ### Studio logins
 

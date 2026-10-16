@@ -27,16 +27,17 @@
 - 189 cards loaded with their Phase 0 approvals: 160 live (125 at Level 1), 29 allergen cards in review. Checked field by field against the export: no differences.
 - David is the studio admin (his own login, created by him in Supabase).
 - Content studio at https://maison-academy.netlify.app/studio: card bank with counts and filters, card editor with a staff preview, approve / approve and next, kitchen check, send back, retire, version history, JSON/CSV import and export, people and roles, learning settings. About line with the copyright and credit.
+- Netlify re-linked to the private repository through its GitHub app (David, 16 October); the studio went live at 22:15.
+- Supabase Site URL and redirect set, so invite and password-reset emails link to the studio.
 - Screen test (headless browser, sample data): every screen loads, no errors, no sideways scrolling at 360 px.
 
 ## Next
 
 1. David signs in to the studio and tries it: approve a card, edit one, look at the history.
-2. Set Supabase's Site URL so invite and password-reset emails link to the studio (asked David 16 October).
-3. Phase-1 report, card export to `exports/`, and David publishes the `phase-1` release.
-4. Kitchen check of the 29 allergen cards (Arabian Ranches head chef or Gerard), from a one-page list. They stay hidden from staff until then.
-5. Gerard accepts the GitHub and Supabase invitations when he can (not blocking).
-6. Next cards once sources arrive: photo cards, payments and alcohol service SOPs, beer serves, coffee recipes, wine pairings.
+2. Phase-1 report, card export to `exports/`, and David publishes the `phase-1` release.
+3. Kitchen check of the 29 allergen cards (Arabian Ranches head chef or Gerard), from a one-page list. They stay hidden from staff until then.
+4. Gerard accepts the GitHub and Supabase invitations when he can (not blocking).
+5. Next cards once sources arrive: photo cards, payments and alcohol service SOPs, beer serves, coffee recipes, wine pairings.
 
 ## Known issues
 
