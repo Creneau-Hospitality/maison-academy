@@ -1,0 +1,19 @@
+{
+  "exported_at": "2026-10-16",
+  "phase": 0,
+  "note": "Defaults from the build brief; the settings table is created in Phase 1.",
+  "settings": {
+    "weekly_target_default": 4,
+    "venue_weekly_goal_pct": 85,
+    "leitner_gaps_days": {"1": 0, "2": 1, "3": 3, "4": 7, "5": 21, "6": 45},
+    "allergen_max_box": 5,
+    "level1_mastery_pct": 80,
+    "readiness_check_cards": 20,
+    "readiness_pass_pct": 80,
+    "level2_mastery_pct": 70,
+    "badge_mastery_pct": 90,
+    "addon_min_guests": 150,
+    "baseline_weeks": 8,
+    "leaver_anonymise_months": 12
+  }
+}

@@ -26,7 +26,7 @@ All three are set up on David's email (david@swrhospitality.com) for now. The sh
 | --- | --- | --- | --- |
 | GitHub | Organisation `Creneau-Hospitality`, private repository `maison-academy` | David (David-SWR); Gerard invited as Owner | The Claude GitHub app is installed on this one repository so Claude can push. |
 | Supabase | Organisation `Creneau Hospitality`, project `maison-academy` | David; Gerard invited as Owner | Project URL `https://dxipjlkledacoabdhrdg.supabase.co`. Region Central EU (Frankfurt). Free plan; move to Pro before real staff data. The database password is in David's password manager, never in files. |
-| Netlify | To be set up | | |
+| Netlify | Team `Creneau Hospitality`, project `maison-academy`, https://maison-academy.netlify.app | David (only owner on the Free plan) | Deploys automatically from `main` on GitHub, publishing the `site` folder (`netlify.toml`). Team protection is on: only signed-in team members can view. Turn it off in Phase 4. Move to Pro and add Gerard and the shared mailbox as owners in Phase 4. |
 
 ### Keys
 
@@ -35,4 +35,7 @@ All three are set up on David's email (david@swrhospitality.com) for now. The sh
 
 ## Deploy, restore, import
 
-To be written once the app exists.
+- **Deploy:** push to `main` on GitHub. Netlify publishes within a minute or two. No build step yet; from Phase 1 the build command and output folder will be set in `netlify.toml`.
+- **Check:** open the site. The Database box should read "Connected to Supabase (Frankfurt)".
+- **Restore:** to be written in Phase 1, once there is data to restore.
+- **Import:** to be written when the card import and roster import exist.
