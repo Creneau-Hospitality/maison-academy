@@ -1,0 +1,16 @@
+# Decisions
+
+One line per decision, dated. When the build brief and David disagree, David wins.
+
+| Date | Decision | Notes |
+| --- | --- | --- |
+| 2026-10-16 | Sequence of service = the four Maison Mathis role documents: Host (7 steps), Waiter (7), Food Runner (7), Barista (6). | Source for the service track, Level 1. Timings: the role documents have none, but the Service Training Program and Operations Manual (both v2026/01) give a 6-step sequence with timing standards. David confirmed these timings on 2026-10-16. No bartender sequence yet. |
+| 2026-10-16 | Cards teach the timing standards from the Service Training Program v2026/01: greet 30 s; water 3 min; drinks 5 min (cocktails 8); food order 10 min; bread 5 min after order; starters 15 min; mains 10 min after starters cleared (20 with no starter); check back 2 min; bill 3 min after request, payment done in 5. | Applies to all venues unless David says otherwise. |
+| 2026-10-16 | David approves all cards in every track (food, allergens, drinks, service, SOPs). | Changes the brief's default of chef for food and allergens and bar lead for drinks. Every allergen card is still checked against the allergen matrix before it goes live. |
+| 2026-10-16 | Gerard (Head of Culinary) does the chef check on allergen cards against the matrix before they go live. David gives final approval. | Gerard needs a content reviewer login in the content studio (Phase 1). |
+| 2026-10-16 | Staff practise pre-shift, on paid time. | Set the daily reminder to arrive before pre-shift (Phase 4). |
+| 2026-10-16 | Pilot at Arabian Ranches for six weeks, starting Sunday 3 January 2027 (to about 13 February). Week-12 review in the week after. | Soft test with 3–5 staff in mid-December. The Micros baseline (8 weeks before launch) falls over the festive period, and Ramadan 2027 is expected to begin around 8 February, overlapping the last week. Compare against voco The Palm to allow for both. |
+| 2026-10-16 | Pilot champion: Alex N., supervisor at Arabian Ranches. | |
+| 2026-10-16 | Project folder: `5. OPERATIONS/maison-academy` on David's computer. The rest of `5. OPERATIONS` is the source library and stays as it is. | Keeps the code repository small and keeps franchise agreements, HR forms and audit files out of it. Source files are listed in `content/CONTENT_CHECK.md` by their path in the library rather than copied. |
+| 2026-10-16 | Accounts are created with David's email (david@swrhospitality.com) for now, as a test, instead of a shared Creneau mailbox. | Changes brief section 13.4. To keep the switch simple: the GitHub organisation, Supabase organisation and Netlify team are named for Creneau from day one, and Gerard is added as owner straight away. Before real staff data (Phase 4), add the shared mailbox as owner on all three. |
+| 2026-10-16 | The archived menu descriptions sheet (Dec 2022) is not used for allergen cards. | It is not the allergen matrix, it is out of date, and it lists the same dish with different allergens in two places. Allergen cards wait for the Meez matrix. |
