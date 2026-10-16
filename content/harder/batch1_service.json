@@ -1,0 +1,215 @@
+{
+ "svc-host-sequence-0002": [
+  "Smile and let them know you've seen them",
+  "Finish with your guest first, then greet them",
+  "Call a waiter over to greet them",
+  "Excuse yourself and seat them straight away"
+ ],
+ "svc-host-sequence-0003": [
+  "\"Good morning, welcome back Mr Khan\"",
+  "\"Good morning, welcome back! Table for one?\"",
+  "\"Good morning sir, lovely to see you again\"",
+  "\"Good morning, how many are you today?\""
+ ],
+ "svc-host-sequence-0004": [
+  "The best table for their group size and type",
+  "A table in the busiest section, so the room looks full",
+  "A table by the window, whatever the group",
+  "The table nearest the host desk"
+ ],
+ "svc-host-sequence-0005": [
+  "A suitable table in the quieter section",
+  "The next table in the busy waiter's section",
+  "Any free table, to seat them quickly",
+  "A table by the kitchen, away from other guests"
+ ],
+ "svc-host-sequence-0006": [
+  "\"Your waiter will be along shortly\"",
+  "\"Let me know when you're ready to order\"",
+  "\"Enjoy, our specials are on the back\"",
+  "\"I'll be your waiter today\""
+ ],
+ "svc-host-sequence-0008": [
+  "Give a realistic waiting time and use a waiting list",
+  "Quote a short wait so they don't walk away",
+  "Seat them at a table as soon as it's cleared, before it's reset",
+  "Suggest they come back in an hour"
+ ],
+ "svc-host-sequence-0009": [
+  "\"Good afternoon, Maison Mathis Arabian Ranches, this is Sara speaking\"",
+  "\"Good afternoon, thank you for calling Maison Mathis, how can I help?\"",
+  "\"Maison Mathis Arabian Ranches, Sara speaking, please hold\"",
+  "\"Hello, this is Sara from Maison Mathis, who's calling please?\""
+ ],
+ "svc-host-sequence-0010": [
+  "Ask their name, write the details down and repeat them back",
+  "Write down the time and party size, then thank them",
+  "Enter the booking straight into the system without repeating it back",
+  "Take their name and time, and remember the rest"
+ ],
+ "svc-host-sequence-0011": [
+  "Excuse yourself politely and answer it",
+  "Let it ring; the guest in front of you comes first",
+  "Answer it without stopping your conversation",
+  "Finish with your guest, then call the number back"
+ ],
+ "svc-waiter-sequence-0015": [
+  "Whoever sees them first",
+  "The host, once free; others carry on serving",
+  "The waiter whose section they'll sit in",
+  "The manager on duty, if the host is busy"
+ ],
+ "svc-waiter-sequence-0016": [
+  "Today's specials and anything out of stock",
+  "How long the kitchen is taking today",
+  "The prices of the premium drinks",
+  "That food orders are taken within 10 minutes"
+ ],
+ "svc-waiter-sequence-0018": [
+  "The bread tin",
+  "Condiments for the mains",
+  "Bottled water",
+  "The dessert menu"
+ ],
+ "svc-waiter-sequence-0020": [
+  "\"Would you like Crispy Truffle Fries or a Garden Salad with that?\"",
+  "\"Would you like any sides with that?\"",
+  "\"Can I get you something on the side, maybe some vegetables or salad?\"",
+  "\"Would you like a sauce with it, like béarnaise or peppercorn?\""
+ ],
+ "svc-waiter-sequence-0021": [
+  "\"How are you enjoying your meal?\"",
+  "\"Is everything OK?\" as you walk past",
+  "\"Are you still working on that?\"",
+  "\"Shall I bring the bill?\""
+ ],
+ "svc-waiter-sequence-0022": {
+  "options": [
+   "Offer more drinks",
+   "Remove empty glasses",
+   "Offer the dessert menu",
+   "Take the order for coffees",
+   "Present the bill"
+  ],
+  "answer": [
+   "Offer more drinks",
+   "Remove empty glasses"
+  ]
+ },
+ "svc-waiter-sequence-0024": [
+  "To pack the leftovers for them",
+  "To take it back to the kitchen to warm up",
+  "A smaller portion next time",
+  "A dessert to share instead"
+ ],
+ "svc-waiter-sequence-0025": [
+  "A dessert menu each, your favourite, and offer coffees",
+  "One dessert menu for the table, and offer coffees",
+  "A dessert menu each, and ask if they'd like the bill",
+  "A dessert menu each, then come back for the order in 5 minutes"
+ ],
+ "svc-waiter-sequence-0027": [
+  "Checked and ready as soon as the table asks",
+  "Printed when the table orders dessert",
+  "Brought with the last course, to save time",
+  "Printed after they ask, then checked at the till"
+ ],
+ "svc-runner-sequence-0030": [
+  "Each dish, plus any spoons or steak knives needed",
+  "Each dish, plus the drinks ordered by the table at the same time",
+  "Each dish and the table number, nothing else",
+  "Each dish, plus the bill for the table"
+ ],
+ "svc-runner-sequence-0031": [
+  "Get someone to help so it goes in one go",
+  "Take what you can now and come straight back",
+  "Wait at the pass until a waiter is free",
+  "Ask the kitchen to hold half under the lights"
+ ],
+ "svc-runner-sequence-0032": [
+  "It's garnished correctly",
+  "It matches the photo on the menu",
+  "The guest's name is on the KOT",
+  "The table's drinks have arrived"
+ ],
+ "svc-runner-sequence-0034": [
+  "Get it replaced as a priority and tell your manager",
+  "Serve the rest, then tell the guest it's on its way",
+  "Get it replaced as a priority; no need to tell anyone",
+  "Tell the guest, and let them choose something else"
+ ],
+ "svc-runner-sequence-0035": [
+  "Tell their waiter straight away",
+  "Tell the bar, so it's made straight away",
+  "Remember it and tell the waiter at the pass",
+  "Punch it in yourself at the nearest POS"
+ ],
+ "svc-runner-sequence-0036": [
+  "Any empty glasses, plates or cutlery",
+  "Nothing, so you're ready for the next run",
+  "Only your tray, to keep the pass moving",
+  "Empty glasses only; plates are for waiters"
+ ],
+ "svc-barista-sequence-0039": [
+  "2 seconds",
+  "5 seconds",
+  "10 seconds",
+  "1 second"
+ ],
+ "svc-barista-sequence-0040": [
+  "The cappuccino, to use the foam",
+  "The latte, so the milk is fresher",
+  "Both from one jug, then split it",
+  "The latte, to stretch the milk first"
+ ],
+ "svc-barista-sequence-0041": [
+  "In the order received, reading ahead",
+  "In the order received, one ticket at a time",
+  "Hot drinks first, then cold, across tickets",
+  "Dine-in first, then takeaway"
+ ],
+ "svc-barista-sequence-0042": [
+  "Let the waiters know politely, or run them yourself",
+  "Keep them on the pass until their waiter returns",
+  "Call out the table number, then start the next ticket",
+  "Remake them when the waiter arrives, so they're hot"
+ ],
+ "svc-barista-sequence-0043": {
+  "options": [
+   "Check machine pressure and temperature",
+   "Make a test espresso and check the flow",
+   "Warm the cups and glassware",
+   "Pre-pour milk into jugs for the day",
+   "Switch the machine on at the first order"
+  ],
+  "answer": [
+   "Check machine pressure and temperature",
+   "Make a test espresso and check the flow",
+   "Warm the cups and glassware"
+  ]
+ },
+ "svc-timing-standards-0044": [
+  "Within 30 seconds",
+  "Within 1 minute",
+  "Within 2 minutes",
+  "Within 3 minutes"
+ ],
+ "svc-timing-standards-0045": [
+  "Within 3 minutes",
+  "Within 5 minutes",
+  "Within 2 minutes",
+  "Within 10 minutes"
+ ],
+ "svc-timing-standards-0047": [
+  "Within 10 minutes",
+  "Within 5 minutes",
+  "Within 15 minutes",
+  "Within 20 minutes"
+ ],
+ "svc-timing-standards-0051": [
+  "Present it within 3 minutes, payment done within 5",
+  "Present it within 5 minutes, payment done within 3",
+  "Present it within 2 minutes, payment done within 5",
+  "Present it within 3 minutes, payment done within 10"
+ ]
+}

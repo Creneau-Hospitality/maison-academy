@@ -1,0 +1,280 @@
+{
+ "food-menu-basics-0001": [
+  "Raw",
+  "Rare",
+  "Rich",
+  "Recommended"
+ ],
+ "food-menu-basics-0002": [
+  "It contains alcohol",
+  "It's an autumn special",
+  "It's served with aioli",
+  "It contains almonds"
+ ],
+ "food-menu-basics-0003": [
+  "(V) is vegetarian, (VG) is vegan",
+  "(V) is vegan, (VG) is vegetarian",
+  "(V) is vegetarian, (VG) is vegetarian and gluten-free",
+  "(V) is vegetarian, (VG) is vegan and gluten-free"
+ ],
+ "food-menu-basics-0004": [
+  "Sourdough Avocado",
+  "Chia Pudding",
+  "Tropical Acai Bowl",
+  "Toast Champignon"
+ ],
+ "food-menu-basics-0006": [
+  "5 pm",
+  "2 pm",
+  "12 pm",
+  "6 pm"
+ ],
+ "food-menu-basics-0007": [
+  "12 pm",
+  "11 am",
+  "2 pm",
+  "5 pm"
+ ],
+ "food-menu-basics-0008": [
+  "Daily, 8 am to 2 pm",
+  "Daily, 8 am to 12 pm",
+  "Daily, 7 am to 2 pm",
+  "Daily, 8 am to 5 pm"
+ ],
+ "food-menu-basics-0009": [
+  "They're served as ready, for quality",
+  "They're timed to arrive one after another for sharing",
+  "The kitchen fires them in the order they were punched",
+  "So the table always has one hot pizza to share"
+ ],
+ "food-menu-basics-0010": [
+  "Sourdough",
+  "Neapolitan wheat",
+  "Thin crust",
+  "Focaccia"
+ ],
+ "food-menu-basics-0011": [
+  "A change to gluten-free portobello mushroom, free",
+  "A change to gluten-free portobello mushroom, AED 15",
+  "A change to gluten-free toast, free of charge",
+  "Hash brown instead of the brioche, free"
+ ],
+ "food-menu-basics-0012": [
+  "Gluten-free pasta, free of charge",
+  "Gluten-free pasta for AED 10",
+  "Gluten-free pasta, for the dishes marked (GF) only",
+  "Rice noodles, free of charge"
+ ],
+ "food-menu-basics-0013": [
+  "No, no discounts apply to mussels",
+  "Yes, the usual discounts apply to mussels too",
+  "Only on the ½ kg portion",
+  "Only with manager approval"
+ ],
+ "food-breakfast-0015": [
+  "Smoked salmon and spinach",
+  "Smoked salmon and avocado",
+  "Prosciutto ham and sundried tomato pesto",
+  "Mushrooms, truffle oil and spinach"
+ ],
+ "food-breakfast-0019": [
+  "Extra bacon, sausage, black pudding and hashbrown",
+  "Extra eggs, bacon, sausage, black pudding and hashbrown",
+  "Extra bacon, sausage, baked beans and toast",
+  "Extra black pudding, mushrooms, tomato and eggs"
+ ],
+ "food-breakfast-0021": [
+  "Fried, sunny side up, boiled, poached or over easy",
+  "Fried, poached or scrambled",
+  "Fried, sunny side up, poached, scrambled or as an omelet",
+  "Boiled, poached, scrambled or as an omelet"
+ ],
+ "food-breakfast-0022": {
+  "options": [
+   "Cherry tomato",
+   "Chili",
+   "Coriander",
+   "Feta",
+   "Chili butter",
+   "Fresh mint"
+  ],
+  "answer": [
+   "Cherry tomato",
+   "Chili",
+   "Coriander"
+  ]
+ },
+ "food-breakfast-0023": {
+  "options": [
+   "Dukkah",
+   "Chili butter",
+   "Fresh mint",
+   "Coriander",
+   "Cherry tomato",
+   "Sautéed spinach"
+  ],
+  "answer": [
+   "Dukkah",
+   "Chili butter",
+   "Fresh mint"
+  ]
+ },
+ "food-breakfast-0024": [
+  "Greek yoghurt or soy yoghurt",
+  "Greek yoghurt or coconut yoghurt",
+  "Greek yoghurt or almond milk",
+  "Plain yoghurt or soy milk"
+ ],
+ "food-breakfast-0026": [
+  "Vanilla mascarpone crème, rhubarb compote, pistachio",
+  "Chocolate ganache, raspberry compote, toasted almonds",
+  "Vanilla mascarpone crème, raspberry compote, almonds",
+  "Salted caramel, banana, pecan nuts"
+ ],
+ "food-lunch-dinner-0027": [
+  "Normandy, France",
+  "Brittany, France",
+  "Galicia, Spain",
+  "Zeeland, Netherlands"
+ ],
+ "food-lunch-dinner-0028": [
+  "An aged gouda, \"Farmdal OG Krystal\"",
+  "An aged Comté, \"Van Tricht\" reserve",
+  "A young gouda with Grana Padano",
+  "Gruyère and aged gouda, half and half"
+ ],
+ "food-lunch-dinner-0030": {
+  "options": [
+   "Tuna",
+   "Anchovy",
+   "Capers",
+   "Sun-dried tomato",
+   "Stracciatella",
+   "Basil pesto"
+  ],
+  "answer": [
+   "Tuna",
+   "Anchovy",
+   "Capers"
+  ]
+ },
+ "food-lunch-dinner-0031": [
+  "Ají amarillo",
+  "Lime and coconut milk",
+  "Roasted pepper chimichurri",
+  "Basil emulsion"
+ ],
+ "food-lunch-dinner-0032": [
+  "Wagyu Tartare",
+  "Vitello Tonnato",
+  "Garlic Shrimps",
+  "Burrata"
+ ],
+ "food-lunch-dinner-0033": [
+  "Pork bacon",
+  "Parma ham",
+  "Pork salami",
+  "Guanciale"
+ ],
+ "food-lunch-dinner-0034": [
+  "Belgian fries",
+  "Skinny fries",
+  "Crispy truffle fries",
+  "Sweet potato fries"
+ ],
+ "food-lunch-dinner-0035": {
+  "options": [
+   "Peppercorn sauce",
+   "Onion jam",
+   "Camembert cheese",
+   "Cheddar",
+   "BBQ sauce",
+   "Grilled onion"
+  ],
+  "answer": [
+   "Peppercorn sauce",
+   "Onion jam",
+   "Camembert cheese"
+  ]
+ },
+ "food-lunch-dinner-0036": [
+  "Leffe Brune",
+  "Leffe Blonde",
+  "Duvel",
+  "Hoegaarden"
+ ],
+ "food-lunch-dinner-0039": {
+  "options": [
+   "Béarnaise",
+   "Green peppercorn",
+   "Blue cheese",
+   "Hollandaise",
+   "Chimichurri",
+   "Truffled cheese sauce"
+  ],
+  "answer": [
+   "Béarnaise",
+   "Green peppercorn",
+   "Blue cheese"
+  ]
+ },
+ "food-lunch-dinner-0040": [
+  "½ kg or 1 kg",
+  "½ kg only",
+  "500 g or 750 g",
+  "1 kg, for sharing"
+ ],
+ "food-lunch-dinner-0041": {
+  "options": [
+   "Roquefort",
+   "Thai Curry",
+   "Mediterranean",
+   "Tomato and Chorizo",
+   "Garlic and Saffron",
+   "White Wine and Leek"
+  ],
+  "answer": [
+   "Roquefort",
+   "Thai Curry",
+   "Mediterranean"
+  ]
+ },
+ "food-lunch-dinner-0042": [
+  "Fisherman's style: mirepoix, white wine, parsley",
+  "Tomato, Mediterranean herbs, white wine",
+  "Cream, garlic, white wine and mirepoix, with parsley",
+  "Mirepoix, white wine and cream, with parsley"
+ ],
+ "food-lunch-dinner-0044": [
+  "Mozzarella",
+  "Taleggio",
+  "Gorgonzola",
+  "Provolone",
+  "Grana Padano",
+  "Fontina"
+ ],
+ "food-lunch-dinner-0045": [
+  "Beef salami",
+  "Beef chorizo",
+  "Beef pepperoni",
+  "Turkey ham"
+ ],
+ "food-lunch-dinner-0046": [
+  "Vanilla ice cream, Belgian chocolate sauce, chocolate crumble, whipped cream",
+  "Chocolate sauce, chocolate crumble and whipped cream on a Brussels waffle",
+  "Vanilla and chocolate ice cream, brownie, Belgian chocolate sauce and meringue",
+  "Vanilla ice cream, salted caramel sauce, banana and whipped cream"
+ ],
+ "food-lunch-dinner-0047": [
+  "Royal Gala apple",
+  "Granny Smith apple",
+  "Pear",
+  "Pink Lady apple"
+ ],
+ "food-lunch-dinner-0048": [
+  "Goulash",
+  "Classic Belgian Beef Stew",
+  "Beer-Braised Pork Cheeks",
+  "Confit Duck Leg"
+ ]
+}

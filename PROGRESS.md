@@ -33,16 +33,17 @@
 - David tried the studio: edited and re-approved one drinks card (now version 2) and retired one (`drk-beer-0016`, Liefmans Kriek).
 - Harder wrong options drafted on a sample of 10 cards (migration 0005), back in review for David. If he likes the level, the rest get the same treatment.
 - Voids need manager authorisation (David): the two cards that said otherwise were corrected and sent back to review (migration 0006).
+- David approved the 10 harder sample cards unchanged, and the 2 void cards (one with his own edit).
+- Harder wrong options drafted on 112 more cards (migrations 0007 to 0010, from `content/harder/`); all back in review. Card bank now: 47 live, 112 in review (harder options), 29 allergen in review, 1 retired.
 - Screen test (headless browser, sample data): every screen loads, no errors, no sideways scrolling at 360 px.
 
 ## Next
 
-1. David reviews the 2 corrected void cards and the 10 harder cards (studio: status In review, Not allergen) and says whether to do the rest.
-2. Check with David that retiring `drk-beer-0016` was intended (one click to restore).
-3. Phase-1 report, card export to `exports/`, and David publishes the `phase-1` release.
-4. Kitchen check of the 29 allergen cards (Arabian Ranches head chef or Gerard), from a one-page list. They stay hidden from staff until then.
-5. Gerard accepts the GitHub and Supabase invitations when he can (not blocking).
-6. Next cards once sources arrive: photo cards, payments and alcohol service SOPs, beer serves, coffee recipes, wine pairings.
+1. David reviews the 112 harder cards in the studio (filters: In review, Not allergen), track by track.
+2. Phase-1 report, card export to `exports/`, and David publishes the `phase-1` release.
+3. Kitchen check of the 29 allergen cards (Arabian Ranches head chef or Gerard), from a one-page list. They stay hidden from staff until then.
+4. Gerard accepts the GitHub and Supabase invitations when he can (not blocking).
+5. Next cards once sources arrive: photo cards, payments and alcohol service SOPs, beer serves, coffee recipes, wine pairings.
 
 ## Known issues
 

@@ -1,0 +1,134 @@
+{
+ "sop-guest-recovery-0011": [
+  "Follow up, and log the issue",
+  "Notify the manager straight away",
+  "Tell the kitchen what went wrong",
+  "Note it on the guest's bill"
+ ],
+ "sop-guest-recovery-0015": [
+  "Acknowledge it, update them honestly and offer a complimentary item",
+  "Apologise and tell them it will be out in a few minutes",
+  "Apologise and offer a complimentary item, without checking the kitchen",
+  "Apologise and promise it's next out, whatever the kitchen says"
+ ],
+ "sop-guest-recovery-0017": [
+  "Introduce the manager personally, with the full story",
+  "Brief the manager at the pass, then let them go over",
+  "Tell the guest a manager is coming, then carry on",
+  "Bring the manager over and let the guest explain again"
+ ],
+ "sop-guest-recovery-0018": [
+  "Lower your voice slightly and slow your pace",
+  "Keep your voice firm so they know you're in charge",
+  "Stand close so you can talk more quietly",
+  "Explain the reason quickly before they get louder"
+ ],
+ "sop-house-standards-0019": [
+  "Quality",
+  "Simplicity",
+  "Authenticity",
+  "Warmth",
+  "Generosity",
+  "Consistency"
+ ],
+ "sop-house-standards-0020": [
+  "Look calm and graceful while working fast",
+  "Keep moving so guests see you're busy",
+  "Work steadily, never faster than guests notice",
+  "Stay graceful by slowing down when it's busy"
+ ],
+ "sop-house-standards-0021": [
+  "Offer a refill or clear it yourself",
+  "Let that waiter know so they can offer a refill",
+  "Clear it only if their waiter is busy",
+  "Leave it; offering drinks belongs to their waiter"
+ ],
+ "sop-house-standards-0023": [
+  "Never on the floor",
+  "Only to check bookings or the rota",
+  "Only for work calls, out of guests' sight",
+  "Only at the side station, when it's quiet"
+ ],
+ "sop-house-standards-0024": {
+  "options": [
+   "Daily specials",
+   "Items that are unavailable (86'd)",
+   "Known VIPs",
+   "Next week's rota",
+   "The cleaning schedule for closing"
+  ],
+  "answer": [
+   "Daily specials",
+   "Items that are unavailable (86'd)",
+   "Known VIPs"
+  ]
+ },
+ "sop-house-standards-0025": [
+  "15 minutes",
+  "10 minutes",
+  "20 minutes",
+  "30 minutes"
+ ],
+ "sop-opening-closing-0026": {
+  "options": [
+   "Tables polished, glassware spotless",
+   "Salt, pepper and condiments restocked",
+   "Music set low to moderate",
+   "Music set lively to fill the room",
+   "Chairs left stacked until the first booking"
+  ],
+  "answer": [
+   "Tables polished, glassware spotless",
+   "Salt, pepper and condiments restocked",
+   "Music set low to moderate"
+  ]
+ },
+ "sop-opening-closing-0027": [
+  "30 minutes before opening",
+  "15 minutes before opening",
+  "60 minutes before opening",
+  "At opening time"
+ ],
+ "sop-opening-closing-0028": [
+  "Every 90 minutes",
+  "Every 60 minutes",
+  "Every 2 hours",
+  "Every 30 minutes"
+ ],
+ "sop-opening-closing-0029": [
+  "Let them finish without rushing them",
+  "Bring the bill so it's ready when they are",
+  "Start closing tasks around them, quietly",
+  "Ask if they'd like the bill, as you're closing soon"
+ ],
+ "sop-controls-0030": [
+  "Get manager authorisation, with a logged reason",
+  "Give up to 10% yourself, then tell the manager",
+  "Get manager authorisation; no need to log it",
+  "Log the reason yourself and apply it"
+ ],
+ "sop-controls-0031": [
+  "Immediately, as you take it",
+  "Once the whole table has ordered",
+  "Within 5 minutes of taking it",
+  "When you pick up the next order"
+ ],
+ "sop-safety-basics-0033": [
+  "Put out a wet floor sign straight away",
+  "Wipe it up first, then put out a sign",
+  "Tell a manager, then fetch a mop",
+  "Stand by it and warn guests until it's dry"
+ ],
+ "sop-safety-basics-0034": [
+  "Yes, every incident and near miss is logged that day",
+  "Yes, but by the end of the week is fine",
+  "Only if they need first aid",
+  "No, near misses are only mentioned at the next briefing"
+ ],
+ "sop-safety-basics-0035": [
+  "Don't handle food",
+  "Handle food but wash your hands more",
+  "Handle food wearing gloves",
+  "Work, but stay away from the kitchen"
+ ]
+}
