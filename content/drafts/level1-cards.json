@@ -1,8 +1,11 @@
 {
-  "drafted": "2026-10-16",
+  "updated": "2026-10-16",
   "level": 1,
-  "status": "review",
   "count": 152,
+  "status_counts": {
+    "live": 125,
+    "review": 27
+  },
   "cards": [
     {
       "id": "svc-host-sequence-0001",
@@ -36,9 +39,10 @@
       "is_allergen": false,
       "source_ref": "SOS Host (Sequence of Service, Host), steps 1 to 6",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-host-sequence-0002",
@@ -65,9 +69,10 @@
       "is_allergen": false,
       "source_ref": "SOS Host (Sequence of Service, Host), step 2; Service Training Program v2026/01, sequence step 1",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-host-sequence-0003",
@@ -95,9 +100,10 @@
       "is_allergen": false,
       "source_ref": "SOS Host (Sequence of Service, Host), step 3; Service Training Program v2026/01, guest service standards",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-host-sequence-0004",
@@ -124,9 +130,10 @@
       "is_allergen": false,
       "source_ref": "SOS Host (Sequence of Service, Host), step 4",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-host-sequence-0005",
@@ -153,9 +160,10 @@
       "is_allergen": false,
       "source_ref": "SOS Host (Sequence of Service, Host), step 4 tip",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-host-sequence-0006",
@@ -182,9 +190,10 @@
       "is_allergen": false,
       "source_ref": "SOS Host (Sequence of Service, Host), step 5",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-host-sequence-0007",
@@ -214,9 +223,10 @@
       "is_allergen": false,
       "source_ref": "SOS Host (Sequence of Service, Host), step 5",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-host-sequence-0008",
@@ -243,9 +253,10 @@
       "is_allergen": false,
       "source_ref": "SOS Host (Sequence of Service, Host), step 6",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-host-sequence-0009",
@@ -272,9 +283,10 @@
       "is_allergen": false,
       "source_ref": "SOS Host (Sequence of Service, Host), step 7",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-host-sequence-0010",
@@ -301,9 +313,10 @@
       "is_allergen": false,
       "source_ref": "SOS Host (Sequence of Service, Host), step 7",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-host-sequence-0011",
@@ -330,9 +343,10 @@
       "is_allergen": false,
       "source_ref": "SOS Host (Sequence of Service, Host), step 7 tip",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-host-sequence-0012",
@@ -362,9 +376,10 @@
       "is_allergen": false,
       "source_ref": "SOS Host (Sequence of Service, Host), step 1",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-host-sequence-0013",
@@ -391,9 +406,10 @@
       "is_allergen": false,
       "source_ref": "SOS Host (Sequence of Service, Host), step 6 tip",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-waiter-sequence-0014",
@@ -429,9 +445,10 @@
       "is_allergen": false,
       "source_ref": "SOS Waiter (Sequence of Service, Waiter), steps 1 to 7",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-waiter-sequence-0015",
@@ -461,9 +478,10 @@
       "is_allergen": false,
       "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 1 tip; Service Training Program v2026/01, sequence step 1",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-waiter-sequence-0016",
@@ -490,9 +508,10 @@
       "is_allergen": false,
       "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 2; Service Training Program v2026/01, sequence step 2",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-waiter-sequence-0017",
@@ -519,9 +538,10 @@
       "is_allergen": false,
       "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 2 tip; Service Training Program v2026/01, sequence step 2",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-waiter-sequence-0018",
@@ -548,9 +568,10 @@
       "is_allergen": false,
       "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 3; Service Training Program v2026/01, sequence step 4",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-waiter-sequence-0019",
@@ -578,8 +599,10 @@
       "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 3 (allergen line added 16 Oct 2026); Service Training Program v2026/01, sequence step 4",
       "review_note": null,
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "svc-waiter-sequence-0020",
@@ -606,9 +629,10 @@
       "is_allergen": false,
       "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 3 tip; AR lunch and dinner menu, Sides",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-waiter-sequence-0021",
@@ -635,9 +659,10 @@
       "is_allergen": false,
       "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 4; Service Training Program v2026/01, check-back protocol",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-waiter-sequence-0022",
@@ -666,9 +691,10 @@
       "is_allergen": false,
       "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 4 tip",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-waiter-sequence-0023",
@@ -696,9 +722,10 @@
       "is_allergen": false,
       "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 5 tip",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-waiter-sequence-0024",
@@ -725,9 +752,10 @@
       "is_allergen": false,
       "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 5",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-waiter-sequence-0025",
@@ -754,9 +782,10 @@
       "is_allergen": false,
       "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 6",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-waiter-sequence-0026",
@@ -783,9 +812,10 @@
       "is_allergen": false,
       "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 6 tip; Operations Manual v2026/01, bakery takeaway",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-waiter-sequence-0027",
@@ -812,9 +842,10 @@
       "is_allergen": false,
       "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 7; Service Training Program v2026/01, sequence step 6",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-waiter-sequence-0028",
@@ -845,9 +876,10 @@
       "is_allergen": false,
       "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 7 tip; Service Training Program v2026/01, sequence step 6",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-runner-sequence-0029",
@@ -883,9 +915,10 @@
       "is_allergen": false,
       "source_ref": "SOS Food Runner (Sequence of Service, Food Runner), steps 1 to 7",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-runner-sequence-0030",
@@ -912,9 +945,10 @@
       "is_allergen": false,
       "source_ref": "SOS Food Runner (Sequence of Service, Food Runner), step 2",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-runner-sequence-0031",
@@ -941,9 +975,10 @@
       "is_allergen": false,
       "source_ref": "SOS Food Runner (Sequence of Service, Food Runner), step 2",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-runner-sequence-0032",
@@ -970,9 +1005,10 @@
       "is_allergen": false,
       "source_ref": "SOS Food Runner (Sequence of Service, Food Runner), step 2 tip",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-runner-sequence-0033",
@@ -1003,9 +1039,10 @@
       "is_allergen": false,
       "source_ref": "SOS Food Runner (Sequence of Service, Food Runner), step 4; Service Training Program v2026/01, sequence step 5",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-runner-sequence-0034",
@@ -1033,9 +1070,10 @@
       "is_allergen": false,
       "source_ref": "SOS Food Runner (Sequence of Service, Food Runner), step 6 tip",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-runner-sequence-0035",
@@ -1062,9 +1100,10 @@
       "is_allergen": false,
       "source_ref": "SOS Food Runner (Sequence of Service, Food Runner), step 7",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-runner-sequence-0036",
@@ -1092,9 +1131,10 @@
       "is_allergen": false,
       "source_ref": "SOS Food Runner (Sequence of Service, Food Runner), step 7 tip",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-runner-sequence-0037",
@@ -1121,9 +1161,10 @@
       "is_allergen": false,
       "source_ref": "SOS Food Runner (Sequence of Service, Food Runner), step 1 tip; Service Training Program v2026/01, guest recovery",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-barista-sequence-0038",
@@ -1157,9 +1198,10 @@
       "is_allergen": false,
       "source_ref": "SOS Barista (Sequence of Service, Barista), steps 1 to 6",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-barista-sequence-0039",
@@ -1186,9 +1228,10 @@
       "is_allergen": false,
       "source_ref": "SOS Barista (Sequence of Service, Barista), step 2 tip",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-barista-sequence-0040",
@@ -1215,9 +1258,10 @@
       "is_allergen": false,
       "source_ref": "SOS Barista (Sequence of Service, Barista), step 4 tip",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-barista-sequence-0041",
@@ -1244,9 +1288,10 @@
       "is_allergen": false,
       "source_ref": "SOS Barista (Sequence of Service, Barista), step 3",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-barista-sequence-0042",
@@ -1273,9 +1318,10 @@
       "is_allergen": false,
       "source_ref": "SOS Barista (Sequence of Service, Barista), step 5",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-barista-sequence-0043",
@@ -1306,9 +1352,10 @@
       "is_allergen": false,
       "source_ref": "SOS Barista (Sequence of Service, Barista), steps 1 to 3; Operations Manual v2026/01, espresso calibration",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-timing-standards-0044",
@@ -1339,9 +1386,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, key timing standards",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-timing-standards-0045",
@@ -1371,9 +1419,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, key timing standards",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-timing-standards-0046",
@@ -1403,9 +1452,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, key timing standards",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-timing-standards-0047",
@@ -1435,9 +1485,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, key timing standards",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-timing-standards-0048",
@@ -1467,9 +1518,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, key timing standards",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-timing-standards-0049",
@@ -1499,9 +1551,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, key timing standards",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-timing-standards-0050",
@@ -1531,9 +1584,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, key timing standards; Operations Manual v2026/01, check-backs",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-timing-standards-0051",
@@ -1560,9 +1614,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, sequence step 6",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "svc-timing-standards-0052",
@@ -1595,9 +1650,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, key timing standards",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-allergen-protocol-0001",
@@ -1629,8 +1685,10 @@
       "source_ref": "Service Training Program v2026/01, allergen protocol",
       "review_note": null,
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "sop-allergen-protocol-0002",
@@ -1662,8 +1720,10 @@
       "source_ref": "Service Training Program v2026/01, allergen protocol; Operations Manual v2026/01, allergen management",
       "review_note": null,
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "sop-allergen-protocol-0003",
@@ -1695,8 +1755,10 @@
       "source_ref": "Service Training Program v2026/01, service do's and don'ts",
       "review_note": "Wording chosen because the menus don't mark every nut item (see MENU_ALLERGEN_FLAGS.md).",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "sop-allergen-protocol-0004",
@@ -1728,8 +1790,10 @@
       "source_ref": "Service Training Program v2026/01, allergen protocol",
       "review_note": null,
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "sop-allergen-protocol-0005",
@@ -1766,8 +1830,10 @@
       "source_ref": "Service Training Program v2026/01, allergen awareness, life-critical protocol",
       "review_note": null,
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "sop-allergen-protocol-0006",
@@ -1804,8 +1870,10 @@
       "source_ref": "Service Training Program v2026/01, allergen awareness, life-critical protocol",
       "review_note": null,
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "sop-allergen-protocol-0007",
@@ -1840,8 +1908,10 @@
       "source_ref": "Service Training Program v2026/01, allergen and safety complaints",
       "review_note": null,
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "sop-allergen-protocol-0008",
@@ -1873,8 +1943,10 @@
       "source_ref": "Service Training Program v2026/01, allergen and safety complaints",
       "review_note": null,
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "sop-allergen-protocol-0009",
@@ -1906,8 +1978,10 @@
       "source_ref": "Service Training Program v2026/01, service do's and don'ts; Operations Manual v2026/01, allergen protocol",
       "review_note": null,
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "sop-guest-recovery-0010",
@@ -1943,9 +2017,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, the LEARN recovery method",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-guest-recovery-0011",
@@ -1976,9 +2051,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, the LEARN recovery method",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-guest-recovery-0012",
@@ -2009,9 +2085,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, the LEARN recovery method",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-guest-recovery-0013",
@@ -2042,9 +2119,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, script: what to say",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-guest-recovery-0014",
@@ -2075,9 +2153,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, complaint scenario playbook",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-guest-recovery-0015",
@@ -2108,9 +2187,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, complaint scenario playbook",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-guest-recovery-0016",
@@ -2144,9 +2224,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, resolve it or escalate it?",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-guest-recovery-0017",
@@ -2177,9 +2258,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, the escalation protocol",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-guest-recovery-0018",
@@ -2210,9 +2292,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, read the room",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-house-standards-0019",
@@ -2248,9 +2331,10 @@
       "is_allergen": false,
       "source_ref": "Operations Manual v2026/01, brand pillars; Service Training Program v2026/01, day 1",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-house-standards-0020",
@@ -2281,9 +2365,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, our service philosophy",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-house-standards-0021",
@@ -2314,9 +2399,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, our service philosophy",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-house-standards-0022",
@@ -2347,9 +2433,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, guest service standards",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-house-standards-0023",
@@ -2380,9 +2467,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, guest service standards; Operations Manual v2026/01, guest service standards",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-house-standards-0024",
@@ -2417,9 +2505,10 @@
       "is_allergen": false,
       "source_ref": "Operations Manual v2026/01, shift management",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-house-standards-0025",
@@ -2450,9 +2539,10 @@
       "is_allergen": false,
       "source_ref": "Operations Manual v2026/01, shift management; Service Training Program v2026/01, shift management",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-opening-closing-0026",
@@ -2487,9 +2577,10 @@
       "is_allergen": false,
       "source_ref": "Operations Manual v2026/01, opening procedures",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-opening-closing-0027",
@@ -2518,9 +2609,10 @@
       "is_allergen": false,
       "source_ref": "Operations Manual v2026/01, opening procedures",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-opening-closing-0028",
@@ -2549,9 +2641,10 @@
       "is_allergen": false,
       "source_ref": "Operations Manual v2026/01, bakery operations",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-opening-closing-0029",
@@ -2582,9 +2675,10 @@
       "is_allergen": false,
       "source_ref": "Operations Manual v2026/01, closing procedures",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-controls-0030",
@@ -2615,9 +2709,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, void and discount controls; Operations Manual v2026/01, void and discount controls",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-controls-0031",
@@ -2645,9 +2740,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, POS accuracy",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-safety-basics-0032",
@@ -2680,9 +2776,10 @@
       "is_allergen": false,
       "source_ref": "Operations Manual v2026/01, personal hygiene; Service Training Program v2026/01, personal hygiene",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-safety-basics-0033",
@@ -2713,9 +2810,10 @@
       "is_allergen": false,
       "source_ref": "Operations Manual v2026/01, slip and trip prevention",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-safety-basics-0034",
@@ -2746,9 +2844,10 @@
       "is_allergen": false,
       "source_ref": "Operations Manual v2026/01, incident reporting; Service Training Program v2026/01, first aid and incident reporting",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "sop-safety-basics-0035",
@@ -2779,9 +2878,10 @@
       "is_allergen": false,
       "source_ref": "Operations Manual v2026/01, personal hygiene",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-menu-basics-0001",
@@ -2812,9 +2912,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, legend",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-menu-basics-0002",
@@ -2845,9 +2946,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, legend; AR breakfast menu, 20260914_MM-AR-BREAKFAST53, legend",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-menu-basics-0003",
@@ -2878,9 +2980,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, legend; AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, legend",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-menu-basics-0004",
@@ -2911,9 +3014,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-menu-basics-0005",
@@ -2944,9 +3048,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-menu-basics-0006",
@@ -2976,9 +3081,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Sandwiches and Toasts",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-menu-basics-0007",
@@ -3008,9 +3114,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, M/M Stone Baked Pizzas",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-menu-basics-0008",
@@ -3041,9 +3148,10 @@
       "is_allergen": false,
       "source_ref": "David, 16 Oct 2026 (menu service times)",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-menu-basics-0009",
@@ -3073,9 +3181,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, M/M Stone Baked Pizzas",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-menu-basics-0010",
@@ -3105,9 +3214,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, M/M Stone Baked Pizzas",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-menu-basics-0011",
@@ -3138,9 +3248,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Benedicts",
       "review_note": "For a coeliac guest the head chef still confirms the dish.",
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-menu-basics-0012",
@@ -3170,9 +3281,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Pasta",
       "review_note": "For a coeliac guest the head chef still confirms the dish.",
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-menu-basics-0013",
@@ -3202,9 +3314,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Mussels and Fries",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-breakfast-0014",
@@ -3235,9 +3348,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Benedicts",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-breakfast-0015",
@@ -3268,9 +3382,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Benedicts",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-breakfast-0016",
@@ -3301,9 +3416,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Benedicts",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-breakfast-0017",
@@ -3334,9 +3450,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Benedicts",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-breakfast-0018",
@@ -3372,9 +3489,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Traditional Breakfast",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-breakfast-0019",
@@ -3405,9 +3523,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Traditional Breakfast",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-breakfast-0020",
@@ -3438,9 +3557,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Omelets and Eggs",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-breakfast-0021",
@@ -3471,9 +3591,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Omelets and Eggs",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-breakfast-0022",
@@ -3509,9 +3630,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Omelets and Eggs",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-breakfast-0023",
@@ -3547,9 +3669,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Omelets and Eggs",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-breakfast-0024",
@@ -3580,9 +3703,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Healthy Section",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-breakfast-0025",
@@ -3613,9 +3737,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Pancakes and Sweets",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-breakfast-0026",
@@ -3646,9 +3771,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Pancakes and Sweets",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0027",
@@ -3678,9 +3804,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Sharing",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0028",
@@ -3710,9 +3837,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Sharing",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0029",
@@ -3742,9 +3870,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Soups and Starters",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0030",
@@ -3779,9 +3908,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Soups and Starters",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0031",
@@ -3811,9 +3941,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Soups and Starters",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0032",
@@ -3843,9 +3974,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Soups and Starters",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0033",
@@ -3875,9 +4007,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Salads",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0034",
@@ -3907,9 +4040,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, M/M Burgers",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0035",
@@ -3944,9 +4078,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, M/M Burgers",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0036",
@@ -3976,9 +4111,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Meat Specials",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0037",
@@ -4008,9 +4144,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, From the Farm",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0038",
@@ -4040,9 +4177,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, From the Farm",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0039",
@@ -4077,9 +4215,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Sauces",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0040",
@@ -4109,9 +4248,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Mussels and Fries",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0041",
@@ -4147,9 +4287,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Mussels and Fries",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0042",
@@ -4179,9 +4320,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Mussels and Fries",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0043",
@@ -4211,9 +4353,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, From the Sea",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0044",
@@ -4248,9 +4391,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, M/M Stone Baked Pizzas",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0045",
@@ -4280,9 +4424,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, M/M Stone Baked Pizzas",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0046",
@@ -4312,9 +4457,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Sundaes",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0047",
@@ -4344,9 +4490,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Desserts",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-lunch-dinner-0048",
@@ -4376,9 +4523,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Autumn Menu",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "food-allergens-breakfast-0049",
@@ -4410,8 +4558,10 @@
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live. The menu doesn't mark this dish (N).",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "food-allergens-breakfast-0050",
@@ -4443,8 +4593,10 @@
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live. The menu doesn't mark this dish (N).",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "food-allergens-breakfast-0051",
@@ -4476,8 +4628,10 @@
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "food-allergens-breakfast-0052",
@@ -4507,8 +4661,10 @@
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Smoothies",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live. The menu doesn't mark this drink (N).",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "food-allergens-breakfast-0053",
@@ -4538,8 +4694,10 @@
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Wellness Late",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live. The menu doesn't mark these drinks (N).",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "food-allergens-breakfast-0054",
@@ -4571,8 +4729,10 @@
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Omelets and Eggs; Service Training Program v2026/01, 14 allergens",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "food-allergens-lunch-dinner-0055",
@@ -4603,8 +4763,10 @@
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39; Service Training Program v2026/01, 14 allergens",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live. The menu doesn't mark these dishes (S).",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "food-allergens-lunch-dinner-0056",
@@ -4635,8 +4797,10 @@
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39; Service Training Program v2026/01, 14 allergens",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live. The menu doesn't mark this dish (S).",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "food-allergens-lunch-dinner-0057",
@@ -4667,8 +4831,10 @@
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Sharing",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "food-allergens-lunch-dinner-0058",
@@ -4699,8 +4865,10 @@
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, M/M Stone Baked Pizzas",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "food-allergens-lunch-dinner-0059",
@@ -4731,8 +4899,10 @@
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Soups and Starters",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "food-allergens-lunch-dinner-0060",
@@ -4763,8 +4933,10 @@
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Salads",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "food-allergens-lunch-dinner-0061",
@@ -4795,8 +4967,10 @@
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Salads",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "food-allergens-lunch-dinner-0062",
@@ -4827,8 +5001,10 @@
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Autumn Menu",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "food-allergens-lunch-dinner-0063",
@@ -4859,8 +5035,10 @@
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Sharing",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "food-allergens-lunch-dinner-0064",
@@ -4891,8 +5069,10 @@
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Sundaes",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live. The menu doesn't mark this dish (N).",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "food-allergens-lunch-dinner-0065",
@@ -4923,8 +5103,10 @@
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Sauces; Service Training Program v2026/01, 14 allergens",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     }
   ]
 }

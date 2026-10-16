@@ -1,8 +1,11 @@
 {
-  "drafted": "2026-10-16",
+  "updated": "2026-10-16",
   "level": 2,
-  "status": "review",
   "count": 37,
+  "status_counts": {
+    "live": 35,
+    "review": 2
+  },
   "cards": [
     {
       "id": "drk-bar-standards-0001",
@@ -29,9 +32,10 @@
       "is_allergen": false,
       "source_ref": "Cocktails and Mocktails Manual v2026/01, drink presentation standards; AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, spirits (30 ML)",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-bar-standards-0002",
@@ -59,9 +63,10 @@
       "is_allergen": false,
       "source_ref": "Cocktails and Mocktails Manual v2026/01, drink presentation standards; AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, wines (150 ML / 750 ML)",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-bar-standards-0003",
@@ -88,9 +93,10 @@
       "is_allergen": false,
       "source_ref": "Cocktails and Mocktails Manual v2026/01, drink presentation standards",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-bar-standards-0004",
@@ -123,9 +129,10 @@
       "is_allergen": false,
       "source_ref": "Cocktails and Mocktails Manual v2026/01, glassware rules",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-bar-standards-0005",
@@ -156,9 +163,10 @@
       "is_allergen": false,
       "source_ref": "Operations Manual v2026/01, bar setup",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-spirits-wine-basics-0006",
@@ -186,9 +194,10 @@
       "is_allergen": false,
       "source_ref": "Cocktails and Mocktails Manual v2026/01, know your spirits",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-spirits-wine-basics-0007",
@@ -216,9 +225,10 @@
       "is_allergen": false,
       "source_ref": "Cocktails and Mocktails Manual v2026/01, know your spirits",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-spirits-wine-basics-0008",
@@ -246,9 +256,10 @@
       "is_allergen": false,
       "source_ref": "Cocktails and Mocktails Manual v2026/01, know your spirits",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-spirits-wine-basics-0009",
@@ -276,9 +287,10 @@
       "is_allergen": false,
       "source_ref": "Cocktails and Mocktails Manual v2026/01, Champagne; AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, sparkling and Champagne",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-spirits-wine-basics-0010",
@@ -306,9 +318,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, white wine",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-spirits-wine-basics-0011",
@@ -336,9 +349,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, red wine",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-spirits-wine-basics-0012",
@@ -366,9 +380,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, sparkling and Champagne; rosé",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-beer-0013",
@@ -396,9 +411,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, draught beer",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-beer-0014",
@@ -426,9 +442,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, draught beer; Meat Specials",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-beer-0015",
@@ -456,9 +473,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, bottled beer",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-beer-0016",
@@ -486,9 +504,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, bottled beer",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-beer-0017",
@@ -516,9 +535,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, draught beer",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-beer-0018",
@@ -550,9 +570,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, non-alcoholic beer",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-cocktails-0019",
@@ -583,9 +604,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, cocktails; Cocktails and Mocktails Manual v2026/01, classic cocktails",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-cocktails-0020",
@@ -612,9 +634,10 @@
       "is_allergen": false,
       "source_ref": "Cocktails and Mocktails Manual v2026/01, signature cocktails; AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, cocktails",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-cocktails-0021",
@@ -641,9 +664,10 @@
       "is_allergen": false,
       "source_ref": "Cocktails and Mocktails Manual v2026/01, classic cocktails; AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, cocktails",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-cocktails-0022",
@@ -671,9 +695,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, cocktails; Cocktails and Mocktails Manual v2026/01, coffee and digestifs",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-cocktails-0023",
@@ -701,9 +726,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, signature cocktails; Cocktails and Mocktails Manual v2026/01, signature cocktails",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-cocktails-0024",
@@ -732,8 +758,10 @@
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, signature cocktails",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only. Gerard to check.",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "drk-cocktails-0025",
@@ -762,8 +790,10 @@
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, autumn espresso martini",
       "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only. The menu doesn't mark it (N). Gerard to check.",
       "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16",
+      "allergen_check_by": null
     },
     {
       "id": "drk-cocktails-0026",
@@ -791,9 +821,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, autumn espresso martini",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-cocktails-0027",
@@ -821,9 +852,10 @@
       "is_allergen": false,
       "source_ref": "Cocktails and Mocktails Manual v2026/01, sharing pitchers and sangria",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-cocktails-0028",
@@ -856,9 +888,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, sharing pitchers; Cocktails and Mocktails Manual v2026/01, sharing pitchers",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-cocktails-0029",
@@ -886,9 +919,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, G&T speciality; Cocktails and Mocktails Manual v2026/01, gin and tonic selection",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-mocktails-soft-0030",
@@ -916,9 +950,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, mocktails; Cocktails and Mocktails Manual v2026/01, mocktails",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-mocktails-soft-0031",
@@ -946,9 +981,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, mocktails; Cocktails and Mocktails Manual v2026/01, mocktails",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-mocktails-soft-0032",
@@ -980,9 +1016,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, mocktails",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-mocktails-soft-0033",
@@ -1011,9 +1048,10 @@
       "is_allergen": false,
       "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, water",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-coffee-tea-0034",
@@ -1046,9 +1084,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, bio-organic teas",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-coffee-tea-0035",
@@ -1077,9 +1116,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, hot beverages",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-coffee-tea-0036",
@@ -1108,9 +1148,10 @@
       "is_allergen": false,
       "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, juices",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     },
     {
       "id": "drk-coffee-tea-0037",
@@ -1139,9 +1180,10 @@
       "is_allergen": false,
       "source_ref": "Service Training Program v2026/01, coffee upselling; Operations Manual v2026/01, coffee check-back",
       "review_note": null,
-      "status": "review",
-      "reviewed_by": null,
-      "version": 1
+      "status": "live",
+      "reviewed_by": "David",
+      "version": 1,
+      "reviewed_at": "2026-10-16"
     }
   ]
 }

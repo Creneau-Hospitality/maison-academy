@@ -1,7 +1,7 @@
 # Card drafts
 
 **Drafted:** 16 October 2026.
-**Cards:** 189, all with `status: review`: 152 at Level 1 and 37 drinks cards at Level 2. None goes live until David approves it. The 29 allergen cards also need Gerard's check.
+**Cards:** 189: 152 at Level 1 and 37 drinks cards at Level 2. David approved them all on 16 October. The 160 cards without allergens are `live`. The 29 allergen cards stay in `review` until Gerard has checked them.
 
 | File | What it is |
 | --- | --- |
