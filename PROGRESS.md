@@ -32,11 +32,12 @@
 - Answer options shuffled (David spotted the right answer was always first): stored order shuffled once on all 182 cards, studio preview shuffles every time, and the staff app must too (Phase 2). Approvals unchanged.
 - David tried the studio: edited and re-approved one drinks card (now version 2) and retired one (`drk-beer-0016`, Liefmans Kriek).
 - Harder wrong options drafted on a sample of 10 cards (migration 0005), back in review for David. If he likes the level, the rest get the same treatment.
+- Voids need manager authorisation (David): the two cards that said otherwise were corrected and sent back to review (migration 0006).
 - Screen test (headless browser, sample data): every screen loads, no errors, no sideways scrolling at 360 px.
 
 ## Next
 
-1. David reviews the 10 harder cards (studio: status In review, Not allergen) and says whether to do the rest.
+1. Confirm migration 0006 ran (David's computer went offline as it was sent). Then David reviews the 2 corrected void cards and the 10 harder cards (studio: status In review, Not allergen) and says whether to do the rest.
 2. Check with David that retiring `drk-beer-0016` was intended (one click to restore).
 3. Phase-1 report, card export to `exports/`, and David publishes the `phase-1` release.
 4. Kitchen check of the 29 allergen cards (Arabian Ranches head chef or Gerard), from a one-page list. They stay hidden from staff until then.
@@ -45,7 +46,6 @@
 
 ## Known issues
 
-- Source conflict to settle: the Service Training Program lets staff remove a single item from the bill themselves (card `sop-guest-recovery-0016`), but its void and discount controls say every void needs manager authorisation (card `sop-controls-0030`). Both cards are live. Asked David 16 October.
 
 - No allergen matrix yet. Allergen cards are drafted from menu ingredients only and wait for a kitchen check.
 - Netlify is on Free with one owner; move to Pro and add Gerard in Phase 4.

@@ -19,7 +19,8 @@ How Maison Academy fits together and where everything lives. Names only, never p
   3. `0003_first_admin.sql`: makes David the admin.
   4. `0004_option_order.sql`: option order no longer counts as a content change; shuffles stored options once.
   5. `0005_harder_options_sample.sql`: harder wrong options on 10 cards, sent back to review.
-  All five were run on 16 October 2026. (For a restore into an empty database, run 0001 to 0003, then 0004; 0005 only matters if the export predates it.)
+  6. `0006_voids_need_manager.sql`: corrects two cards so voids always need a manager.
+  All six were run on 16 October 2026. (For a restore into an empty database, run 0001 to 0003, then 0004; 0005 only matters if the export predates it.)
 
 ### Content rules the database enforces
 
