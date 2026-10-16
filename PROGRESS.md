@@ -37,7 +37,7 @@
 
 ## Next
 
-1. Confirm migration 0006 ran (David's computer went offline as it was sent). Then David reviews the 2 corrected void cards and the 10 harder cards (studio: status In review, Not allergen) and says whether to do the rest.
+1. David reviews the 2 corrected void cards and the 10 harder cards (studio: status In review, Not allergen) and says whether to do the rest.
 2. Check with David that retiring `drk-beer-0016` was intended (one click to restore).
 3. Phase-1 report, card export to `exports/`, and David publishes the `phase-1` release.
 4. Kitchen check of the 29 allergen cards (Arabian Ranches head chef or Gerard), from a one-page list. They stay hidden from staff until then.
