@@ -263,19 +263,19 @@
       "prompt": "What makes a sparkling wine a Champagne?",
       "media": null,
       "options": [
-        "It's made in Champagne, France",
-        "It's French and sparkling",
-        "It's made from Chardonnay",
-        "It's served in a flute"
+        "It's made in France",
+        "It's made in Italy",
+        "It's served in a flute",
+        "It's always rosé"
       ],
       "answer": [
-        "It's made in Champagne, France"
+        "It's made in France"
       ],
       "explanation": "Champagne is made in France; any other type is sparkling wine. Our Louis Roederer Brut NV is a Champagne; the Da Luca Prosecco is an Italian sparkling wine.",
       "why_it_matters": "Calling things by the right name matters to guests who are celebrating.",
       "is_allergen": false,
       "source_ref": "Cocktails and Mocktails Manual v2026/01, Champagne; AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, sparkling and Champagne",
-      "review_note": "Manual says \"made in France\"; card says Champagne, France. Confirm wording.",
+      "review_note": null,
       "status": "review",
       "reviewed_by": null,
       "version": 1

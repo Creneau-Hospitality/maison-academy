@@ -35,12 +35,12 @@ No fact comes from general knowledge, except the allergen group a food belongs t
 ## To confirm
 
 1. **Allergen cards from the menu (19).** There are 17 food cards and 2 drinks cards. All were drafted from the ingredients the menu lists, not the allergen matrix. Gerard checks each one, and none says a dish is free from anything. See `../MENU_ALLERGEN_FLAGS.md`.
-2. **Champagne.** The manual says Champagne is "made in France"; the card says "made in Champagne, France". Which wording do we keep?
 
 ### Settled by David on 16 October
 
 - **Dish names:** spelt as printed on the menu, for example "Huitres Hervé #3" and "Morrocan Mint".
 - **Leche de tigre:** the ceviche card stays as it is.
+- **Champagne:** the card follows the manual: Champagne is made in France.
 - **"86'd":** means unavailable. The pre-shift card wording stays.
 - **Allergen question at the order:** added to the waiter's sequence of service (step 3), and the card now cites it.
 

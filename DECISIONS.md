@@ -21,3 +21,4 @@ One line per decision, dated. When the build brief and David disagree, David win
 | 2026-10-16 | "86'd" means an item is unavailable; cards use it that way. | |
 | 2026-10-16 | The waiter's sequence of service now asks about allergies at step 3: ask "does anyone have any allergies?" and, if anyone does, tell the head chef straightaway; never guess. | The PowerPoint was updated in place. The original was kept in `Sequence of Service/Archive/Waiter/`. The PDF still needs re-exporting from PowerPoint, so the brand font is kept. |
 | 2026-10-16 | Drinks cards are drafted at Level 2, as the brief scopes them. Where the menu and the cocktails manual differ, cards follow the menu for what the guest receives, and the manual for glass, garnish and method. | |
+| 2026-10-16 | The Champagne card follows the manual's wording: Champagne is made in France, and any other type is sparkling wine. | |
