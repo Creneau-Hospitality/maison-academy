@@ -16,22 +16,21 @@
 - 37 drinks cards drafted at Level 2 (2 allergen cards).
 - David approved all 189 cards: 160 live, 29 allergen cards in review for Gerard.
 - Phase-0 report written and release published by David.
+- GitHub repository made private on 16 October (it had been public for about two hours after creation; checked private and not viewable signed-out).
 - Waiter's sequence of service updated with the allergen question at step 3.
 
 ## Next
 
-1. **Make the GitHub repository private** (it was found public on 16 October; Settings > Danger Zone > Change visibility).
-2. Gerard accepts the GitHub and Supabase invitations and turns on Watch; send him the phase-0 release link.
-3. Allow package registries for Claude's workspace (claude.ai, Settings > Capabilities). The setting was saved on 16 October but hadn't reached this session; check it in a new session.
-4. Phase 1: content studio, load the 189 cards, Gerard's reviewer login.
-5. Gerard checks the 29 allergen cards; allergen matrix still wanted.
-6. David re-exports `SOS_Waiter.pdf` from PowerPoint.
-7. Next cards once sources arrive: photo cards, payments and alcohol service SOPs, beer serves, coffee recipes, wine pairings.
+1. Gerard accepts the GitHub and Supabase invitations and turns on Watch; send him the phase-0 release link.
+2. Allow package registries for Claude's workspace (claude.ai, Settings > Capabilities). The setting was saved on 16 October but hadn't reached this session; check it in a new session.
+3. Phase 1: content studio, load the 189 cards, Gerard's reviewer login.
+4. Gerard checks the 29 allergen cards; allergen matrix still wanted.
+5. David re-exports `SOS_Waiter.pdf` from PowerPoint.
+6. Next cards once sources arrive: photo cards, payments and alcohol service SOPs, beer serves, coffee recipes, wine pairings.
 
 ## Known issues
 
 - No allergen matrix yet. Allergen cards are drafted from menu ingredients only and wait for Gerard's check.
 - Netlify is on Free with one owner; move to Pro and add Gerard in Phase 4.
-- The GitHub repository was created public by mistake; it must be private (brief section 13.5).
 - Accounts use David's email for now. The shared Creneau mailbox must be added as owner on all three before Phase 4.
 - Network: Claude's workspace can't reach the npm package registry, Supabase or Netlify (blocked by the session's network settings, checked 16 October). The Phase 0 hello page needs none of them. Phase 1 needs npm, so David (or the Claude plan's organisation owner) allows package registries, and ideally api.supabase.com and api.netlify.com, on claude.ai under Settings > Capabilities.

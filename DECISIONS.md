@@ -24,3 +24,4 @@ One line per decision, dated. When the build brief and David disagree, David win
 | 2026-10-16 | The Champagne card follows the manual's wording: Champagne is made in France, and any other type is sparkling wine. | |
 | 2026-10-16 | David approved all 189 drafted cards. The 160 cards without allergens are marked live; the 29 allergen cards stay in review until Gerard's check. | Recorded in each card as `reviewed_by: David`, `reviewed_at: 2026-10-16`. |
 | 2026-10-16 | Phase-0 release published by David on GitHub (Claude's session can't create releases). Gerard's owner invitations were still pending at that point. | Once Gerard accepts and turns on Watch, he receives later releases by email; send him the phase-0 link directly. |
+| 2026-10-16 | Repository visibility corrected to private. | It was public from creation (about 18:10) until about 20:55. Checked: private, and returns 404 to signed-out visitors. |
