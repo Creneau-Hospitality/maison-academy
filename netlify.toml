@@ -1,5 +1,16 @@
+# Netlify builds the app from GitHub (main) and publishes the dist folder.
 [build]
-  publish = "site"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# One-page app: every path (e.g. /studio) is served by index.html.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 [[headers]]
   for = "/*"

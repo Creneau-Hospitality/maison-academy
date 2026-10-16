@@ -18,4 +18,6 @@ A phone-first training app for Maison Mathis front-of-house teams, with a manage
 | `content/` | Content check and card sources |
 | `reports/` | Phase reports (also published as GitHub releases) |
 | `exports/` | Card bank and settings backups |
-| `site/` | The web app as deployed to Netlify |
+| `src/` | The web app (Vite + React + TypeScript): staff front page and content studio |
+| `supabase/migrations/` | Database set-up, in order: tables and rules, the Phase 0 cards, the first admin |
+| `scripts/` | Small helpers (for example, rebuilding the card seed from an export) |
