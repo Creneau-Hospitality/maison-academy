@@ -1,6 +1,6 @@
 # Progress
 
-**Current phase:** 0 done (release `phase-0`, 16 October). Phase 1 is next and waits on network settings.
+**Current phase:** 0 done on 16 October, once David publishes the `phase-0` release on GitHub. Phase 1 is next and waits on network settings.
 **Last updated:** 16 October 2026.
 
 ## Done
@@ -15,7 +15,7 @@
 - 152 Level 1 cards drafted, all in review: service 52, SOPs 35, food 65 (27 allergen cards). See `content/drafts/README.md`.
 - 37 drinks cards drafted at Level 2 (2 allergen cards).
 - David approved all 189 cards: 160 live, 29 allergen cards in review for Gerard.
-- Gerard confirmed owner access and is watching the repository. Phase-0 report and release published.
+- Gerard confirmed owner access and is watching the repository. Phase-0 report written; David publishes the release on GitHub.
 - Waiter's sequence of service updated with the allergen question at step 3.
 
 ## Next

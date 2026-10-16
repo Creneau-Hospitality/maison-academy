@@ -40,3 +40,4 @@ All three are set up on David's email (david@swrhospitality.com) for now. The sh
 - **Check:** open the site. The Database box should read "Connected to Supabase (Frankfurt)".
 - **Restore:** to be written in Phase 1, once there is data to restore.
 - **Import:** to be written when the card import and roster import exist.
+- **Phase releases:** Claude's session can push commits but can't create GitHub releases or push tags. David publishes each release on GitHub (Releases > Draft a new release, new tag `phase-N` on `main`, report pasted as the notes).
