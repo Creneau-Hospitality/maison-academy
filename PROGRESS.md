@@ -1,7 +1,7 @@
 # Progress
 
-**Current phase:** 0 done on 16 October (release `phase-0` published). Gerard's owner invitations still pending. Phase 1 (content studio) started 16 October, evening.
-**Last updated:** 16 October 2026.
+**Current phase:** 1, content studio, built on 16 October (evening). Waiting for David to try it, then the phase-1 report, export and release.
+**Last updated:** 16 October 2026, evening.
 
 ## Done
 
@@ -20,12 +20,23 @@
 - Waiter's sequence of service updated with the allergen question at step 3; `SOS_Waiter.pdf` re-exported from PowerPoint (checked 16 October).
 - Network fixed: Claude's workspace reaches npm, Supabase and Netlify (checked 16 October, evening).
 
+## Phase 1 so far (16 October, evening)
+
+- Database set up in Supabase: content tables, row-level security, version history, approvals and an audit log. Tested first on a local copy: 24 checks passed.
+- The database refuses to put an allergen card live without a kitchen check, recorded by someone marked as an allergen checker.
+- 189 cards loaded with their Phase 0 approvals: 160 live (125 at Level 1), 29 allergen cards in review. Checked field by field against the export: no differences.
+- David is the studio admin (his own login, created by him in Supabase).
+- Content studio at https://maison-academy.netlify.app/studio: card bank with counts and filters, card editor with a staff preview, approve / approve and next, kitchen check, send back, retire, version history, JSON/CSV import and export, people and roles, learning settings. About line with the copyright and credit.
+- Screen test (headless browser, sample data): every screen loads, no errors, no sideways scrolling at 360 px.
+
 ## Next
 
-1. Phase 1: content studio, load the 189 cards.
-2. Kitchen check of the 29 allergen cards (Arabian Ranches head chef or Gerard), from a one-page list. They stay hidden from staff until then.
-3. Gerard accepts the GitHub and Supabase invitations when he can (not blocking).
-4. Next cards once sources arrive: photo cards, payments and alcohol service SOPs, beer serves, coffee recipes, wine pairings.
+1. David signs in to the studio and tries it: approve a card, edit one, look at the history.
+2. Set Supabase's Site URL so invite and password-reset emails link to the studio (asked David 16 October).
+3. Phase-1 report, card export to `exports/`, and David publishes the `phase-1` release.
+4. Kitchen check of the 29 allergen cards (Arabian Ranches head chef or Gerard), from a one-page list. They stay hidden from staff until then.
+5. Gerard accepts the GitHub and Supabase invitations when he can (not blocking).
+6. Next cards once sources arrive: photo cards, payments and alcohol service SOPs, beer serves, coffee recipes, wine pairings.
 
 ## Known issues
 
