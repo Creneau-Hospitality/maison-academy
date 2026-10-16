@@ -40,10 +40,10 @@ Not used at all: franchise agreements, HR forms and job descriptions, audit and 
 
 Menu allergen and print points are listed separately in `MENU_ALLERGEN_FLAGS.md`, for Gerard.
 
-
 1. **Timings.** Confirmed by David on 16 October: cards teach the training programme's timings.
 2. **Coffee follow-up.** The Operations Manual says within 3 minutes; the training programme gives no time.
-3. **Pizza.** One manual says wood-fired, the other stone-baked.
+3. **Pizza.** One manual says wood-fired, the other stone-baked. The Arabian Ranches menu says stone-baked with a sourdough base, so cards follow the menu.
 4. **Sours.** The ingredients list fresh lime juice, the description says lemon juice.
 5. **S.O.B. shot.** The description mentions peach schnapps, the ingredients don't.
 6. **Drinks wording.** The manual calls some drinks "for ladies" or "for gents". Cards will leave that out.
+7. **Mai Tai.** The menu adds pineapple juice and lemon; the manual has no pineapple and uses lime. Cards follow the menu for what the guest gets, until the bar lead says otherwise.
