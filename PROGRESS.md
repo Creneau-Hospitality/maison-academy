@@ -18,5 +18,6 @@
 ## Known issues
 
 - No allergen matrix yet, so no allergen cards can be drafted.
+- Netlify is on Free with one owner; move to Pro and add Gerard in Phase 4.
 - Accounts use David's email for now. The shared Creneau mailbox must be added as owner on all three before Phase 4.
 - Network: Claude's workspace can't reach the npm package registry, Supabase or Netlify (blocked by the session's network settings, checked 16 October). The Phase 0 hello page needs none of them. Phase 1 needs npm, so David (or the Claude plan's organisation owner) allows package registries, and ideally api.supabase.com and api.netlify.com, on claude.ai under Settings > Capabilities.
