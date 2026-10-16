@@ -1,0 +1,1147 @@
+{
+  "drafted": "2026-10-16",
+  "level": 2,
+  "status": "review",
+  "count": 37,
+  "cards": [
+    {
+      "id": "drk-bar-standards-0001",
+      "track": "drinks",
+      "unit": "bar-standards",
+      "level": 2,
+      "roles": [
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "What is our standard spirit measure?",
+      "media": null,
+      "options": [
+        "30 ml",
+        "25 ml",
+        "35 ml",
+        "50 ml"
+      ],
+      "answer": [
+        "30 ml"
+      ],
+      "explanation": "Every bartender uses a jigger for exact measurements; the standard measure is 30 ml.",
+      "why_it_matters": "Every guest gets the same drink, and over-pouring costs the house money.",
+      "is_allergen": false,
+      "source_ref": "Cocktails and Mocktails Manual v2026/01, drink presentation standards; AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, spirits (30 ML)",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-bar-standards-0002",
+      "track": "drinks",
+      "unit": "bar-standards",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "How much is a glass of wine?",
+      "media": null,
+      "options": [
+        "150 ml",
+        "125 ml",
+        "175 ml",
+        "200 ml"
+      ],
+      "answer": [
+        "150 ml"
+      ],
+      "explanation": "Wine and sparkling wine by the glass is 150 ml.",
+      "why_it_matters": "Guests compare glass and bottle; know the measure.",
+      "is_allergen": false,
+      "source_ref": "Cocktails and Mocktails Manual v2026/01, drink presentation standards; AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, wines (150 ML / 750 ML)",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-bar-standards-0003",
+      "track": "drinks",
+      "unit": "bar-standards",
+      "level": 2,
+      "roles": [
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "What's the rule on pouring above the measure?",
+      "media": null,
+      "options": [
+        "Over-pouring is not accepted",
+        "Allowed for regulars",
+        "Allowed if the guest asks",
+        "Up to 5 ml is fine"
+      ],
+      "answer": [
+        "Over-pouring is not accepted"
+      ],
+      "explanation": "Over-pouring is not accepted: every recipe is tested, and a drink made by one bartender must be made exactly the same by all others.",
+      "why_it_matters": "Consistency is what guests expect every time.",
+      "is_allergen": false,
+      "source_ref": "Cocktails and Mocktails Manual v2026/01, drink presentation standards",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-bar-standards-0004",
+      "track": "drinks",
+      "unit": "bar-standards",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server",
+        "barista"
+      ],
+      "type": "multi",
+      "prompt": "Glassware rules: what's right? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Use the proper glass for each drink",
+        "Always use a tong for ice",
+        "Check glasses aren't cracked or chipped",
+        "Put breakage in the specific bin",
+        "Put breakage in the general bin"
+      ],
+      "answer": [
+        "Use the proper glass for each drink",
+        "Always use a tong for ice",
+        "Check glasses aren't cracked or chipped",
+        "Put breakage in the specific bin"
+      ],
+      "explanation": "Use the proper, sparkling-clean glass, check for cracks and chips, always use a tong for ice, and put breakage in the specific bin.",
+      "why_it_matters": "A chip or a shard of glass can injure a guest.",
+      "is_allergen": false,
+      "source_ref": "Cocktails and Mocktails Manual v2026/01, glassware rules",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-bar-standards-0005",
+      "track": "drinks",
+      "unit": "bar-standards",
+      "level": 2,
+      "roles": [
+        "bar"
+      ],
+      "type": "multi",
+      "prompt": "Bar set-up before service: which are non-negotiable? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Ice, garnishes and syrups ready",
+        "Glassware polished and stacked",
+        "Spirits at par level",
+        "Cocktail tools clean and in position",
+        "Cocktails pre-mixed in jugs"
+      ],
+      "answer": [
+        "Ice, garnishes and syrups ready",
+        "Glassware polished and stacked",
+        "Spirits at par level",
+        "Cocktail tools clean and in position"
+      ],
+      "explanation": "Bar mise en place: ice, garnishes and syrups, glassware polished and stacked, spirits at par, tools clean and in position. No exceptions.",
+      "why_it_matters": "A ready bar keeps cocktails inside the 8-minute standard.",
+      "is_allergen": false,
+      "source_ref": "Operations Manual v2026/01, bar setup",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-spirits-wine-basics-0006",
+      "track": "drinks",
+      "unit": "spirits-wine-basics",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "Tequila is made from which plant?",
+      "media": null,
+      "options": [
+        "Blue agave",
+        "Sugar cane",
+        "Juniper",
+        "Rye"
+      ],
+      "answer": [
+        "Blue agave"
+      ],
+      "explanation": "Tequila is made from the blue agave plant of Mexico. Rum is made from sugar cane; gin from juniper berries.",
+      "why_it_matters": "Guests ask; a confident answer builds trust.",
+      "is_allergen": false,
+      "source_ref": "Cocktails and Mocktails Manual v2026/01, know your spirits",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-spirits-wine-basics-0007",
+      "track": "drinks",
+      "unit": "spirits-wine-basics",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "Which spirit is made from sugar cane?",
+      "media": null,
+      "options": [
+        "Rum",
+        "Vodka",
+        "Tequila",
+        "Gin"
+      ],
+      "answer": [
+        "Rum"
+      ],
+      "explanation": "Rum is made from sugar cane, from clear to dark brown.",
+      "why_it_matters": "Helps you guide a guest to a style they'll like.",
+      "is_allergen": false,
+      "source_ref": "Cocktails and Mocktails Manual v2026/01, know your spirits",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-spirits-wine-basics-0008",
+      "track": "drinks",
+      "unit": "spirits-wine-basics",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "Which brandy may be called Cognac?",
+      "media": null,
+      "options": [
+        "Only brandy from the Cognac region of France",
+        "Any French brandy",
+        "Any aged grape brandy",
+        "Brandy aged over 10 years"
+      ],
+      "answer": [
+        "Only brandy from the Cognac region of France"
+      ],
+      "explanation": "Only brandy from the Cognac region of France may be called Cognac. It's most often an after-dinner drink, neat in a snifter or on the rocks.",
+      "why_it_matters": "Good for suggesting a digestif with confidence.",
+      "is_allergen": false,
+      "source_ref": "Cocktails and Mocktails Manual v2026/01, know your spirits",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-spirits-wine-basics-0009",
+      "track": "drinks",
+      "unit": "spirits-wine-basics",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "What makes a sparkling wine a Champagne?",
+      "media": null,
+      "options": [
+        "It's made in Champagne, France",
+        "It's French and sparkling",
+        "It's made from Chardonnay",
+        "It's served in a flute"
+      ],
+      "answer": [
+        "It's made in Champagne, France"
+      ],
+      "explanation": "Champagne is made in France; any other type is sparkling wine. Our Louis Roederer Brut NV is a Champagne; the Da Luca Prosecco is an Italian sparkling wine.",
+      "why_it_matters": "Calling things by the right name matters to guests who are celebrating.",
+      "is_allergen": false,
+      "source_ref": "Cocktails and Mocktails Manual v2026/01, Champagne; AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, sparkling and Champagne",
+      "review_note": "Manual says \"made in France\"; card says Champagne, France. Confirm wording.",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-spirits-wine-basics-0010",
+      "track": "drinks",
+      "unit": "spirits-wine-basics",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "Where is the Matua Valley Sauvignon Blanc from?",
+      "media": null,
+      "options": [
+        "New Zealand",
+        "France",
+        "Chile",
+        "South Africa"
+      ],
+      "answer": [
+        "New Zealand"
+      ],
+      "explanation": "Matua Valley Sauvignon Blanc is from New Zealand.",
+      "why_it_matters": "Guests often choose wine by country.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, white wine",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-spirits-wine-basics-0011",
+      "track": "drinks",
+      "unit": "spirits-wine-basics",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "Which of our red wines is from Spain?",
+      "media": null,
+      "options": [
+        "Cune Rioja Crianza",
+        "La Linda Malbec",
+        "Kadette Cape Blend",
+        "Merlot Bio Bio"
+      ],
+      "answer": [
+        "Cune Rioja Crianza"
+      ],
+      "explanation": "Cune Rioja Crianza is Spanish. La Linda Malbec is from Argentina, Kadette Cape Blend from South Africa and Merlot Bio Bio from Italy.",
+      "why_it_matters": "Matching a guest's favourite country is an easy recommendation.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, red wine",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-spirits-wine-basics-0012",
+      "track": "drinks",
+      "unit": "spirits-wine-basics",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "Which of these is our Champagne rosé?",
+      "media": null,
+      "options": [
+        "Laurent-Perrier Cuvée Rosé Brut NV",
+        "Da Luca Sparkling Rosé",
+        "Colombelle Rose",
+        "Eau de Provence Rose"
+      ],
+      "answer": [
+        "Laurent-Perrier Cuvée Rosé Brut NV"
+      ],
+      "explanation": "Laurent-Perrier Cuvée Rosé Brut NV is from France. Da Luca Sparkling Rosé is Italian; Colombelle and Eau de Provence are still rosés.",
+      "why_it_matters": "Celebrating guests often ask for pink Champagne.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, sparkling and Champagne; rosé",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-beer-0013",
+      "track": "drinks",
+      "unit": "beer",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "Which draught beer is a light-bodied Belgian wheat beer?",
+      "media": null,
+      "options": [
+        "Hoegaarden",
+        "Stella Artois",
+        "Leffe Brune",
+        "Guinness"
+      ],
+      "answer": [
+        "Hoegaarden"
+      ],
+      "explanation": "Hoegaarden (Belgium, 4.9%) is a light-bodied wheat beer with orange zest, spices and coriander.",
+      "why_it_matters": "Wheat beer fans will look for it.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, draught beer",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-beer-0014",
+      "track": "drinks",
+      "unit": "beer",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "A guest wants a dark Belgian abbey beer on draught. Which do you suggest?",
+      "media": null,
+      "options": [
+        "Leffe Brune",
+        "Leffe Blonde",
+        "Hoegaarden",
+        "Kronenbourg 1664 Blanc"
+      ],
+      "answer": [
+        "Leffe Brune"
+      ],
+      "explanation": "Leffe Brune (Belgium, 6.5%) is an authentic abbey beer with darkly roasted malt: vanilla, cloves and chocolate.",
+      "why_it_matters": "It's also the beer our Belgian beef stew is braised in.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, draught beer; Meat Specials",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-beer-0015",
+      "track": "drinks",
+      "unit": "beer",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "What's the strength of Duvel?",
+      "media": null,
+      "options": [
+        "8.5%",
+        "5%",
+        "6.6%",
+        "4.9%"
+      ],
+      "answer": [
+        "8.5%"
+      ],
+      "explanation": "Duvel (Belgium, 8.5%) is \"Belgian beer royalty\", devilishly strong.",
+      "why_it_matters": "Guests should know it's much stronger than a lager.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, bottled beer",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-beer-0016",
+      "track": "drinks",
+      "unit": "beer",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "Which beer tastes of tart cherries?",
+      "media": null,
+      "options": [
+        "Liefmans Kriek-Brut",
+        "Duvel",
+        "Magners Dark Fruits",
+        "Somersby"
+      ],
+      "answer": [
+        "Liefmans Kriek-Brut"
+      ],
+      "explanation": "Liefmans Kriek-Brut (Belgium, 6.2%) has tart cherries and a refreshing, lightly sweet finish.",
+      "why_it_matters": "A great suggestion for guests who don't usually like beer.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, bottled beer",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-beer-0017",
+      "track": "drinks",
+      "unit": "beer",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "Which draught is a typical Belgian blonde ale?",
+      "media": null,
+      "options": [
+        "Leffe Blonde",
+        "Stella Artois",
+        "Carlsberg",
+        "Peroni Nastro Azzurro"
+      ],
+      "answer": [
+        "Leffe Blonde"
+      ],
+      "explanation": "Leffe Blonde (Belgium, 6.6%) is a typical, perfectly balanced Belgian blonde: raisin, banana, aromatic herbs.",
+      "why_it_matters": "Belgian beer is part of our house story.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, draught beer",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-beer-0018",
+      "track": "drinks",
+      "unit": "beer",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "multi",
+      "prompt": "Which alcohol-free beers do we serve? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Peroni 0.0%",
+        "Corona Cero 0.0%",
+        "Guinness 0.0%",
+        "Fly Craft 0.0%",
+        "Stella Artois 0.0%"
+      ],
+      "answer": [
+        "Peroni 0.0%",
+        "Corona Cero 0.0%",
+        "Guinness 0.0%",
+        "Fly Craft 0.0%"
+      ],
+      "explanation": "Peroni 0.0%, Corona Cero 0.0%, Guinness 0.0% and Fly Craft 0.0% from the UAE.",
+      "why_it_matters": "Every guest should get a good drink, with or without alcohol.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, non-alcoholic beer",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-cocktails-0019",
+      "track": "drinks",
+      "unit": "cocktails",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "multi",
+      "prompt": "What goes into a Negroni? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Gin",
+        "Campari",
+        "Sweet vermouth",
+        "Vodka",
+        "Soda"
+      ],
+      "answer": [
+        "Gin",
+        "Campari",
+        "Sweet vermouth"
+      ],
+      "explanation": "A Negroni is gin, Campari and sweet vermouth, three equal parts, in a vintage rock glass with orange peel.",
+      "why_it_matters": "An iconic classic many guests order by name.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, cocktails; Cocktails and Mocktails Manual v2026/01, classic cocktails",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-cocktails-0020",
+      "track": "drinks",
+      "unit": "cocktails",
+      "level": 2,
+      "roles": [
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Which glass and garnish for an Aperol Spritz?",
+      "media": null,
+      "options": [
+        "Red wine glass, dry orange",
+        "Highball, lime wedge",
+        "Coupe, orange peel",
+        "Rock glass, mint sprig"
+      ],
+      "answer": [
+        "Red wine glass, dry orange"
+      ],
+      "explanation": "Aperol Spritz: Aperol, sparkling wine and soda, served in a red wine glass with dry orange.",
+      "why_it_matters": "The right glass and garnish are part of the drink.",
+      "is_allergen": false,
+      "source_ref": "Cocktails and Mocktails Manual v2026/01, signature cocktails; AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, cocktails",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-cocktails-0021",
+      "track": "drinks",
+      "unit": "cocktails",
+      "level": 2,
+      "roles": [
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "How is a Margarita served?",
+      "media": null,
+      "options": [
+        "Shaken, fine strained, salt-rim glass, lime wedge",
+        "Stirred, on the rocks, orange peel",
+        "Built in a highball, topped with soda",
+        "Blended, with a sugar rim"
+      ],
+      "answer": [
+        "Shaken, fine strained, salt-rim glass, lime wedge"
+      ],
+      "explanation": "Margarita: tequila, orange liqueur, fresh lime and simple syrup, shaken and fine strained into a salt-rimmed cocktail glass with a lime wedge.",
+      "why_it_matters": "Getting the serve right is what makes it ours.",
+      "is_allergen": false,
+      "source_ref": "Cocktails and Mocktails Manual v2026/01, classic cocktails; AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, cocktails",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-cocktails-0022",
+      "track": "drinks",
+      "unit": "cocktails",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "What's in our Espresso Martini?",
+      "media": null,
+      "options": [
+        "Vodka, espresso, coffee liqueur, vanilla syrup",
+        "Rum, espresso, cream",
+        "Baileys, espresso, vodka",
+        "Tequila, espresso, agave"
+      ],
+      "answer": [
+        "Vodka, espresso, coffee liqueur, vanilla syrup"
+      ],
+      "explanation": "Espresso Martini: vodka, espresso, coffee liqueur and vanilla syrup, in a Marie Antoinette coupe with coffee beans.",
+      "why_it_matters": "A popular after-dinner suggestion.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, cocktails; Cocktails and Mocktails Manual v2026/01, coffee and digestifs",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-cocktails-0023",
+      "track": "drinks",
+      "unit": "cocktails",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "Which of our signature cocktails has dill and cucumber?",
+      "media": null,
+      "options": [
+        "Dill or Not Deal",
+        "Black Forest",
+        "Maison Orchard",
+        "Spicy José"
+      ],
+      "answer": [
+        "Dill or Not Deal"
+      ],
+      "explanation": "Dill or Not Deal: gin, elderflower, cucumber, dill leaf, lemon juice, simple syrup and egg whites. It's our own signature.",
+      "why_it_matters": "Signatures are drinks guests can only get here.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, signature cocktails; Cocktails and Mocktails Manual v2026/01, signature cocktails",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-cocktails-0024",
+      "track": "drinks",
+      "unit": "cocktails",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "Which signature cocktail lists egg whites?",
+      "media": null,
+      "options": [
+        "Dill or Not Deal",
+        "Maison Home-Made Mule",
+        "Passion in Rum",
+        "El Chapo"
+      ],
+      "answer": [
+        "Dill or Not Deal"
+      ],
+      "explanation": "Dill or Not Deal lists egg whites. Egg is one of the 14 major allergens.",
+      "why_it_matters": "A guest with an egg allergy may not expect egg in a cocktail.",
+      "is_allergen": true,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, signature cocktails",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only. Gerard to check.",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-cocktails-0025",
+      "track": "drinks",
+      "unit": "cocktails",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "What is the Nutty Espresso Martini garnished with?",
+      "media": null,
+      "options": [
+        "Roasted, crushed pistachios and almonds",
+        "Coffee beans",
+        "Grated dark chocolate",
+        "Star anise"
+      ],
+      "answer": [
+        "Roasted, crushed pistachios and almonds"
+      ],
+      "explanation": "Nutty Espresso Martini: vodka, Amaretto Disaronno, Kahlua, espresso and pistachio syrup, with crushed pistachios and almonds.",
+      "why_it_matters": "It contains nuts, so it matters for any guest with a nut allergy.",
+      "is_allergen": true,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, autumn espresso martini",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only. The menu doesn't mark it (N). Gerard to check.",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-cocktails-0026",
+      "track": "drinks",
+      "unit": "cocktails",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "Which autumn espresso martini is served in a lightly smoked cloche?",
+      "media": null,
+      "options": [
+        "Oaxaca Espresso Martini",
+        "Tiramisu Espresso Martini",
+        "Spiced Espresso Martini",
+        "Nutty Espresso Martini"
+      ],
+      "answer": [
+        "Oaxaca Espresso Martini"
+      ],
+      "explanation": "Oaxaca: Patron XO Café, 400 Conejos mezcal, espresso, agave syrup and grated Mexican dark chocolate, in a lightly smoked cloche.",
+      "why_it_matters": "A bit of theatre to describe at the table.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, autumn espresso martini",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-cocktails-0027",
+      "track": "drinks",
+      "unit": "cocktails",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "A sangria pitcher is served in which jug?",
+      "media": null,
+      "options": [
+        "ARAS jug, 1.5 L",
+        "Carafe, 1 L",
+        "Glass jug, 2 L",
+        "Wine decanter"
+      ],
+      "answer": [
+        "ARAS jug, 1.5 L"
+      ],
+      "explanation": "All sharing pitchers are served in the ARAS jug, 1.5 L.",
+      "why_it_matters": "Guests ask how many glasses a pitcher pours.",
+      "is_allergen": false,
+      "source_ref": "Cocktails and Mocktails Manual v2026/01, sharing pitchers and sangria",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-cocktails-0028",
+      "track": "drinks",
+      "unit": "cocktails",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "multi",
+      "prompt": "What's in our Red Sangria? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Red wine",
+        "Rum",
+        "Orange liqueur",
+        "Cranberry juice",
+        "Gin",
+        "Prosecco"
+      ],
+      "answer": [
+        "Red wine",
+        "Rum",
+        "Orange liqueur",
+        "Cranberry juice"
+      ],
+      "explanation": "Red Sangria: red wine, rum, orange liqueur, grenadine, mixed fruits, orange juice, cranberry juice and soda.",
+      "why_it_matters": "Guests are often surprised it includes rum.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, sharing pitchers; Cocktails and Mocktails Manual v2026/01, sharing pitchers",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-cocktails-0029",
+      "track": "drinks",
+      "unit": "cocktails",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "Which premium G&T is garnished with cucumber?",
+      "media": null,
+      "options": [
+        "Hendrick's",
+        "Gin Mare",
+        "Roku",
+        "Tanqueray 10 Citrus"
+      ],
+      "answer": [
+        "Hendrick's"
+      ],
+      "explanation": "Hendrick's is served with cucumber. Gin Mare comes with basil, rosemary and olives; Roku with fresh ginger slices.",
+      "why_it_matters": "The garnish shows off each gin's flavour.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, G&T speciality; Cocktails and Mocktails Manual v2026/01, gin and tonic selection",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-mocktails-soft-0030",
+      "track": "drinks",
+      "unit": "mocktails-soft",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "A guest who's driving liked the look of the Hugo. What do you suggest?",
+      "media": null,
+      "options": [
+        "Drivers Hugo",
+        "Virgin Mojito",
+        "Mint Lemonade",
+        "Apple Granita"
+      ],
+      "answer": [
+        "Drivers Hugo"
+      ],
+      "explanation": "Drivers Hugo is the alcohol-free Hugo: elderflower, mint, lemon juice and soda.",
+      "why_it_matters": "Everyone at the table can join the round.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, mocktails; Cocktails and Mocktails Manual v2026/01, mocktails",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-mocktails-soft-0031",
+      "track": "drinks",
+      "unit": "mocktails-soft",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "What is a Simple Mary?",
+      "media": null,
+      "options": [
+        "An alcohol-free Bloody Mary",
+        "A plain tonic water",
+        "A virgin mojito",
+        "An iced tea"
+      ],
+      "answer": [
+        "An alcohol-free Bloody Mary"
+      ],
+      "explanation": "Simple Mary is the alcohol-free Bloody Mary: tomato juice, lemon, salt, pepper, Tabasco, Worcestershire, celery and olive.",
+      "why_it_matters": "Spice can be adjusted to the guest's taste.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, mocktails; Cocktails and Mocktails Manual v2026/01, mocktails",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-mocktails-soft-0032",
+      "track": "drinks",
+      "unit": "mocktails-soft",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server"
+      ],
+      "type": "multi",
+      "prompt": "Which flavours do our Virgin Mojitos come in? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Simple",
+        "Peach",
+        "Strawberry",
+        "Passion Fruit",
+        "Mango"
+      ],
+      "answer": [
+        "Simple",
+        "Peach",
+        "Strawberry",
+        "Passion Fruit"
+      ],
+      "explanation": "Virgin Mojitos, like our iced teas, come Simple, Peach, Strawberry or Passion Fruit.",
+      "why_it_matters": "Offering the flavours makes it easy to choose.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, mocktails",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-mocktails-soft-0033",
+      "track": "drinks",
+      "unit": "mocktails-soft",
+      "level": 2,
+      "roles": [
+        "bar",
+        "server",
+        "host"
+      ],
+      "type": "mcq",
+      "prompt": "A table asks for water. What can you offer?",
+      "media": null,
+      "options": [
+        "Filtered still with unlimited refills, or Eira still or sparkling",
+        "Tap water only",
+        "Eira sparkling only",
+        "Water comes free with food"
+      ],
+      "answer": [
+        "Filtered still with unlimited refills, or Eira still or sparkling"
+      ],
+      "explanation": "We serve filtered still water with unlimited refills, and Eira still or sparkling in 0.4 L or 1 L.",
+      "why_it_matters": "Water is the first drink most tables order.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, water",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-coffee-tea-0034",
+      "track": "drinks",
+      "unit": "coffee-tea",
+      "level": 2,
+      "roles": [
+        "barista",
+        "server",
+        "bar"
+      ],
+      "type": "multi",
+      "prompt": "Which green teas are on the menu? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Matcha Green Tea",
+        "Morrocan Mint",
+        "Jasmine",
+        "Mao Feng",
+        "Earl Grey"
+      ],
+      "answer": [
+        "Matcha Green Tea",
+        "Morrocan Mint",
+        "Jasmine",
+        "Mao Feng"
+      ],
+      "explanation": "Our bio-organic green teas are Matcha, Morrocan Mint, Jasmine and Mao Feng. Earl Grey is a black tea.",
+      "why_it_matters": "Tea drinkers like to hear the choice.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, bio-organic teas",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-coffee-tea-0035",
+      "track": "drinks",
+      "unit": "coffee-tea",
+      "level": 2,
+      "roles": [
+        "barista",
+        "server",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Which of these is a cold coffee on our menu?",
+      "media": null,
+      "options": [
+        "Cold Brew Tonic",
+        "Flat White",
+        "Cortado",
+        "Macchiato"
+      ],
+      "answer": [
+        "Cold Brew Tonic"
+      ],
+      "explanation": "Our cold coffees include Cream and Caramel Cold Brew, Cold Brew Tonic, Espresso Tonico, Iced Spanish Latte and Cold Drip Coffee.",
+      "why_it_matters": "In the Dubai heat, many guests want their coffee cold.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, hot beverages",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-coffee-tea-0036",
+      "track": "drinks",
+      "unit": "coffee-tea",
+      "level": 2,
+      "roles": [
+        "barista",
+        "server",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "A guest wants a juice that isn't on the list. What can you offer?",
+      "media": null,
+      "options": [
+        "\"Mix Your Own\" from our fresh juices",
+        "Only the juices listed",
+        "A smoothie instead",
+        "A soft drink"
+      ],
+      "answer": [
+        "\"Mix Your Own\" from our fresh juices"
+      ],
+      "explanation": "Guests can mix their own from green apple, red apple, orange, grapefruit, carrot, watermelon, cucumber, celery, lemon, pineapple, ginger and beetroot.",
+      "why_it_matters": "A made-to-order juice is a lovely yes.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, juices",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "drk-coffee-tea-0037",
+      "track": "drinks",
+      "unit": "coffee-tea",
+      "level": 2,
+      "roles": [
+        "barista",
+        "server",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "What follows every coffee or hot drink order?",
+      "media": null,
+      "options": [
+        "A check back, then offer the next one",
+        "Nothing, it's a small order",
+        "The bill",
+        "A dessert menu only"
+      ],
+      "answer": [
+        "A check back, then offer the next one"
+      ],
+      "explanation": "Follow up after every coffee or hot drink, and offer the next one.",
+      "why_it_matters": "A guest who isn't enjoying their drink won't order a second.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, coffee upselling; Operations Manual v2026/01, coffee check-back",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    }
+  ]
+}
