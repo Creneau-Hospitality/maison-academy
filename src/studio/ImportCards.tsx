@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { supabase } from '../lib/supabase';
 import { csvToObjects, humanise, normaliseCard } from '../lib/csv';
 import { checkCard } from '../lib/validate';
-import { CONTENT_FIELDS, sameContent, type Card } from '../lib/types';
+import { CONTENT_FIELDS, sameContent, shuffled, type Card } from '../lib/types';
 import type { StudioData } from './Studio';
 
 type Row = { card: Card; kind: 'new' | 'changed' | 'same' | 'problem'; problems: string[] };
@@ -61,7 +61,11 @@ export default function ImportCards({ ctx }: { ctx: StudioData }) {
       CONTENT_FIELDS.forEach((k) => { b[k] = c[k]; });
       return b;
     };
-    const fresh = todo.filter((r) => r.kind === 'new').map((r) => ({ ...body(r.card), id: r.card.id, status: 'review' }));
+    // New cards are stored with their options shuffled (not for "put in order" cards).
+    const fresh = todo.filter((r) => r.kind === 'new').map((r) => ({
+      ...body(r.card), id: r.card.id, status: 'review',
+      ...(r.card.type !== 'order' ? { options: shuffled(r.card.options) } : {}),
+    }));
     let added = 0, updated = 0;
     const issues: string[] = [];
     for (let i = 0; i < fresh.length; i += 100) {

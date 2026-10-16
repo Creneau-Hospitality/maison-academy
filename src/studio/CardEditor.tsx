@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { supabase } from '../lib/supabase';
 import { linkProps, navigate } from '../lib/router';
 import {
-  blankCard, CARD_TYPES, CONTENT_FIELDS, fmtDate, ROLES, sameContent, statusLabel,
+  blankCard, CARD_TYPES, CONTENT_FIELDS, fmtDate, ROLES, sameContent, shuffled, statusLabel,
   type Card, type CardType, type CardVersion,
 } from '../lib/types';
 import { canGoLive, checkCard } from '../lib/validate';
@@ -131,6 +131,8 @@ export default function CardEditor({ ctx, id, path }: { ctx: StudioData; id: str
     body.answer = card.answer.map((a) => a.trim());
     if (isNew) {
       if (cards.some((c) => c.id === card.id)) { setBusy(false); setMsg({ kind: 'blush', text: 'That card ID is already used.' }); return; }
+      // Store new cards with their options shuffled, so the right answer isn't always first.
+      if (card.type !== 'order') body.options = shuffled(body.options as string[]);
       const { error } = await supabase.from('cards').insert({ ...body, id: card.id, status: 'review' });
       setBusy(false);
       if (error) return fail(error);
@@ -408,7 +410,10 @@ export default function CardEditor({ ctx, id, path }: { ctx: StudioData; id: str
 
 function Preview({ card, trackName, unitName }: { card: Card; trackName: string; unitName: string }) {
   const [shown, setShown] = useState(false);
-  const opts = card.options.filter((o) => o.trim());
+  // Staff see the options in a new random order every time, so the preview does too.
+  const [round, setRound] = useState(0);
+  const optionSet = card.options.filter((o) => o.trim()).join('\u0000');
+  const opts = useMemo(() => shuffled(card.options.filter((o) => o.trim())), [optionSet, round]); // eslint-disable-line
   return (
     <div className="preview">
       <p className="label" style={{ margin: 0 }}>{trackName} · {unitName}</p>
@@ -422,7 +427,10 @@ function Preview({ card, trackName, unitName }: { card: Card; trackName: string;
         </div>
       ))}
       {!shown ? (
-        <button className="outline small" onClick={() => setShown(true)}>Show the answer</button>
+        <div className="actions">
+          <button className="outline small" onClick={() => setShown(true)}>Show the answer</button>
+          <button className="text small" onClick={() => setRound((r) => r + 1)}>Shuffle again</button>
+        </div>
       ) : (
         <div className="fb">
           <p style={{ margin: '0 0 6px' }}><strong>Got it.</strong> {card.explanation}</p>

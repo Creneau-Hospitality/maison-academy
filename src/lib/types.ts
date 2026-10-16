@@ -79,8 +79,27 @@ export function blankCard(track_id = 'service', unit_id = ''): Card {
   };
 }
 
+// Option order doesn't count as content (staff always see options shuffled).
+// For "put in order" cards the right order still counts.
+function contentKey(c: Partial<Card>, f: (typeof CONTENT_FIELDS)[number]): string {
+  const v = c[f] ?? null;
+  if (f === 'options' && Array.isArray(v)) return JSON.stringify([...v].map((x) => x.trim()).sort());
+  if (f === 'answer' && Array.isArray(v) && c.type !== 'order') return JSON.stringify([...v].map((x) => x.trim()).sort());
+  return JSON.stringify(v);
+}
+
 export function sameContent(a: Partial<Card>, b: Partial<Card>): boolean {
-  return CONTENT_FIELDS.every((f) => JSON.stringify(a[f] ?? null) === JSON.stringify(b[f] ?? null));
+  return CONTENT_FIELDS.every((f) => contentKey(a, f) === contentKey(b, f));
+}
+
+/** A fresh random order (Fisher–Yates). */
+export function shuffled<T>(xs: T[]): T[] {
+  const a = [...xs];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
 }
 
 export function fmtDate(s: string | null | undefined): string {
