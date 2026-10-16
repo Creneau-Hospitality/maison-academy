@@ -20,7 +20,18 @@ How Maison Academy fits together and where everything lives. Names only, never p
 
 ## Accounts
 
-Not created yet. To be filled in during Phase 0: GitHub organisation and repository, Supabase project (region Frankfurt), Netlify team and site, the shared Creneau mailbox that owns them, and who is owner on each.
+All three are set up on David's email (david@swrhospitality.com) for now. The shared Creneau mailbox is added as owner on each before Phase 4 (see `DECISIONS.md`).
+
+| Account | Name | Owners | Notes |
+| --- | --- | --- | --- |
+| GitHub | Organisation `Creneau-Hospitality`, private repository `maison-academy` | David (David-SWR); Gerard invited as Owner | The Claude GitHub app is installed on this one repository so Claude can push. |
+| Supabase | Organisation `Creneau Hospitality`, project `maison-academy` | David; Gerard invited as Owner | Project URL `https://dxipjlkledacoabdhrdg.supabase.co`. Region Central EU (Frankfurt). Free plan; move to Pro before real staff data. The database password is in David's password manager, never in files. |
+| Netlify | To be set up | | |
+
+### Keys
+
+- The Supabase **publishable** key is in `site/config.js`. It is meant to be public: every visitor's browser receives it. Access is controlled by row-level security in the database.
+- The **secret / service-role** key and the database password never go in the repository, in front-end code or in chat. When server code needs them they go in Netlify or Supabase environment variables.
 
 ## Deploy, restore, import
 
