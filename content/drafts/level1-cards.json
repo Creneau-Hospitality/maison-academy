@@ -1,0 +1,4930 @@
+{
+  "drafted": "2026-10-16",
+  "level": 1,
+  "status": "review",
+  "count": 152,
+  "cards": [
+    {
+      "id": "svc-host-sequence-0001",
+      "track": "service",
+      "unit": "host-sequence",
+      "level": 1,
+      "roles": [
+        "host"
+      ],
+      "type": "order",
+      "prompt": "Put the host's steps in order, from opening the desk to seating guests.",
+      "media": null,
+      "options": [
+        "Seat guests",
+        "Set up host desk",
+        "Hand menus",
+        "Welcome",
+        "Acknowledgement",
+        "Return to host desk"
+      ],
+      "answer": [
+        "Set up host desk",
+        "Acknowledgement",
+        "Welcome",
+        "Seat guests",
+        "Hand menus",
+        "Return to host desk"
+      ],
+      "explanation": "Set up the desk, acknowledge the guest, welcome them, seat them, hand menus, then go straight back to the desk.",
+      "why_it_matters": "Every guest gets the same warm start, however busy the door is.",
+      "is_allergen": false,
+      "source_ref": "SOS Host (Sequence of Service, Host), steps 1 to 6",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-host-sequence-0002",
+      "track": "service",
+      "unit": "host-sequence",
+      "level": 1,
+      "roles": [
+        "host"
+      ],
+      "type": "scenario",
+      "prompt": "You're helping a guest at the desk when a couple walks in. What do you do?",
+      "media": null,
+      "options": [
+        "Smile and let them know you've seen them",
+        "Finish with your guest, then look up",
+        "Ask a waiter to seat them",
+        "Point them to the waiting area"
+      ],
+      "answer": [
+        "Smile and let them know you've seen them"
+      ],
+      "explanation": "Give every guest immediate acknowledgement with a warm smile, even while you're attending to someone else.",
+      "why_it_matters": "A guest who knows they've been seen will wait happily.",
+      "is_allergen": false,
+      "source_ref": "SOS Host (Sequence of Service, Host), step 2; Service Training Program v2026/01, sequence step 1",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-host-sequence-0003",
+      "track": "service",
+      "unit": "host-sequence",
+      "level": 1,
+      "roles": [
+        "host",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "A regular, Mr Khan, arrives for breakfast. How do you welcome him?",
+      "media": null,
+      "options": [
+        "\"Good morning, welcome back Mr Khan\"",
+        "\"Good morning, table for one?\"",
+        "\"Hi, have you been here before?\"",
+        "\"Good morning, are you waiting for someone?\""
+      ],
+      "answer": [
+        "\"Good morning, welcome back Mr Khan\""
+      ],
+      "explanation": "If guests have been before, greet them by name: \"welcome back Mr X\".",
+      "why_it_matters": "Using a regular's name makes them feel at home, which is why they keep coming back.",
+      "is_allergen": false,
+      "source_ref": "SOS Host (Sequence of Service, Host), step 3; Service Training Program v2026/01, guest service standards",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-host-sequence-0004",
+      "track": "service",
+      "unit": "host-sequence",
+      "level": 1,
+      "roles": [
+        "host"
+      ],
+      "type": "mcq",
+      "prompt": "Which table should you choose for arriving guests?",
+      "media": null,
+      "options": [
+        "The best table for their group size and type",
+        "The table nearest the door",
+        "Whichever table was cleared most recently",
+        "A table in the busiest section"
+      ],
+      "answer": [
+        "The best table for their group size and type"
+      ],
+      "explanation": "Take guests to the best table for their group size and type, for example families or business guests, and seat tables evenly through the restaurant.",
+      "why_it_matters": "Seating evenly stops one waiter being overloaded, so every table gets good service.",
+      "is_allergen": false,
+      "source_ref": "SOS Host (Sequence of Service, Host), step 4",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-host-sequence-0005",
+      "track": "service",
+      "unit": "host-sequence",
+      "level": 1,
+      "roles": [
+        "host"
+      ],
+      "type": "scenario",
+      "prompt": "One waiter's section is full and another is quiet. A family of four arrives. Where do you seat them?",
+      "media": null,
+      "options": [
+        "A suitable table in the quieter section",
+        "In the full section, near the kitchen",
+        "At the bar until the full section clears",
+        "Wherever the family points first"
+      ],
+      "answer": [
+        "A suitable table in the quieter section"
+      ],
+      "explanation": "Seat tables evenly through the restaurant, choosing a table that suits a family of four.",
+      "why_it_matters": "An overloaded waiter means slower service for everyone in that section.",
+      "is_allergen": false,
+      "source_ref": "SOS Host (Sequence of Service, Host), step 4 tip",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-host-sequence-0006",
+      "track": "service",
+      "unit": "host-sequence",
+      "level": 1,
+      "roles": [
+        "host"
+      ],
+      "type": "mcq",
+      "prompt": "Guests are seated. What do you say as you hand over the menus?",
+      "media": null,
+      "options": [
+        "\"Your waiter will be along shortly\"",
+        "\"Let me know when you're ready to order\"",
+        "\"The kitchen is busy today\"",
+        "\"Do you know what you'd like?\""
+      ],
+      "answer": [
+        "\"Your waiter will be along shortly\""
+      ],
+      "explanation": "Hand open menus to the seated guests and tell them their waiter will be along shortly.",
+      "why_it_matters": "Guests relax when they know what happens next.",
+      "is_allergen": false,
+      "source_ref": "SOS Host (Sequence of Service, Host), step 5",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-host-sequence-0007",
+      "track": "service",
+      "unit": "host-sequence",
+      "level": 1,
+      "roles": [
+        "host"
+      ],
+      "type": "multi",
+      "prompt": "A family with a toddler sits down. What can you offer as you hand menus? Pick all that apply.",
+      "media": null,
+      "options": [
+        "A highchair",
+        "A children's menu",
+        "A colouring sheet",
+        "The wine list",
+        "A dessert menu"
+      ],
+      "answer": [
+        "A highchair",
+        "A children's menu",
+        "A colouring sheet"
+      ],
+      "explanation": "Give any highchairs needed, plus a children's menu and a colouring sheet.",
+      "why_it_matters": "Settling the children first lets the whole family enjoy the visit.",
+      "is_allergen": false,
+      "source_ref": "SOS Host (Sequence of Service, Host), step 5",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-host-sequence-0008",
+      "track": "service",
+      "unit": "host-sequence",
+      "level": 1,
+      "roles": [
+        "host"
+      ],
+      "type": "mcq",
+      "prompt": "The restaurant is full and guests are waiting. What should you do?",
+      "media": null,
+      "options": [
+        "Give a realistic waiting time and use a waiting list",
+        "Promise a table in five minutes",
+        "Ask them to come back later",
+        "Seat them at a table that isn't ready"
+      ],
+      "answer": [
+        "Give a realistic waiting time and use a waiting list"
+      ],
+      "explanation": "When it's busy, be realistic about waiting times and keep a waiting list.",
+      "why_it_matters": "An honest wait is easier for guests than a broken promise.",
+      "is_allergen": false,
+      "source_ref": "SOS Host (Sequence of Service, Host), step 6",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-host-sequence-0009",
+      "track": "service",
+      "unit": "host-sequence",
+      "level": 1,
+      "roles": [
+        "host"
+      ],
+      "type": "mcq",
+      "prompt": "How do you answer the restaurant phone?",
+      "media": null,
+      "options": [
+        "\"Good afternoon, Maison Mathis Arabian Ranches, this is Sara speaking\"",
+        "\"Hello, Maison Mathis?\"",
+        "\"Maison Mathis, please hold\"",
+        "\"Hi, who's calling?\""
+      ],
+      "answer": [
+        "\"Good afternoon, Maison Mathis Arabian Ranches, this is Sara speaking\""
+      ],
+      "explanation": "Greet with the time of day, Maison Mathis and the location name, then your own name, and ask \"How can I help you?\"",
+      "why_it_matters": "The phone is often a guest's first contact with the house.",
+      "is_allergen": false,
+      "source_ref": "SOS Host (Sequence of Service, Host), step 7",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-host-sequence-0010",
+      "track": "service",
+      "unit": "host-sequence",
+      "level": 1,
+      "roles": [
+        "host"
+      ],
+      "type": "mcq",
+      "prompt": "A guest calls to book a table. What do you do with their details?",
+      "media": null,
+      "options": [
+        "Ask their name, write the details down and repeat them back",
+        "Remember them and enter them later",
+        "Ask them to book online instead",
+        "Write down the time only"
+      ],
+      "answer": [
+        "Ask their name, write the details down and repeat them back"
+      ],
+      "explanation": "Ask the guest's name, take the details, write them down and repeat them back, then thank them for calling.",
+      "why_it_matters": "Repeating details back catches mistakes before the guest arrives.",
+      "is_allergen": false,
+      "source_ref": "SOS Host (Sequence of Service, Host), step 7",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-host-sequence-0011",
+      "track": "service",
+      "unit": "host-sequence",
+      "level": 1,
+      "roles": [
+        "host"
+      ],
+      "type": "mcq",
+      "prompt": "The phone rings while you're with a guest at the desk. What's right?",
+      "media": null,
+      "options": [
+        "Excuse yourself politely and answer it",
+        "Let it ring until you've finished",
+        "Answer without a word to the guest",
+        "Ask the guest to answer it"
+      ],
+      "answer": [
+        "Excuse yourself politely and answer it"
+      ],
+      "explanation": "If you're attending a guest when the phone rings, excuse yourself to answer it.",
+      "why_it_matters": "Both guests feel looked after: the one in front of you and the one calling.",
+      "is_allergen": false,
+      "source_ref": "SOS Host (Sequence of Service, Host), step 7 tip",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-host-sequence-0012",
+      "track": "service",
+      "unit": "host-sequence",
+      "level": 1,
+      "roles": [
+        "host"
+      ],
+      "type": "multi",
+      "prompt": "Setting up the host desk: what do you check? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Today's reservations, with booked tables assigned",
+        "Menus stocked, with specials and promo menus",
+        "The waiting area and front entrance are clean",
+        "The coffee machine pressure",
+        "The bar's spirit levels"
+      ],
+      "answer": [
+        "Today's reservations, with booked tables assigned",
+        "Menus stocked, with specials and promo menus",
+        "The waiting area and front entrance are clean"
+      ],
+      "explanation": "Check the reservations diary and assign booked tables, stock menus with specials and promo menus, and check the entrance and waiting area as a guest would see them.",
+      "why_it_matters": "The door is the guest's first impression of the house.",
+      "is_allergen": false,
+      "source_ref": "SOS Host (Sequence of Service, Host), step 1",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-host-sequence-0013",
+      "track": "service",
+      "unit": "host-sequence",
+      "level": 1,
+      "roles": [
+        "host"
+      ],
+      "type": "mcq",
+      "prompt": "Why does the host check the toilets often?",
+      "media": null,
+      "options": [
+        "Guests link toilet cleanliness with our kitchens",
+        "Because the cleaners finish at noon",
+        "To count how many guests are inside",
+        "It's only needed before closing"
+      ],
+      "answer": [
+        "Guests link toilet cleanliness with our kitchens"
+      ],
+      "explanation": "Check the toilets often: guests associate their cleanliness with the cleanliness of our kitchens.",
+      "why_it_matters": "A clean bathroom tells guests they can trust the food.",
+      "is_allergen": false,
+      "source_ref": "SOS Host (Sequence of Service, Host), step 6 tip",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-waiter-sequence-0014",
+      "track": "service",
+      "unit": "waiter-sequence",
+      "level": 1,
+      "roles": [
+        "server"
+      ],
+      "type": "order",
+      "prompt": "Put the waiter's steps in order.",
+      "media": null,
+      "options": [
+        "Clearing",
+        "Drinks order and delivery",
+        "Bill payment and goodbye",
+        "Welcome and seating",
+        "Desserts and coffees",
+        "Food delivery and check back",
+        "Food order and punch"
+      ],
+      "answer": [
+        "Welcome and seating",
+        "Drinks order and delivery",
+        "Food order and punch",
+        "Food delivery and check back",
+        "Clearing",
+        "Desserts and coffees",
+        "Bill payment and goodbye"
+      ],
+      "explanation": "Welcome, drinks, food order, food delivery and check back, clearing, desserts and coffees, then bill and goodbye.",
+      "why_it_matters": "Following the same order every time means nothing is forgotten when it's busy.",
+      "is_allergen": false,
+      "source_ref": "SOS Waiter (Sequence of Service, Waiter), steps 1 to 7",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-waiter-sequence-0015",
+      "track": "service",
+      "unit": "waiter-sequence",
+      "level": 1,
+      "roles": [
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "Guests walk in and the host is busy. Who welcomes them?",
+      "media": null,
+      "options": [
+        "Whoever sees them first",
+        "Only the host",
+        "The manager on duty",
+        "The waiter whose section it is, once free"
+      ],
+      "answer": [
+        "Whoever sees them first"
+      ],
+      "explanation": "Don't rely on the host to welcome guests: it is everyone's responsibility.",
+      "why_it_matters": "Every guest should be acknowledged within 30 seconds, whoever is nearest.",
+      "is_allergen": false,
+      "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 1 tip; Service Training Program v2026/01, sequence step 1",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-waiter-sequence-0016",
+      "track": "service",
+      "unit": "waiter-sequence",
+      "level": 1,
+      "roles": [
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "Taking the drinks order, what else do you tell guests?",
+      "media": null,
+      "options": [
+        "Today's specials and anything out of stock",
+        "How long the food will take",
+        "The price of each drink",
+        "Which tables are free"
+      ],
+      "answer": [
+        "Today's specials and anything out of stock"
+      ],
+      "explanation": "Ask \"can I get you something to drink?\" and tell guests about daily specials and any out-of-stock items.",
+      "why_it_matters": "Guests shouldn't fall for a dish, then hear it's not available.",
+      "is_allergen": false,
+      "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 2; Service Training Program v2026/01, sequence step 2",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-waiter-sequence-0017",
+      "track": "service",
+      "unit": "waiter-sequence",
+      "level": 1,
+      "roles": [
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "A table orders soft drinks. What do you also suggest?",
+      "media": null,
+      "options": [
+        "Bottled water",
+        "A second round straight away",
+        "A cocktail each",
+        "Nothing more"
+      ],
+      "answer": [
+        "Bottled water"
+      ],
+      "explanation": "Suggest bottled water to every table, whatever else they order, offering still or sparkling.",
+      "why_it_matters": "Water arrives first and keeps guests comfortable while they wait for food.",
+      "is_allergen": false,
+      "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 2 tip; Service Training Program v2026/01, sequence step 2",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-waiter-sequence-0018",
+      "track": "service",
+      "unit": "waiter-sequence",
+      "level": 1,
+      "roles": [
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "You've punched a food order. What do you take to the table straight away?",
+      "media": null,
+      "options": [
+        "The bread tin",
+        "The dessert menu",
+        "The bill wallet",
+        "Extra napkins"
+      ],
+      "answer": [
+        "The bread tin"
+      ],
+      "explanation": "Repeat the order back, punch it straight away and take the bread tin to the table. Bread is served within 5 minutes of the order.",
+      "why_it_matters": "Fresh bread is part of the house welcome and fills the wait for starters.",
+      "is_allergen": false,
+      "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 3; Service Training Program v2026/01, sequence step 4",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-waiter-sequence-0019",
+      "track": "service",
+      "unit": "waiter-sequence",
+      "level": 1,
+      "roles": [
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "When you take the food order, what must you ask every table?",
+      "media": null,
+      "options": [
+        "Whether anyone has an allergy",
+        "Whether they're celebrating",
+        "How they heard of us",
+        "If they want the bill"
+      ],
+      "answer": [
+        "Whether anyone has an allergy"
+      ],
+      "explanation": "At the food order, know the menu, highlight specials and ask about allergens, then confirm the order back.",
+      "why_it_matters": "Asking every time is how we catch an allergy before the food is cooked.",
+      "is_allergen": true,
+      "source_ref": "Service Training Program v2026/01, sequence step 4",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-waiter-sequence-0020",
+      "track": "service",
+      "unit": "waiter-sequence",
+      "level": 1,
+      "roles": [
+        "server"
+      ],
+      "type": "scenario",
+      "prompt": "A guest orders the Steak and Fries 200 gr. How do you suggest a side?",
+      "media": null,
+      "options": [
+        "\"Would you like Crispy Truffle Fries or a Garden Salad with that?\"",
+        "\"Any sides?\"",
+        "\"Our sides are on the back page\"",
+        "Say nothing, it comes with fries"
+      ],
+      "answer": [
+        "\"Would you like Crispy Truffle Fries or a Garden Salad with that?\""
+      ],
+      "explanation": "Suggest side dishes by name to complement the main. Knowing the sides list makes this easy.",
+      "why_it_matters": "A named suggestion helps the guest picture it, so it's easier to say yes.",
+      "is_allergen": false,
+      "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 3 tip; AR lunch and dinner menu, Sides",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-waiter-sequence-0021",
+      "track": "service",
+      "unit": "waiter-sequence",
+      "level": 1,
+      "roles": [
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "What do you ask when you check back?",
+      "media": null,
+      "options": [
+        "\"How are you enjoying your meal?\"",
+        "\"Is everything OK?\" as you walk past",
+        "\"Are you finished?\"",
+        "\"Ready for the bill?\""
+      ],
+      "answer": [
+        "\"How are you enjoying your meal?\""
+      ],
+      "explanation": "Check the food arrived correctly with condiments, then check back after a few bites and ask how they're enjoying it.",
+      "why_it_matters": "Catching a problem early prevents a complaint and protects our reviews.",
+      "is_allergen": false,
+      "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 4; Service Training Program v2026/01, check-back protocol",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-waiter-sequence-0022",
+      "track": "service",
+      "unit": "waiter-sequence",
+      "level": 1,
+      "roles": [
+        "server",
+        "runner"
+      ],
+      "type": "multi",
+      "prompt": "When you check back on a table, what else do you do? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Offer more drinks",
+        "Remove empty glasses",
+        "Present the bill",
+        "Clear plates still being eaten from"
+      ],
+      "answer": [
+        "Offer more drinks",
+        "Remove empty glasses"
+      ],
+      "explanation": "At the check back, offer more drinks and remove any empty glasses.",
+      "why_it_matters": "An empty glass is a missed chance to look after the guest.",
+      "is_allergen": false,
+      "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 4 tip",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-waiter-sequence-0023",
+      "track": "service",
+      "unit": "waiter-sequence",
+      "level": 1,
+      "roles": [
+        "server",
+        "runner"
+      ],
+      "type": "scenario",
+      "prompt": "One guest has pushed their plate aside; the others are still eating. What do you do?",
+      "media": null,
+      "options": [
+        "Remove that plate",
+        "Wait until everyone has finished",
+        "Clear every plate",
+        "Ask the table if they're done"
+      ],
+      "answer": [
+        "Remove that plate"
+      ],
+      "explanation": "Clear when everyone has finished, but if someone pushes their plate to the side first, you can remove it.",
+      "why_it_matters": "The guest has signalled they're done, and the table stays tidy.",
+      "is_allergen": false,
+      "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 5 tip",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-waiter-sequence-0024",
+      "track": "service",
+      "unit": "waiter-sequence",
+      "level": 1,
+      "roles": [
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "A guest has food left and says it was lovely. What do you offer?",
+      "media": null,
+      "options": [
+        "To pack the leftovers for them",
+        "A smaller portion next time",
+        "A discount",
+        "To leave the plate"
+      ],
+      "answer": [
+        "To pack the leftovers for them"
+      ],
+      "explanation": "After asking \"how was everything?\", clear the plates and pack any leftovers for the guest.",
+      "why_it_matters": "They take the meal home and remember us later.",
+      "is_allergen": false,
+      "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 5",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-waiter-sequence-0025",
+      "track": "service",
+      "unit": "waiter-sequence",
+      "level": 1,
+      "roles": [
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "Mains are cleared. How do you start desserts?",
+      "media": null,
+      "options": [
+        "A dessert menu each, your favourite, and offer coffees",
+        "Ask \"any dessert?\" with the bill",
+        "Wait for guests to ask",
+        "Bring one dessert menu for the table"
+      ],
+      "answer": [
+        "A dessert menu each, your favourite, and offer coffees"
+      ],
+      "explanation": "Hand a dessert menu to each guest, say \"my favourite dessert is the...\" and offer coffees.",
+      "why_it_matters": "A personal recommendation is the friendliest way to suggest dessert.",
+      "is_allergen": false,
+      "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 6",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-waiter-sequence-0026",
+      "track": "service",
+      "unit": "waiter-sequence",
+      "level": 1,
+      "roles": [
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "A table says they're too full for dessert. What could you suggest?",
+      "media": null,
+      "options": [
+        "Visiting our bakery counter",
+        "A smaller main next time",
+        "Nothing at all",
+        "A second round of mains"
+      ],
+      "answer": [
+        "Visiting our bakery counter"
+      ],
+      "explanation": "Invite guests to visit the bakery counter for more cakes and desserts.",
+      "why_it_matters": "Takeaway from the bakery lets them enjoy it later.",
+      "is_allergen": false,
+      "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 6 tip; Operations Manual v2026/01, bakery takeaway",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-waiter-sequence-0027",
+      "track": "service",
+      "unit": "waiter-sequence",
+      "level": 1,
+      "roles": [
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "When should the bill be ready?",
+      "media": null,
+      "options": [
+        "Checked and ready as soon as the table asks",
+        "Printed when the mains arrive",
+        "Only after the guest asks twice",
+        "When the next booking arrives"
+      ],
+      "answer": [
+        "Checked and ready as soon as the table asks"
+      ],
+      "explanation": "Watch tables close to finishing, check their bill details and present it in a bill wallet as soon as they ask.",
+      "why_it_matters": "Waiting for the bill is one of the commonest reasons for a slow-service complaint.",
+      "is_allergen": false,
+      "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 7; Service Training Program v2026/01, sequence step 6",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-waiter-sequence-0028",
+      "track": "service",
+      "unit": "waiter-sequence",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "When does a guest stop being our guest?",
+      "media": null,
+      "options": [
+        "When they leave",
+        "When they pay",
+        "When they finish eating",
+        "When the bill is printed"
+      ],
+      "answer": [
+        "When they leave"
+      ],
+      "explanation": "Guests are our guests until they leave, not only until they pay. Thank them and say \"see you again soon\".",
+      "why_it_matters": "A warm goodbye is as important as a warm welcome.",
+      "is_allergen": false,
+      "source_ref": "SOS Waiter (Sequence of Service, Waiter), step 7 tip; Service Training Program v2026/01, sequence step 6",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-runner-sequence-0029",
+      "track": "service",
+      "unit": "runner-sequence",
+      "level": 1,
+      "roles": [
+        "runner"
+      ],
+      "type": "order",
+      "prompt": "Put the food runner's steps in order.",
+      "media": null,
+      "options": [
+        "Serve food",
+        "Return to food pass",
+        "Food pass set up",
+        "Offer condiments",
+        "Run food to table",
+        "Check KOTs and prepare tray",
+        "Check order is complete"
+      ],
+      "answer": [
+        "Food pass set up",
+        "Check KOTs and prepare tray",
+        "Run food to table",
+        "Serve food",
+        "Offer condiments",
+        "Check order is complete",
+        "Return to food pass"
+      ],
+      "explanation": "Set up the pass, check the KOT and prepare the tray, run, serve, offer condiments, check the order is complete, then return to the pass.",
+      "why_it_matters": "The same routine every run means the right food reaches the right guest, hot.",
+      "is_allergen": false,
+      "source_ref": "SOS Food Runner (Sequence of Service, Food Runner), steps 1 to 7",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-runner-sequence-0030",
+      "track": "service",
+      "unit": "runner-sequence",
+      "level": 1,
+      "roles": [
+        "runner"
+      ],
+      "type": "mcq",
+      "prompt": "As you load a tray, what do you check against the KOT?",
+      "media": null,
+      "options": [
+        "Each dish, plus any spoons or steak knives needed",
+        "Only the main courses",
+        "The table number only",
+        "The price of each item"
+      ],
+      "answer": [
+        "Each dish, plus any spoons or steak knives needed"
+      ],
+      "explanation": "Check off each item on the KOT as it goes on the tray, including spoons or steak knives.",
+      "why_it_matters": "A missing knife or side means the guest waits while others eat.",
+      "is_allergen": false,
+      "source_ref": "SOS Food Runner (Sequence of Service, Food Runner), step 2",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-runner-sequence-0031",
+      "track": "service",
+      "unit": "runner-sequence",
+      "level": 1,
+      "roles": [
+        "runner"
+      ],
+      "type": "scenario",
+      "prompt": "A table of six is ready and you can't carry it all. What do you do?",
+      "media": null,
+      "options": [
+        "Get someone to help so it goes in one go",
+        "Take half now and half later",
+        "Leave it until a waiter comes",
+        "Take the largest plates first"
+      ],
+      "answer": [
+        "Get someone to help so it goes in one go"
+      ],
+      "explanation": "Take the whole table's order in one go. If you can't, get someone else to help you.",
+      "why_it_matters": "Guests at one table should eat together.",
+      "is_allergen": false,
+      "source_ref": "SOS Food Runner (Sequence of Service, Food Runner), step 2",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-runner-sequence-0032",
+      "track": "service",
+      "unit": "runner-sequence",
+      "level": 1,
+      "roles": [
+        "runner"
+      ],
+      "type": "mcq",
+      "prompt": "Before a dish leaves the pass, what do you check?",
+      "media": null,
+      "options": [
+        "It's garnished correctly",
+        "The guest's name",
+        "That the plate is full to the edge",
+        "The bill total"
+      ],
+      "answer": [
+        "It's garnished correctly"
+      ],
+      "explanation": "Check every dish is garnished correctly before taking it from the pass.",
+      "why_it_matters": "The plate the guest sees should match the house standard every time.",
+      "is_allergen": false,
+      "source_ref": "SOS Food Runner (Sequence of Service, Food Runner), step 2 tip",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-runner-sequence-0033",
+      "track": "service",
+      "unit": "runner-sequence",
+      "level": 1,
+      "roles": [
+        "runner",
+        "server"
+      ],
+      "type": "multi",
+      "prompt": "Serving at the table: what's right? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Announce each dish as you serve it",
+        "Move around the table to each guest",
+        "Warn guests about hot plates",
+        "Reach across guests to save time",
+        "Ask the table who ordered what"
+      ],
+      "answer": [
+        "Announce each dish as you serve it",
+        "Move around the table to each guest",
+        "Warn guests about hot plates"
+      ],
+      "explanation": "Announce each dish, move around the table rather than reaching over anyone, and warn about hot plates, keeping them away from children.",
+      "why_it_matters": "Guests feel looked after, and nobody gets burnt.",
+      "is_allergen": false,
+      "source_ref": "SOS Food Runner (Sequence of Service, Food Runner), step 4; Service Training Program v2026/01, sequence step 5",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-runner-sequence-0034",
+      "track": "service",
+      "unit": "runner-sequence",
+      "level": 1,
+      "roles": [
+        "runner",
+        "server"
+      ],
+      "type": "scenario",
+      "prompt": "You drop a plate on the way to the table. What do you do?",
+      "media": null,
+      "options": [
+        "Get it replaced as a priority and tell your manager",
+        "Serve the rest and say nothing",
+        "Ask the guest to reorder",
+        "Wait for the next table's order first"
+      ],
+      "answer": [
+        "Get it replaced as a priority and tell your manager"
+      ],
+      "explanation": "If food is dropped or spilled, replace it as a priority and inform your manager.",
+      "why_it_matters": "The guest is already waiting; quick action keeps the delay short.",
+      "is_allergen": false,
+      "source_ref": "SOS Food Runner (Sequence of Service, Food Runner), step 6 tip",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-runner-sequence-0035",
+      "track": "service",
+      "unit": "runner-sequence",
+      "level": 1,
+      "roles": [
+        "runner"
+      ],
+      "type": "mcq",
+      "prompt": "A guest asks you for another drink. What do you do?",
+      "media": null,
+      "options": [
+        "Tell their waiter straight away",
+        "Say you're only the runner",
+        "Bring it on your next run",
+        "Ask them to wave to the bar"
+      ],
+      "answer": [
+        "Tell their waiter straight away"
+      ],
+      "explanation": "If guests order more drinks, inform the relevant waiter immediately.",
+      "why_it_matters": "The guest asked once; they shouldn't need to ask again.",
+      "is_allergen": false,
+      "source_ref": "SOS Food Runner (Sequence of Service, Food Runner), step 7",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-runner-sequence-0036",
+      "track": "service",
+      "unit": "runner-sequence",
+      "level": 1,
+      "roles": [
+        "runner",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "Walking back to the pass from a table, what should be in your hands?",
+      "media": null,
+      "options": [
+        "Any empty glasses, plates or cutlery",
+        "Nothing, to move faster",
+        "Only your tray",
+        "The next KOT"
+      ],
+      "answer": [
+        "Any empty glasses, plates or cutlery"
+      ],
+      "explanation": "Never leave a table empty-handed: remove any empty glasses, plates or cutlery.",
+      "why_it_matters": "Every trip keeps tables tidy without extra journeys.",
+      "is_allergen": false,
+      "source_ref": "SOS Food Runner (Sequence of Service, Food Runner), step 7 tip",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-runner-sequence-0037",
+      "track": "service",
+      "unit": "runner-sequence",
+      "level": 1,
+      "roles": [
+        "runner"
+      ],
+      "type": "mcq",
+      "prompt": "A guest tells you their dish is too salty. Who do you tell?",
+      "media": null,
+      "options": [
+        "The chef in charge, and the waiter",
+        "No one, it's a one-off",
+        "Only the next guest",
+        "The host"
+      ],
+      "answer": [
+        "The chef in charge, and the waiter"
+      ],
+      "explanation": "Liaise with the chef in charge and pass on any guest feedback about dishes.",
+      "why_it_matters": "The kitchen can only fix what it hears about.",
+      "is_allergen": false,
+      "source_ref": "SOS Food Runner (Sequence of Service, Food Runner), step 1 tip; Service Training Program v2026/01, guest recovery",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-barista-sequence-0038",
+      "track": "service",
+      "unit": "barista-sequence",
+      "level": 1,
+      "roles": [
+        "barista"
+      ],
+      "type": "order",
+      "prompt": "Put the barista's steps in order.",
+      "media": null,
+      "options": [
+        "Prepare orders",
+        "Restock",
+        "Turn on equipment and set up",
+        "Check KOTs",
+        "Serving drinks",
+        "Coffee quality check"
+      ],
+      "answer": [
+        "Turn on equipment and set up",
+        "Coffee quality check",
+        "Check KOTs",
+        "Prepare orders",
+        "Serving drinks",
+        "Restock"
+      ],
+      "explanation": "Set up, check the coffee quality, check KOTs, prepare, serve, then restock.",
+      "why_it_matters": "A set routine keeps every cup to standard through the rush.",
+      "is_allergen": false,
+      "source_ref": "SOS Barista (Sequence of Service, Barista), steps 1 to 6",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-barista-sequence-0039",
+      "track": "service",
+      "unit": "barista-sequence",
+      "level": 1,
+      "roles": [
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "Before extracting a coffee, how long do you purge water from the group head?",
+      "media": null,
+      "options": [
+        "2 seconds",
+        "10 seconds",
+        "30 seconds",
+        "No purge needed"
+      ],
+      "answer": [
+        "2 seconds"
+      ],
+      "explanation": "Release or purge water for 2 seconds from the group head before extracting coffee.",
+      "why_it_matters": "A clean, stable group head gives a better-tasting shot.",
+      "is_allergen": false,
+      "source_ref": "SOS Barista (Sequence of Service, Barista), step 2 tip",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-barista-sequence-0040",
+      "track": "service",
+      "unit": "barista-sequence",
+      "level": 1,
+      "roles": [
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "You have a cappuccino and a latte to make. Which first, where possible?",
+      "media": null,
+      "options": [
+        "The cappuccino, to use the foam",
+        "The latte, it's quicker",
+        "Whichever is cheaper",
+        "Both at once with one jug"
+      ],
+      "answer": [
+        "The cappuccino, to use the foam"
+      ],
+      "explanation": "Where possible, make cappuccinos before lattes so the foam gets used.",
+      "why_it_matters": "Less waste, and both drinks get the right milk texture.",
+      "is_allergen": false,
+      "source_ref": "SOS Barista (Sequence of Service, Barista), step 4 tip",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-barista-sequence-0041",
+      "track": "service",
+      "unit": "barista-sequence",
+      "level": 1,
+      "roles": [
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "Several KOTs print at once. In what order do you make them?",
+      "media": null,
+      "options": [
+        "In the order received, reading ahead",
+        "Easiest drinks first",
+        "Biggest table first",
+        "Takeaway first"
+      ],
+      "answer": [
+        "In the order received, reading ahead"
+      ],
+      "explanation": "Prepare orders in the order received, and read ahead to make several checks at once.",
+      "why_it_matters": "First come, first served is fair, and reading ahead saves time.",
+      "is_allergen": false,
+      "source_ref": "SOS Barista (Sequence of Service, Barista), step 3",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-barista-sequence-0042",
+      "track": "service",
+      "unit": "barista-sequence",
+      "level": 1,
+      "roles": [
+        "barista"
+      ],
+      "type": "scenario",
+      "prompt": "Two lattes are ready and no waiter has come for them. What do you do?",
+      "media": null,
+      "options": [
+        "Let the waiters know politely, or run them yourself",
+        "Leave them until a waiter passes",
+        "Remake them when someone comes",
+        "Call the guest to the bar"
+      ],
+      "answer": [
+        "Let the waiters know politely, or run them yourself"
+      ],
+      "explanation": "Serve hot drinks immediately: let the waiters know politely, or run them yourself whenever possible.",
+      "why_it_matters": "Coffee that sits goes cold and comes back to be remade.",
+      "is_allergen": false,
+      "source_ref": "SOS Barista (Sequence of Service, Barista), step 5",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-barista-sequence-0043",
+      "track": "service",
+      "unit": "barista-sequence",
+      "level": 1,
+      "roles": [
+        "barista"
+      ],
+      "type": "multi",
+      "prompt": "Setting up the coffee station: what do you do? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Check machine pressure and temperature",
+        "Warm the cups and glassware",
+        "Make a test espresso and check the flow",
+        "Have spare printer rolls ready",
+        "Pre-pour milk into jugs for the day"
+      ],
+      "answer": [
+        "Check machine pressure and temperature",
+        "Warm the cups and glassware",
+        "Make a test espresso and check the flow",
+        "Have spare printer rolls ready"
+      ],
+      "explanation": "Turn on and check pressure and temperature, warm cups, calibrate with a test espresso, and keep spare printer rolls ready.",
+      "why_it_matters": "Getting set up right before the first order keeps the rush smooth.",
+      "is_allergen": false,
+      "source_ref": "SOS Barista (Sequence of Service, Barista), steps 1 to 3; Operations Manual v2026/01, espresso calibration",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-timing-standards-0044",
+      "track": "service",
+      "unit": "timing-standards",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "How quickly must every guest be acknowledged on arrival?",
+      "media": null,
+      "options": [
+        "Within 30 seconds",
+        "Within 2 minutes",
+        "Within 5 minutes",
+        "Once they're seated"
+      ],
+      "answer": [
+        "Within 30 seconds"
+      ],
+      "explanation": "Every guest is acknowledged within 30 seconds of arrival, with eye contact and a smile.",
+      "why_it_matters": "A guest who knows they've been seen will wait happily.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, key timing standards",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-timing-standards-0045",
+      "track": "service",
+      "unit": "timing-standards",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "How soon after seating should water be served?",
+      "media": null,
+      "options": [
+        "Within 3 minutes",
+        "Within 10 minutes",
+        "With the food",
+        "Only when asked"
+      ],
+      "answer": [
+        "Within 3 minutes"
+      ],
+      "explanation": "Offer still or sparkling water on seating; water is served within 3 minutes.",
+      "why_it_matters": "Water first makes guests comfortable straight away.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, key timing standards",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-timing-standards-0046",
+      "track": "service",
+      "unit": "timing-standards",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "What's the standard for serving a cocktail after it's ordered?",
+      "media": null,
+      "options": [
+        "Within 8 minutes",
+        "Within 3 minutes",
+        "Within 15 minutes",
+        "With the starters"
+      ],
+      "answer": [
+        "Within 8 minutes"
+      ],
+      "explanation": "Other drinks are served within 5 minutes; cocktails take up to 8 minutes.",
+      "why_it_matters": "Drinks set the pace for the whole meal.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, key timing standards",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-timing-standards-0047",
+      "track": "service",
+      "unit": "timing-standards",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "How soon after arrival should the food order be taken?",
+      "media": null,
+      "options": [
+        "Within 10 minutes",
+        "Within 3 minutes",
+        "Within 20 minutes",
+        "When guests call you over"
+      ],
+      "answer": [
+        "Within 10 minutes"
+      ],
+      "explanation": "Take the food order within 10 minutes of arrival.",
+      "why_it_matters": "Guests notice a slow start more than almost anything else.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, key timing standards",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-timing-standards-0048",
+      "track": "service",
+      "unit": "timing-standards",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Starters are ordered. How long until they should be served?",
+      "media": null,
+      "options": [
+        "Within 15 minutes",
+        "Within 5 minutes",
+        "Within 25 minutes",
+        "Within 30 minutes"
+      ],
+      "answer": [
+        "Within 15 minutes"
+      ],
+      "explanation": "Starters are served within 15 minutes.",
+      "why_it_matters": "Knowing the standard helps you spot a delay early.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, key timing standards",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-timing-standards-0049",
+      "track": "service",
+      "unit": "timing-standards",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "scenario",
+      "prompt": "A table ordered mains only, no starters. When should the mains arrive?",
+      "media": null,
+      "options": [
+        "Within 20 minutes",
+        "Within 10 minutes",
+        "Within 15 minutes",
+        "Within 30 minutes"
+      ],
+      "answer": [
+        "Within 20 minutes"
+      ],
+      "explanation": "Mains come 10 minutes after starters are cleared, or within 20 minutes when there are no starters.",
+      "why_it_matters": "You can update the guest honestly if the kitchen is running late.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, key timing standards",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-timing-standards-0050",
+      "track": "service",
+      "unit": "timing-standards",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Food has just been served. When do you check back?",
+      "media": null,
+      "options": [
+        "Within 2 minutes",
+        "Within 10 minutes",
+        "When the plates are empty",
+        "Only if the guest looks unhappy"
+      ],
+      "answer": [
+        "Within 2 minutes"
+      ],
+      "explanation": "Check back within 2 minutes of the food being served.",
+      "why_it_matters": "If there's a problem, two minutes in is early enough to fix it.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, key timing standards; Operations Manual v2026/01, check-backs",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-timing-standards-0051",
+      "track": "service",
+      "unit": "timing-standards",
+      "level": 1,
+      "roles": [
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "A guest asks for the bill. What are the standards?",
+      "media": null,
+      "options": [
+        "Present it within 3 minutes, payment done within 5",
+        "Present it within 10 minutes",
+        "Bring it with dessert",
+        "Payment done within 15 minutes"
+      ],
+      "answer": [
+        "Present it within 3 minutes, payment done within 5"
+      ],
+      "explanation": "Present the bill within 3 minutes of the request and finalise payment within 5.",
+      "why_it_matters": "The last minutes of a visit shape how guests remember it.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, sequence step 6",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "svc-timing-standards-0052",
+      "track": "service",
+      "unit": "timing-standards",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "order",
+      "prompt": "Put these in the order they should happen for a table.",
+      "media": null,
+      "options": [
+        "Food order taken",
+        "Water served",
+        "Check back",
+        "Bread served"
+      ],
+      "answer": [
+        "Water served",
+        "Food order taken",
+        "Bread served",
+        "Check back"
+      ],
+      "explanation": "Water within 3 minutes, food order within 10, bread within 5 minutes of the order, then check back 2 minutes after food is served.",
+      "why_it_matters": "Each step sets up the next one, so the meal flows.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, key timing standards",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-allergen-protocol-0001",
+      "track": "sop",
+      "unit": "allergen-protocol",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "scenario",
+      "prompt": "A guest says, \"I have a severe nut allergy.\" What do you do first?",
+      "media": null,
+      "options": [
+        "Tell the head chef immediately",
+        "Point to the dishes without (N)",
+        "Suggest the salads",
+        "Note it on the bill"
+      ],
+      "answer": [
+        "Tell the head chef immediately"
+      ],
+      "explanation": "If a guest declares an allergy, inform the head chef immediately. Never guess; always verify.",
+      "why_it_matters": "An allergy can be life-threatening, and only the kitchen knows every ingredient.",
+      "is_allergen": true,
+      "source_ref": "Service Training Program v2026/01, allergen protocol",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-allergen-protocol-0002",
+      "track": "sop",
+      "unit": "allergen-protocol",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "How must every allergen request be treated?",
+      "media": null,
+      "options": [
+        "As life-critical",
+        "As a preference",
+        "As a special request if the kitchen is quiet",
+        "As the guest's own responsibility"
+      ],
+      "answer": [
+        "As life-critical"
+      ],
+      "explanation": "Treat every allergen request as life-critical, and as medical, not a service issue. No shortcuts.",
+      "why_it_matters": "One mistake can put a guest in hospital.",
+      "is_allergen": true,
+      "source_ref": "Service Training Program v2026/01, allergen protocol; Operations Manual v2026/01, allergen management",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-allergen-protocol-0003",
+      "track": "sop",
+      "unit": "allergen-protocol",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "scenario",
+      "prompt": "A guest with a nut allergy asks about a dish with no (N) on the menu. What do you say?",
+      "media": null,
+      "options": [
+        "\"Let me check with the head chef for you\"",
+        "\"It's nut-free, there's no (N)\"",
+        "\"I think it's fine\"",
+        "\"Most of our dishes are safe\""
+      ],
+      "answer": [
+        "\"Let me check with the head chef for you\""
+      ],
+      "explanation": "Never guess on allergens: always verify with the head chef before confirming anything to the guest.",
+      "why_it_matters": "Recipes can contain allergens that the menu doesn't show.",
+      "is_allergen": true,
+      "source_ref": "Service Training Program v2026/01, service do's and don'ts",
+      "review_note": "Wording chosen because the menus don't mark every nut item (see MENU_ALLERGEN_FLAGS.md).",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-allergen-protocol-0004",
+      "track": "sop",
+      "unit": "allergen-protocol",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "If a replacement dish is needed for a guest with an allergy, what must the kitchen use?",
+      "media": null,
+      "options": [
+        "Designated equipment",
+        "The same pan, wiped clean",
+        "Whatever is free",
+        "Disposable cutlery only"
+      ],
+      "answer": [
+        "Designated equipment"
+      ],
+      "explanation": "Use designated equipment when a guest has declared an allergy.",
+      "why_it_matters": "Traces from shared equipment can be enough to cause a reaction.",
+      "is_allergen": true,
+      "source_ref": "Service Training Program v2026/01, allergen protocol",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-allergen-protocol-0005",
+      "track": "sop",
+      "unit": "allergen-protocol",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "multi",
+      "prompt": "Which of these are among the 14 major allergens? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Celery",
+        "Mustard",
+        "Sesame",
+        "Lupin",
+        "Garlic",
+        "Tomato"
+      ],
+      "answer": [
+        "Celery",
+        "Mustard",
+        "Sesame",
+        "Lupin"
+      ],
+      "explanation": "The 14 are: cereals with gluten, crustaceans, eggs, fish, lupin, milk, molluscs, mustard, tree nuts, peanuts, sesame, soybeans, sulphites and celery.",
+      "why_it_matters": "Knowing all 14 helps you spot when to involve the kitchen.",
+      "is_allergen": true,
+      "source_ref": "Service Training Program v2026/01, allergen awareness, life-critical protocol",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-allergen-protocol-0006",
+      "track": "sop",
+      "unit": "allergen-protocol",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "multi",
+      "prompt": "Which of these are among the 14 major allergens? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Molluscs",
+        "Crustaceans",
+        "Sulphites",
+        "Peanuts",
+        "Chicken",
+        "Rice"
+      ],
+      "answer": [
+        "Molluscs",
+        "Crustaceans",
+        "Sulphites",
+        "Peanuts"
+      ],
+      "explanation": "Molluscs, crustaceans, sulphites and peanuts are all on the list of 14. Chicken and rice are not.",
+      "why_it_matters": "Some allergens, like sulphites in wine, are easy to forget.",
+      "is_allergen": true,
+      "source_ref": "Service Training Program v2026/01, allergen awareness, life-critical protocol",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-allergen-protocol-0007",
+      "track": "sop",
+      "unit": "allergen-protocol",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "order",
+      "prompt": "A guest raises an allergen concern about their food. Put the steps in order.",
+      "media": null,
+      "options": [
+        "Escalate",
+        "Document",
+        "Verify",
+        "Isolate"
+      ],
+      "answer": [
+        "Verify",
+        "Isolate",
+        "Escalate",
+        "Document"
+      ],
+      "explanation": "Verify the ingredients with the head chef, isolate with designated equipment for any replacement, escalate to a manager, and document the incident.",
+      "why_it_matters": "Allergen complaints are medical, not a service issue.",
+      "is_allergen": true,
+      "source_ref": "Service Training Program v2026/01, allergen and safety complaints",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-allergen-protocol-0008",
+      "track": "sop",
+      "unit": "allergen-protocol",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "scenario",
+      "prompt": "A guest thinks a dish contained their allergen but says they feel fine. What now?",
+      "media": null,
+      "options": [
+        "Involve a manager now and log it",
+        "Apologise and move on",
+        "Offer dessert on the house",
+        "Wait to see if they feel unwell"
+      ],
+      "answer": [
+        "Involve a manager now and log it"
+      ],
+      "explanation": "Involve a manager immediately, however minor the guest makes it sound, and log the incident even if no reaction occurred.",
+      "why_it_matters": "Reactions can start later, and the log helps stop it happening again.",
+      "is_allergen": true,
+      "source_ref": "Service Training Program v2026/01, allergen and safety complaints",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-allergen-protocol-0009",
+      "track": "sop",
+      "unit": "allergen-protocol",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "Who confirms the ingredients of a dish for a guest with an allergy?",
+      "media": null,
+      "options": [
+        "The head chef",
+        "The waiter, from the menu",
+        "The host",
+        "The guest's friends"
+      ],
+      "answer": [
+        "The head chef"
+      ],
+      "explanation": "Always verify allergens with the head chef. Never guess.",
+      "why_it_matters": "The head chef knows every recipe and any change made today.",
+      "is_allergen": true,
+      "source_ref": "Service Training Program v2026/01, service do's and don'ts; Operations Manual v2026/01, allergen protocol",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-guest-recovery-0010",
+      "track": "sop",
+      "unit": "guest-recovery",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "order",
+      "prompt": "Put the LEARN steps for handling a complaint in order.",
+      "media": null,
+      "options": [
+        "Resolve",
+        "Listen",
+        "Notify",
+        "Apologise",
+        "Empathise"
+      ],
+      "answer": [
+        "Listen",
+        "Empathise",
+        "Apologise",
+        "Resolve",
+        "Notify"
+      ],
+      "explanation": "LEARN: Listen, Empathise, Apologise, Resolve, Notify.",
+      "why_it_matters": "The same calm steps every time turn a complaint into loyalty.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, the LEARN recovery method",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-guest-recovery-0011",
+      "track": "sop",
+      "unit": "guest-recovery",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "In LEARN, what does the N (Notify) step mean?",
+      "media": null,
+      "options": [
+        "Follow up, and log the issue",
+        "Notify the guest's company",
+        "Tell the next shift only",
+        "Send the guest a voucher"
+      ],
+      "answer": [
+        "Follow up, and log the issue"
+      ],
+      "explanation": "Notify: follow up to confirm the guest is satisfied, and log the issue so it doesn't happen again.",
+      "why_it_matters": "Logging it is how the team fixes the cause, not just the table.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, the LEARN recovery method",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-guest-recovery-0012",
+      "track": "sop",
+      "unit": "guest-recovery",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "A guest is complaining. While they speak, what do you do?",
+      "media": null,
+      "options": [
+        "Listen without interrupting",
+        "Explain what happened",
+        "Defend the kitchen",
+        "Start offering solutions"
+      ],
+      "answer": [
+        "Listen without interrupting"
+      ],
+      "explanation": "Listen first: give full attention and don't interrupt, explain or defend. Let the guest finish.",
+      "why_it_matters": "Guests want to be heard before anything else.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, the LEARN recovery method",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-guest-recovery-0013",
+      "track": "sop",
+      "unit": "guest-recovery",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "Which phrase should you avoid with an unhappy guest?",
+      "media": null,
+      "options": [
+        "\"That's not my section.\"",
+        "\"Thank you for telling me, let me make this right.\"",
+        "\"I'll check with the kitchen myself.\"",
+        "\"Let me get this sorted for you immediately.\""
+      ],
+      "answer": [
+        "\"That's not my section.\""
+      ],
+      "explanation": "Avoid phrases like \"That's not my section\" or \"There's nothing I can do\". An unhappy guest is your responsibility, whichever section they're in.",
+      "why_it_matters": "Guests want someone to own the problem.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, script: what to say",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-guest-recovery-0014",
+      "track": "sop",
+      "unit": "guest-recovery",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "scenario",
+      "prompt": "\"This was supposed to be hot, it's barely warm.\" What's the right first action?",
+      "media": null,
+      "options": [
+        "Apologise, replace it now, take it off the bill and tell the kitchen",
+        "Offer a dessert instead",
+        "Reheat the same plate",
+        "Explain the kitchen is busy"
+      ],
+      "answer": [
+        "Apologise, replace it now, take it off the bill and tell the kitchen"
+      ],
+      "explanation": "For a cold or incorrect dish: apologise, remove it from the bill, replace it immediately and notify the kitchen.",
+      "why_it_matters": "Acting fast shows the guest we care more about them than the bill.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, complaint scenario playbook",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-guest-recovery-0015",
+      "track": "sop",
+      "unit": "guest-recovery",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "scenario",
+      "prompt": "\"We've waited 40 minutes and nothing's come out.\" What do you do?",
+      "media": null,
+      "options": [
+        "Acknowledge it, update them honestly and offer a complimentary item",
+        "Say it will be out soon",
+        "Blame the kitchen",
+        "Offer to cancel the order"
+      ],
+      "answer": [
+        "Acknowledge it, update them honestly and offer a complimentary item"
+      ],
+      "explanation": "For a long wait: acknowledge, update the guest, offer a complimentary item. Escalate if the wait is over twice the normal time.",
+      "why_it_matters": "Honest updates calm guests far more than vague promises.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, complaint scenario playbook",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-guest-recovery-0016",
+      "track": "sop",
+      "unit": "guest-recovery",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "multi",
+      "prompt": "Which of these can you resolve yourself, without a manager? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Replacing a dish or drink",
+        "Removing a single item from the bill",
+        "Adjusting seating, noise or pace",
+        "A guest asking for a refund",
+        "A guest saying the food made them ill"
+      ],
+      "answer": [
+        "Replacing a dish or drink",
+        "Removing a single item from the bill",
+        "Adjusting seating, noise or pace"
+      ],
+      "explanation": "You can replace a dish or drink, remove a single item, apologise and follow up, and adjust seating, noise or pace. Refunds and illness or injury go to a manager.",
+      "why_it_matters": "Fixing small things on the spot keeps the guest's visit on track.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, resolve it or escalate it?",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-guest-recovery-0017",
+      "track": "sop",
+      "unit": "guest-recovery",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "When you bring in a manager for a complaint, how do you hand over?",
+      "media": null,
+      "options": [
+        "Introduce the manager personally, with the full story",
+        "Tell the guest a manager is coming and leave",
+        "Send the manager to the table alone",
+        "Wait for the guest to ask twice"
+      ],
+      "answer": [
+        "Introduce the manager personally, with the full story"
+      ],
+      "explanation": "Flag it early, hand over warmly by introducing the manager personally, and give them full context. Never disappear without a word.",
+      "why_it_matters": "The guest shouldn't have to repeat the problem.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, the escalation protocol",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-guest-recovery-0018",
+      "track": "sop",
+      "unit": "guest-recovery",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "A guest is getting louder. What helps calm things down?",
+      "media": null,
+      "options": [
+        "Lower your voice slightly and slow your pace",
+        "Match their volume so they hear you",
+        "Stand close beside them",
+        "Fill every pause with an explanation"
+      ],
+      "answer": [
+        "Lower your voice slightly and slow your pace"
+      ],
+      "explanation": "Lower your voice and slow down: calm is contagious. Keep an open posture and give the guest space.",
+      "why_it_matters": "A calm voice is the quickest way to bring the temperature down.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, read the room",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-house-standards-0019",
+      "track": "sop",
+      "unit": "house-standards",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "multi",
+      "prompt": "What are the four Maison Mathis brand pillars? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Quality",
+        "Simplicity",
+        "Authenticity",
+        "Warmth",
+        "Speed",
+        "Luxury"
+      ],
+      "answer": [
+        "Quality",
+        "Simplicity",
+        "Authenticity",
+        "Warmth"
+      ],
+      "explanation": "Quality, Simplicity, Authenticity and Warmth.",
+      "why_it_matters": "The pillars explain why we do things the way we do.",
+      "is_allergen": false,
+      "source_ref": "Operations Manual v2026/01, brand pillars; Service Training Program v2026/01, day 1",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-house-standards-0020",
+      "track": "sop",
+      "unit": "house-standards",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "What does the \"Swan Theory\" ask of you during a busy service?",
+      "media": null,
+      "options": [
+        "Look calm and graceful while working fast",
+        "Move slowly so guests relax",
+        "Tell guests how busy it is",
+        "Stay at the bar until it's quieter"
+      ],
+      "answer": [
+        "Look calm and graceful while working fast"
+      ],
+      "explanation": "Appear calm and graceful always, working at full speed beneath the surface. Guests should never feel the pressure.",
+      "why_it_matters": "Guests relax when the team looks in control.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, our service philosophy",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-house-standards-0021",
+      "track": "sop",
+      "unit": "house-standards",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "scenario",
+      "prompt": "You pass an empty glass on a table in another waiter's section. What do you do?",
+      "media": null,
+      "options": [
+        "Offer a refill or clear it yourself",
+        "Tell that waiter later",
+        "Leave it, it's not your section",
+        "Wait for the runner"
+      ],
+      "answer": [
+        "Offer a refill or clear it yourself"
+      ],
+      "explanation": "The Gentleman's Agreement: an empty glass, an uncleared table or a guest needing help is your responsibility, whatever your section.",
+      "why_it_matters": "Guests see one team, not sections.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, our service philosophy",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-house-standards-0022",
+      "track": "sop",
+      "unit": "house-standards",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "A guest asks something you don't know. What do you say?",
+      "media": null,
+      "options": [
+        "\"Let me find out for you\"",
+        "\"I don't know\"",
+        "\"That's not on the menu\"",
+        "\"Ask your waiter\""
+      ],
+      "answer": [
+        "\"Let me find out for you\""
+      ],
+      "explanation": "Never say \"I don't know\" without immediately offering to find out. Then always follow up.",
+      "why_it_matters": "Guests trust a team that finds the answer.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, guest service standards",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-house-standards-0023",
+      "track": "sop",
+      "unit": "house-standards",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "When can you use your personal phone on the floor?",
+      "media": null,
+      "options": [
+        "Never on the floor",
+        "When it's quiet",
+        "To check the time",
+        "If a guest can't see you"
+      ],
+      "answer": [
+        "Never on the floor"
+      ],
+      "explanation": "No personal phone use on the floor.",
+      "why_it_matters": "Guests should always see a team that's focused on them.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, guest service standards; Operations Manual v2026/01, guest service standards",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-house-standards-0024",
+      "track": "sop",
+      "unit": "house-standards",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "multi",
+      "prompt": "What does the pre-shift briefing cover? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Daily specials",
+        "Reservations",
+        "Items that are unavailable (86'd)",
+        "Known VIPs",
+        "Staff wages"
+      ],
+      "answer": [
+        "Daily specials",
+        "Reservations",
+        "Items that are unavailable (86'd)",
+        "Known VIPs"
+      ],
+      "explanation": "Every shift starts with a 15-minute briefing: specials, reservations, 86'd items, known VIPs, and one team focus.",
+      "why_it_matters": "Knowing these before the doors open stops surprises at the table.",
+      "is_allergen": false,
+      "source_ref": "Operations Manual v2026/01, shift management",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-house-standards-0025",
+      "track": "sop",
+      "unit": "house-standards",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "How long is the pre-shift briefing?",
+      "media": null,
+      "options": [
+        "15 minutes",
+        "5 minutes",
+        "30 minutes",
+        "1 hour"
+      ],
+      "answer": [
+        "15 minutes"
+      ],
+      "explanation": "Every shift begins with a 15-minute team briefing.",
+      "why_it_matters": "It's the team's one chance to plan the shift together.",
+      "is_allergen": false,
+      "source_ref": "Operations Manual v2026/01, shift management; Service Training Program v2026/01, shift management",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-opening-closing-0026",
+      "track": "sop",
+      "unit": "opening-closing",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "multi",
+      "prompt": "FOH opening checklist: which of these are on it? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Tables polished, glassware spotless",
+        "Salt, pepper and condiments restocked",
+        "Menus clean and in position",
+        "Music set low to moderate",
+        "Chairs stacked on tables"
+      ],
+      "answer": [
+        "Tables polished, glassware spotless",
+        "Salt, pepper and condiments restocked",
+        "Menus clean and in position",
+        "Music set low to moderate"
+      ],
+      "explanation": "Polish tables and glassware, restock condiments, set clean menus, and set music low to moderate for opening.",
+      "why_it_matters": "The first guest of the day deserves the same house as the hundredth.",
+      "is_allergen": false,
+      "source_ref": "Operations Manual v2026/01, opening procedures",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-opening-closing-0027",
+      "track": "sop",
+      "unit": "opening-closing",
+      "level": 1,
+      "roles": [
+        "barista",
+        "host",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "When should baked goods be on display?",
+      "media": null,
+      "options": [
+        "30 minutes before opening",
+        "At opening time",
+        "Once the first guest orders",
+        "By lunchtime"
+      ],
+      "answer": [
+        "30 minutes before opening"
+      ],
+      "explanation": "Baked goods are displayed 30 minutes before opening.",
+      "why_it_matters": "The bakery display is a marketing tool from the first minute.",
+      "is_allergen": false,
+      "source_ref": "Operations Manual v2026/01, opening procedures",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-opening-closing-0028",
+      "track": "sop",
+      "unit": "opening-closing",
+      "level": 1,
+      "roles": [
+        "barista",
+        "host",
+        "server"
+      ],
+      "type": "mcq",
+      "prompt": "How often is the bakery display refreshed through the day?",
+      "media": null,
+      "options": [
+        "Every 90 minutes",
+        "Once at lunch",
+        "Every 4 hours",
+        "Only when empty"
+      ],
+      "answer": [
+        "Every 90 minutes"
+      ],
+      "explanation": "Refresh the bakery display every 90 minutes: clean trays, labels visible, nothing crumbled or stale.",
+      "why_it_matters": "A fresh display sells; a tired one doesn't.",
+      "is_allergen": false,
+      "source_ref": "Operations Manual v2026/01, bakery operations",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-opening-closing-0029",
+      "track": "sop",
+      "unit": "opening-closing",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "scenario",
+      "prompt": "It's near closing and one table is still chatting over coffee. What do you do?",
+      "media": null,
+      "options": [
+        "Let them finish without rushing them",
+        "Start stacking chairs nearby",
+        "Bring the bill unasked",
+        "Turn the lights down"
+      ],
+      "answer": [
+        "Let them finish without rushing them"
+      ],
+      "explanation": "At wind-down, give final tables a genuine farewell; remaining guests are not rushed.",
+      "why_it_matters": "The last guest's memory of us matters as much as the first's.",
+      "is_allergen": false,
+      "source_ref": "Operations Manual v2026/01, closing procedures",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-controls-0030",
+      "track": "sop",
+      "unit": "controls",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "scenario",
+      "prompt": "A guest complains and you want to give a discount. What's the rule?",
+      "media": null,
+      "options": [
+        "Get manager authorisation, with a logged reason",
+        "Give it if the guest is upset",
+        "Give up to 10% yourself",
+        "Ask the guest how much they want"
+      ],
+      "answer": [
+        "Get manager authorisation, with a logged reason"
+      ],
+      "explanation": "All voids and discounts need manager authorisation and a logged reason, even to solve a complaint.",
+      "why_it_matters": "It protects you, the guest and the business.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, void and discount controls; Operations Manual v2026/01, void and discount controls",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-controls-0031",
+      "track": "sop",
+      "unit": "controls",
+      "level": 1,
+      "roles": [
+        "server",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "When should an order be entered into the POS?",
+      "media": null,
+      "options": [
+        "Immediately, as you take it",
+        "At the end of the table's visit",
+        "When the kitchen asks",
+        "Before closing"
+      ],
+      "answer": [
+        "Immediately, as you take it"
+      ],
+      "explanation": "Every order goes into the POS immediately, so errors are caught at order stage, not at billing.",
+      "why_it_matters": "The kitchen starts cooking sooner and the bill is right.",
+      "is_allergen": false,
+      "source_ref": "Service Training Program v2026/01, POS accuracy",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-safety-basics-0032",
+      "track": "sop",
+      "unit": "safety-basics",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "multi",
+      "prompt": "When is handwashing mandatory? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Before handling food",
+        "After handling waste",
+        "After any break",
+        "Only at the start of a shift"
+      ],
+      "answer": [
+        "Before handling food",
+        "After handling waste",
+        "After any break"
+      ],
+      "explanation": "Wash hands before handling food, after handling waste and after any break.",
+      "why_it_matters": "Clean hands are the simplest way to protect guests.",
+      "is_allergen": false,
+      "source_ref": "Operations Manual v2026/01, personal hygiene; Service Training Program v2026/01, personal hygiene",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-safety-basics-0033",
+      "track": "sop",
+      "unit": "safety-basics",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "A drink spills on the floor. What comes first?",
+      "media": null,
+      "options": [
+        "Put out a wet floor sign straight away",
+        "Finish serving your table",
+        "Tell the cleaner at closing",
+        "Cover it with napkins"
+      ],
+      "answer": [
+        "Put out a wet floor sign straight away"
+      ],
+      "explanation": "Deploy a wet floor sign immediately after any spill, then clean it up.",
+      "why_it_matters": "A slip can injure a guest or a teammate in seconds.",
+      "is_allergen": false,
+      "source_ref": "Operations Manual v2026/01, slip and trip prevention",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-safety-basics-0034",
+      "track": "sop",
+      "unit": "safety-basics",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "A teammate trips but isn't hurt. Does it need logging?",
+      "media": null,
+      "options": [
+        "Yes, every incident and near miss is logged that day",
+        "Only if someone is hurt",
+        "Only if a guest saw it",
+        "No, near misses don't count"
+      ],
+      "answer": [
+        "Yes, every incident and near miss is logged that day"
+      ],
+      "explanation": "Every incident, however minor, is logged on the day it happens, and near misses are reported and reviewed.",
+      "why_it_matters": "Near misses show where the next accident could happen.",
+      "is_allergen": false,
+      "source_ref": "Operations Manual v2026/01, incident reporting; Service Training Program v2026/01, first aid and incident reporting",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "sop-safety-basics-0035",
+      "track": "sop",
+      "unit": "safety-basics",
+      "level": 1,
+      "roles": [
+        "host",
+        "server",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "You feel unwell with a stomach bug before your shift. What's right?",
+      "media": null,
+      "options": [
+        "Don't handle food",
+        "Handle food but wash your hands more",
+        "Handle food wearing gloves",
+        "Handle only cold food"
+      ],
+      "answer": [
+        "Don't handle food"
+      ],
+      "explanation": "Team members with any illness affecting food safety must not handle food.",
+      "why_it_matters": "It protects guests and teammates from getting ill.",
+      "is_allergen": false,
+      "source_ref": "Operations Manual v2026/01, personal hygiene",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-menu-basics-0001",
+      "track": "food",
+      "unit": "menu-basics",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "On our menus, what does (R) next to a dish mean?",
+      "media": null,
+      "options": [
+        "Raw",
+        "Recommended",
+        "Regional",
+        "Reduced fat"
+      ],
+      "answer": [
+        "Raw"
+      ],
+      "explanation": "(R) marks a raw dish, such as the Wagyu Beef Carpaccio, Wagyu Tartare or Seabream Ceviche.",
+      "why_it_matters": "Some guests, such as pregnant guests, may want to know a dish is raw before ordering.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, legend",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-menu-basics-0002",
+      "track": "food",
+      "unit": "menu-basics",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "On our menus, what does (A) next to a dish mean?",
+      "media": null,
+      "options": [
+        "It contains alcohol",
+        "It's an autumn special",
+        "It's available all day",
+        "It's served with aioli"
+      ],
+      "answer": [
+        "It contains alcohol"
+      ],
+      "explanation": "(A) marks alcohol, for example the Classic Belgian Beef Stew, braised in Leffe Brune, and the beer-battered Fish and Chips.",
+      "why_it_matters": "Some guests don't take alcohol in any form, including in cooking.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, legend; AR breakfast menu, 20260914_MM-AR-BREAKFAST53, legend",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-menu-basics-0003",
+      "track": "food",
+      "unit": "menu-basics",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "What's the difference between (V) and (VG) on our menus?",
+      "media": null,
+      "options": [
+        "(V) is vegetarian, (VG) is vegan",
+        "(V) is vegan, (VG) is vegetarian",
+        "(VG) means very good",
+        "They mean the same"
+      ],
+      "answer": [
+        "(V) is vegetarian, (VG) is vegan"
+      ],
+      "explanation": "(V) marks vegetarian dishes; (VG) marks vegan ones, such as the Sourdough Avocado and the Superfood Salad.",
+      "why_it_matters": "A vegan guest needs the right one; a vegetarian dish may still contain dairy or egg.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, legend; AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, legend",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-menu-basics-0004",
+      "track": "food",
+      "unit": "menu-basics",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "Which breakfast dish is marked vegan (VG)?",
+      "media": null,
+      "options": [
+        "Sourdough Avocado",
+        "Toast Champignon",
+        "Perfect Scrambled",
+        "Benedict Forestiere"
+      ],
+      "answer": [
+        "Sourdough Avocado"
+      ],
+      "explanation": "Sourdough Avocado and the Vegan Breakfast are marked (VG). Toast Champignon, Perfect Scrambled and Benedict Forestiere are vegetarian (V).",
+      "why_it_matters": "Vegan guests need to know their options straight away.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-menu-basics-0005",
+      "track": "food",
+      "unit": "menu-basics",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "scenario",
+      "prompt": "A guest who doesn't eat pork wants the M/M Breakfast. What can you offer?",
+      "media": null,
+      "options": [
+        "The Halal choice",
+        "Nothing, it contains pork",
+        "The same plate without the ham",
+        "A Full English instead"
+      ],
+      "answer": [
+        "The Halal choice"
+      ],
+      "explanation": "The M/M Breakfast and The Full English both come as Pork (P) or Halal choice.",
+      "why_it_matters": "Knowing the choice means the guest still gets the breakfast they wanted.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-menu-basics-0006",
+      "track": "food",
+      "unit": "menu-basics",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Until what time are sandwiches and toasts served?",
+      "media": null,
+      "options": [
+        "5 pm",
+        "2 pm",
+        "12 pm",
+        "All day"
+      ],
+      "answer": [
+        "5 pm"
+      ],
+      "explanation": "Sandwiches and toasts are served till 5 pm.",
+      "why_it_matters": "You can suggest them confidently before 5, and steer later guests elsewhere.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Sandwiches and Toasts",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-menu-basics-0007",
+      "track": "food",
+      "unit": "menu-basics",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "From what time are the stone-baked pizzas available?",
+      "media": null,
+      "options": [
+        "12 pm",
+        "8 am",
+        "5 pm",
+        "6 pm"
+      ],
+      "answer": [
+        "12 pm"
+      ],
+      "explanation": "M/M Stone Baked Pizzas are available daily from 12 pm onwards.",
+      "why_it_matters": "Breakfast guests asking for pizza need the right answer.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, M/M Stone Baked Pizzas",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-menu-basics-0008",
+      "track": "food",
+      "unit": "menu-basics",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "When is the breakfast menu served at Arabian Ranches?",
+      "media": null,
+      "options": [
+        "Daily, 8 am to 2 pm",
+        "Weekends only",
+        "Until 11 am",
+        "All day"
+      ],
+      "answer": [
+        "Daily, 8 am to 2 pm"
+      ],
+      "explanation": "The breakfast menu is served daily between 8 am and 2 pm.",
+      "why_it_matters": "Late-morning guests often ask if they can still order breakfast.",
+      "is_allergen": false,
+      "source_ref": "David, 16 Oct 2026 (menu service times)",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-menu-basics-0009",
+      "track": "food",
+      "unit": "menu-basics",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Pizzas for a table come out at different times. Why?",
+      "media": null,
+      "options": [
+        "They're served as ready, for quality",
+        "The kitchen forgot them",
+        "One pizza oven only",
+        "Guests asked for it"
+      ],
+      "answer": [
+        "They're served as ready, for quality"
+      ],
+      "explanation": "Pizzas are served as they're ready, to make sure every dish is at its best.",
+      "why_it_matters": "Telling guests at the order avoids surprise later.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, M/M Stone Baked Pizzas",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-menu-basics-0010",
+      "track": "food",
+      "unit": "menu-basics",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "What is the base of our stone-baked pizzas?",
+      "media": null,
+      "options": [
+        "Sourdough",
+        "Thin and crispy wheat",
+        "Gluten-free dough",
+        "Focaccia"
+      ],
+      "answer": [
+        "Sourdough"
+      ],
+      "explanation": "Our pizzas are stone-baked with a sourdough base.",
+      "why_it_matters": "It's part of what makes our pizza different; say it with pride.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, M/M Stone Baked Pizzas",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-menu-basics-0011",
+      "track": "food",
+      "unit": "menu-basics",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "A guest wants a benedict but avoids gluten. What can you offer?",
+      "media": null,
+      "options": [
+        "A change to gluten-free portobello mushroom, free",
+        "Nothing, benedicts contain bread",
+        "A change to sourdough",
+        "Extra hollandaise"
+      ],
+      "answer": [
+        "A change to gluten-free portobello mushroom, free"
+      ],
+      "explanation": "Benedicts can change to gluten-free portobello mushroom, free of charge.",
+      "why_it_matters": "Offering the swap keeps the guest's choice open.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Benedicts",
+      "review_note": "For a coeliac guest the head chef still confirms the dish.",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-menu-basics-0012",
+      "track": "food",
+      "unit": "menu-basics",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "A guest avoiding gluten wants a pasta dish. What can you offer?",
+      "media": null,
+      "options": [
+        "Gluten-free pasta, free of charge",
+        "Gluten-free pasta for AED 10",
+        "Rice instead",
+        "Nothing"
+      ],
+      "answer": [
+        "Gluten-free pasta, free of charge"
+      ],
+      "explanation": "Any pasta can change to gluten-free pasta, free of charge.",
+      "why_it_matters": "Guests love an easy yes.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Pasta",
+      "review_note": "For a coeliac guest the head chef still confirms the dish.",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-menu-basics-0013",
+      "track": "food",
+      "unit": "menu-basics",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Is a discount applied to mussels?",
+      "media": null,
+      "options": [
+        "No, no discounts apply to mussels",
+        "Yes, like everything else",
+        "Only at lunch",
+        "Only for 1 kg"
+      ],
+      "answer": [
+        "No, no discounts apply to mussels"
+      ],
+      "explanation": "The menu says no discounts are applicable on mussels.",
+      "why_it_matters": "Knowing this avoids an awkward moment at the bill.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Mussels and Fries",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-breakfast-0014",
+      "track": "food",
+      "unit": "breakfast",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "Which benedict comes with béarnaise instead of hollandaise?",
+      "media": null,
+      "options": [
+        "Belgian Benedict",
+        "Classic Benedict",
+        "Benedict Royal",
+        "Benedict Forestiere"
+      ],
+      "answer": [
+        "Belgian Benedict"
+      ],
+      "explanation": "The Belgian Benedict has pork bacon, sourdough, caramelized onion and béarnaise. The others come with hollandaise.",
+      "why_it_matters": "Guests who love béarnaise will thank you for pointing it out.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Benedicts",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-breakfast-0015",
+      "track": "food",
+      "unit": "breakfast",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "What's on the Benedict Royal?",
+      "media": null,
+      "options": [
+        "Smoked salmon and spinach",
+        "Prosciutto ham and pesto",
+        "Pulled beef and chili beans",
+        "Mushrooms and truffle oil"
+      ],
+      "answer": [
+        "Smoked salmon and spinach"
+      ],
+      "explanation": "Benedict Royal: smoked salmon and spinach, brioche, hollandaise.",
+      "why_it_matters": "Guests often ask for \"the salmon one\".",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Benedicts",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-breakfast-0016",
+      "track": "food",
+      "unit": "breakfast",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "Which benedict has a spicy hollandaise?",
+      "media": null,
+      "options": [
+        "Pulled Beef Benedict",
+        "Classic Benedict",
+        "Benedict San Daniele",
+        "Benedict Royal"
+      ],
+      "answer": [
+        "Pulled Beef Benedict"
+      ],
+      "explanation": "The Pulled Beef Benedict has 6-hour slow-cooked BBQ pulled beef, brioche, M/M chili beans and spicy hollandaise.",
+      "why_it_matters": "Mention the spice so nobody gets a surprise.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Benedicts",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-breakfast-0017",
+      "track": "food",
+      "unit": "breakfast",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "Which benedict is vegetarian (V)?",
+      "media": null,
+      "options": [
+        "Benedict Forestiere",
+        "Benedict San Daniele",
+        "Belgian Benedict",
+        "Benedict Royal"
+      ],
+      "answer": [
+        "Benedict Forestiere"
+      ],
+      "explanation": "Benedict Forestiere: mushrooms, truffle oil, spinach, herbs, brioche and hollandaise, marked (V).",
+      "why_it_matters": "It's the benedict to suggest to vegetarian guests.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Benedicts",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-breakfast-0018",
+      "track": "food",
+      "unit": "breakfast",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "multi",
+      "prompt": "What comes on The Full English? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Black pudding",
+        "Heinz baked beans",
+        "Hash brown",
+        "Grilled tomato",
+        "Avocado",
+        "Smoked salmon"
+      ],
+      "answer": [
+        "Black pudding",
+        "Heinz baked beans",
+        "Hash brown",
+        "Grilled tomato"
+      ],
+      "explanation": "Sunny-side-up eggs, sourdough toast, bacon, sausage, grilled tomato, sautéed mushrooms, Heinz baked beans, black pudding and hash brown.",
+      "why_it_matters": "Guests ask what's on it before they commit to a big breakfast.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Traditional Breakfast",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-breakfast-0019",
+      "track": "food",
+      "unit": "breakfast",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "What makes the Double Full English \"double\"?",
+      "media": null,
+      "options": [
+        "Extra bacon, sausage, black pudding and hashbrown",
+        "Two plates for sharing",
+        "Double eggs only",
+        "A larger toast"
+      ],
+      "answer": [
+        "Extra bacon, sausage, black pudding and hashbrown"
+      ],
+      "explanation": "The Double Full English adds extra bacon, sausage, black pudding and hashbrown.",
+      "why_it_matters": "Helps hungry guests choose.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Traditional Breakfast",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-breakfast-0020",
+      "track": "food",
+      "unit": "breakfast",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "How many eggs are in the Perfect Scrambled?",
+      "media": null,
+      "options": [
+        "3",
+        "2",
+        "4",
+        "1"
+      ],
+      "answer": [
+        "3"
+      ],
+      "explanation": "Perfect Scrambled is 3 free range eggs on sourdough toast. Smoked salmon can be added.",
+      "why_it_matters": "Portion questions are common; a confident answer builds trust.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Omelets and Eggs",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-breakfast-0021",
+      "track": "food",
+      "unit": "breakfast",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "Which eggs can a guest choose for \"Simply Your Way\"?",
+      "media": null,
+      "options": [
+        "Fried, sunny side up, boiled, poached or over easy",
+        "Scrambled only",
+        "Poached only",
+        "Omelet or scrambled"
+      ],
+      "answer": [
+        "Fried, sunny side up, boiled, poached or over easy"
+      ],
+      "explanation": "Simply Your Way is 2 free range eggs, fried, sunny side up, boiled, poached or over easy, with sourdough toast.",
+      "why_it_matters": "Asking how they'd like their eggs is part of taking the order.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Omelets and Eggs",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-breakfast-0022",
+      "track": "food",
+      "unit": "breakfast",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "multi",
+      "prompt": "What's in the Shakshuka? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Cherry tomato",
+        "2 free range eggs",
+        "Chili",
+        "Coriander",
+        "Feta",
+        "Avocado"
+      ],
+      "answer": [
+        "Cherry tomato",
+        "2 free range eggs",
+        "Chili",
+        "Coriander"
+      ],
+      "explanation": "Shakshuka: cherry tomato, 2 free range eggs, chili, a blend of spices, coriander and caramelized onion. Beef or pork chorizo can be added.",
+      "why_it_matters": "Guests often ask how spicy it is; chili is listed.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Omelets and Eggs",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-breakfast-0023",
+      "track": "food",
+      "unit": "breakfast",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "multi",
+      "prompt": "What's in the Yoghurt and Eggs? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Dukkah",
+        "Chili butter",
+        "Feta",
+        "Fresh mint",
+        "Hollandaise",
+        "Bacon"
+      ],
+      "answer": [
+        "Dukkah",
+        "Chili butter",
+        "Feta",
+        "Fresh mint"
+      ],
+      "explanation": "Poached eggs, dukkah, chili butter, fresh mint, feta, chili crisp and roasted zucchini and capsicum. Sujuk sausage can be added.",
+      "why_it_matters": "It's an unusual dish, so guests often ask what it is.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Omelets and Eggs",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-breakfast-0024",
+      "track": "food",
+      "unit": "breakfast",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "What can guests choose with the Signature Granola?",
+      "media": null,
+      "options": [
+        "Greek yoghurt or soy yoghurt",
+        "Milk or cream",
+        "Honey or jam",
+        "Hot or cold"
+      ],
+      "answer": [
+        "Greek yoghurt or soy yoghurt"
+      ],
+      "explanation": "The Signature Granola comes with Greek yoghurt or soy yoghurt and seasonal fruits.",
+      "why_it_matters": "It gives guests a choice of yoghurt.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Healthy Section",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-breakfast-0025",
+      "track": "food",
+      "unit": "breakfast",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "How many pancakes come in the Blueberry Pancakes?",
+      "media": null,
+      "options": [
+        "3",
+        "2",
+        "4",
+        "5"
+      ],
+      "answer": [
+        "3"
+      ],
+      "explanation": "All our pancake dishes come with 3 pancakes. Blueberry has blueberry jam, fresh blueberries, cream and icing sugar.",
+      "why_it_matters": "Helps guests decide whether to share.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Pancakes and Sweets",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-breakfast-0026",
+      "track": "food",
+      "unit": "breakfast",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "What is the Vanilla French Toast served with?",
+      "media": null,
+      "options": [
+        "Vanilla mascarpone crème, rhubarb compote, pistachio",
+        "Chocolate ganache and almonds",
+        "Maple syrup and bacon",
+        "Fresh strawberries and cream"
+      ],
+      "answer": [
+        "Vanilla mascarpone crème, rhubarb compote, pistachio"
+      ],
+      "explanation": "Vanilla French Toast: vanilla mascarpone crème, rhubarb compote and pistachio.",
+      "why_it_matters": "Describing it well helps it sell.",
+      "is_allergen": false,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Pancakes and Sweets",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0027",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Where do our Huîtres Hervé #3 oysters come from?",
+      "media": null,
+      "options": [
+        "Normandy, France",
+        "Brittany, France",
+        "Ireland",
+        "Zeeland, Netherlands"
+      ],
+      "answer": [
+        "Normandy, France"
+      ],
+      "explanation": "Huîtres Hervé #3 oysters are from Normandy, France, sold by the piece.",
+      "why_it_matters": "Guests ordering oysters often ask where they're from.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Sharing",
+      "review_note": "Menu prints \"HUITRES HERVÉ\"; card adds the circumflex (Huîtres). Confirm preferred spelling.",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0028",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "What cheese is in our \"Van Tricht\" cheese croquettes?",
+      "media": null,
+      "options": [
+        "An aged gouda, \"Farmdal OG Krystal\"",
+        "Comté",
+        "Grana Padano",
+        "Camembert"
+      ],
+      "answer": [
+        "An aged gouda, \"Farmdal OG Krystal\""
+      ],
+      "explanation": "Our signature croquettes use a specially selected aged gouda, \"Farmdal OG Krystal\", served with fried parsley and a whole grain mustard dip.",
+      "why_it_matters": "It's a signature recipe, worth telling guests about.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Sharing",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0029",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "How many snails come in the Escargots de Bourgogne?",
+      "media": null,
+      "options": [
+        "12",
+        "6",
+        "8",
+        "10"
+      ],
+      "answer": [
+        "12"
+      ],
+      "explanation": "12 Burgundy snails in garlic and parsley butter, with sourdough.",
+      "why_it_matters": "A classic guests often ask about.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Soups and Starters",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0030",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "multi",
+      "prompt": "What's in the Vitello Tonnato? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Slow-roasted veal tenderloin",
+        "Tuna",
+        "Anchovy",
+        "Capers",
+        "Pork belly",
+        "Pistachio"
+      ],
+      "answer": [
+        "Slow-roasted veal tenderloin",
+        "Tuna",
+        "Anchovy",
+        "Capers"
+      ],
+      "explanation": "Vitello Tonnato: slow-roasted veal tenderloin, tuna, anchovy, capers and Grana Padano.",
+      "why_it_matters": "Guests are often surprised it has fish; tell them.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Soups and Starters",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0031",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "What makes the Seabream Ceviche's \"leche de tigre\"?",
+      "media": null,
+      "options": [
+        "Ají amarillo",
+        "Coconut milk",
+        "Soy sauce",
+        "Basil emulsion"
+      ],
+      "answer": [
+        "Ají amarillo"
+      ],
+      "explanation": "Seabream Ceviche (R): ají amarillo \"leche de tigre\", fresh corn salsa, avocado, sweet potato and nachos.",
+      "why_it_matters": "Guests ask what leche de tigre is.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Soups and Starters",
+      "review_note": "The menu doesn't explain leche de tigre beyond ají amarillo. Chef to give a one-line description if wanted.",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0032",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Which starter is served raw?",
+      "media": null,
+      "options": [
+        "Wagyu Tartare",
+        "Escargots de Bourgogne",
+        "Garlic Shrimps",
+        "Soup of the Day"
+      ],
+      "answer": [
+        "Wagyu Tartare"
+      ],
+      "explanation": "Wagyu Tartare is marked (R): raw Wagyu beef with a classic Belgian dressing, toasted sourdough and crispy potato.",
+      "why_it_matters": "Guests should know a dish is raw before ordering.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Soups and Starters",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0033",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "What's in the Classic Caesar that makes it (P)?",
+      "media": null,
+      "options": [
+        "Pork bacon",
+        "Pork croutons",
+        "Ham dressing",
+        "Salami"
+      ],
+      "answer": [
+        "Pork bacon"
+      ],
+      "explanation": "Classic Caesar: lettuce, Caesar dressing, Grana Padano PDO, croutons and pork bacon.",
+      "why_it_matters": "Guests who avoid pork need to know before ordering.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Salads",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0034",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "What comes with every M/M burger?",
+      "media": null,
+      "options": [
+        "Belgian fries",
+        "Skinny fries",
+        "Garden salad",
+        "Sweet potato fries"
+      ],
+      "answer": [
+        "Belgian fries"
+      ],
+      "explanation": "All M/M burgers are served with Belgian fries.",
+      "why_it_matters": "Saves the guest asking, and opens a chance to suggest an upgrade.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, M/M Burgers",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0035",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "multi",
+      "prompt": "What's on the Signature Burger? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Angus beef patty",
+        "Peppercorn sauce",
+        "Onion jam",
+        "Camembert cheese",
+        "Cheddar",
+        "BBQ sauce"
+      ],
+      "answer": [
+        "Angus beef patty",
+        "Peppercorn sauce",
+        "Onion jam",
+        "Camembert cheese"
+      ],
+      "explanation": "Signature Burger: Angus beef patty, peppercorn sauce, onion jam, camembert, roquette lettuce, mushrooms, M/M bun.",
+      "why_it_matters": "Knowing the differences between burgers helps guests choose.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, M/M Burgers",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0036",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "What is the Classic Belgian Beef Stew braised in?",
+      "media": null,
+      "options": [
+        "Leffe Brune",
+        "Red wine",
+        "Guinness",
+        "Beef stock only"
+      ],
+      "answer": [
+        "Leffe Brune"
+      ],
+      "explanation": "Classic Belgian Beef Stew and Fries (A): beef braised in Leffe Brune, with Belgian fries and endive salad.",
+      "why_it_matters": "It's a true Belgian classic, and Leffe Brune is on draught to pair with it.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Meat Specials",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0037",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "How much does the Grilled Rib Eye weigh?",
+      "media": null,
+      "options": [
+        "300 gr",
+        "200 gr",
+        "220 gr",
+        "250 gr"
+      ],
+      "answer": [
+        "300 gr"
+      ],
+      "explanation": "Grilled Rib Eye is 300 gr, Prime Angus, grain fed. The Steak and Fries is 200 gr, the tenderloin 220 gr and the Wagyu striploin 250 gr.",
+      "why_it_matters": "Guests choose steaks by size; know them.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, From the Farm",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0038",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Which steak is Australian \"Westholme\" Wagyu, MB 4-5?",
+      "media": null,
+      "options": [
+        "Grilled Wagyu Striploin 250 gr",
+        "Grilled Rib Eye 300 gr",
+        "Steak and Fries 200 gr",
+        "Black Angus Grilled Tenderloin 220 gr"
+      ],
+      "answer": [
+        "Grilled Wagyu Striploin 250 gr"
+      ],
+      "explanation": "The Grilled Wagyu Striploin is Australian \"Westholme\" Wagyu MB 4-5, with red wine shallots and Padron pepper.",
+      "why_it_matters": "Guests paying for Wagyu like to hear where it's from.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, From the Farm",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0039",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "multi",
+      "prompt": "Which sauces can guests add to a steak? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Béarnaise",
+        "Green peppercorn",
+        "Forestal mushroom",
+        "Blue cheese",
+        "Hollandaise",
+        "Chimichurri"
+      ],
+      "answer": [
+        "Béarnaise",
+        "Green peppercorn",
+        "Forestal mushroom",
+        "Blue cheese"
+      ],
+      "explanation": "Four sauces: Forestal mushroom, green peppercorn, béarnaise and blue cheese, AED 5 each.",
+      "why_it_matters": "Offering a sauce by name is an easy, welcome suggestion.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Sauces",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0040",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "What sizes do our mussels come in?",
+      "media": null,
+      "options": [
+        "½ kg or 1 kg",
+        "500 g only",
+        "Small, medium or large",
+        "By the piece"
+      ],
+      "answer": [
+        "½ kg or 1 kg"
+      ],
+      "explanation": "Mussels come as ½ kg or 1 kg, served with Belgian fries and a dip.",
+      "why_it_matters": "Helps guests decide whether to share.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Mussels and Fries",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0041",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "multi",
+      "prompt": "Which mussel styles are on the menu? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Classic",
+        "Garlic and Cream",
+        "Roquefort",
+        "Thai Curry",
+        "Mediterranean",
+        "Tomato and Chorizo"
+      ],
+      "answer": [
+        "Classic",
+        "Garlic and Cream",
+        "Roquefort",
+        "Thai Curry",
+        "Mediterranean"
+      ],
+      "explanation": "Five styles: Classic, Garlic and Cream, Mediterranean, Roquefort and Thai Curry.",
+      "why_it_matters": "Mussels and fries is our tradition; know every style.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Mussels and Fries",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0042",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "How are the Classic mussels prepared?",
+      "media": null,
+      "options": [
+        "Fisherman's style: mirepoix, white wine, parsley",
+        "Cream, garlic and white wine",
+        "Thai curry and coconut milk",
+        "Roquefort cheese and cream"
+      ],
+      "answer": [
+        "Fisherman's style: mirepoix, white wine, parsley"
+      ],
+      "explanation": "Classic mussels are fisherman's style, with mirepoix, white wine and parsley.",
+      "why_it_matters": "It's the one to suggest to first-timers.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Mussels and Fries",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0043",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "What's in the Fish and Chips?",
+      "media": null,
+      "options": [
+        "Beer-battered cod, mushy peas, tartare, fries",
+        "Breaded hake, salad, fries",
+        "Grilled cod, mash, peas",
+        "Battered sea bass, chips, aioli"
+      ],
+      "answer": [
+        "Beer-battered cod, mushy peas, tartare, fries"
+      ],
+      "explanation": "Fish and Chips (A): beer-battered flaky cod, mushy peas, tartare and fries.",
+      "why_it_matters": "The (A) is because of the beer batter.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, From the Sea",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0044",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "multi",
+      "prompt": "Which cheeses are on the Quatro Formaggi pizza? Pick all that apply.",
+      "media": null,
+      "options": [
+        "Mozzarella",
+        "Taleggio",
+        "Gorgonzola",
+        "Provolone",
+        "Feta",
+        "Cheddar"
+      ],
+      "answer": [
+        "Mozzarella",
+        "Taleggio",
+        "Gorgonzola",
+        "Provolone"
+      ],
+      "explanation": "Quatro Formaggi: mozzarella, Taleggio, Gorgonzola and Provolone.",
+      "why_it_matters": "Cheese lovers ask which four.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, M/M Stone Baked Pizzas",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0045",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "What meat is on the Pepperoni pizza?",
+      "media": null,
+      "options": [
+        "Beef salami",
+        "Pork salami",
+        "Turkey ham",
+        "Beef chorizo"
+      ],
+      "answer": [
+        "Beef salami"
+      ],
+      "explanation": "The Pepperoni pizza has mozzarella, olives and beef salami.",
+      "why_it_matters": "Guests who avoid pork often ask.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, M/M Stone Baked Pizzas",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0046",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "What's in a Dame Blanche?",
+      "media": null,
+      "options": [
+        "Vanilla ice cream, Belgian chocolate sauce, chocolate crumble, whipped cream",
+        "Speculoos ice cream and caramel",
+        "Strawberry ice cream and meringue",
+        "Brownie and chocolate ice cream"
+      ],
+      "answer": [
+        "Vanilla ice cream, Belgian chocolate sauce, chocolate crumble, whipped cream"
+      ],
+      "explanation": "Dame Blanche: 3 scoops of vanilla ice cream, Belgian chocolate sauce, chocolate crumble and whipped cream.",
+      "why_it_matters": "A Belgian classic to recommend with pride.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Sundaes",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0047",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "What fruit is in our Tarte Tatin?",
+      "media": null,
+      "options": [
+        "Royal Gala apple",
+        "Pear",
+        "Peach",
+        "Pineapple"
+      ],
+      "answer": [
+        "Royal Gala apple"
+      ],
+      "explanation": "Tarte Tatin: Royal Gala apple, puff pastry and vanilla ice cream. Good for sharing.",
+      "why_it_matters": "Describing it helps it sell.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Desserts",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-lunch-dinner-0048",
+      "track": "food",
+      "unit": "lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Which dish on the autumn menu is a Hungarian beef stew?",
+      "media": null,
+      "options": [
+        "Goulash",
+        "Confit Duck Leg",
+        "Lamb Chops",
+        "Wild Mushroom Ravioli"
+      ],
+      "answer": [
+        "Goulash"
+      ],
+      "explanation": "Goulash: Hungarian beef stew with red peppers, paprika, tomato, potato, toasted sourdough and sour cream.",
+      "why_it_matters": "Seasonal dishes change; know the current ones.",
+      "is_allergen": false,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Autumn Menu",
+      "review_note": null,
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-allergens-breakfast-0049",
+      "track": "food",
+      "unit": "allergens-breakfast",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "Which nut is listed on the Vanilla French Toast?",
+      "media": null,
+      "options": [
+        "Pistachio",
+        "Hazelnut",
+        "Walnut",
+        "Pecan"
+      ],
+      "answer": [
+        "Pistachio"
+      ],
+      "explanation": "Vanilla French Toast lists pistachio, a tree nut.",
+      "why_it_matters": "Guests with a nut allergy must know before ordering.",
+      "is_allergen": true,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live. The menu doesn't mark this dish (N).",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-allergens-breakfast-0050",
+      "track": "food",
+      "unit": "allergens-breakfast",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "Which nut is listed on the Chocolate French Toast?",
+      "media": null,
+      "options": [
+        "Toasted almonds",
+        "Pecan nuts",
+        "Hazelnuts",
+        "Pistachio"
+      ],
+      "answer": [
+        "Toasted almonds"
+      ],
+      "explanation": "Chocolate French Toast lists toasted almonds, a tree nut.",
+      "why_it_matters": "Guests with a nut allergy must know before ordering.",
+      "is_allergen": true,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live. The menu doesn't mark this dish (N).",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-allergens-breakfast-0051",
+      "track": "food",
+      "unit": "allergens-breakfast",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "Which nut is listed on the Banofee and Pecan Pancakes?",
+      "media": null,
+      "options": [
+        "Pecan nuts",
+        "Almonds",
+        "Walnuts",
+        "Cashews"
+      ],
+      "answer": [
+        "Pecan nuts"
+      ],
+      "explanation": "Banofee and Pecan Pancakes list pecan nuts, a tree nut, and the dish is marked (N).",
+      "why_it_matters": "Guests with a nut allergy must know before ordering.",
+      "is_allergen": true,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-allergens-breakfast-0052",
+      "track": "food",
+      "unit": "allergens-breakfast",
+      "level": 1,
+      "roles": [
+        "barista",
+        "server",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "The Baobab Harmony smoothie lists which peanut ingredient?",
+      "media": null,
+      "options": [
+        "Peanut butter",
+        "Peanut oil",
+        "Crushed peanuts",
+        "Peanut milk"
+      ],
+      "answer": [
+        "Peanut butter"
+      ],
+      "explanation": "Baobab Harmony lists peanut butter, and almond milk too: peanuts and tree nuts are both major allergens.",
+      "why_it_matters": "A peanut allergy can be severe; the guest must know.",
+      "is_allergen": true,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Smoothies",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live. The menu doesn't mark this drink (N).",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-allergens-breakfast-0053",
+      "track": "food",
+      "unit": "allergens-breakfast",
+      "level": 1,
+      "roles": [
+        "barista",
+        "server",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "What milk are the Matcha, Turmeric and Beetroot lattes served with?",
+      "media": null,
+      "options": [
+        "Almond milk",
+        "Oat milk",
+        "Soy milk",
+        "Cow's milk"
+      ],
+      "answer": [
+        "Almond milk"
+      ],
+      "explanation": "The wellness lattes are served with almond milk. Almond is a tree nut.",
+      "why_it_matters": "Guests with a nut allergy may assume a latte is nut-free.",
+      "is_allergen": true,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Wellness Late",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live. The menu doesn't mark these drinks (N).",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-allergens-breakfast-0054",
+      "track": "food",
+      "unit": "allergens-breakfast",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar",
+        "barista"
+      ],
+      "type": "mcq",
+      "prompt": "Which allergen group does the crab in the Crab Omelet belong to?",
+      "media": null,
+      "options": [
+        "Crustaceans",
+        "Molluscs",
+        "Fish",
+        "Lupin"
+      ],
+      "answer": [
+        "Crustaceans"
+      ],
+      "explanation": "Crab is a crustacean. The Crab Omelet is marked (S) for shellfish.",
+      "why_it_matters": "Shellfish allergies are common and can be severe.",
+      "is_allergen": true,
+      "source_ref": "AR breakfast menu, 20260914_MM-AR-BREAKFAST53, Omelets and Eggs; Service Training Program v2026/01, 14 allergens",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-allergens-lunch-dinner-0055",
+      "track": "food",
+      "unit": "allergens-lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Which allergen group does calamari belong to?",
+      "media": null,
+      "options": [
+        "Molluscs",
+        "Crustaceans",
+        "Fish",
+        "Sesame"
+      ],
+      "answer": [
+        "Molluscs"
+      ],
+      "explanation": "Calamari (squid) is a mollusc. It's in the Crispy Calamari and the Crispy-Skin Grilled Seabream.",
+      "why_it_matters": "A guest with a mollusc allergy may not think of squid.",
+      "is_allergen": true,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39; Service Training Program v2026/01, 14 allergens",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live. The menu doesn't mark these dishes (S).",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-allergens-lunch-dinner-0056",
+      "track": "food",
+      "unit": "allergens-lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Which allergen group do the snails in the Escargots belong to?",
+      "media": null,
+      "options": [
+        "Molluscs",
+        "Crustaceans",
+        "Fish",
+        "None"
+      ],
+      "answer": [
+        "Molluscs"
+      ],
+      "explanation": "Snails are molluscs, one of the 14 major allergens.",
+      "why_it_matters": "Guests rarely think of snails as shellfish.",
+      "is_allergen": true,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39; Service Training Program v2026/01, 14 allergens",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live. The menu doesn't mark this dish (S).",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-allergens-lunch-dinner-0057",
+      "track": "food",
+      "unit": "allergens-lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "The \"Espinaler\" Spanish olives are stuffed with what?",
+      "media": null,
+      "options": [
+        "Anchovy",
+        "Garlic",
+        "Pimento",
+        "Almond"
+      ],
+      "answer": [
+        "Anchovy"
+      ],
+      "explanation": "They're 150 g of anchovy-stuffed \"Manzanilla Fina\" olives, so they contain fish.",
+      "why_it_matters": "A fish allergy guest could easily assume olives are safe.",
+      "is_allergen": true,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Sharing",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-allergens-lunch-dinner-0058",
+      "track": "food",
+      "unit": "allergens-lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Which pizza has anchovies?",
+      "media": null,
+      "options": [
+        "Napoletana",
+        "Margarita",
+        "Quatro Stagione",
+        "Diavola"
+      ],
+      "answer": [
+        "Napoletana"
+      ],
+      "explanation": "The Napoletana has mozzarella, tomato sauce, anchovies and capers.",
+      "why_it_matters": "Fish allergies apply to pizza too.",
+      "is_allergen": true,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, M/M Stone Baked Pizzas",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-allergens-lunch-dinner-0059",
+      "track": "food",
+      "unit": "allergens-lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Which nut is listed on the Tuna Tartare and Stracciatella?",
+      "media": null,
+      "options": [
+        "Pistachio",
+        "Pine nuts",
+        "Walnut",
+        "Almond"
+      ],
+      "answer": [
+        "Pistachio"
+      ],
+      "explanation": "Tuna Tartare and Stracciatella (R, N) lists pistachio, with basil pesto.",
+      "why_it_matters": "Guests with a nut allergy must know before ordering.",
+      "is_allergen": true,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Soups and Starters",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-allergens-lunch-dinner-0060",
+      "track": "food",
+      "unit": "allergens-lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Which nut is listed on the Chef's Salad?",
+      "media": null,
+      "options": [
+        "Pine nuts",
+        "Hazelnuts",
+        "Walnuts",
+        "Almonds"
+      ],
+      "answer": [
+        "Pine nuts"
+      ],
+      "explanation": "Chef's Salad (P) (N) lists pine nuts.",
+      "why_it_matters": "Guests with a nut allergy must know before ordering.",
+      "is_allergen": true,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Salads",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-allergens-lunch-dinner-0061",
+      "track": "food",
+      "unit": "allergens-lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Which nut is listed on the Roasted Beetroot and Feta?",
+      "media": null,
+      "options": [
+        "Hazelnuts",
+        "Pistachio",
+        "Pecans",
+        "Cashews"
+      ],
+      "answer": [
+        "Hazelnuts"
+      ],
+      "explanation": "Roasted Beetroot and Feta (V) (N) (GF) lists hazelnuts.",
+      "why_it_matters": "Guests with a nut allergy must know before ordering.",
+      "is_allergen": true,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Salads",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-allergens-lunch-dinner-0062",
+      "track": "food",
+      "unit": "allergens-lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Which nut is listed on the Butternut Pumpkin Salad?",
+      "media": null,
+      "options": [
+        "Toasted almonds",
+        "Walnuts",
+        "Pine nuts",
+        "Hazelnuts"
+      ],
+      "answer": [
+        "Toasted almonds"
+      ],
+      "explanation": "Butternut Pumpkin Salad (V, N) lists toasted almonds.",
+      "why_it_matters": "Guests with a nut allergy must know before ordering.",
+      "is_allergen": true,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Autumn Menu",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-allergens-lunch-dinner-0063",
+      "track": "food",
+      "unit": "allergens-lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Which nut comes with the M/M Cheese Selection?",
+      "media": null,
+      "options": [
+        "Walnuts",
+        "Almonds",
+        "Pecans",
+        "Pistachio"
+      ],
+      "answer": [
+        "Walnuts"
+      ],
+      "explanation": "The M/M Cheese Selection (V) (N) comes with chutney, grapes, crackers and walnuts.",
+      "why_it_matters": "Guests with a nut allergy must know before ordering.",
+      "is_allergen": true,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Sharing",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-allergens-lunch-dinner-0064",
+      "track": "food",
+      "unit": "allergens-lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "Which nut is listed on the Chocolate Crush sundae?",
+      "media": null,
+      "options": [
+        "Almond",
+        "Hazelnut",
+        "Pecan",
+        "Peanut"
+      ],
+      "answer": [
+        "Almond"
+      ],
+      "explanation": "Chocolate Crush lists vanilla and chocolate ice cream, brownie, chocolate sauce, meringue and almond.",
+      "why_it_matters": "Guests with a nut allergy must know before ordering.",
+      "is_allergen": true,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Sundaes",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live. The menu doesn't mark this dish (N).",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    },
+    {
+      "id": "food-allergens-lunch-dinner-0065",
+      "track": "food",
+      "unit": "allergens-lunch-dinner",
+      "level": 1,
+      "roles": [
+        "server",
+        "host",
+        "runner",
+        "bar"
+      ],
+      "type": "mcq",
+      "prompt": "The béarnaise lists eggs and butter. Butter belongs to which allergen group?",
+      "media": null,
+      "options": [
+        "Milk",
+        "Eggs",
+        "Mustard",
+        "Soybeans"
+      ],
+      "answer": [
+        "Milk"
+      ],
+      "explanation": "Butter is a milk product, so béarnaise contains milk as well as eggs.",
+      "why_it_matters": "Guests avoiding dairy often forget butter in sauces.",
+      "is_allergen": true,
+      "source_ref": "AR lunch and dinner menu, 20260922_MM-AR-LUNCHDINNER39, Sauces; Service Training Program v2026/01, 14 allergens",
+      "review_note": "[TO CONFIRM] Drafted from the menu's listed ingredients only, not the allergen matrix. Gerard to check before it goes live.",
+      "status": "review",
+      "reviewed_by": null,
+      "version": 1
+    }
+  ]
+}

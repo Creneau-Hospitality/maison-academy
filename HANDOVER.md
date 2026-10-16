@@ -15,7 +15,8 @@ How Maison Academy fits together and where everything lives. Names only, never p
 | `MAISON_ACADEMY_BUILD_BRIEF.md` | What to build and how |
 | `DAVID_ROADMAP.md` | David's step-by-step plan |
 | `PROGRESS.md`, `DECISIONS.md` | Where we are; every decision, dated |
-| `content/` | Content check and new source files |
+| `content/` | Content check, menu allergen flags, and new source files (menus PDFs are kept on David's computer, not in git) |
+| `content/drafts/` | Card drafts awaiting review, as JSON (for import) and CSV (for review) |
 | `5. OPERATIONS/1. MANUAL`, `2. TRAINING` | Source library for cards (see `content/CONTENT_CHECK.md`) |
 
 ## Accounts
