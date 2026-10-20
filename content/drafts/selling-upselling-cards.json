@@ -1,0 +1,328 @@
+{
+ "unit": {
+  "id": "upselling",
+  "track_id": "upselling",
+  "name": "Upselling",
+  "sort": 1
+ },
+ "source": "Server Training Guide: Sales Techniques (David, SWR Hospitality)",
+ "cards": [
+  {
+   "n": 1,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 2.1",
+   "prompt": "What is upselling?",
+   "options": [
+    "Suggesting a higher-value version of what the guest is ordering",
+    "Suggesting an extra item that the guest hadn't planned to order",
+    "Suggesting the most expensive item to every guest",
+    "Adding a service charge for premium items"
+   ],
+   "answer": [
+    "Suggesting a higher-value version of what the guest is ordering"
+   ],
+   "explanation": "Upselling encourages a higher-value version of something already being ordered: a premium brand, larger size, better cut or an add-on.",
+   "why": "Upselling raises the value of each item, not the number of items."
+  },
+  {
+   "n": 2,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "sections 2.2 and 10",
+   "prompt": "Which question is typical of upselling?",
+   "options": [
+    "\"Would you prefer the... instead?\"",
+    "\"Would you like to add...?\"",
+    "\"Is that everything for you?\"",
+    "\"Can I get you anything else with that?\""
+   ],
+   "answer": [
+    "\"Would you prefer the... instead?\""
+   ],
+   "explanation": "Upselling asks \"Would you prefer the... instead?\"; suggestive selling asks \"Would you like to add...?\"",
+   "why": "The question shows which technique you're using."
+  },
+  {
+   "n": 3,
+   "type": "multi",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "sections 2.3, 4.1 and 9.1",
+   "prompt": "Which of these are upselling? Pick all that apply.",
+   "options": [
+    "Guest orders the Steak and Fries; you offer the Black Angus Tenderloin instead",
+    "Guest orders a gin and tonic; you offer it with Hendrick's",
+    "Guest orders the Signature Burger; you suggest adding pork bacon",
+    "Guest orders mains only; you suggest Patatas Bravas to share",
+    "Mains are cleared; you suggest the Dame Blanche"
+   ],
+   "answer": [
+    "Guest orders the Steak and Fries; you offer the Black Angus Tenderloin instead",
+    "Guest orders a gin and tonic; you offer it with Hendrick's",
+    "Guest orders the Signature Burger; you suggest adding pork bacon"
+   ],
+   "explanation": "A better cut, a premium gin and an add-on all raise the value of something the guest already chose. A new starter or dessert is suggestive selling.",
+   "why": "Knowing which is which helps you choose the right moment for each."
+  },
+  {
+   "n": 4,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "sections 2.3 note and 9.1",
+   "prompt": "You suggest adding cheddar (AED 5) to a guest's Veggie Burger. Which technique is that?",
+   "options": [
+    "Upselling (an add-on)",
+    "Suggestive selling",
+    "Neither; it's a substitution",
+    "Both at the same time"
+   ],
+   "answer": [
+    "Upselling (an add-on)"
+   ],
+   "explanation": "Add-ons to an item the guest already chose, like extra cheese on a burger, count as upselling because they raise that item's value.",
+   "why": "Add-ons are the easiest upsell: the guest has already said yes to the dish."
+  },
+  {
+   "n": 5,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 4.2",
+   "prompt": "When is the best moment to upsell?",
+   "options": [
+    "The moment the guest names the item",
+    "After the order is in the POS",
+    "When you bring the food to the table",
+    "At the check back"
+   ],
+   "answer": [
+    "The moment the guest names the item"
+   ],
+   "explanation": "Upsell right when the guest names the item. Once the order is placed and you've walked away, the moment has gone.",
+   "why": "An upgrade offered later means changing an order, which guests rarely do."
+  },
+  {
+   "n": 6,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 4.2",
+   "prompt": "A guest orders a glass of wine at AED 45. Which upgrade are they most likely to accept?",
+   "options": [
+    "One at about AED 60",
+    "One at about AED 100",
+    "One at about AED 150",
+    "The most expensive bottle"
+   ],
+   "answer": [
+    "One at about AED 60"
+   ],
+   "explanation": "Offer one step up, not three. A guest ordering a AED 45 glass is more likely to accept a AED 60 option than a AED 150 one.",
+   "why": "A small step feels like a treat; a big jump feels like pressure."
+  },
+  {
+   "n": 7,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "sections 4.2 and 7",
+   "prompt": "An upgrade carries a supplement. When do you mention the price?",
+   "options": [
+    "Naturally, as you suggest it",
+    "Only if the guest asks",
+    "Not at all; it shows on the bill",
+    "After they've agreed to it"
+   ],
+   "answer": [
+    "Naturally, as you suggest it"
+   ],
+   "explanation": "Be transparent: mention a supplement naturally when you suggest the upgrade, so the guest is never surprised by the bill.",
+   "why": "A surprise on the bill turns a good meal into a complaint."
+  },
+  {
+   "n": 8,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server"
+   ],
+   "step": "section 4.2",
+   "prompt": "Which steak upsell is strongest?",
+   "options": [
+    "\"For something special, the Westholme Wagyu is beautifully marbled; it's AED 130 more.\"",
+    "\"Would you like the more expensive steak instead?\"",
+    "\"The Wagyu is our most expensive steak, if you like.\"",
+    "\"Most of our guests go for the Wagyu striploin these days; it's a very popular choice.\""
+   ],
+   "answer": [
+    "\"For something special, the Westholme Wagyu is beautifully marbled; it's AED 130 more.\""
+   ],
+   "explanation": "Explain the benefit to the guest, not just the price, and be clear about the supplement. The Wagyu striploin is AED 265; the Steak and Fries is AED 135.",
+   "why": "Guests upgrade when they understand what they'll get."
+  },
+  {
+   "n": 9,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server"
+   ],
+   "step": "section 4.1",
+   "prompt": "A guest orders the Steak and Fries 200 gr (AED 135). What's the natural one-step upsell?",
+   "options": [
+    "The Black Angus Tenderloin 220 gr (AED 209)",
+    "The Grilled Wagyu Striploin 250 gr (AED 265)",
+    "A second Steak and Fries to share",
+    "The Belgian Steak Tartare (AED 135)"
+   ],
+   "answer": [
+    "The Black Angus Tenderloin 220 gr (AED 209)"
+   ],
+   "explanation": "Offer the next level up, not the most expensive: from the Steak and Fries, that's the Black Angus Tenderloin.",
+   "why": "One step up feels like a natural treat, not a hard sell."
+  },
+  {
+   "n": 10,
+   "type": "scenario",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar"
+   ],
+   "step": "sections 2.3 and 4.1",
+   "prompt": "Two guests each order a glass of the same white wine and mention a second round. What do you suggest?",
+   "options": [
+    "A bottle: better value, kept chilled at the table",
+    "Two glasses now, and you'll check back later for the next",
+    "A glass of Champagne each instead",
+    "A cocktail for the second round"
+   ],
+   "answer": [
+    "A bottle: better value, kept chilled at the table"
+   ],
+   "explanation": "If guests plan a second glass each, a bottle works out better value and stays chilled at the table.",
+   "why": "The guest gets better value and you save a trip to the bar."
+  },
+  {
+   "n": 11,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 4.2",
+   "prompt": "Why does a pairing make an upsell easier?",
+   "options": [
+    "It feels like expert advice, not a sales pitch",
+    "It always works out cheaper for the guest in the end",
+    "The kitchen prefers dishes in pairs",
+    "It speeds up the order"
+   ],
+   "answer": [
+    "It feels like expert advice, not a sales pitch"
+   ],
+   "explanation": "Pairing an upgrade with something the guest already ordered makes it feel like expert advice rather than a sales pitch.",
+   "why": "Guests welcome advice; they resist being sold to."
+  },
+  {
+   "n": 12,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "barista"
+   ],
+   "step": "section 4.1",
+   "prompt": "A guest orders a latte. Which suggestion is an upsell?",
+   "options": [
+    "Adding an extra shot",
+    "A croissant to go with it",
+    "A second latte later",
+    "A glass of water"
+   ],
+   "answer": [
+    "Adding an extra shot"
+   ],
+   "explanation": "An extra shot upgrades the latte the guest already chose, so it's upselling. A croissant is a new item, so it's suggestive selling.",
+   "why": "Small coffee upgrades add up over a busy morning."
+  },
+  {
+   "n": 13,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 2.2",
+   "prompt": "What's the main risk of overdoing upselling?",
+   "options": [
+    "The guest feels judged on budget or misled on price",
+    "The guest feels pushed into ordering far too much food",
+    "The kitchen runs out of premium items",
+    "The bill takes longer to print"
+   ],
+   "answer": [
+    "The guest feels judged on budget or misled on price"
+   ],
+   "explanation": "Overdone upselling leaves guests feeling judged on budget or misled on price. Overdone suggestive selling makes them feel pushed into ordering too much.",
+   "why": "Trust is harder to win back than a sale."
+  },
+  {
+   "n": 14,
+   "type": "scenario",
+   "level": 2,
+   "roles": [
+    "server"
+   ],
+   "step": "section 9.2",
+   "prompt": "An anniversary couple orders two glasses of house wine. What's the best approach?",
+   "options": [
+    "Suggest a bottle now, and a dessert to share later",
+    "Suggest the most expensive Champagne straight away",
+    "Serve the glasses and leave them to it",
+    "Suggest a bottle, a starter and the Wagyu at once"
+   ],
+   "answer": [
+    "Suggest a bottle now, and a dessert to share later"
+   ],
+   "explanation": "Upsell the wine to a bottle at the moment they order, and suggest a shared dessert when the mains are cleared.",
+   "why": "Well-timed suggestions make the occasion feel special without pressure."
+  }
+ ]
+}

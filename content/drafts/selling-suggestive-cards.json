@@ -1,0 +1,348 @@
+{
+ "unit": {
+  "id": "suggestive-selling",
+  "track_id": "suggestive",
+  "name": "Suggestive selling",
+  "sort": 1
+ },
+ "source": "Server Training Guide: Sales Techniques (David, SWR Hospitality)",
+ "cards": [
+  {
+   "n": 1,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 2.1",
+   "prompt": "What is suggestive selling?",
+   "options": [
+    "Recommending items the guest hadn't planned to order",
+    "Recommending a better version of what they've already ordered",
+    "Recommending the most expensive dish on the menu",
+    "Recommending today's special to every table"
+   ],
+   "answer": [
+    "Recommending items the guest hadn't planned to order"
+   ],
+   "explanation": "Suggestive selling recommends additional items the guest hadn't planned to order, to add to what they're already having. Upselling is upgrading what they've chosen.",
+   "why": "Knowing the difference helps you pick the right technique at the right moment."
+  },
+  {
+   "n": 2,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 2.2",
+   "prompt": "Suggestive selling mainly increases which part of the check?",
+   "options": [
+    "The number of items",
+    "The value of each item",
+    "The number of guests",
+    "The size of each portion"
+   ],
+   "answer": [
+    "The number of items"
+   ],
+   "explanation": "Suggestive selling adds more things; upselling makes each thing better.",
+   "why": "A simple way to remember which technique you're using."
+  },
+  {
+   "n": 3,
+   "type": "multi",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "sections 2.2 and 9.1",
+   "prompt": "Which of these are suggestive selling? Pick all that apply.",
+   "options": [
+    "Suggesting Patatas Bravas to share while they decide",
+    "Offering an espresso after dessert",
+    "Suggesting a large bottle of water for the table",
+    "Offering Hendrick's in the guest's gin and tonic",
+    "Offering the Black Angus Tenderloin instead of the Steak and Fries"
+   ],
+   "answer": [
+    "Suggesting Patatas Bravas to share while they decide",
+    "Offering an espresso after dessert",
+    "Suggesting a large bottle of water for the table"
+   ],
+   "explanation": "Starters, waters and coffee are new items on the check, so they're suggestive selling. A premium gin or a better steak upgrades something already ordered, so that's upselling.",
+   "why": "Each technique has its own best moment in the meal."
+  },
+  {
+   "n": 4,
+   "type": "order",
+   "level": 2,
+   "roles": [
+    "server"
+   ],
+   "step": "section 3.1",
+   "prompt": "Put these suggestions in the order they come during a meal.",
+   "answer": [
+    "A signature drink at the greeting",
+    "A sharing starter as you present the menu",
+    "A side dish with the main order",
+    "A second round at the mid-meal check-in",
+    "A dessert as you clear the mains",
+    "Coffee or tea after dessert"
+   ],
+   "explanation": "Greeting: drinks. Menu: starters to share. Mains: sides. Mid-meal: another round. Clearing mains: dessert. After dessert: coffee or tea.",
+   "why": "Suggesting an item just before the guest would think of it is what makes it welcome."
+  },
+  {
+   "n": 5,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server"
+   ],
+   "step": "section 3.1",
+   "prompt": "You're clearing the mains. Which suggestion fits this moment best?",
+   "options": [
+    "A dessert, named and described",
+    "A sharing starter",
+    "Another round of the same drinks",
+    "A coffee or mint tea"
+   ],
+   "answer": [
+    "A dessert, named and described"
+   ],
+   "explanation": "Clearing the mains is the moment for dessert. Coffee, tea and digestifs come after dessert.",
+   "why": "The right suggestion at the right moment feels like good service, not selling."
+  },
+  {
+   "n": 6,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 3.2",
+   "prompt": "Which is the strongest starter suggestion?",
+   "options": [
+    "\"Have you tried our Van Tricht croquettes? Crispy, with an aged gouda inside.\"",
+    "\"Would anyone like to have a look at our starters before you choose your mains tonight?\"",
+    "\"Our starters are all really good, any you like the look of?\"",
+    "\"Would anyone like a starter tonight, or straight to mains?\""
+   ],
+   "answer": [
+    "\"Have you tried our Van Tricht croquettes? Crispy, with an aged gouda inside.\""
+   ],
+   "explanation": "Name a specific item and describe one or two qualities. Vague questions get vague answers, usually \"no\".",
+   "why": "A specific dish creates a picture in the guest's mind."
+  },
+  {
+   "n": 7,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server"
+   ],
+   "step": "section 3.2",
+   "prompt": "Which dessert question works best?",
+   "options": [
+    "\"Would you like the Dame Blanche or the Tarte Tatin to finish?\"",
+    "\"Do you want any dessert tonight?\"",
+    "\"Will it be dessert, or just the bill for you?\"",
+    "\"You really should have a dessert tonight, they're all really great.\""
+   ],
+   "answer": [
+    "\"Would you like the Dame Blanche or the Tarte Tatin to finish?\""
+   ],
+   "explanation": "Offer a choice, not a yes/no question: it invites the guest to choose rather than refuse.",
+   "why": "\"Which would you prefer?\" is easier to answer than \"Do you want...?\""
+  },
+  {
+   "n": 8,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 3.2",
+   "prompt": "Why suggest a starter for the table to share, rather than one each?",
+   "options": [
+    "Sharing feels like less of a commitment",
+    "It's quicker to write on the pad",
+    "The kitchen prefers to cook sharing plates",
+    "Guests always want to try each other's food"
+   ],
+   "answer": [
+    "Sharing feels like less of a commitment"
+   ],
+   "explanation": "Sharing items feel lower-commitment, so \"Shall I bring one to share?\" is easier to say yes to than asking each guest.",
+   "why": "Guests say yes more easily when it doesn't feel like a big decision."
+  },
+  {
+   "n": 9,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "sections 3.2 and 7",
+   "prompt": "What makes a personal recommendation work?",
+   "options": [
+    "You've tasted it and genuinely like it",
+    "It's the most expensive dish on the menu",
+    "It's the dish the team needs to sell most",
+    "It's on promotion this week"
+   ],
+   "answer": [
+    "You've tasted it and genuinely like it"
+   ],
+   "explanation": "Only recommend things you've tasted and genuinely like. Guests can tell when enthusiasm isn't genuine.",
+   "why": "Guests trust honest, personal opinions."
+  },
+  {
+   "n": 10,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 3.2",
+   "prompt": "Which words help a guest imagine how a dish tastes?",
+   "options": [
+    "Crispy, slow-cooked, house-made",
+    "Nice, good, tasty",
+    "Large portions, filling, great value",
+    "Popular, classic, best-selling"
+   ],
+   "answer": [
+    "Crispy, slow-cooked, house-made"
+   ],
+   "explanation": "Sensory words like crispy, slow-cooked, chargrilled and house-made help guests imagine the taste. Describe one or two qualities, not the full recipe.",
+   "why": "A dish the guest can picture is a dish they want."
+  },
+  {
+   "n": 11,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 6",
+   "prompt": "Which phrase should you avoid when taking an order?",
+   "options": [
+    "\"Is that all?\"",
+    "\"Have you tried our...?\"",
+    "\"It pairs beautifully with...\"",
+    "\"My personal favourite is...\""
+   ],
+   "answer": [
+    "\"Is that all?\""
+   ],
+   "explanation": "Avoid closed phrases like \"Is that all?\" or \"Do you want anything else?\". Use specific, inviting ones like \"Have you tried our...?\"",
+   "why": "A closed question invites a \"yes, that's all\"."
+  },
+  {
+   "n": 12,
+   "type": "scenario",
+   "level": 2,
+   "roles": [
+    "server"
+   ],
+   "step": "sections 7 and 9.2",
+   "prompt": "A guest politely declines dessert. What do you do?",
+   "options": [
+    "Accept it, and offer coffee or mint tea just once",
+    "Ask \"Are you sure?\" in case they change their mind",
+    "Describe the desserts again in more detail",
+    "Leave the dessert menu on the table, just in case"
+   ],
+   "answer": [
+    "Accept it, and offer coffee or mint tea just once"
+   ],
+   "explanation": "Accept a no graciously and offer a lighter alternative only once. Repeating a suggestion after a no damages trust.",
+   "why": "A guest who feels respected comes back."
+  },
+  {
+   "n": 13,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 7",
+   "prompt": "How many items should you recommend at once?",
+   "options": [
+    "One or two",
+    "Three or four",
+    "A whole section of the menu",
+    "Every special of the day"
+   ],
+   "answer": [
+    "One or two"
+   ],
+   "explanation": "Too many options overwhelm guests. Recommend one or two items.",
+   "why": "A clear recommendation is easier to say yes to."
+  },
+  {
+   "n": 14,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server"
+   ],
+   "step": "section 7",
+   "prompt": "When is it too late to suggest a starter?",
+   "options": [
+    "Once the mains have been ordered",
+    "While the guests read the menu",
+    "When you greet the table",
+    "While you take the table's drinks order"
+   ],
+   "answer": [
+    "Once the mains have been ordered"
+   ],
+   "explanation": "Timing matters: offering starters after the mains are ordered, or dessert while guests are still eating, comes too late or too early.",
+   "why": "Suggestions only work when they fit the flow of the meal."
+  },
+  {
+   "n": 15,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 10",
+   "prompt": "Of the five habits of a great seller, which means \"suggest once, respect the answer\"?",
+   "options": [
+    "Respect",
+    "Read",
+    "Time",
+    "Describe"
+   ],
+   "answer": [
+    "Respect"
+   ],
+   "explanation": "The five habits are Taste, Read, Describe, Time and Respect. Respect means suggest once, respect the answer, and always put the guest first.",
+   "why": "A guest who feels looked after will return; one who feels pushed won't."
+  }
+ ]
+}

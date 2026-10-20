@@ -1,0 +1,262 @@
+{
+ "unit": {
+  "id": "reading-the-guest",
+  "track_id": "suggestive",
+  "name": "Reading the guest",
+  "sort": 2
+ },
+ "source": "Server Training Guide: Sales Techniques (David, SWR Hospitality)",
+ "cards": [
+  {
+   "n": 1,
+   "type": "scenario",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 5",
+   "prompt": "A couple tells you it's their anniversary. How do you adjust your suggestions?",
+   "options": [
+    "Suggest a bottle, and a dessert to share",
+    "Keep suggestions quick and practical",
+    "Suggest value options and sharing items for the table",
+    "Explain the signature dishes"
+   ],
+   "answer": [
+    "Suggest a bottle, and a dessert to share"
+   ],
+   "explanation": "Celebrating guests are open to treating themselves: suggest bottles, premium items, desserts to share and a celebration touch.",
+   "why": "The right suggestion makes their occasion feel special."
+  },
+  {
+   "n": 2,
+   "type": "scenario",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 5",
+   "prompt": "Two guests at a business lunch keep checking their watches. How do you adjust?",
+   "options": [
+    "Keep suggestions quick; offer coffee to go",
+    "Suggest a bottle and a dessert to share",
+    "Explain the signature dishes in detail",
+    "Suggest a sharing starter while they decide"
+   ],
+   "answer": [
+    "Keep suggestions quick; offer coffee to go"
+   ],
+   "explanation": "Guests checking their watches are short on time, so keep suggestions quick and practical, and offer coffee to go.",
+   "why": "Respecting their time is the best service you can give."
+  },
+  {
+   "n": 3,
+   "type": "scenario",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 5",
+   "prompt": "A family is reading the prices very carefully. How do you adjust?",
+   "options": [
+    "Suggest value options and sharing items",
+    "Suggest premium upgrades as a little treat for them",
+    "Don't suggest anything at all",
+    "Suggest the specials of the day"
+   ],
+   "answer": [
+    "Suggest value options and sharing items"
+   ],
+   "explanation": "Budget-conscious guests: recommend value options and sharing items, and avoid pushing premium upgrades.",
+   "why": "Guests who feel their budget is respected relax and enjoy their visit."
+  },
+  {
+   "n": 4,
+   "type": "scenario",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 5",
+   "prompt": "Guests tell you it's their first time at Maison Mathis. What fits best?",
+   "options": [
+    "Explain our signature dishes and house specialities",
+    "Mention the new dishes and what's changed since last month",
+    "Leave them to explore the menu alone",
+    "Suggest the quickest dishes"
+   ],
+   "answer": [
+    "Explain our signature dishes and house specialities"
+   ],
+   "explanation": "First-time visitors are curious and want guidance, so explain the signature dishes and house specialities.",
+   "why": "A great first visit is how a guest becomes a regular."
+  },
+  {
+   "n": 5,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "sections 5 and 7",
+   "prompt": "A guest isn't drinking alcohol. What do you do with drinks suggestions?",
+   "options": [
+    "Suggest mocktails and fresh juices as warmly as cocktails",
+    "Skip drinks suggestions altogether so they don't feel awkward",
+    "Ask them why they're not drinking tonight",
+    "Offer water only"
+   ],
+   "answer": [
+    "Suggest mocktails and fresh juices as warmly as cocktails"
+   ],
+   "explanation": "Guests not drinking alcohol still want something special. Recommend mocktails, fresh juices and premium waters with the same enthusiasm, and never make a guest explain.",
+   "why": "Every guest deserves a great drink, with or without alcohol."
+  },
+  {
+   "n": 6,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 5",
+   "prompt": "Regulars know the menu well. What should you suggest to them?",
+   "options": [
+    "New items and specials, and their favourites",
+    "Nothing; they already know what they want",
+    "The signature dishes, explained in full detail again",
+    "The most expensive dish on the menu"
+   ],
+   "answer": [
+    "New items and specials, and their favourites"
+   ],
+   "explanation": "Regulars know the menu, so mention new items and specials, and remember their favourites.",
+   "why": "Remembering a regular's favourite makes them feel at home."
+  },
+  {
+   "n": 7,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 5",
+   "prompt": "What's the golden rule of selling?",
+   "options": [
+    "Sell to the guest's needs, not to your target",
+    "Suggest something on every visit to the table",
+    "Always offer the premium option first",
+    "Focus on the items with the best margin"
+   ],
+   "answer": [
+    "Sell to the guest's needs, not to your target"
+   ],
+   "explanation": "Sell to the guest's needs, not to your target. A guest who feels looked after will return; a guest who feels pushed will not.",
+   "why": "Long-term, loyal guests are worth far more than one bigger check."
+  },
+  {
+   "n": 8,
+   "type": "scenario",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar"
+   ],
+   "step": "section 7",
+   "prompt": "A guest is showing signs of having had too much to drink. Their glass is empty. What do you do?",
+   "options": [
+    "Don't suggest another drink; follow responsible service rules",
+    "Offer a smaller measure or a lighter drink instead of a full one",
+    "Suggest a lighter beer, like Hoegaarden",
+    "Ask if they'd like the same again"
+   ],
+   "answer": [
+    "Don't suggest another drink; follow responsible service rules"
+   ],
+   "explanation": "Never suggest another round to a guest showing signs of intoxication. Follow responsible service rules and the venue's licensing conditions.",
+   "why": "Guest safety and our licence come before any sale."
+  },
+  {
+   "n": 9,
+   "type": "scenario",
+   "level": 2,
+   "roles": [
+    "server"
+   ],
+   "step": "sections 7 and 9.2",
+   "allergen": true,
+   "prompt": "A guest with a nut allergy asks which dessert you'd recommend. What do you do?",
+   "options": [
+    "Confirm with the kitchen first, then recommend a safe option",
+    "Recommend a dessert that has no nuts listed anywhere on the menu",
+    "Recommend the Dame Blanche straight away",
+    "Say you can't recommend any desserts"
+   ],
+   "answer": [
+    "Confirm with the kitchen first, then recommend a safe option"
+   ],
+   "explanation": "Always check allergies before recommending and confirm with the kitchen if you're unsure. Never guess, then recommend a safe option with genuine enthusiasm.",
+   "why": "An allergy can be life-threatening, and the menu doesn't show every ingredient."
+  },
+  {
+   "n": 10,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 7",
+   "prompt": "Which tables should you offer upgrades to?",
+   "options": [
+    "Any table, respectfully, without assuming",
+    "Only the tables that look like they're big spenders",
+    "Only tables that are celebrating",
+    "Only regulars who know the menu"
+   ],
+   "answer": [
+    "Any table, respectfully, without assuming"
+   ],
+   "explanation": "Never assume who can or can't afford an upgrade. Offer options respectfully to every table.",
+   "why": "Judging a guest's budget is the quickest way to lose their trust."
+  },
+  {
+   "n": 11,
+   "type": "mcq",
+   "level": 2,
+   "roles": [
+    "server",
+    "bar",
+    "host"
+   ],
+   "step": "section 7",
+   "prompt": "Before service, what should you check with the kitchen so you don't sell the unavailable?",
+   "options": [
+    "Sold-out (86'd) items and preparation times",
+    "The staff meal time",
+    "The chef's favourite dish",
+    "Tonight's table plan and the reservations list"
+   ],
+   "answer": [
+    "Sold-out (86'd) items and preparation times"
+   ],
+   "explanation": "Check with the kitchen before service for 86'd (sold-out) items and preparation times.",
+   "why": "Recommending a dish that's sold out disappoints the guest twice."
+  }
+ ]
+}
