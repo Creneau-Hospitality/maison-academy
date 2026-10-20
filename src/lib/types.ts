@@ -43,6 +43,7 @@ export interface Access {
   admin: boolean;
   allergen_checker: boolean;
   reviewer_tracks: string[];
+  manager_venues?: string[];
 }
 
 export const CARD_TYPES: { id: CardType; label: string }[] = [

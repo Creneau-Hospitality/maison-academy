@@ -4,7 +4,7 @@ import type { StudioData } from './Studio';
 
 interface Person {
   user_id: string; email: string; display_name: string; allergen_checker: boolean; active: boolean;
-  user_roles: { role: string; tracks: string[] | null }[];
+  user_roles: { role: string; tracks: string[] | null; venue_id?: string | null }[];
 }
 
 const ROLE_NAMES: Record<string, string> = { admin: 'Admin', reviewer: 'Content reviewer', venue_manager: 'Venue manager', staff: 'Staff' };
@@ -14,10 +14,12 @@ export default function People({ ctx }: { ctx: StudioData }) {
   const [people, setPeople] = useState<Person[]>([]);
   const [msg, setMsg] = useState<{ kind: 'sky' | 'blush'; text: string } | null>(null);
   const [busy, setBusy] = useState(false);
-  const [form, setForm] = useState({ email: '', name: '', role: 'reviewer', tracks: [] as string[], checker: false });
+  const [form, setForm] = useState({ email: '', name: '', role: 'reviewer', tracks: [] as string[], checker: false, venue: '' });
+  const [venues, setVenues] = useState<{ id: string; name: string }[]>([]);
+  useEffect(() => { supabase.rpc('list_venues').then(({ data }) => setVenues(((data as { id: string; name: string }[]) ?? []).filter((v) => v.id !== 'demo'))); }, []);
 
   const load = async () => {
-    const { data, error } = await supabase.from('app_users').select('user_id, email, display_name, allergen_checker, active, user_roles(role, tracks)').order('display_name');
+    const { data, error } = await supabase.from('app_users').select('user_id, email, display_name, allergen_checker, active, user_roles(role, tracks, venue_id)').order('display_name');
     if (error) setMsg({ kind: 'blush', text: error.message }); else setPeople((data ?? []) as Person[]);
   };
   useEffect(() => { load(); }, []);
@@ -25,14 +27,16 @@ export default function People({ ctx }: { ctx: StudioData }) {
   const grant = async (e: React.FormEvent) => {
     e.preventDefault();
     setBusy(true); setMsg(null);
-    const { error } = await supabase.rpc('grant_role', {
-      p_email: form.email, p_role: form.role, p_display_name: form.name || null,
-      p_tracks: form.role === 'reviewer' ? form.tracks : null, p_allergen_checker: form.checker,
-    });
+    const { error } = form.role === 'venue_manager'
+      ? await supabase.rpc('grant_venue_manager', { p_email: form.email, p_display_name: form.name || null, p_venue: form.venue || venues[0]?.id })
+      : await supabase.rpc('grant_role', {
+          p_email: form.email, p_role: form.role, p_display_name: form.name || null,
+          p_tracks: form.role === 'reviewer' ? form.tracks : null, p_allergen_checker: form.checker,
+        });
     setBusy(false);
     if (error) { setMsg({ kind: 'blush', text: error.message }); return; }
     setMsg({ kind: 'sky', text: `${form.name || form.email} is set up.` });
-    setForm({ email: '', name: '', role: 'reviewer', tracks: [], checker: false });
+    setForm({ email: '', name: '', role: 'reviewer', tracks: [], checker: false, venue: '' });
     load();
   };
 
@@ -69,7 +73,7 @@ export default function People({ ctx }: { ctx: StudioData }) {
                 <td>
                   {p.user_roles.map((r) => (
                     <div key={r.role}>
-                      {ROLE_NAMES[r.role] ?? r.role}{r.tracks?.length ? `: ${r.tracks.map(trackName).join(', ')}` : ''}{' '}
+                      {ROLE_NAMES[r.role] ?? r.role}{r.tracks?.length ? `: ${r.tracks.map(trackName).join(', ')}` : ''}{r.venue_id ? `: ${venues.find((v) => v.id === r.venue_id)?.name ?? r.venue_id}` : ''}{' '}
                       <button className="text small" disabled={busy} onClick={() => revoke(p, r.role)}>Remove</button>
                     </div>
                   ))}
@@ -101,8 +105,15 @@ export default function People({ ctx }: { ctx: StudioData }) {
             <label className="field"><span className="label">Role</span>
               <select value={form.role} onChange={(e) => setForm({ ...form, role: e.target.value })}>
                 <option value="reviewer">Content reviewer</option>
+                <option value="venue_manager">Venue manager</option>
                 <option value="admin">Admin</option>
               </select></label>
+            {form.role === 'venue_manager' && (
+              <label className="field"><span className="label">Venue</span>
+                <select value={form.venue || venues[0]?.id || ''} onChange={(e) => setForm({ ...form, venue: e.target.value })}>
+                  {venues.map((v) => <option key={v.id} value={v.id}>{v.name}</option>)}
+                </select></label>
+            )}
           </div>
           {form.role === 'reviewer' && (
             <div className="field">
@@ -118,10 +129,12 @@ export default function People({ ctx }: { ctx: StudioData }) {
               </div>
             </div>
           )}
+          {form.role !== 'venue_manager' && (
           <label className="check" style={{ marginBottom: 12 }}>
             <input type="checkbox" checked={form.checker} onChange={(e) => setForm({ ...form, checker: e.target.checked })} />
             Can record the kitchen allergen check (head chef or Gerard only)
           </label>
+          )}
           {msg && <p className={'note ' + msg.kind}>{msg.text}</p>}
           <div><button type="submit" disabled={busy}>Add</button></div>
         </form>

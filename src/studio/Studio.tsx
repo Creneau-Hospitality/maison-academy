@@ -11,6 +11,8 @@ import ExportCards from './ExportCards';
 import People from './People';
 import Settings from './Settings';
 import Staff from './Staff';
+import Dashboard from './Dashboard';
+import MenuSets from './MenuSets';
 
 export interface StudioData {
   access: Access;
@@ -60,17 +62,23 @@ export default function Studio({ path }: { path: string }) {
   if (!data) return <div className="loading">Loading the card bank…</div>;
 
   const { access } = data;
-  const hasAccess = access.admin || access.reviewer_tracks.length > 0;
+  const isContent = access.admin || access.reviewer_tracks.length > 0;
+  const isManager = (access.manager_venues ?? []).length > 0;
+  const hasAccess = isContent || isManager;
   const ctx: StudioData = { ...data, reload };
 
   const signOut = async () => { await supabase.auth.signOut(); navigate('/studio'); };
   const sub = path.replace(/^\/studio\/?/, '').split('?')[0];
   const nav = [
-    { to: '/studio', label: 'Cards', on: sub === '' || sub.startsWith('card') || sub === 'new' },
-    { to: '/studio/import', label: 'Import', on: sub === 'import' },
-    { to: '/studio/export', label: 'Export', on: sub === 'export' },
+    ...(isManager ? [{ to: '/studio/dashboard', label: 'Dashboard', on: sub.startsWith('dashboard') }] : []),
+    ...(isContent ? [
+      { to: '/studio', label: 'Cards', on: sub === '' || sub.startsWith('card') || sub === 'new' },
+      { to: '/studio/import', label: 'Import', on: sub === 'import' },
+      { to: '/studio/export', label: 'Export', on: sub === 'export' },
+    ] : []),
+    ...(isManager ? [{ to: '/studio/staff', label: 'Staff', on: sub === 'staff' }] : []),
     ...(access.admin ? [
-      { to: '/studio/staff', label: 'Staff', on: sub === 'staff' },
+      { to: '/studio/menu', label: 'New on the menu', on: sub === 'menu' },
       { to: '/studio/people', label: 'People', on: sub === 'people' },
       { to: '/studio/settings', label: 'Settings', on: sub === 'settings' },
     ] : []),
@@ -84,7 +92,11 @@ export default function Studio({ path }: { path: string }) {
         <p>You're signed in as {session.user.email}, but you don't have a studio role yet. Ask David to add you.</p>
       </div>
     );
-  } else if (sub === '') page = <CardList ctx={ctx} path={path} />;
+  } else if (sub.startsWith('dashboard') && isManager) page = <Dashboard access={access} path={path} />;
+  else if (sub === 'staff' && isManager) page = <Staff />;
+  else if (sub === 'menu' && access.admin) page = <MenuSets ctx={ctx} />;
+  else if (!isContent && sub === '') page = <Dashboard access={access} path="/studio/dashboard" />;
+  else if (sub === '') page = <CardList ctx={ctx} path={path} />;
   else if (sub === 'new') page = <CardEditor ctx={ctx} id={null} path={path} key="new" />;
   else if (sub.startsWith('card/')) {
     const id = decodeURIComponent(sub.slice(5));
@@ -94,7 +106,6 @@ export default function Studio({ path }: { path: string }) {
   else if (sub === 'export') page = <ExportCards ctx={ctx} />;
   else if (sub === 'people' && access.admin) page = <People ctx={ctx} />;
   else if (sub === 'settings' && access.admin) page = <Settings />;
-  else if (sub === 'staff' && access.admin) page = <Staff />;
   else page = <div className="narrow"><p>Page not found.</p><a {...linkProps('/studio')}>Back to cards</a></div>;
 
   return (

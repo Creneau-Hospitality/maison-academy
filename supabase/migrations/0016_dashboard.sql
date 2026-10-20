@@ -367,7 +367,7 @@ begin
     ) vp on true
     where public.is_manager_for(v.id) and (p_venue is null or v.id = p_venue) and vp.n > 0));
 
-  -- Weekly target met, week by week (last 8 weeks), by venue.
+  -- Weekly target met, week by week (the last 8 full weeks; this week is in the headline figures), by venue.
   res := res || jsonb_build_object('trend', (
     select coalesce(jsonb_agg(jsonb_build_object('venue_id', v.id, 'venue', v.name,
              'goal_pct', coalesce(v.weekly_goal_pct, _setting_int('venue_weekly_goal_pct', 85)),
@@ -375,7 +375,7 @@ begin
                          'pct', (select case when count(*) = 0 then null
                                        else round(100.0 * count(*) filter (where _sets_in_week(p.id, w) >= _target(p)) / count(*))::int end
                                  from _dash_staff(v.id, p_include_test) p where p.created_at::date <= w + 6)) order by w)
-                       from generate_series(wk - 49, wk, interval '7 days') g(wt), lateral (select g.wt::date w) ww)
+                       from generate_series(wk - 56, wk - 7, interval '7 days') g(wt), lateral (select g.wt::date w) ww)
            ) order by v.name), '[]'::jsonb)
     from venues v where public.is_manager_for(v.id) and (p_venue is null or v.id = p_venue)
       and exists (select 1 from _dash_staff(v.id, p_include_test))));
@@ -411,9 +411,9 @@ begin
   -- Recognise: most improved over 28 days, longest rhythm, level-ups this week.
   res := res || jsonb_build_object('recognise', jsonb_build_object(
     'improved', (select coalesce(jsonb_agg(jsonb_build_object('staff_id', id, 'name', name, 'gain', gain) order by gain desc), '[]'::jsonb)
-                 from (select p.id, _name(p) name, _avg_mastery_on(p, today) - _avg_mastery_on(p, today - 28) gain
-                       from _dash_staff(p_venue, p_include_test) p) g where gain > 0 and gain is not null
-                 limit 3),
+                 from (select * from (select p.id, _name(p) name, _avg_mastery_on(p, today) - _avg_mastery_on(p, today - 28) gain
+                                      from _dash_staff(p_venue, p_include_test) p) g0
+                       where gain > 0 order by gain desc, name limit 3) g),
     'streak', (select jsonb_build_object('staff_id', id, 'name', name, 'weeks', weeks)
                from (select p.id, _name(p) name, (_rhythm(p) ->> 'streak')::int weeks from _dash_staff(p_venue, p_include_test) p) r
                where weeks > 0 order by weeks desc, name limit 1),
