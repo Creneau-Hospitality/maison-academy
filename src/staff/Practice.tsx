@@ -5,15 +5,12 @@ import { navigate } from '../lib/router';
 import { shuffled } from '../lib/types';
 import {
   enqueue, flush, isRight, newEventId, NeedLogin, Offline, queued, rpc, store,
-  type Confidence, type HomeData, type PracticeSet, type SetResult, type StaffCard,
+  type HomeData, type PracticeSet, type SetResult, type StaffCard,
 } from './api';
 
 type Mode = 'daily' | 'readiness' | 'misses';
 type Phase = 'loading' | 'card' | 'feedback' | 'done' | 'empty' | 'offline';
 
-const CONF: { id: Confidence; label: string }[] = [
-  { id: 'sure', label: 'Sure' }, { id: 'think', label: 'Think so' }, { id: 'guess', label: 'Guessing' },
-];
 
 export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogin: () => void }) {
   const [phase, setPhase] = useState<Phase>('loading');
@@ -78,11 +75,11 @@ export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogi
     setPhase('done');
   }
 
-  function answer(chosen: string[], confidence: Confidence) {
+  function answer(chosen: string[]) {
     const card = cards[i];
     const right = isRight(card, chosen);
     if (mode !== 'misses' && setInfo) {
-      enqueue({ kind: 'answer', client_event_id: newEventId(), set_id: setInfo.id, card_id: card.id, chosen, confidence, answered_at: new Date().toISOString() });
+      enqueue({ kind: 'answer', client_event_id: newEventId(), set_id: setInfo.id, card_id: card.id, chosen, confidence: null, answered_at: new Date().toISOString() });
       void flush();
     }
     setResults([...results, right]);
@@ -146,7 +143,7 @@ function Shell({ title, progress, children }: {
   );
 }
 
-function CardView({ card, onAnswer }: { card: StaffCard; onAnswer: (chosen: string[], c: Confidence) => void }) {
+function CardView({ card, onAnswer }: { card: StaffCard; onAnswer: (chosen: string[]) => void }) {
   const opts = useMemo(() => {
     if (card.type !== 'order') return shuffled(card.options);
     for (let k = 0; k < 6; k++) { const s = shuffled(card.options); if (JSON.stringify(s) !== JSON.stringify(card.answer)) return s; }
@@ -160,7 +157,7 @@ function CardView({ card, onAnswer }: { card: StaffCard; onAnswer: (chosen: stri
   const tap = (o: string) => {
     if (ordering) setPicked(picked.includes(o) ? picked.slice(0, picked.indexOf(o)) : [...picked, o]);
     else if (many) setPicked(picked.includes(o) ? picked.filter((x) => x !== o) : [...picked, o]);
-    else setPicked([o]);
+    else onAnswer([o]); // one tap answers
   };
 
   return (
@@ -174,22 +171,17 @@ function CardView({ card, onAnswer }: { card: StaffCard; onAnswer: (chosen: stri
           {picked.map((o) => <li key={o}><button className="opt on" onClick={() => tap(o)}>{o}</button></li>)}
         </ol>
       )}
-      <div className="opts" role={many || ordering ? 'group' : 'radiogroup'}>
+      <div className="opts" role="group">
         {opts.filter((o) => !(ordering && picked.includes(o))).map((o) => (
           <button key={o} className={'opt' + (picked.includes(o) ? ' on' : '')} onClick={() => tap(o)}
-            role={many ? 'checkbox' : ordering ? undefined : 'radio'} aria-checked={ordering ? undefined : picked.includes(o)}>
+            role={many ? 'checkbox' : undefined} aria-checked={many ? picked.includes(o) : undefined}>
             {many && <span className="box" aria-hidden>{picked.includes(o) ? '✓' : ''}</span>}
             <span>{o}</span>
           </button>
         ))}
       </div>
-      {ready && (
-        <div className="conf">
-          <p className="label">How sure were you?</p>
-          <div className="conf-row">
-            {CONF.map((c) => <button key={c.id} onClick={() => onAnswer(picked, c.id)}>{c.label}</button>)}
-          </div>
-        </div>
+      {(many || ordering) && (
+        <button className="wide" disabled={!ready} onClick={() => onAnswer(picked)}>Check</button>
       )}
     </div>
   );

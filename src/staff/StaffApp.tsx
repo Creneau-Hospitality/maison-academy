@@ -311,7 +311,6 @@ function Progress({ onNeedLogin }: { onNeedLogin: () => void }) {
       .catch((e) => { if (e instanceof NeedLogin) onNeedLogin(); else if (e instanceof Offline) setOffline(true); else setOffline(true); });
   }, [onNeedLogin]);
   if (!p) return <Page title="My progress">{offline ? <p className="note cream">You're offline. Connect to see your progress.</p> : <div className="loading">Loading…</div>}</Page>;
-  const c = p.confidence;
   return (
     <Page title="My progress">
       {offline && <p className="note cream">Offline: showing your last update.</p>}
@@ -323,7 +322,7 @@ function Progress({ onNeedLogin }: { onNeedLogin: () => void }) {
           <h3>Next: {p.next_level_name}</h3>
           <ul className="steps">
             <li className={p.level1.mastery_pct >= p.level1.mastery_target ? 'met' : ''}>
-              <span>Know {p.level1.mastery_target}% of the Level 1 cards (right and sure)</span>
+              <span>Know {p.level1.mastery_target}% of the Level 1 cards</span>
               <span className="bar" aria-hidden><span style={{ width: `${Math.min(100, (100 * p.level1.mastery_pct) / p.level1.mastery_target)}%` }} /></span>
               <span className="info">You're at {p.level1.mastery_pct}%</span>
             </li>
@@ -355,22 +354,10 @@ function Progress({ onNeedLogin }: { onNeedLogin: () => void }) {
             <span className="bar" aria-hidden><span style={{ width: `${t.pct}%` }} /></span>
           </div>
         ))}
-        <p className="info">A card counts when you answer it right and sure, a few times, spaced out.</p>
+        <p className="info">A card counts once you've answered it right three times in a row, spaced out over days.</p>
       </div>
 
       <div className="panel">
-        <h3>How sure you were</h3>
-        <dl className="conf-grid">
-          <div><dt>Right and sure</dt><dd>{c.right_sure}</dd></div>
-          <div><dt>Right, not sure</dt><dd>{c.right_not_sure}</dd></div>
-          <div><dt>Not yet, not sure</dt><dd>{c.not_yet_not_sure}</dd></div>
-          <div><dt>Not yet, but sure</dt><dd>{c.not_yet_sure}</dd></div>
-        </dl>
-        {c.not_yet_sure > 0 && <p className="info">"Not yet, but sure" is the one to look at: review your misses to fix those first.</p>}
-      </div>
-
-      <div className="panel">
-        {p.strengths.length > 0 && <><h3>Strengths</h3><p>{p.strengths.join(', ')}</p></>}
         <h3>Next focus</h3>
         <p>{p.next_focus ? `${p.next_focus.track}: ${p.next_focus.unit}` : 'Keep your rhythm going.'}</p>
       </div>

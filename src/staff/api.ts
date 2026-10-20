@@ -107,7 +107,7 @@ export function isRight(card: StaffCard, chosen: string[]): boolean {
 
 // --- The answer queue ---------------------------------------------------------
 type QueueItem =
-  | { kind: 'answer'; client_event_id: string; set_id: string; card_id: string; chosen: string[]; confidence: Confidence; answered_at: string }
+  | { kind: 'answer'; client_event_id: string; set_id: string; card_id: string; chosen: string[]; confidence: Confidence | null; answered_at: string }
   | { kind: 'finish'; set_id: string };
 
 const Q = 'ma-queue';

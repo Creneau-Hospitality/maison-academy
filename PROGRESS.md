@@ -1,6 +1,6 @@
 # Progress
 
-**Current phase:** 2, staff app. Built and live on 20 October; waiting for David's phone test with test accounts.
+**Current phase:** 2, staff app. Live; phone test passed on 20 October; simplified to one-tap answers. Phase-2 report and release next.
 **Last updated:** 20 October 2026, afternoon.
 
 ## Done
@@ -49,12 +49,14 @@
 - Login function `staff-auth` on Supabase Edge Functions (activation with code, PIN login, lockout after 5 tries, obvious PINs refused, never says whether a staff number exists). Deployed 20 October with "Verify JWT" off.
 - Staff app at the site's front page: activate (code, privacy notice, PIN), log in, home, daily set with all five card types, "How sure were you?", feedback, set done, review my misses, my progress, readiness check, install help, privacy page. Installable, works on low signal (today's set kept on the phone, answers queued and sent when back online), test bar for test accounts (next day, reset).
 - Studio > Staff: add test accounts and print activation codes with a QR code. Real staff come in Phase 4 from the roster.
+- David tested on iPhone and Android: works well. He found the "How sure were you?" step confusing, so answers are now one tap (Check button only for pick-all and put-in-order cards), and My progress shows just level steps, tracks and next focus (migration 0015, applied 20 October).
+- Extra checks for the sign-off list: a venue manager sees only their own venue (local test, 7 checks passed).
 - Tests: local copy, three test accounts over two simulated weeks plus privacy checks (55 checks passed); phone-width screen test (no sideways scrolling, buttons at least 44 px, no banned words); live database test of three days in a throwaway account, undone afterwards (misses came back next set, spacing right, other people's records and PIN hashes blocked).
 
 ## Next
 
-1. David's phone test (iPhone and Android): sign in to the studio, add three test accounts under Staff, activate them on phones, do sets, use "Next day" to watch cards come back and space out.
-2. Fix what the phone test finds; then the `phase-2` report and release.
+1. David tries the one-tap version on his phone.
+2. Phase-2 report, card backup and the `phase-2` release (David publishes).
 3. Still open from Phase 1: review of the last 6 cards, kitchen check of the 31 allergen cards, phase-1 report, export and release.
 4. Decisions still to confirm (defaults in use): weekly target 4 sets, level targets, what Level 3 earns, English only for version 1, the app's name. Privacy notice wording with counsel.
 5. Phase 3: the manager dashboard (and practical sign-offs, which Level 1 needs).
