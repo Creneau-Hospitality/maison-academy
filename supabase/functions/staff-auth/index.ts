@@ -16,9 +16,19 @@
 
 import { createClient } from 'npm:@supabase/supabase-js@2.58.0';
 
+// Supabase provides these on the server. Newer projects name the keys
+// SUPABASE_SECRET_KEYS / SUPABASE_PUBLISHABLE_KEYS (JSON); older ones use the legacy names.
+function serverKey(modern: string, legacy: string): string {
+  try {
+    const j = JSON.parse(Deno.env.get(modern) ?? '');
+    const v = j?.default ?? Object.values(j ?? {})[0];
+    if (typeof v === 'string' && v) return v;
+  } catch { /* not set */ }
+  return Deno.env.get(legacy) ?? '';
+}
 const URL = Deno.env.get('SUPABASE_URL')!;
-const SERVICE = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
-const ANON = Deno.env.get('SUPABASE_ANON_KEY')!;
+const SERVICE = serverKey('SUPABASE_SECRET_KEYS', 'SUPABASE_SERVICE_ROLE_KEY');
+const ANON = serverKey('SUPABASE_PUBLISHABLE_KEYS', 'SUPABASE_ANON_KEY');
 const ITERATIONS = 150_000;
 const STAFF_EMAIL_DOMAIN = 'staff.maison-academy.invalid'; // reserved name: can never receive email
 
@@ -49,7 +59,7 @@ async function pbkdf2(pin: string, salt: Uint8Array, iterations: number): Promis
 
 async function hashPin(pin: string): Promise<string> {
   const salt = crypto.getRandomValues(new Uint8Array(16));
-  return `pbkdf2-sha256$${ITERATIONS}$${b64(salt)}$${b64(await pbkdf2(pin, salt, ITERATIONS))}`;
+  return 'pbkdf2-sha256$' + ITERATIONS + '$' + b64(salt) + '$' + b64(await pbkdf2(pin, salt, ITERATIONS));
 }
 
 async function verifyPin(pin: string, stored: string | null): Promise<boolean> {
@@ -96,7 +106,7 @@ async function sessionFor(userId: string) {
 
 async function ensureUser(staffId: string, existing: string | null): Promise<string> {
   if (existing) return existing;
-  const email = `staff-${staffId}@${STAFF_EMAIL_DOMAIN}`;
+  const email = 'staff-' + staffId + '@' + STAFF_EMAIL_DOMAIN;
   const password = b64(crypto.getRandomValues(new Uint8Array(32))); // never used or stored
   const { data, error } = await admin.auth.admin.createUser({
     email, password, email_confirm: true, app_metadata: { kind: 'staff' },
