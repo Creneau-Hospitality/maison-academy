@@ -1,6 +1,6 @@
 # Progress
 
-**Current phase:** 2 closed on 20 October (reports and card backup done; David publishes the `phase-1` and `phase-2` releases). Next: Phase 3, the manager dashboard.
+**Current phase:** 3, manager dashboard. Built and live on 20 October with a demo venue of sample people; waiting for David to try it.
 **Last updated:** 20 October 2026, afternoon.
 
 ## Done
@@ -53,10 +53,19 @@
 - Extra checks for the sign-off list: a venue manager sees only their own venue (local test, 7 checks passed).
 - Tests: local copy, three test accounts over two simulated weeks plus privacy checks (55 checks passed); phone-width screen test (no sideways scrolling, buttons at least 44 px, no banned words); live database test of three days in a throwaway account, undone afterwards (misses came back next set, spacing right, other people's records and PIN hashes blocked).
 
+## Phase 3 so far (20 October)
+
+- `phase-1` and `phase-2` releases published by David.
+- Dashboard database (migration 0016, applied 20 October): Overview, Team, Person and Questions figures; practical sign-offs; leave weeks (one a month); "new on the menu" sets that come first in staff's next sets; venue-manager logins; the studio now shows each person only what their role allows.
+- Studio: Dashboard (Overview, Team, Person, Questions, CSV downloads), New on the menu, and People can add a venue manager for a venue.
+- Demo venue loaded (12 sample people, test accounts, 5 weeks of practice). It never mixes with real figures: the dashboard leaves test and sample accounts out unless "Include test and sample accounts" is ticked (ticked by default while there are no real staff). Remove it in the SQL editor with `select demo_remove();`.
+- Tests: local copy, 19 dashboard checks (figures match a manual count; a venue manager sees only their venue; staff can't open the dashboard; menu-set cards come first) plus the earlier staff-app checks again; desktop and phone-width screen test; live check of the figures as David.
+
 ## Next
 
-1. David publishes the `phase-1` and `phase-2` releases on GitHub (reports in `reports/`, card backup in `exports/2026-10-20-phase-2/`).
-2. Phase 3: the manager dashboard.
+1. David tries the dashboard (Studio > Dashboard): Overview, Team, a person, Questions; tries a sign-off and a "new on the menu" set.
+2. Fix what he finds; Phase-3 report and release.
+3. Phase 4, pilot ready: roster import, activation sheet, reminders, final privacy notice, paid plans, soft test.
 3. Still open from Phase 1: review of the last 6 cards, kitchen check of the 31 allergen cards, phase-1 report, export and release.
 4. Decisions still to confirm (defaults in use): weekly target 4 sets, level targets, what Level 3 earns, English only for version 1, the app's name. Privacy notice wording with counsel.
 5. Phase 3: the manager dashboard (and practical sign-offs, which Level 1 needs).
