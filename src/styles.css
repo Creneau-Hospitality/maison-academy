@@ -302,3 +302,21 @@ ul.steps li button { align-self: flex-start; }
   .no-print { display: none !important; }
 }
 .app button.small { min-height: 44px; }
+
+/* Answer feedback: the whole page is green for "Got it", red for "Not yet" (David, 20 Oct 2026). */
+:root { --got: #2F6B3B; --got-bg: #E2F0DD; --notyet: #B3261E; --notyet-bg: #FBE1DE; }
+body.tone-got { background: var(--got-bg); }
+body.tone-notyet { background: var(--notyet-bg); }
+.app.tone-got .app-top, .app.tone-notyet .app-top { border-bottom-color: transparent; }
+.app.tone-got .verdict, .app.tone-notyet .verdict {
+  color: var(--white); margin: 0 -16px 16px; padding: 18px 16px; font-size: 38px;
+}
+.app.tone-got .verdict { background: var(--got); }
+.app.tone-notyet .verdict { background: var(--notyet); }
+.app.tone-got .answer-list, .app.tone-notyet .answer-list { background: var(--white); border-left: 6px solid var(--got); color: var(--ink); }
+.chosen-list { background: var(--white); border-left: 6px solid var(--notyet); padding: 10px 12px; margin: 4px 0 12px; list-style: none; color: var(--ink); }
+.app.tone-got .why { border-left-color: var(--got); }
+.app.tone-notyet .why { border-left-color: var(--notyet); }
+.app.tone-got button.wide { background: var(--got); border-color: var(--got); }
+.app.tone-notyet button.wide { background: var(--notyet); border-color: var(--notyet); }
+.app.tone-got .dot.done, .app.tone-notyet .dot.done { background: var(--ink); }

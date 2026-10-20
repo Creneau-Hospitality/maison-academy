@@ -112,7 +112,8 @@ export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogi
 
   const card = cards[i];
   return (
-    <Shell title={title} progress={{ at: i, of: cards.length, phase, results }}>
+    <Shell title={title} progress={{ at: i, of: cards.length, phase, results }}
+      tone={phase === 'feedback' ? (last!.right ? 'got' : 'notyet') : undefined}>
       <p className="label card-meta">{card.track} · {card.unit}</p>
       {phase === 'card'
         ? <CardView key={card.id} card={card} onAnswer={answer} />
@@ -121,12 +122,18 @@ export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogi
   );
 }
 
-function Shell({ title, progress, children }: {
-  title: string; children: React.ReactNode;
+function Shell({ title, progress, tone, children }: {
+  title: string; children: React.ReactNode; tone?: 'got' | 'notyet';
   progress?: { at: number; of: number; phase: Phase; results: boolean[] };
 }) {
+  // The whole page takes the answer's colour: green for "Got it", red for "Not yet" (David, 20 Oct).
+  useEffect(() => {
+    document.body.classList.remove('tone-got', 'tone-notyet');
+    if (tone) document.body.classList.add('tone-' + tone);
+    return () => document.body.classList.remove('tone-got', 'tone-notyet');
+  }, [tone]);
   return (
-    <div className="app">
+    <div className={'app' + (tone ? ' tone-' + tone : '')}>
       <div className="app-top">
         <button className="text" onClick={() => navigate('/')} aria-label="Back to home">‹ Home</button>
         <span className="label">{title}</span>
@@ -192,7 +199,7 @@ function Feedback({ card, right, chosen, mode, last, onNext }: {
 }) {
   return (
     <div className="feedback">
-      <p className={'verdict ' + (right ? 'got' : 'notyet')}>{right ? 'Got it.' : 'Not yet.'}</p>
+      <p className={'verdict ' + (right ? 'got' : 'notyet')}><span aria-hidden>{right ? '✓ ' : ''}</span>{right ? 'Got it.' : 'Not yet.'}</p>
       <p className="q small">{card.prompt}</p>
       {card.type === 'order' ? (
         <>
@@ -203,7 +210,7 @@ function Feedback({ card, right, chosen, mode, last, onNext }: {
         <>
           <p className="label">{card.answer.length > 1 ? 'The right answers' : 'The right answer'}</p>
           <ul className="answer-list plain">{card.answer.map((a) => <li key={a}>{a}</li>)}</ul>
-          {!right && chosen.length > 0 && <p className="info">You chose: {chosen.join(', ')}</p>}
+          {!right && chosen.length > 0 && (<><p className="label">Your answer</p><ul className="chosen-list plain">{chosen.map((a) => <li key={a}>{a}</li>)}</ul></>)}
         </>
       )}
       <p>{card.explanation}</p>
