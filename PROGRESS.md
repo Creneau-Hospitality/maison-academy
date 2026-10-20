@@ -36,20 +36,20 @@
 - David approved the 10 harder sample cards unchanged, and the 2 void cards (one with his own edit).
 - Harder wrong options drafted on 112 more cards (migrations 0007 to 0010, from `content/harder/`); all back in review. Card bank now: 47 live, 112 in review (harder options), 29 allergen in review, 1 retired.
 - 20 Oct: 21 new service cards drafted from the 11-step sequence of service document David shared (unit "Service steps", migration 0011, source saved in `content/sources/`). All in review; one is an allergen card for the kitchen check.
+- 20 Oct: David settled the 11-step document's differences (check back 2 min; name the dish, generic also fine; bill 2 to 3 min). Two live cards updated and back in review (migration 0012). The document saved as `2. TRAINING/Sequence of Service/SOS_Service_Steps.docx` and PDF.
+- David approved the 112 harder cards.
 - Screen test (headless browser, sample data): every screen loads, no errors, no sideways scrolling at 360 px.
 
 ## Next
 
-1. David decides the three timing and wording differences in the 11-step document, and gives its title.
-2. David reviews the 112 harder cards and the 21 new service-step cards in the studio (filters: In review, Not allergen), track by track.
-3. Phase-1 report, card export to `exports/`, and David publishes the `phase-1` release.
-4. Kitchen check of the 29 allergen cards (Arabian Ranches head chef or Gerard), from a one-page list. They stay hidden from staff until then.
-5. Gerard accepts the GitHub and Supabase invitations when he can (not blocking).
-6. Next cards once sources arrive: photo cards, payments and alcohol service SOPs, beer serves, coffee recipes, wine pairings.
+1. David reviews the 21 new service-step cards and the 2 updated check-back and bill cards in the studio (filters: In review, Not allergen), track by track.
+2. Phase-1 report, card export to `exports/`, and David publishes the `phase-1` release.
+3. Kitchen check of the 29 allergen cards (Arabian Ranches head chef or Gerard), from a one-page list. They stay hidden from staff until then.
+4. Gerard accepts the GitHub and Supabase invitations when he can (not blocking).
+5. Next cards once sources arrive: photo cards, payments and alcohol service SOPs, beer serves, coffee recipes, wine pairings.
 
 ## Known issues
 
-- The 11-step sequence document (20 Oct) differs from live cards on three points, held back until David decides: check back 3 to 5 minutes after food (live card: within 2); ask about the dish by name, "How is your steak?" (live card: "How are you enjoying your meal?"); bill within 2 minutes of the request (live card: within 3). Also need the document's real title and version for the source line.
 
 
 - No allergen matrix yet. Allergen cards are drafted from menu ingredients only and wait for a kitchen check.
