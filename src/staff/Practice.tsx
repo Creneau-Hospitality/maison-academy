@@ -126,12 +126,6 @@ function Shell({ title, progress, tone, children }: {
   title: string; children: React.ReactNode; tone?: 'got' | 'notyet';
   progress?: { at: number; of: number; phase: Phase; results: boolean[] };
 }) {
-  // The whole page takes the answer's colour: green for "Got it", red for "Not yet" (David, 20 Oct).
-  useEffect(() => {
-    document.body.classList.remove('tone-got', 'tone-notyet');
-    if (tone) document.body.classList.add('tone-' + tone);
-    return () => document.body.classList.remove('tone-got', 'tone-notyet');
-  }, [tone]);
   return (
     <div className={'app' + (tone ? ' tone-' + tone : '')}>
       <div className="app-top">
