@@ -1,6 +1,6 @@
 # Progress
 
-**Current phase:** 2, staff app. Live; phone test passed on 20 October; simplified to one-tap answers. Phase-2 report and release next.
+**Current phase:** 2 closed on 20 October (reports and card backup done; David publishes the `phase-1` and `phase-2` releases). Next: Phase 3, the manager dashboard.
 **Last updated:** 20 October 2026, afternoon.
 
 ## Done
@@ -55,8 +55,8 @@
 
 ## Next
 
-1. David tries the one-tap version on his phone.
-2. Phase-2 report, card backup and the `phase-2` release (David publishes).
+1. David publishes the `phase-1` and `phase-2` releases on GitHub (reports in `reports/`, card backup in `exports/2026-10-20-phase-2/`).
+2. Phase 3: the manager dashboard.
 3. Still open from Phase 1: review of the last 6 cards, kitchen check of the 31 allergen cards, phase-1 report, export and release.
 4. Decisions still to confirm (defaults in use): weekly target 4 sets, level targets, what Level 3 earns, English only for version 1, the app's name. Privacy notice wording with counsel.
 5. Phase 3: the manager dashboard (and practical sign-offs, which Level 1 needs).
