@@ -112,12 +112,12 @@ export default function CardEditor({ ctx, id, path }: { ctx: StudioData; id: str
     await reload();
     setMsg({ kind, text });
   };
-  const fail = (e: { message: string }) => setMsg({ kind: 'blush', text: 'Not saved: ' + e.message });
+  const notSaved = (e: { message: string }) => setMsg({ kind: 'blush', text: 'Not saved: ' + e.message });
 
   const ensureUnit = async (): Promise<boolean> => {
     if (units.some((u) => u.id === card.unit_id)) return true;
     const { error } = await supabase.from('units').insert({ id: card.unit_id, track_id: card.track_id, name: humanise(card.unit_id), sort: 99 });
-    if (error) { fail(error); return false; }
+    if (error) { notSaved(error); return false; }
     return true;
   };
 
@@ -135,7 +135,7 @@ export default function CardEditor({ ctx, id, path }: { ctx: StudioData; id: str
       if (card.type !== 'order') body.options = shuffled(body.options as string[]);
       const { error } = await supabase.from('cards').insert({ ...body, id: card.id, status: 'review' });
       setBusy(false);
-      if (error) return fail(error);
+      if (error) return notSaved(error);
       await reload();
       navigate(`/studio/card/${encodeURIComponent(card.id)}${qs}`);
       return;
@@ -143,7 +143,7 @@ export default function CardEditor({ ctx, id, path }: { ctx: StudioData; id: str
     const wasLive = saved!.status === 'live';
     const { error } = await supabase.from('cards').update(body).eq('id', card.id);
     setBusy(false);
-    if (error) return fail(error);
+    if (error) return notSaved(error);
     finish(wasLive && !sameContent(card, saved!) ? 'Saved as a new version. It was live, so it is back in review until approved again.' : 'Saved.');
   };
 
@@ -151,14 +151,14 @@ export default function CardEditor({ ctx, id, path }: { ctx: StudioData; id: str
     setBusy(true);
     const { error } = await supabase.from('cards').update({ status, ...extra }).eq('id', card.id);
     setBusy(false);
-    if (error) return fail(error);
+    if (error) return notSaved(error);
     finish(note ?? `Now ${statusLabel(status).toLowerCase()}.`);
   };
   const approve = async (andNext: boolean) => {
     setBusy(true);
     const { error } = await supabase.from('cards').update({ status: 'live' }).eq('id', card.id);
     setBusy(false);
-    if (error) return fail(error);
+    if (error) return notSaved(error);
     await reload();
     if (andNext && next) go(next); else setMsg({ kind: 'sky', text: 'Approved. The card is live.' });
   };
@@ -166,7 +166,7 @@ export default function CardEditor({ ctx, id, path }: { ctx: StudioData; id: str
     setBusy(true);
     const { error } = await supabase.from('cards').update({ allergen_check_by: access.display_name ?? 'checked' }).eq('id', card.id);
     setBusy(false);
-    if (error) return fail(error);
+    if (error) return notSaved(error);
     finish('Kitchen check recorded. The card can now be approved.');
   };
   const sendBack = () => setStatus('review', { review_note: sendBackNote.trim() || card.review_note }, 'Back in review.');

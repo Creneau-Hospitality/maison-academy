@@ -10,6 +10,7 @@ import ImportCards from './ImportCards';
 import ExportCards from './ExportCards';
 import People from './People';
 import Settings from './Settings';
+import Staff from './Staff';
 
 export interface StudioData {
   access: Access;
@@ -69,6 +70,7 @@ export default function Studio({ path }: { path: string }) {
     { to: '/studio/import', label: 'Import', on: sub === 'import' },
     { to: '/studio/export', label: 'Export', on: sub === 'export' },
     ...(access.admin ? [
+      { to: '/studio/staff', label: 'Staff', on: sub === 'staff' },
       { to: '/studio/people', label: 'People', on: sub === 'people' },
       { to: '/studio/settings', label: 'Settings', on: sub === 'settings' },
     ] : []),
@@ -92,6 +94,7 @@ export default function Studio({ path }: { path: string }) {
   else if (sub === 'export') page = <ExportCards ctx={ctx} />;
   else if (sub === 'people' && access.admin) page = <People ctx={ctx} />;
   else if (sub === 'settings' && access.admin) page = <Settings />;
+  else if (sub === 'staff' && access.admin) page = <Staff />;
   else page = <div className="narrow"><p>Page not found.</p><a {...linkProps('/studio')}>Back to cards</a></div>;
 
   return (

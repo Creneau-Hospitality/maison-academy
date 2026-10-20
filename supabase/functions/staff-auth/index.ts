@@ -8,7 +8,7 @@
 //   POST { action: "activate", code, pin, privacy_version }  -> { session, first_name }
 //   POST { action: "login", staff_number, pin }              -> { session, first_name }
 //
-// Rules (brief section 10): 6-digit PIN; obvious PINs refused; 5 wrong PINs
+// Rules (brief section 10): 6-digit PIN; obvious PINs refused; 5 mistyped PINs
 // pause login for 15 minutes; the reply never says whether a staff number
 // exists; PINs are stored only as a slow salted hash (PBKDF2-SHA256).
 //
@@ -115,7 +115,7 @@ Deno.serve(async (req) => {
   if (req.method !== 'POST') return reply(405, { error: 'Use POST.' });
 
   let body: Record<string, unknown>;
-  try { body = await req.json(); } catch { return reply(400, { error: 'Bad request.' }); }
+  try { body = await req.json(); } catch { return reply(400, { error: 'Unreadable request.' }); }
 
   try {
     if (body.action === 'check_code') {
@@ -159,6 +159,6 @@ Deno.serve(async (req) => {
     return reply(400, { error: 'Unknown action.' });
   } catch (e) {
     console.error('staff-auth', (e as Error).message); // never logs PINs or codes
-    return reply(500, { error: 'Something went wrong on our side. Please try again in a minute.' });
+    return reply(500, { error: 'Something didn’t work on our side. Please try again in a minute.' });
   }
 });
