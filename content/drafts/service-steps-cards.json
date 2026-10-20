@@ -1,0 +1,459 @@
+{
+ "unit": {
+  "id": "service-steps",
+  "track_id": "service",
+  "name": "Service steps (11-step sequence)",
+  "sort": 6
+ },
+ "source": "Sequence of service steps, 11-step document (from David, 20 Oct 2026)",
+ "cards": [
+  {
+   "n": 1,
+   "type": "order",
+   "roles": [
+    "server"
+   ],
+   "step": "steps 1 to 6",
+   "prompt": "Put the first six steps of the sequence of service in order.",
+   "answer": [
+    "Welcome",
+    "Taking the drink order",
+    "Serving drinks",
+    "Taking the food order",
+    "Serving food",
+    "Checking on guest satisfaction"
+   ],
+   "explanation": "Welcome, drink order, serve drinks, food order, serve food, then check the guests are enjoying their meal.",
+   "why": "The same order every time means nothing is missed, however busy it gets."
+  },
+  {
+   "n": 2,
+   "type": "order",
+   "roles": [
+    "server"
+   ],
+   "step": "steps 7 to 11",
+   "prompt": "Put the last five steps of the sequence of service in order.",
+   "answer": [
+    "Calling the main course",
+    "Clearing plates",
+    "Presenting the dessert menu",
+    "Presenting the check",
+    "Departing the guest"
+   ],
+   "explanation": "Call the mains, clear, present the dessert menu, present the check, then see the guests off.",
+   "why": "The end of the meal is what guests remember most, so it needs the same care as the start."
+  },
+  {
+   "n": 3,
+   "type": "scenario",
+   "roles": [
+    "server",
+    "host"
+   ],
+   "step": "step 1",
+   "prompt": "You reach a table and the guests are deep in conversation. What do you do?",
+   "options": [
+    "Wait a few seconds to catch their eye",
+    "Start your welcome so they know you're there",
+    "Come back once they've stopped talking",
+    "Wait for them to call you over"
+   ],
+   "answer": [
+    "Wait a few seconds to catch their eye"
+   ],
+   "explanation": "If the guests are talking, wait a few seconds to attract their attention. Never wait for a guest to approach you first.",
+   "why": "Guests feel noticed without being interrupted."
+  },
+  {
+   "n": 4,
+   "type": "mcq",
+   "roles": [
+    "server",
+    "host"
+   ],
+   "step": "step 1",
+   "prompt": "As you approach a table to introduce yourself, who do you make eye contact with?",
+   "options": [
+    "The host of the table",
+    "The guest facing you",
+    "Whoever looks ready to order",
+    "The oldest guest at the table"
+   ],
+   "answer": [
+    "The host of the table"
+   ],
+   "explanation": "Make eye contact with the host as you approach the table, then introduce yourself as soon as possible.",
+   "why": "The host is the person looking after the table's guests, so they should feel looked after first."
+  },
+  {
+   "n": 5,
+   "type": "multi",
+   "roles": [
+    "server",
+    "bar"
+   ],
+   "step": "step 2",
+   "prompt": "Entering a drinks order into Micros, what do you double-check? Pick all that apply.",
+   "options": [
+    "The table number",
+    "The number of guests",
+    "Any special requests",
+    "The guests' names",
+    "The price of each drink"
+   ],
+   "answer": [
+    "The table number",
+    "The number of guests",
+    "Any special requests"
+   ],
+   "explanation": "Double-check the table number, the number of guests, and that the order went in correctly with every special request.",
+   "why": "A mistyped table number sends the drinks to another table."
+  },
+  {
+   "n": 6,
+   "type": "mcq",
+   "roles": [
+    "server",
+    "runner",
+    "bar"
+   ],
+   "step": "step 3",
+   "prompt": "How do you pick up a glass to serve it?",
+   "options": [
+    "By the base or the stem",
+    "By the body, away from the rim",
+    "By the rim, so it stays steady",
+    "With a napkin around the bowl"
+   ],
+   "answer": [
+    "By the base or the stem"
+   ],
+   "explanation": "Pick up the glass by the base or stem, never the rim, with clean, dry hands and no fingerprints or lipstick marks on the glass.",
+   "why": "Guests drink from the rim, so it must stay untouched."
+  },
+  {
+   "n": 7,
+   "type": "mcq",
+   "roles": [
+    "server",
+    "runner",
+    "bar"
+   ],
+   "step": "step 3",
+   "prompt": "You arrive with a tray of drinks for a table. Who do you serve first?",
+   "options": [
+    "Ladies and older gentlemen",
+    "The host of the table",
+    "The guest who ordered first",
+    "Whoever is nearest to you"
+   ],
+   "answer": [
+    "Ladies and older gentlemen"
+   ],
+   "explanation": "Serve ladies and older gentlemen first, announcing each drink as you serve it.",
+   "why": "A consistent, courteous order is part of formal service."
+  },
+  {
+   "n": 8,
+   "type": "mcq",
+   "roles": [
+    "server",
+    "runner",
+    "bar"
+   ],
+   "step": "steps 3 and 5",
+   "prompt": "From which side of the guest do you serve drinks and food?",
+   "options": [
+    "The guest's right",
+    "The guest's left",
+    "Drinks from the right, food from the left",
+    "Food from the right, drinks from the left"
+   ],
+   "answer": [
+    "The guest's right"
+   ],
+   "explanation": "Announce and serve drinks from the right, and approach the guest from the right to serve food.",
+   "why": "Serving from one side every time means you never reach across a guest."
+  },
+  {
+   "n": 9,
+   "type": "mcq",
+   "roles": [
+    "server",
+    "runner",
+    "bar"
+   ],
+   "step": "step 3",
+   "prompt": "You've served everyone their drinks. What now?",
+   "options": [
+    "Step back and say \"Enjoy your drinks!\"",
+    "Ask if they're ready to order food",
+    "Leave quietly so you don't interrupt",
+    "Ask \"Is everything OK with your drinks?\""
+   ],
+   "answer": [
+    "Step back and say \"Enjoy your drinks!\""
+   ],
+   "explanation": "When everyone has been served, take a step back and say \"Enjoy your drinks!\"",
+   "why": "A small, warm close makes the moment feel finished."
+  },
+  {
+   "n": 10,
+   "type": "mcq",
+   "roles": [
+    "server"
+   ],
+   "step": "step 4",
+   "prompt": "What must you do before leaving the table with a food order?",
+   "options": [
+    "Repeat the order back to each guest",
+    "Read the whole order back to the host",
+    "Check it on the POS while at the table",
+    "Confirm the total with the host"
+   ],
+   "answer": [
+    "Repeat the order back to each guest"
+   ],
+   "explanation": "Repeat the order back to each guest with eye contact. You must be 100% sure the order is understood and recorded correctly before you leave.",
+   "why": "Repeating it back catches mistakes before the kitchen starts cooking."
+  },
+  {
+   "n": 11,
+   "type": "multi",
+   "roles": [
+    "server"
+   ],
+   "step": "step 4",
+   "allergen": true,
+   "prompt": "Taking the food order, what must you find out from your guests? Pick all that apply.",
+   "options": [
+    "Any allergies",
+    "Any dietary requirements",
+    "Their names",
+    "Their seating preference",
+    "How they'll pay"
+   ],
+   "answer": [
+    "Any allergies",
+    "Any dietary requirements"
+   ],
+   "explanation": "Collect all the information you need, such as allergies and dietary requirements, and explain dishes so guests know what they're ordering.",
+   "why": "An allergy missed at the order can't be fixed once the dish is cooked."
+  },
+  {
+   "n": 12,
+   "type": "mcq",
+   "roles": [
+    "server",
+    "runner"
+   ],
+   "step": "step 5",
+   "prompt": "What's the most plates you should carry at one time?",
+   "options": [
+    "3",
+    "2",
+    "4",
+    "As many as you can carry safely"
+   ],
+   "answer": [
+    "3"
+   ],
+   "explanation": "Never carry more than 3 plates at a time, and hold them straight so no sauce spills.",
+   "why": "Fewer plates means no spills and no dropped food at the table."
+  },
+  {
+   "n": 13,
+   "type": "mcq",
+   "roles": [
+    "server",
+    "runner"
+   ],
+   "step": "step 5",
+   "prompt": "You're about to serve a plate but the guest hasn't seen you. What do you say?",
+   "options": [
+    "\"May I?\"",
+    "\"Excuse me!\"",
+    "\"Here's your food\"",
+    "Nothing; wait until they notice you"
+   ],
+   "answer": [
+    "\"May I?\""
+   ],
+   "explanation": "Approach from the right, and if the guest doesn't see you, say \"May I?\"",
+   "why": "It avoids startling the guest or knocking into them."
+  },
+  {
+   "n": 14,
+   "type": "mcq",
+   "roles": [
+    "server",
+    "runner"
+   ],
+   "step": "step 5",
+   "prompt": "Serving sauces or condiments, what do you tell the guest?",
+   "options": [
+    "Name, ingredients and how spicy",
+    "Name, price and whether it's spicy",
+    "Just the name",
+    "Ingredients, but only if asked"
+   ],
+   "answer": [
+    "Name, ingredients and how spicy"
+   ],
+   "explanation": "Serve the sauces or condiments and explain what they are: name, ingredients and spiciness.",
+   "why": "Guests can't enjoy a sauce they're unsure about, especially if it's hot."
+  },
+  {
+   "n": 15,
+   "type": "mcq",
+   "roles": [
+    "server",
+    "runner"
+   ],
+   "step": "step 5",
+   "prompt": "Before taking plates to a table, what do you check them against?",
+   "options": [
+    "The captain order",
+    "The table plan",
+    "The menu descriptions",
+    "The guests' bill"
+   ],
+   "answer": [
+    "The captain order"
+   ],
+   "explanation": "Double-check the food against the captain order, make sure plates are clean of drips and fingerprints, and that you have the right condiments.",
+   "why": "Catching a missing or mixed-up dish at the pass saves the guest a wait."
+  },
+  {
+   "n": 16,
+   "type": "mcq",
+   "roles": [
+    "server"
+   ],
+   "step": "step 6",
+   "prompt": "How often must you check on each table's satisfaction during a meal?",
+   "options": [
+    "At least once",
+    "Only if they call you over",
+    "After every course, every time",
+    "Only when you clear plates"
+   ],
+   "answer": [
+    "At least once"
+   ],
+   "explanation": "Visit each table at least once during the meal to check the guests are enjoying their food and drinks.",
+   "why": "Guests who aren't happy often won't say so unless you ask."
+  },
+  {
+   "n": 17,
+   "type": "mcq",
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "step 6",
+   "prompt": "A guest complains about a dish. How should you see it?",
+   "options": [
+    "As a second chance to win them back",
+    "As something for the manager to handle",
+    "As a one-off to apologise for and move on",
+    "As feedback to pass to the kitchen later"
+   ],
+   "answer": [
+    "As a second chance to win them back"
+   ],
+   "explanation": "A guest who complains gives you a second chance, unlike guests who say nothing and never return, so do whatever it takes to recover them.",
+   "why": "A complaint handled well can win a guest for life."
+  },
+  {
+   "n": 18,
+   "type": "mcq",
+   "roles": [
+    "server"
+   ],
+   "step": "step 7",
+   "prompt": "How do you know when to call the main course?",
+   "options": [
+    "Watch how fast the table is eating",
+    "Once all the starter plates are cleared",
+    "As soon as the starters are served",
+    "When the guests ask for their mains"
+   ],
+   "answer": [
+    "Watch how fast the table is eating"
+   ],
+   "explanation": "Monitor the meal, estimate how fast the guests are eating, then go to the service station and send the mains away.",
+   "why": "Good timing means mains arrive just as guests are ready, not too soon or too late."
+  },
+  {
+   "n": 19,
+   "type": "mcq",
+   "roles": [
+    "server",
+    "runner"
+   ],
+   "step": "step 8",
+   "prompt": "Clearing a plate, how do you hold the cutlery?",
+   "options": [
+    "Fork handle to your thumb, thumb on it, knife slid under the fork",
+    "Knife handle to your thumb, thumb on it, fork slid under the knife",
+    "Fork and knife side by side, held under your fingers",
+    "Fork handle to your thumb, knife laid on top of the fork"
+   ],
+   "answer": [
+    "Fork handle to your thumb, thumb on it, knife slid under the fork"
+   ],
+   "explanation": "Turn the fork handle towards your thumb and hold it down with your thumb, then slide the knife underneath the fork so nothing slides around.",
+   "why": "Cutlery that can't move won't fall on a guest or the floor."
+  },
+  {
+   "n": 20,
+   "type": "scenario",
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "step 11",
+   "prompt": "Guests stand up to leave while you're in the middle of a task. What do you do?",
+   "options": [
+    "Pause to thank them and say goodbye",
+    "Finish your task, then wave as they go",
+    "Leave the farewell to the host at the door",
+    "Nod and smile, then carry on"
+   ],
+   "answer": [
+    "Pause to thank them and say goodbye"
+   ],
+   "explanation": "Even mid-task, pause briefly to thank the guests, get their feedback and say goodbye.",
+   "why": "The last moment is often the one guests remember."
+  },
+  {
+   "n": 21,
+   "type": "mcq",
+   "roles": [
+    "server",
+    "runner"
+   ],
+   "step": "step 11",
+   "prompt": "Guests have just left. Where do you check for anything they've forgotten?",
+   "options": [
+    "On the table, on the chairs and under the table",
+    "On the table and the chairs, and by the entrance",
+    "Under the table only",
+    "On the table only"
+   ],
+   "answer": [
+    "On the table, on the chairs and under the table"
+   ],
+   "explanation": "Check on top of the table, on the chairs and below the table so guests don't forget anything.",
+   "why": "Catching a phone or bag before the guest reaches their car saves a stressful trip back."
+  }
+ ]
+}
