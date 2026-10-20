@@ -1,7 +1,7 @@
 # Progress
 
-**Current phase:** 1, content studio, built on 16 October (evening). Waiting for David to try it, then the phase-1 report, export and release.
-**Last updated:** 16 October 2026, evening.
+**Current phase:** 2, staff app. Built and live on 20 October; waiting for David's phone test with test accounts.
+**Last updated:** 20 October 2026, afternoon.
 
 ## Done
 
@@ -41,15 +41,28 @@
 - 20 Oct: 40 new Level 2 selling cards drafted from David's Server Training Guide: Sales Techniques (migration 0013): Suggestive selling 15, Reading the guest 11 (suggestive track), Upselling 14 (upselling track). Examples use our real Arabian Ranches menu and prices instead of the guide's generic dishes. All in review; one (nut-allergy dessert) is an allergen card for the kitchen check. Card bank: 250 cards, 31 of them allergen cards. The guide PDF is in `content/sources/` on David's computer (PDFs stay out of the repository).
 - Screen test (headless browser, sample data): every screen loads, no errors, no sideways scrolling at 360 px.
 
+## Phase 2 so far (20 October)
+
+- David moved on to Phase 2, leaving the remaining review cards and the allergen kitchen check for later. Phase 1's report, export and release are still to do.
+- Card bank on 20 October, afternoon: 201 live (136 Level 1, 65 Level 2), 6 in review, 31 allergen cards waiting for the kitchen check, 12 retired.
+- Staff database and learning engine (migration 0014, applied 20 October): venues, staff, PIN records, activation codes, card states, sets, answers, coaching prompts, sign-offs, levels, rhythm pauses. The database grades every answer and moves cards between spacing boxes, so the phone can't change the rules.
+- Login function `staff-auth` on Supabase Edge Functions (activation with code, PIN login, lockout after 5 tries, obvious PINs refused, never says whether a staff number exists). Deployed 20 October with "Verify JWT" off.
+- Staff app at the site's front page: activate (code, privacy notice, PIN), log in, home, daily set with all five card types, "How sure were you?", feedback, set done, review my misses, my progress, readiness check, install help, privacy page. Installable, works on low signal (today's set kept on the phone, answers queued and sent when back online), test bar for test accounts (next day, reset).
+- Studio > Staff: add test accounts and print activation codes with a QR code. Real staff come in Phase 4 from the roster.
+- Tests: local copy, three test accounts over two simulated weeks plus privacy checks (55 checks passed); phone-width screen test (no sideways scrolling, buttons at least 44 px, no banned words); live database test of three days in a throwaway account, undone afterwards (misses came back next set, spacing right, other people's records and PIN hashes blocked).
+
 ## Next
 
-1. David reviews in the studio (filters: In review, Not allergen), track by track: the 21 new service-step cards, the 2 updated check-back and bill cards, and the 40 new selling cards (Suggestive selling and Upselling tracks).
-2. Phase-1 report, card export to `exports/`, and David publishes the `phase-1` release.
-3. Kitchen check of the 31 allergen cards (Arabian Ranches head chef or Gerard), from a one-page list. They stay hidden from staff until then.
-4. Gerard accepts the GitHub and Supabase invitations when he can (not blocking).
-5. Next cards once sources arrive: photo cards, payments and alcohol service SOPs, beer serves, coffee recipes, wine pairings.
+1. David's phone test (iPhone and Android): sign in to the studio, add three test accounts under Staff, activate them on phones, do sets, use "Next day" to watch cards come back and space out.
+2. Fix what the phone test finds; then the `phase-2` report and release.
+3. Still open from Phase 1: review of the last 6 cards, kitchen check of the 31 allergen cards, phase-1 report, export and release.
+4. Decisions still to confirm (defaults in use): weekly target 4 sets, level targets, what Level 3 earns, English only for version 1, the app's name. Privacy notice wording with counsel.
+5. Phase 3: the manager dashboard (and practical sign-offs, which Level 1 needs).
 
 ## Known issues
+
+- Netlify skipped one deploy on 20 October morning ("account credit usage exceeded"). Later deploys went through. Watch it; the paid plan is planned for Phase 4 anyway.
+- The site is behind Netlify team protection, so only signed-in Netlify team members can open it. On an iPhone, the app added to the home screen keeps its own cookies and may ask for the Netlify login again. Staff can only use it once protection is off (Phase 4).
 
 
 
