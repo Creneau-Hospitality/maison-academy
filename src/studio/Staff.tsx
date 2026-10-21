@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from 'react';
 import qrcode from 'qrcode-generator';
 import { supabase } from '../lib/supabase';
 import { parseCsv } from '../lib/csv';
+import { readXlsx } from '../lib/xlsx';
 import { fmtDate, ROLES } from '../lib/types';
 
 interface StaffRow {
@@ -87,7 +88,7 @@ export default function Staff() {
       <p className="label">Staff</p>
       <h1>Staff</h1>
       <p>Add people, import the roster, and print activation codes for pre-shift. Test accounts never count in a venue's figures.</p>
-      {!realAllowed && <p className="note cream">Before go-live, imports and new people are <strong>test accounts</strong>. Real staff can be added once the final privacy notice and the paid backup plan are in place (setting "real staff allowed").</p>}
+      {!realAllowed && <p className="note cream">Before go-live, imports and new people are <strong>test accounts</strong>. Real staff can be added once the go-live checklist is done (final privacy notice and shared owner mailbox) (setting "real staff allowed").</p>}
       {msg && <p className={'note ' + msg.kind}>{msg.text}</p>}
       {venues.length > 1 && (
         <label className="inline" style={{ marginBottom: 12 }}><span className="label">Venue</span>
@@ -170,6 +171,10 @@ const mapRole = (v: string) => { const s = v.toLowerCase().trim(); return ROLE_W
 const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
 function toMonth(v: string): string {
   const s = v.trim();
+  if (/^\d{5}(\.\d+)?$/.test(s)) {           // an Excel date (days since 30 Dec 1899)
+    const d = new Date(Date.UTC(1899, 11, 30) + Math.floor(Number(s)) * 86400000);
+    return d.getUTCFullYear() > 1990 && d.getUTCFullYear() < 2100 ? `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, '0')}` : '';
+  }
   let m = s.match(/^(\d{4})[-/.](\d{1,2})/); if (m) return `${m[1]}-${m[2].padStart(2, '0')}`;
   m = s.match(/^(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})/); if (m) return `${m[3]}-${m[2].padStart(2, '0')}`;          // day/month/year
   m = s.match(/^(\d{1,2})[- ]([A-Za-z]{3})[A-Za-z]*[- ,]*(\d{4})/);
@@ -183,7 +188,7 @@ const GUESS: [Field, RegExp][] = [
   ['last_name', /last.?name|surname|family/i],
   ['full_name', /^(full.?)?name$|employee.?name|staff.?name/i],
   ['role', /role|position|job|designation|title/i],
-  ['start', /start|join|hire|doj/i],
+  ['start', /^(?!.*(leave|cycle|accru|encash)).*(start|join|hire|doj)/i],   // not "Leave Cycle Start Date"
 ];
 const FIELD_LABEL: Record<Field, string> = {
   staff_number: 'Staff number', first_name: 'First name', last_name: 'Last name', full_name: 'Full name (if no first/last)',
@@ -194,6 +199,8 @@ function RosterImport({ venue, venueName, realAllowed, onDone }: { venue: string
   const [table, setTable] = useState<string[][] | null>(null);
   const [cols, setCols] = useState<Record<Field, number>>({ staff_number: -1, first_name: -1, last_name: -1, full_name: -1, role: -1, start: -1 });
   const [roles, setRoles] = useState<Record<number, string>>({});
+  const [names, setNames] = useState<Record<number, string>>({});
+  const [roleForRest, setRoleForRest] = useState('');
   const [asTest, setAsTest] = useState(true);
   const [markLeft, setMarkLeft] = useState(false);
   const [busy, setBusy] = useState(false);
@@ -201,12 +208,18 @@ function RosterImport({ venue, venueName, realAllowed, onDone }: { venue: string
 
   const read = async (f: File) => {
     setResult(null);
-    const t = parseCsv(await f.text()).filter((r) => r.some((c) => c.trim()));
-    if (t.length < 2) { setResult({ kind: 'blush', text: 'No rows found. Save the roster as CSV and try again.' }); return; }
-    const head = t[0].map((h) => h.trim());
+    let t: string[][];
+    try {
+      t = (/\.xlsx$/i.test(f.name) ? readXlsx(await f.arrayBuffer()) : parseCsv(await f.text())).filter((r) => r.some((c) => c.trim()));
+    } catch {
+      setResult({ kind: 'blush', text: 'This file couldn’t be read. Use the Excel (.xlsx) or CSV export.' }); return;
+    }
+    if (t.length < 2) { setResult({ kind: 'blush', text: 'No rows found under the headings.' }); return; }
+    t[0] = t[0].map((h) => h.replace(/\s+/g, ' ').trim());
+    const head = t[0];
     const next = { staff_number: -1, first_name: -1, last_name: -1, full_name: -1, role: -1, start: -1 } as Record<Field, number>;
     GUESS.forEach(([field, re]) => { next[field] = head.findIndex((h, i) => re.test(h) && !Object.values(next).includes(i)); });
-    setCols(next); setTable(t); setRoles({}); setAsTest(true);
+    setCols(next); setTable(t); setRoles({}); setNames({}); setRoleForRest(''); setAsTest(true);
   };
 
   const people = useMemo(() => {
@@ -218,11 +231,11 @@ function RosterImport({ venue, venueName, realAllowed, onDone }: { venue: string
         const parts = get('full_name').split(/\s+/).filter(Boolean);
         first = first || parts[0] || ''; last = last || (parts.length > 1 ? parts[parts.length - 1] : '');
       }
-      const role = roles[i] ?? mapRole(get('role'));
-      return { i, staff_number: get('staff_number'), first_name: first, last_initial: last.slice(0, 1).toUpperCase(),
+      const role = roles[i] ?? (mapRole(get('role')) || roleForRest);
+      return { i, staff_number: get('staff_number'), first_name: (names[i] ?? first).trim(), last_initial: last.slice(0, 1).toUpperCase(),
                role, raw_role: get('role'), start_month: toMonth(get('start')) };
     });
-  }, [table, cols, roles]);
+  }, [table, cols, roles, names, roleForRest]);
   const ready = people.filter((p) => p.staff_number && p.first_name && p.last_initial && p.role);
 
   const run = async () => {
@@ -242,8 +255,8 @@ function RosterImport({ venue, venueName, realAllowed, onDone }: { venue: string
   return (
     <div className="panel">
       <h3>Import the roster</h3>
-      <p className="info">Choose a CSV export of the roster (for example from Bayzat). It's read on this computer: only the staff number, first name, first letter of the last name, role and start month are sent. Nothing else in the file is stored.</p>
-      <input type="file" accept=".csv,text/csv" onChange={(e) => e.target.files?.[0] && void read(e.target.files[0])} />
+<p className="info">Choose the staff export (for example from Bayzat), as Excel or CSV. It's read on this computer: only the staff number, first name, first letter of the last name, role and start month are sent. Nothing else in the file is stored.</p>
+      <input type="file" accept=".xlsx,.csv,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" onChange={(e) => e.target.files?.[0] && void read(e.target.files[0])} />
       {result && <div className={'note ' + result.kind} style={{ marginTop: 12 }}>{result.text}
         {result.problems && <ul>{result.problems.slice(0, 30).map((p) => <li key={p.row}>Row {p.row + 1}: {p.reason}</li>)}</ul>}</div>}
       {table && (
@@ -257,12 +270,20 @@ function RosterImport({ venue, venueName, realAllowed, onDone }: { venue: string
                 </select></label>
             ))}
           </div>
+          <div className="row" style={{ alignItems: 'flex-end' }}>
+            <label className="field"><span className="label">Role for everyone without one</span>
+              <select value={roleForRest} onChange={(e) => setRoleForRest(e.target.value)}>
+                <option value="">(pick each one)</option>
+                {ROLES.map((r) => <option key={r} value={r}>{r}</option>)}
+              </select></label>
+            <p className="note-s" style={{ flex: 1, minWidth: 220 }}>Then change the few who differ. First names can be edited to the name used on the floor: it's how the app greets them.</p>
+          </div>
           <div className="scroll-x" style={{ maxHeight: 360, overflowY: 'auto', border: '1px solid var(--line)' }}>
             <table>
               <thead><tr><th>Row</th><th>Staff no.</th><th>First name</th><th>Initial</th><th>Role</th><th>Start</th></tr></thead>
               <tbody>{people.map((p) => (
                 <tr key={p.i} style={{ background: p.staff_number && p.first_name && p.last_initial && p.role ? undefined : 'var(--blush)' }}>
-                  <td className="note-s">{p.i + 2}</td><td>{p.staff_number || '–'}</td><td>{p.first_name || '–'}</td><td>{p.last_initial || '–'}</td>
+                  <td className="note-s">{p.i + 2}</td><td>{p.staff_number || '–'}</td><td><input value={p.first_name} onChange={(e) => setNames({ ...names, [p.i]: e.target.value.slice(0, 40) })} aria-label={`First name for row ${p.i + 2}`} style={{ minHeight: 36, padding: '4px 8px', width: 130 }} /></td><td>{p.last_initial || '–'}</td>
                   <td>
                     <select value={p.role} onChange={(e) => setRoles({ ...roles, [p.i]: e.target.value })} aria-label={`Role for row ${p.i + 2}`} style={{ minHeight: 36, padding: '4px 8px' }}>
                       <option value="">{p.raw_role ? `"${p.raw_role}": pick a role` : 'Pick a role'}</option>

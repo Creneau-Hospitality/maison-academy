@@ -77,9 +77,11 @@
 - 21 Oct: costs. Supabase and Netlify stay on free plans (David). Nightly encrypted backup set up on GitHub Actions instead of Supabase Pro, with a restore test; David added the two secrets; first backup and restore test passed on 21 October (all 24 tables restored with matching row counts, loaded as the postgres user, the way a real restore would be).
 - 21 Oct: the GitHub repository was found public and made private again (David approved and confirmed with his code). Nothing secret was ever in it.
 
+- 21 Oct: roster import checked against David's Bayzat export (headings only): now reads the Excel file directly, picks "Employee Id" as the staff number, ignores leave-cycle dates, sets one role for everyone, and lets first names be edited. Tested with a made-up file of the same layout.
+
 ## Next
 
-1. David: send the roster's column headings only (no names), the reminder time, and the venue's map point if the location check will ever be used.
+1. David: confirm staff know their Bayzat Employee Id (M-number); send the reminder time, and the venue's map point if the location check will ever be used.
 2. David: publish the `phase-3` release.
 3. Watch the nightly backup for its first few nights (GitHub > Actions > Database backup).
 4. Go-live checklist (see `reports/2026-10-21-pilot-checklist.md`): shared mailbox as owner (Netlify: the account's email); no paid plans; final privacy notice from counsel; Netlify protection off; remove the demo venue; turn on go-live; reminders "all"; soft test with 3 to 5 staff in mid-December.

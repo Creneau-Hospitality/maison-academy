@@ -29,7 +29,7 @@ export default function Settings() {
       <h1>Settings</h1>
       <p>Change how the app behaves, no code needed. Values in quotes are words (for example "on"); the rest are numbers or true/false.</p>
       <ul className="info">
-        <li><strong>real staff allowed</strong>: the go-live switch. Turn on only once the final privacy notice is approved and Supabase Pro backups are on.</li>
+        <li><strong>real staff allowed</strong>: the go-live switch. Turn on only once the final privacy notice is approved and the go-live checklist is done (nightly backups are already running).</li>
         <li><strong>reminders mode</strong>: "off", "test" (test accounts only) or "all". <strong>reminder time</strong>: for example "10:00".</li>
         <li><strong>location check</strong>: "off" or "on". It needs the venue's map point below, and a line in the privacy notice, before it's switched on.</li>
       </ul>

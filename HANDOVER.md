@@ -48,7 +48,7 @@ How Maison Academy fits together and where everything lives. Names only, never p
   - `reminders_mode`: "off", "test" (test accounts only) or "all". Now "test".
   - `reminder_time`: "10:00" (venue time).
   - `location_check`: "off" or "on". Now **off**. `location_radius_m`: 500. Set each venue's map point first (Settings > Venue map points).
-- **Roster import:** Studio > Staff > Import roster (CSV). Database function `import_staff`; `issue_codes` makes codes in bulk for the activation sheet.
+- **Roster import:** Studio > Staff > Import roster (Excel .xlsx or CSV, read in the browser by `src/lib/xlsx.ts` / `parseCsv`; staff number = Bayzat "Employee Id"). Database function `import_staff`; `issue_codes` makes codes in bulk for the activation sheet.
 - **Reminders:** `supabase/functions/reminders/index.ts`, deployed as the Edge Function `reminders` with **Verify JWT turned off** (the scheduler calls it without a login). To redeploy: Supabase > Edge Functions > reminders > Code, paste, Deploy; check Settings still shows Verify JWT off. It makes its own push keys on the first call (kept in `push_keys`, server-only). The schedule (`maison-reminders` in `cron.job`) calls it every 15 minutes; the database decides who is due (`svc_due_reminders`), at most one a day per person. To pause, set `reminders_mode` to "off". Staff turn reminders on from Home; test accounts get a "Send test reminder" button.
 - **Location check:** `start_daily_set` and `start_readiness` take the phone's position only when the check is on, compare it with the venue's point (`_check_on_site`), and keep only `sets.on_site`.
 - **Error log:** `client_errors`, written by `log_client_error` from `src/lib/errors.ts`; the latest show in Settings > Recent app errors. Kept 90 days.
