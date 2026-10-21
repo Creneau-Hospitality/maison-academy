@@ -4,7 +4,7 @@
 **Written:** 21 October 2026
 **Soft test:** 3 to 5 staff, mid-December. **Pilot:** Arabian Ranches, from Sunday 3 January 2027.
 
-Everything in the app is built. What's left is mostly accounts, money and paperwork. Do the steps in order; Claude does the ones marked *Claude*.
+Everything in the app is built. What's left is mostly accounts and paperwork. Running cost: AED 0 a month. Do the steps in order; Claude does the ones marked *Claude*.
 
 ## 1. Send Claude three small things
 
@@ -15,9 +15,11 @@ Everything in the app is built. What's left is mostly accounts, money and paperw
 ## 2. Accounts (before any real staff data)
 
 - [ ] Create the shared Creneau mailbox (for example academy@...).
-- [ ] Add it as an **owner** on GitHub, Supabase and Netlify. Gerard accepts his invitations.
-- [ ] **Supabase Pro**: USD 25 a month (about AED 92). Gives daily backups. *Your approval and card.*
-- [ ] **Netlify Pro**: USD 20 a month (about AED 73). Allows more than one owner and removes the build-credit limit. *Your approval and card.*
+- [ ] Add it as an **owner** on GitHub and Supabase. Gerard accepts his invitations.
+- [ ] Netlify allows one owner on the free plan: change the Netlify account's email to the shared mailbox.
+- [x] **No paid plans** (decided 21 October): Supabase and Netlify stay free. Backups run nightly from GitHub instead of Supabase Pro.
+- [ ] Add the two backup secrets in GitHub (`SUPABASE_DB_PASSWORD`, `BACKUP_PASSPHRASE`); keep the passphrase in your password manager and give Gerard a copy. *Claude* runs the first backup and restore test.
+- [ ] Check the GitHub repository still shows **Private** (it was found public on 21 October and fixed).
 
 ## 3. Privacy
 

@@ -92,8 +92,8 @@ All three are set up on David's email for now. The shared Creneau mailbox is add
 | Account | Name | Owners | Notes |
 | --- | --- | --- | --- |
 | GitHub | Organisation `Creneau-Hospitality`, private repository `maison-academy` | David (David-SWR); Gerard invited as Owner | The Claude GitHub app is installed on this one repository so Claude can push. |
-| Supabase | Organisation `Creneau Hospitality`, project `maison-academy` | David; Gerard invited as Owner | Project URL `https://dxipjlkledacoabdhrdg.supabase.co`. Region Central EU (Frankfurt). Free plan; move to Pro before real staff data. The database password is in David's password manager, never in files. |
-| Netlify | Team `Creneau Hospitality`, project `maison-academy`, https://maison-academy.netlify.app | David (only owner on the Free plan) | Builds from `main` on GitHub (`netlify.toml`: `npm run build`, publishes `dist`). Linked through the Netlify GitHub app, which has access to this one repository (set up by David on 16 October after the repository went private; deploys between 20:56 and 22:15 failed with "Unsupported repository type" until then). Team protection is on: only signed-in team members can view. Turn it off in Phase 4. Move to Pro and add Gerard and the shared mailbox as owners in Phase 4. |
+| Supabase | Organisation `Creneau Hospitality`, project `maison-academy` | David; Gerard invited as Owner | Project URL `https://dxipjlkledacoabdhrdg.supabase.co`. Region Central EU (Frankfurt). Free plan, kept for the pilot (decision 21 October); backed up nightly by GitHub Actions (see "Database backups"). The database password is in David's password manager, never in files. |
+| Netlify | Team `Creneau Hospitality`, project `maison-academy`, https://maison-academy.netlify.app | David (only owner on the Free plan) | Builds from `main` on GitHub (`netlify.toml`: `npm run build`, publishes `dist`). Linked through the Netlify GitHub app, which has access to this one repository (set up by David on 16 October after the repository went private; deploys between 20:56 and 22:15 failed with "Unsupported repository type" until then). Team protection is on: only signed-in team members can view. Turn it off before the soft test. Stays on Free; make the shared mailbox the owner (decision 21 October). |
 
 ### Studio logins
 
@@ -107,6 +107,18 @@ To add a reviewer or the kitchen checker: invite them in Supabase (Authenticatio
 
 - The Supabase **publishable** key is in `src/lib/supabase.ts`. It is meant to be public: every visitor's browser receives it. Access is controlled by row-level security in the database.
 - The **secret / service-role** key and the database password never go in the repository, in front-end code or in chat. When server code needs them they go in Netlify or Supabase environment variables.
+
+## Database backups
+
+- **What:** `.github/workflows/backup.yml` on GitHub Actions. Every night at 03:00 Dubai it dumps roles, structure and data (Supabase's own method, `supabase db dump`), encrypts the three files with `BACKUP_PASSPHRASE` (gpg, AES-256) and keeps them as a download on that run's page: 30 days, Sunday copies 90 days. Nothing goes into the repository.
+- **Secrets** (GitHub > repository > Settings > Secrets and variables > Actions): `SUPABASE_DB_PASSWORD` and `BACKUP_PASSPHRASE`. Both live in David's password manager. Lose the passphrase and the backups can't be opened.
+- **Check it's working:** GitHub > Actions > Database backup: a green tick every morning. A red cross means GitHub emails the owner; look at the step that failed.
+- **Restore test:** "Run workflow" with "Also test restoring the backup" ticked (and automatically on the 1st of each month) loads the backup into a throwaway local Supabase and compares row counts table by table.
+- **Restore for real** (developer, about 30 minutes):
+  1. Download the backup from the run's page and decrypt it: `gpg -d maison-backup-....tar.gz.gpg | tar xzf -` (asks for the passphrase).
+  2. Into a new or emptied Supabase project, from a computer with Postgres 17's `psql`: `psql --single-transaction -v ON_ERROR_STOP=1 -f roles.sql -f schema.sql -c 'SET session_replication_role = replica' -f data.sql -d "<new project's connection string>"`.
+  3. Redeploy the two Edge Functions (`staff-auth`, `reminders`, Verify JWT off), run `0018_reminder_schedule.sql` (the schedule isn't in the backup), and point the app at the new project if it changed (`src/lib/supabase.ts`).
+- **Connection:** the job uses the session pooler (`aws-0-eu-west-1.pooler.supabase.com`, as shown in Supabase > Connect), because GitHub's machines can't reach the direct address (IPv6 only on the Free plan).
 
 ## Deploy, restore, import
 
