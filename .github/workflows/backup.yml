@@ -1,0 +1,160 @@
+# Maison Academy · nightly database backup (free alternative to Supabase Pro backups)
+# Copyright © 2026 Creneau Hospitality. All rights reserved.
+#
+# Every night at 03:00 Dubai time this copies the whole database (roles,
+# structure and data, the way Supabase's own guide does it), encrypts it with
+# the BACKUP_PASSPHRASE and keeps it as a download on the run's page:
+# 30 days for nightly copies, 90 days for Sunday copies.
+# Nothing is ever written into the repository itself.
+#
+# Two repository secrets are needed (Settings > Secrets and variables > Actions):
+#   SUPABASE_DB_PASSWORD  the database password (from the password manager)
+#   BACKUP_PASSPHRASE     a long passphrase kept in the password manager; without it a backup can't be opened
+#
+# "Run workflow" by hand runs a backup now. Tick "restore test" to also load
+# the backup into a throwaway local Supabase and count the rows, which shows
+# the backup can really be restored. The restore test also runs on the 1st of
+# each month. See HANDOVER.md for how to restore for real.
+
+name: Database backup
+
+on:
+  schedule:
+    - cron: '0 23 * * *'    # nightly backup, 23:00 UTC = 03:00 Dubai
+    - cron: '30 23 1 * *'   # monthly backup + restore test, 1st of the month
+  workflow_dispatch:
+    inputs:
+      restore_test:
+        description: 'Also test restoring the backup'
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: db-backup
+  cancel-in-progress: false
+
+env:
+  DB_HOST: aws-0-eu-west-1.pooler.supabase.com   # session pooler (GitHub runners have no IPv6 for the direct address)
+  DB_USER: postgres.dxipjlkledacoabdhrdg
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      name: ${{ steps.pack.outputs.name }}
+    steps:
+      - name: Check the secrets are set
+        env:
+          PW: ${{ secrets.SUPABASE_DB_PASSWORD }}
+          PP: ${{ secrets.BACKUP_PASSPHRASE }}
+        run: |
+          [ -n "$PW" ] || { echo "::error::The SUPABASE_DB_PASSWORD secret is missing."; exit 1; }
+          [ "${#PP}" -ge 16 ] || { echo "::error::The BACKUP_PASSPHRASE secret is missing or shorter than 16 characters."; exit 1; }
+
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+
+      - name: Copy the database
+        env:
+          PW: ${{ secrets.SUPABASE_DB_PASSWORD }}
+        run: |
+          set -euo pipefail
+          ENC=$(python3 -c 'import os, urllib.parse; print(urllib.parse.quote(os.environ["PW"], safe=""))')
+          echo "::add-mask::$ENC"
+          URL="postgresql://${DB_USER}:${ENC}@${DB_HOST}:5432/postgres"
+          mkdir -p "$RUNNER_TEMP/b" && cd "$RUNNER_TEMP/b"
+          supabase db dump --db-url "$URL" -f roles.sql --role-only
+          supabase db dump --db-url "$URL" -f schema.sql
+          supabase db dump --db-url "$URL" -f data.sql --data-only --use-copy
+          ls -l
+
+      - name: Check the copy looks complete (row counts only, no content)
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP/b"
+          awk '/^COPY /{t=$2; n=0; inside=1; next} inside && /^\\\.$/{print t, n; inside=0; next} inside{n++}' data.sql > counts.txt
+          grep -E '^"?(public|auth)"?\.' counts.txt | sort || true
+          for t in cards card_versions settings; do   # these are never empty
+            grep -Eq "^\"?public\"?\.\"?$t\"? [1-9]" counts.txt || { echo "::error::Table $t is missing or empty in the backup."; exit 1; }
+          done
+          for t in staff events card_state signoffs; do   # these may be empty, but must be there
+            grep -Eq "^\"?public\"?\.\"?$t\"? [0-9]" counts.txt || { echo "::error::Table $t is missing from the backup."; exit 1; }
+          done
+
+      - name: Encrypt
+        id: pack
+        env:
+          PP: ${{ secrets.BACKUP_PASSPHRASE }}
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP/b"
+          NAME="maison-backup-$(date -u +%Y-%m-%d-%H%M)"
+          tar czf - roles.sql schema.sql data.sql counts.txt \
+            | gpg --batch --yes --pinentry-mode loopback --passphrase-fd 3 \
+                  --symmetric --cipher-algo AES256 -o "$RUNNER_TEMP/$NAME.tar.gz.gpg" 3<<<"$PP"
+          shred -u roles.sql schema.sql data.sql
+          echo "name=$NAME" >> "$GITHUB_OUTPUT"
+          echo "days=$([ "$(date -u +%u)" = 6 ] && echo 90 || echo 30)" >> "$GITHUB_OUTPUT"   # 23:00 UTC Saturday = Sunday morning in Dubai
+          ls -l "$RUNNER_TEMP"/*.gpg
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.pack.outputs.name }}
+          path: ${{ runner.temp }}/${{ steps.pack.outputs.name }}.tar.gz.gpg
+          retention-days: ${{ steps.pack.outputs.days }}
+          if-no-files-found: error
+          compression-level: 0
+
+  restore-test:
+    needs: backup
+    if: (github.event_name == 'workflow_dispatch' && inputs.restore_test) || (github.event_name == 'schedule' && github.event.schedule == '30 23 1 * *')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: ${{ needs.backup.outputs.name }}
+          path: ${{ runner.temp }}/in
+
+      - name: Decrypt
+        env:
+          PP: ${{ secrets.BACKUP_PASSPHRASE }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/r" && cd "$RUNNER_TEMP/r"
+          gpg --batch --pinentry-mode loopback --passphrase-fd 3 -d "$RUNNER_TEMP"/in/*.gpg 3<<<"$PP" | tar xzf -
+          ls -l
+
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+
+      - name: Start a throwaway local Supabase
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/restoretest" && cd "$RUNNER_TEMP/restoretest"
+          supabase init --force >/dev/null
+          sed -i 's/^major_version = .*/major_version = 17/' supabase/config.toml
+          supabase start -x realtime,storage-api,imgproxy,kong,mailpit,postgrest,postgres-meta,studio,edge-runtime,logflare,vector,supavisor
+
+      - name: Restore into it and compare row counts
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP/r"
+          DB=$(docker ps --filter name=supabase_db_ --format '{{.Names}}' | head -1)
+          { cat roles.sql schema.sql; echo 'SET session_replication_role = replica;'; cat data.sql; } \
+            | docker exec -i "$DB" psql -U postgres -d postgres --single-transaction -v ON_ERROR_STOP=1 -q >/dev/null
+          echo "Restored. Checking row counts against the backup:"
+          bad=0
+          while read -r t n; do
+            case "$t" in public.*|\"public\".*) ;; *) continue ;; esac
+            got=$(docker exec -i "$DB" psql -U postgres -d postgres -tAc "select count(*) from $t")
+            if [ "$got" = "$n" ]; then echo "  ok   $t $n"; else echo "  DIFF $t backup=$n restored=$got"; bad=1; fi
+          done < counts.txt
+          [ "$bad" = 0 ] || { echo "::error::Restored row counts differ from the backup."; exit 1; }
+          echo "Restore test passed."
