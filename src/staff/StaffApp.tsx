@@ -3,7 +3,8 @@
 import { useCallback, useEffect, useState } from 'react';
 import { linkProps, navigate } from '../lib/router';
 import {
-  activate, AuthProblem, checkCode, flush, login, NeedLogin, Offline, queued, rpc, signOut, staffDb, store,
+  activate, AuthProblem, checkCode, disableReminders, enableReminders, flush, isIos, isStandalone, login, NeedLogin, Offline,
+  pushSupported, queued, rpc, sendTestReminder, signOut, staffDb, store,
   type HomeData,
 } from './api';
 import Practice, { RhythmLine, TeamLine } from './Practice';
@@ -207,8 +208,9 @@ function Home({ onNeedLogin }: { onNeedLogin: () => void }) {
       setPending(queued().length);
       const h = await rpc<HomeData>('staff_home');
       setHome(h); setOffline(false); store.set('ma-home', h);
-      // Keep today's set on the phone, so it still opens on low signal.
-      if (h.cards_available && !h.set_today?.finished) {
+      // Keep today's set on the phone, so it still opens on low signal
+      // (not when the location check is on: the set starts at the venue).
+      if (h.cards_available && !h.set_today?.finished && !h.location_required) {
         rpc('start_daily_set').then((s) => store.set('ma-set', s)).catch(() => {});
       }
     } catch (e) {
@@ -244,6 +246,8 @@ function Home({ onNeedLogin }: { onNeedLogin: () => void }) {
           ? <div className="panel done-panel"><span className="label">Today</span><p className="big">Today's set is done.</p><p className="info">See you next shift.</p></div>
           : <p className="note cream">No cards are ready for you yet. Check back soon.</p>}
 
+      <Reminders home={home} />
+
       <RhythmLine r={home.rhythm} />
 
       <button className="panel level-link" onClick={() => navigate('/progress')}>
@@ -268,6 +272,54 @@ function Home({ onNeedLogin }: { onNeedLogin: () => void }) {
       <p className="center info footer-links">
         <a {...linkProps('/install')}>Add to home screen</a> · <a {...linkProps('/privacy')}>Privacy</a> · <button className="text" onClick={() => void signOut()}>Log out</button>
       </p>
+    </div>
+  );
+}
+
+// Reminders: offered after the first set is done (brief section 10), at most one a day.
+function Reminders({ home }: { home: HomeData }) {
+  const r = home.reminders;
+  const [state, setState] = useState<'idle' | 'busy' | 'on' | 'off'>(r && r.subscriptions > 0 ? 'on' : 'idle');
+  const [msg, setMsg] = useState('');
+  const [dismissed, setDismissed] = useState(store.get('ma-reminder-dismissed', false));
+  if (!r?.available || r.sets_done < 1) return null;
+  const perm = pushSupported() ? Notification.permission : 'unsupported';
+  const go = async (fn: () => Promise<void | string>, next: 'on' | 'off') => {
+    setState('busy'); setMsg('');
+    try { const t = await fn(); setState(next); if (typeof t === 'string') setMsg(t); }
+    catch (e) { setMsg((e as Error).message); setState(next === 'on' ? 'idle' : 'on'); }
+  };
+  if (state === 'on' || state === 'busy' && r.subscriptions > 0) {
+    return home.test ? (
+      <div className="panel">
+        <span className="label">Reminders on · {r.time} on days you haven't practised</span>
+        <div className="actions" style={{ marginTop: 8 }}>
+          <button className="small outline" onClick={() => void go(sendTestReminder, 'on')}>Send a test reminder</button>
+          <button className="small text" onClick={() => void go(disableReminders, 'off')}>Turn off</button>
+        </div>
+        {msg && <p className="info">{msg}</p>}
+      </div>
+    ) : null;
+  }
+  if (dismissed || perm === 'denied') return null;
+  if (perm === 'unsupported' || (isIos() && !isStandalone())) {
+    return isIos() && !isStandalone() ? (
+      <div className="panel">
+        <span className="label">Reminders</span>
+        <p className="info">To get a short reminder before your shift, first add Maison Academy to your home screen, then open it from there.</p>
+        <a className="btn outline small" {...linkProps('/install')}>How to add it</a>
+      </div>
+    ) : null;
+  }
+  return (
+    <div className="panel">
+      <span className="label">Reminders</span>
+      <p>Get one short reminder at {r.time} on days you haven't done your set? None once your weekly target is met.</p>
+      <div className="actions">
+        <button className="small" disabled={state === 'busy'} onClick={() => void go(enableReminders, 'on')}>Yes, remind me</button>
+        <button className="small text" onClick={() => { store.set('ma-reminder-dismissed', true); setDismissed(true); }}>Not now</button>
+      </div>
+      {msg && <p className="info">{msg}</p>}
     </div>
   );
 }

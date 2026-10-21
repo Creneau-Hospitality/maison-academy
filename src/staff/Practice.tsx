@@ -4,12 +4,12 @@ import { useEffect, useMemo, useState } from 'react';
 import { navigate } from '../lib/router';
 import { shuffled } from '../lib/types';
 import {
-  enqueue, flush, isRight, newEventId, NeedLogin, Offline, queued, rpc, store,
+  enqueue, flush, getPosition, isRight, LocationProblem, locationMessage, newEventId, NeedLogin, Offline, queued, rpc, store,
   type HomeData, type PracticeSet, type SetResult, type StaffCard,
 } from './api';
 
 type Mode = 'daily' | 'readiness' | 'misses';
-type Phase = 'loading' | 'card' | 'feedback' | 'done' | 'empty' | 'offline';
+type Phase = 'loading' | 'card' | 'feedback' | 'done' | 'empty' | 'offline' | 'location';
 
 
 export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogin: () => void }) {
@@ -21,6 +21,8 @@ export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogi
   const [last, setLast] = useState<{ right: boolean; chosen: string[] } | null>(null);
   const [summary, setSummary] = useState<SetResult | null>(null);
   const [savedOffline, setSavedOffline] = useState(false);
+  const [placeMsg, setPlaceMsg] = useState('');
+  const [attempt, setAttempt] = useState(0);
 
   useEffect(() => {
     let live = true;
@@ -33,11 +35,11 @@ export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogi
           catch (e) { if (e instanceof Offline) list = store.get<StaffCard[]>('ma-misses', []); else throw e; }
           data = { set: null, cards: list, answered: [] };
         } else if (mode === 'readiness') {
-          data = await rpc<PracticeSet>('start_readiness');
+          data = await rpc<PracticeSet>('start_readiness', await whereAmI());
         } else {
           try {
             await flush();
-            data = await rpc<PracticeSet>('start_daily_set');
+            data = await rpc<PracticeSet>('start_daily_set', await whereAmI());
             store.set('ma-set', data);
           } catch (e) {
             if (!(e instanceof Offline)) throw e;
@@ -57,14 +59,23 @@ export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogi
         if (data.set?.finished || (data.set && todo.length === 0 && data.cards.length > 0)) { await finish(data.set); return; }
         setPhase(todo.length ? 'card' : 'empty');
       } catch (e) {
-        if (e instanceof NeedLogin) onNeedLogin();
+        const home = store.get<HomeData | null>('ma-home', null);
+        const place = e instanceof LocationProblem ? e.message : locationMessage(e, home?.team.venue ?? '');
+        if (place) { setPlaceMsg(place); setPhase('location'); }
+        else if (e instanceof NeedLogin) onNeedLogin();
         else if (e instanceof Offline) setPhase('offline');
         else { console.error(e); setPhase('offline'); }
       }
     })();
     return () => { live = false; };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mode]);
+  }, [mode, attempt]);
+
+  // Only when the location check is switched on for this venue.
+  async function whereAmI() {
+    const home = store.get<HomeData | null>('ma-home', null);
+    return home?.location_required ? await getPosition() : {};
+  }
 
   async function finish(s: PracticeSet['set']) {
     if (mode === 'misses' || !s) { setPhase('done'); return; }
@@ -100,6 +111,13 @@ export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogi
     <Shell title={title}>
       <p className="note cream">You're offline, and this hasn't been saved on your phone yet. Connect to Wi-Fi or mobile data and try again.</p>
       <button className="wide" onClick={() => navigate('/')}>Back to home</button>
+    </Shell>
+  );
+  if (phase === 'location') return (
+    <Shell title={title}>
+      <p className="note cream">{placeMsg}</p>
+      <button className="wide" onClick={() => { setPhase('loading'); setAttempt(attempt + 1); }}>Try again</button>
+      <button className="wide outline" onClick={() => navigate('/')}>Back to home</button>
     </Shell>
   );
   if (phase === 'empty') return (

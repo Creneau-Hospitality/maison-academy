@@ -3,6 +3,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles.css';
 import App from './App';
+import { installErrorLog } from './lib/errors';
+import { supabase } from './lib/supabase';
+import { staffDb } from './staff/api';
+
+installErrorLog(location.pathname.startsWith('/studio') ? 'studio' : 'staff',
+  () => (location.pathname.startsWith('/studio') ? supabase : staffDb));
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

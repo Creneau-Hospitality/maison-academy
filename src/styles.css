@@ -392,3 +392,19 @@ ul.picked { margin: 0 0 12px; padding-left: 18px; font-size: 14px; }
 .pick-list { max-height: 360px; overflow: auto; border: 1px solid var(--line); background: var(--white); padding: 4px 10px; }
 .check.pick { display: flex; align-items: flex-start; gap: 8px; padding: 6px 0; border-bottom: 1px solid var(--line); min-height: 44px; }
 .grid + .block, .block + .grid { margin-top: 16px; }
+
+/* Printable activation sheet */
+.sheet { display: grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 12px; }
+.act-card { background: var(--white); border: 1px dashed var(--olive); padding: 14px; break-inside: avoid; page-break-inside: avoid; }
+.act-top { border-bottom: 1px solid var(--line); padding-bottom: 6px; margin-bottom: 10px; }
+.act-body { display: grid; grid-template-columns: 130px 1fr; gap: 14px; align-items: center; }
+.act-body .qr { width: 130px; height: 130px; }
+.act-body .qr svg { width: 100%; height: 100%; display: block; }
+.act-name { font: 400 24px/1.1 var(--display); text-transform: uppercase; color: var(--forest); }
+.act-card .code { font: 500 24px/1.2 var(--sans); letter-spacing: 3px; color: var(--forest); margin: 8px 0; }
+@media print {
+  .sheet { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .act-card { padding: 10px; }
+  @page { size: A4; margin: 10mm; }
+  .sheet.print-area { right: 0; padding: 0; }
+}

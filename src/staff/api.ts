@@ -31,6 +31,8 @@ export interface HomeData {
   level1_pct: number; today: string; test: { offset: number } | null;
   set_today: { id: string; finished: boolean; total: number; answered: number } | null;
   cards_available: boolean; misses: number; rhythm: Rhythm; team: Team;
+  location_required?: boolean;
+  reminders?: { available: boolean; time: string; subscriptions: number; sets_done: number };
 }
 export interface SetResult {
   kind: 'daily' | 'readiness'; learned: number; strengthened: number; practised: number;
@@ -152,4 +154,71 @@ export function newEventId(): string {
   b[6] = (b[6] & 0x0f) | 0x40; b[8] = (b[8] & 0x3f) | 0x80;
   const h = [...b].map((x) => x.toString(16).padStart(2, '0')).join('');
   return `${h.slice(0, 8)}-${h.slice(8, 12)}-${h.slice(12, 16)}-${h.slice(16, 20)}-${h.slice(20)}`;
+}
+
+// --- Location check (only when switched on for the venue) ----------------------
+export class LocationProblem extends Error {}
+export function getPosition(): Promise<{ p_lat: number; p_lng: number; p_accuracy: number }> {
+  return new Promise((resolve, reject) => {
+    if (!('geolocation' in navigator)) { reject(new LocationProblem("This phone can't share its location, so the set can't start here.")); return; }
+    navigator.geolocation.getCurrentPosition(
+      (pos) => resolve({ p_lat: pos.coords.latitude, p_lng: pos.coords.longitude, p_accuracy: pos.coords.accuracy }),
+      (err) => reject(new LocationProblem(err.code === err.PERMISSION_DENIED
+        ? "Sets are done at work, so Maison Academy needs your location to start one. Allow location for this site in your phone's settings, then try again."
+        : "Your phone couldn't find its location. Move near a window for a moment, then try again.")),
+      { enableHighAccuracy: true, timeout: 15000, maximumAge: 60000 });
+  });
+}
+/** Turn the server's location answers into plain words. */
+export function locationMessage(e: unknown, venue: string): string | null {
+  const m = (e as Error)?.message ?? '';
+  if (/location_needed/.test(m)) return 'Sets are done at work, so Maison Academy needs your location to start one. Please allow it and try again.';
+  const far = m.match(/not_on_site:(\d+)/);
+  if (far) {
+    const d = Number(far[1]);
+    return `Sets can be started at ${venue || 'the venue'}. Your phone says you're about ${d >= 1000 ? (d / 1000).toFixed(1) + ' km' : d + ' m'} away. Try again when you're at work.`;
+  }
+  return null;
+}
+
+// --- Reminders by web push ---------------------------------------------------------
+export function pushSupported() {
+  return typeof window !== 'undefined' && 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
+}
+export const isStandalone = () =>
+  window.matchMedia?.('(display-mode: standalone)').matches || (navigator as unknown as { standalone?: boolean }).standalone === true;
+export const isIos = () => /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+function fromB64u(s: string): Uint8Array {
+  const p = s.replace(/-/g, '+').replace(/_/g, '/') + '==='.slice((s.length + 3) % 4);
+  return Uint8Array.from(atob(p), (c) => c.charCodeAt(0));
+}
+
+export async function enableReminders(): Promise<void> {
+  if (!pushSupported()) throw new Error("This phone can't show reminders from the browser.");
+  const perm = await Notification.requestPermission();
+  if (perm !== 'granted') throw new Error('Reminders are off. You can turn them on later in your phone\'s settings for this site.');
+  const res = await fetch(`${url}/functions/v1/reminders`, { headers: { apikey: key } });
+  const { public_key } = await res.json();
+  const reg = await navigator.serviceWorker.ready;
+  const sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: fromB64u(public_key) });
+  const j = sub.toJSON() as { endpoint: string; keys: { p256dh: string; auth: string } };
+  await rpc('save_push_subscription', { p_endpoint: j.endpoint, p_p256dh: j.keys.p256dh, p_auth: j.keys.auth });
+}
+
+export async function disableReminders(): Promise<void> {
+  const reg = await navigator.serviceWorker.ready;
+  const sub = await reg.pushManager.getSubscription();
+  if (sub) { await rpc('remove_push_subscription', { p_endpoint: sub.endpoint }).catch(() => {}); await sub.unsubscribe(); }
+}
+
+export async function sendTestReminder(): Promise<string> {
+  const { data } = await staffDb.auth.getSession();
+  const res = await fetch(`${url}/functions/v1/reminders`, {
+    method: 'POST', headers: { 'Content-Type': 'application/json', apikey: key, Authorization: `Bearer ${data.session?.access_token ?? ''}` },
+    body: JSON.stringify({ action: 'test' }),
+  });
+  const j = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(j.error || 'Could not send a test reminder.');
+  return j.sent ? 'Test reminder sent. It should arrive in a few seconds.' : 'No reminder could be sent to this phone.';
 }
