@@ -147,8 +147,12 @@ jobs:
           set -euo pipefail
           cd "$RUNNER_TEMP/r"
           DB=$(docker ps --filter name=supabase_db_ --format '{{.Names}}' | head -1)
-          { cat roles.sql schema.sql; echo 'SET session_replication_role = replica;'; cat data.sql; } \
-            | docker exec -i "$DB" psql -U postgres -d postgres --single-transaction -v ON_ERROR_STOP=1 -q >/dev/null
+          # Settings Supabase manages itself (logging) can't be set by the postgres user; skip them, as in a real restore.
+          echo "Skipped from roles.sql:"; grep -E '^ALTER ROLE .* SET "?log_' roles.sql || echo "  (nothing)"
+          grep -vE '^ALTER ROLE .* SET "?log_' roles.sql > roles-restore.sql
+          # VERBOSITY=terse keeps row content out of any error message.
+          { cat roles-restore.sql schema.sql; echo 'SET session_replication_role = replica;'; cat data.sql; } \
+            | docker exec -i "$DB" psql -U postgres -d postgres --single-transaction -v ON_ERROR_STOP=1 -v VERBOSITY=terse -q >/dev/null
           echo "Restored. Checking row counts against the backup:"
           bad=0
           while read -r t n; do
