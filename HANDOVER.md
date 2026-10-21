@@ -116,7 +116,7 @@ To add a reviewer or the kitchen checker: invite them in Supabase (Authenticatio
 - **Restore test:** "Run workflow" with "Also test restoring the backup" ticked (and automatically on the 1st of each month) loads the backup into a throwaway local Supabase and compares row counts table by table.
 - **Restore for real** (developer, about 30 minutes):
   1. Download the backup from the run's page and decrypt it: `gpg -d maison-backup-....tar.gz.gpg | tar xzf -` (asks for the passphrase).
-  2. Remove the logging settings Supabase manages itself (the postgres user may not set them): for `roles.sql` and `schema.sql`, `grep -vE '^[[:space:]]*(ALTER ROLE .* )?SET "?log_' roles.sql > roles-restore.sql`, and the same for schema.
+  2. Remove the logging settings Supabase manages itself (the postgres user may not set them): for `roles.sql` and `schema.sql`, `grep -vE '^[[:space:]]*(ALTER (ROLE|DATABASE) .* )?SET "?log_' roles.sql > roles-restore.sql`, and the same for schema.
   3. Into a new or emptied Supabase project, from a computer with Postgres 17's `psql`: `psql --single-transaction -v ON_ERROR_STOP=1 -f roles-restore.sql -f schema-restore.sql -c 'SET session_replication_role = replica' -f data.sql -d "<new project's connection string>"`.
   4. Redeploy the two Edge Functions (`staff-auth`, `reminders`, Verify JWT off), run `0018_reminder_schedule.sql` (the schedule isn't in the backup), and point the app at the new project if it changed (`src/lib/supabase.ts`).
 - **Connection:** the job uses the session pooler (`aws-0-eu-west-1.pooler.supabase.com`, as shown in Supabase > Connect), because GitHub's machines can't reach the direct address (IPv6 only on the Free plan).

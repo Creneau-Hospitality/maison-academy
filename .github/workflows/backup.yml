@@ -148,7 +148,7 @@ jobs:
           cd "$RUNNER_TEMP/r"
           DB=$(docker ps --filter name=supabase_db_ --format '{{.Names}}' | head -1)
           # Settings Supabase manages itself (logging) can't be set by the postgres user; skip them, as in a real restore.
-          PAT='^[[:space:]]*(ALTER ROLE .* )?SET "?log_'
+          PAT='^[[:space:]]*(ALTER (ROLE|DATABASE) .* )?SET "?log_'
           for f in roles schema; do
             echo "Skipped from $f.sql:"; grep -nE "$PAT" $f.sql | cut -c1-200 || echo "  (nothing)"
             grep -vE "$PAT" $f.sql > $f-restore.sql
