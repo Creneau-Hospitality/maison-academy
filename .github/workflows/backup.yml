@@ -148,10 +148,13 @@ jobs:
           cd "$RUNNER_TEMP/r"
           DB=$(docker ps --filter name=supabase_db_ --format '{{.Names}}' | head -1)
           # Settings Supabase manages itself (logging) can't be set by the postgres user; skip them, as in a real restore.
-          echo "Skipped from roles.sql:"; grep -E '^ALTER ROLE .* SET "?log_' roles.sql || echo "  (nothing)"
-          grep -vE '^ALTER ROLE .* SET "?log_' roles.sql > roles-restore.sql
+          PAT='^[[:space:]]*(ALTER ROLE .* )?SET "?log_'
+          for f in roles schema; do
+            echo "Skipped from $f.sql:"; grep -nE "$PAT" $f.sql | cut -c1-200 || echo "  (nothing)"
+            grep -vE "$PAT" $f.sql > $f-restore.sql
+          done
           # VERBOSITY=terse keeps row content out of any error message.
-          { cat roles-restore.sql schema.sql; echo 'SET session_replication_role = replica;'; cat data.sql; } \
+          { cat roles-restore.sql schema-restore.sql; echo 'SET session_replication_role = replica;'; cat data.sql; } \
             | docker exec -i "$DB" psql -U postgres -d postgres --single-transaction -v ON_ERROR_STOP=1 -v VERBOSITY=terse -q >/dev/null
           echo "Restored. Checking row counts against the backup:"
           bad=0
