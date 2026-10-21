@@ -74,14 +74,14 @@
 - Reminders function `reminders` deployed on Supabase (21 October, Verify JWT off); its push keys were made on the first call and are kept in the database. Migration 0018 schedules it every 15 minutes (pg_cron). First check: nobody due, nothing sent, as expected.
 - Tests: local copy (roster import, go-live switch, reminders due list, location check, error log, privacy checks), phone-width screen test of the new screens with no banned words, and the reminder's encryption and signature checked with the reference web-push library (it decrypts to the same message).
 
-- 21 Oct: costs. Supabase and Netlify stay on free plans (David). Nightly encrypted backup set up on GitHub Actions instead of Supabase Pro, with a restore test; waiting for David's two secrets before the first run.
+- 21 Oct: costs. Supabase and Netlify stay on free plans (David). Nightly encrypted backup set up on GitHub Actions instead of Supabase Pro, with a restore test; David added the two secrets; first backup and restore test passed on 21 October (all 24 tables restored with matching row counts, loaded as the postgres user, the way a real restore would be).
 - 21 Oct: the GitHub repository was found public and made private again (David approved and confirmed with his code). Nothing secret was ever in it.
 
 ## Next
 
 1. David: send the roster's column headings only (no names), the reminder time, and the venue's map point if the location check will ever be used.
 2. David: publish the `phase-3` release.
-3. David: add the two backup secrets; Claude runs the first backup and restore test.
+3. Watch the nightly backup for its first few nights (GitHub > Actions > Database backup).
 4. Go-live checklist (see `reports/2026-10-21-pilot-checklist.md`): shared mailbox as owner (Netlify: the account's email); no paid plans; final privacy notice from counsel; Netlify protection off; remove the demo venue; turn on go-live; reminders "all"; soft test with 3 to 5 staff in mid-December.
 5. Still open: kitchen check of the 31 allergen cards; cards in review.
 6. Decisions still to confirm (defaults in use): weekly target 4 sets, level targets, what Level 3 earns, English only for version 1, the app's name.

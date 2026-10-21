@@ -18,7 +18,8 @@ Everything in the app is built. What's left is mostly accounts and paperwork. Ru
 - [ ] Add it as an **owner** on GitHub and Supabase. Gerard accepts his invitations.
 - [ ] Netlify allows one owner on the free plan: change the Netlify account's email to the shared mailbox.
 - [x] **No paid plans** (decided 21 October): Supabase and Netlify stay free. Backups run nightly from GitHub instead of Supabase Pro.
-- [ ] Add the two backup secrets in GitHub (`SUPABASE_DB_PASSWORD`, `BACKUP_PASSPHRASE`); keep the passphrase in your password manager and give Gerard a copy. *Claude* runs the first backup and restore test.
+- [x] Backup secrets added in GitHub; first backup and restore test passed (21 October).
+- [ ] Give Gerard (or the shared mailbox's password vault) a copy of the backup passphrase.
 - [ ] Check the GitHub repository still shows **Private** (it was found public on 21 October and fixed).
 
 ## 3. Privacy
