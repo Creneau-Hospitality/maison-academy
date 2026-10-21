@@ -10,7 +10,7 @@ How Maison Academy fits together and where everything lives. Names only, never p
 ## How it fits together
 
 - **Web app:** one Vite + React + TypeScript app in `src/`, built by Netlify and served at https://maison-academy.netlify.app.
-  - `/` is the front page. The staff app replaces it in Phase 2.
+  - `/` is the staff app.
   - `/studio` is the content studio: sign-in, card bank, card editor, import, export, people and settings.
 - **Database:** Supabase (Postgres) in Frankfurt. The browser talks to it directly with the public key. Every table has row-level security, so the database itself decides who can read or change what.
 - **Database set-up** lives in `supabase/migrations/`, run in order in the Supabase SQL editor:
@@ -27,7 +27,9 @@ How Maison Academy fits together and where everything lives. Names only, never p
   11. `0014_staff_app.sql`: the staff app's tables, learning engine and rules (see "Staff app" below).
   12. `0015_one_tap.sql`: one-tap answers, no confidence step (David, 20 October).
   13. `0016_dashboard.sql`: the manager dashboard, sign-offs, leave weeks, "new on the menu" sets, venue managers, and the demo-venue loader.
-  0001 to 0006 were run on 16 October 2026, 0007 to 0010 on 17 October, 0011 to 0016 on 20 October. (For a restore into an empty database, run 0001 to 0003, then 0004; 0005 only matters if the export predates it.)
+  14. `0017_pilot_ready.sql`: go-live switch, roster import, activation codes in bulk, reminders tables, location check (off), error log.
+  15. `0018_reminder_schedule.sql`: runs the reminders function every 15 minutes (pg_cron and pg_net).
+  0001 to 0006 were run on 16 October 2026, 0007 to 0010 on 17 October, 0011 to 0016 on 20 October, 0017 and 0018 on 21 October. (For a restore into an empty database, run 0001 to 0003, then 0004; 0005 only matters if the export predates it.)
 
 ### Staff app
 
@@ -38,6 +40,18 @@ How Maison Academy fits together and where everything lives. Names only, never p
 - **Learning engine (database functions):** `start_daily_set`, `record_answer` (grades, moves spacing boxes: right goes up one, not yet back to box 1; de-duplicates by the phone's event id; the allergen coaching prompt only fires if confidence is ever collected again), `finish_set`, `start_readiness`, `my_misses`, `my_progress`, `staff_home`. Studio: `create_staff`, `issue_activation_code`, `list_staff`, `set_staff_active`, `list_venues`. Test accounts: `test_move_date`, `test_reset`. Server only: `svc_*`.
 - **Settings** (table `settings`): set size and mix, spacing gaps, allergen box limit, weekly target, venue goal, level thresholds, login limits, code life, privacy notice version.
 - **Offline:** the app keeps today's set on the phone and queues answers (`localStorage`), sending them in order when back online. `public/sw.js` caches the app's own files.
+
+### Pilot-ready pieces (Phase 4)
+
+- **Go-live switches** (Studio > Settings, or the `settings` table):
+  - `real_staff_allowed`: false until the go-live checklist is done. While false, only test accounts can be made or imported.
+  - `reminders_mode`: "off", "test" (test accounts only) or "all". Now "test".
+  - `reminder_time`: "10:00" (venue time).
+  - `location_check`: "off" or "on". Now **off**. `location_radius_m`: 500. Set each venue's map point first (Settings > Venue map points).
+- **Roster import:** Studio > Staff > Import roster (CSV). Database function `import_staff`; `issue_codes` makes codes in bulk for the activation sheet.
+- **Reminders:** `supabase/functions/reminders/index.ts`, deployed as the Edge Function `reminders` with **Verify JWT turned off** (the scheduler calls it without a login). To redeploy: Supabase > Edge Functions > reminders > Code, paste, Deploy; check Settings still shows Verify JWT off. It makes its own push keys on the first call (kept in `push_keys`, server-only). The schedule (`maison-reminders` in `cron.job`) calls it every 15 minutes; the database decides who is due (`svc_due_reminders`), at most one a day per person. To pause, set `reminders_mode` to "off". Staff turn reminders on from Home; test accounts get a "Send test reminder" button.
+- **Location check:** `start_daily_set` and `start_readiness` take the phone's position only when the check is on, compare it with the venue's point (`_check_on_site`), and keep only `sets.on_site`.
+- **Error log:** `client_errors`, written by `log_client_error` from `src/lib/errors.ts`; the latest show in Settings > Recent app errors. Kept 90 days.
 
 ### Manager dashboard
 
@@ -96,7 +110,7 @@ To add a reviewer or the kitchen checker: invite them in Supabase (Authenticatio
 
 ## Deploy, restore, import
 
-- **Deploy:** push to `main` on GitHub. Netlify builds and publishes within a minute or two.
+- **Deploy:** push to `main` on GitHub (a commit message containing `[skip netlify]` is not built). Netlify builds and publishes within a minute or two.
 - **Run locally (developers):** `npm install`, then `npm run dev`. `npm run build` checks the types and builds.
 - **Check:** open the site: the front page shows the staff login ("Log in" / "Activate"). Sign in to the studio at `/studio`.
 - **Doc-only commits:** add `[skip netlify]` to the commit message so Netlify doesn't spend build credit on them.

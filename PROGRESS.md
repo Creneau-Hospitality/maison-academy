@@ -1,7 +1,7 @@
 # Progress
 
-**Current phase:** 3, manager dashboard. Built and live on 20 October with a demo venue of sample people; waiting for David to try it.
-**Last updated:** 20 October 2026, afternoon.
+**Current phase:** 4, pilot ready. The pieces are built and live (21 October); the go-live steps wait for David (accounts, paid plans, privacy notice, roster).
+**Last updated:** 21 October 2026.
 
 ## Done
 
@@ -60,15 +60,27 @@
 - Studio: Dashboard (Overview, Team, Person, Questions, CSV downloads), New on the menu, and People can add a venue manager for a venue.
 - Demo venue loaded (12 sample people, test accounts, 5 weeks of practice). It never mixes with real figures: the dashboard leaves test and sample accounts out unless "Include test and sample accounts" is ticked (ticked by default while there are no real staff). Remove it in the SQL editor with `select demo_remove();`.
 - Tests: local copy, 19 dashboard checks (figures match a manual count; a venue manager sees only their venue; staff can't open the dashboard; menu-set cards come first) plus the earlier staff-app checks again; desktop and phone-width screen test; live check of the figures as David.
+- David reviewed the dashboard on 21 October and moved on. Phase-3 report written (`reports/2026-10-21-phase-3.md`); release `phase-3` for David to publish.
+
+## Phase 4 so far (21 October)
+
+- Pilot-ready database (migration 0017, applied 21 October):
+  - **Go-live switch** (`real_staff_allowed`, now off): until it's on, the studio can only make test accounts.
+  - **Roster import** (Studio > Staff > Import roster): reads a CSV on David's computer, finds the columns itself, maps job titles to app roles, and sends only staff number, first name, first letter of the last name, role and start month. Updates people already there, can mark people missing from the file as left, and lists rows it skipped with the reason. Until go-live it imports as test accounts only.
+  - **Activation sheet:** codes for everyone not yet activated, or for the ones ticked, printed as cut-out slips with a QR code.
+  - **Reminders:** one phone notification a day at the set time (default 10:00, [TO CONFIRM]), only if today's set isn't done and the weekly target isn't met. Staff turn them on from Home. Mode "test" (test accounts only) for now.
+  - **Location check, built and switched OFF** (David): when turned on, a set starts only within 500 m of the venue. Only "on site: yes/no" is kept, never the position. Needs the venue's map point (Settings) first.
+  - **Error log:** app errors are kept for 90 days without names, PINs or page addresses' query parts; the admin sees the latest in Settings.
+- Reminders function `reminders` deployed on Supabase (21 October, Verify JWT off); its push keys were made on the first call and are kept in the database. Migration 0018 schedules it every 15 minutes (pg_cron). First check: nobody due, nothing sent, as expected.
+- Tests: local copy (roster import, go-live switch, reminders due list, location check, error log, privacy checks), phone-width screen test of the new screens with no banned words, and the reminder's encryption and signature checked with the reference web-push library (it decrypts to the same message).
 
 ## Next
 
-1. David tries the dashboard (Studio > Dashboard): Overview, Team, a person, Questions; tries a sign-off and a "new on the menu" set.
-2. Fix what he finds; Phase-3 report and release.
-3. Phase 4, pilot ready: roster import, activation sheet, reminders, final privacy notice, paid plans, soft test.
-3. Still open from Phase 1: review of the last 6 cards, kitchen check of the 31 allergen cards, phase-1 report, export and release.
-4. Decisions still to confirm (defaults in use): weekly target 4 sets, level targets, what Level 3 earns, English only for version 1, the app's name. Privacy notice wording with counsel.
-5. Phase 3: the manager dashboard (and practical sign-offs, which Level 1 needs).
+1. David: send the roster's column headings only (no names), the reminder time, and the venue's map point if the location check will ever be used.
+2. David: publish the `phase-3` release.
+3. Go-live checklist (see `reports/2026-10-21-pilot-checklist.md`): shared mailbox as owner on all three accounts; Supabase Pro and Netlify Pro (cost approval); final privacy notice from counsel; Netlify protection off; remove the demo venue; turn on go-live; reminders "all"; soft test with 3 to 5 staff in mid-December.
+4. Still open: kitchen check of the 31 allergen cards; cards in review.
+5. Decisions still to confirm (defaults in use): weekly target 4 sets, level targets, what Level 3 earns, English only for version 1, the app's name.
 
 ## Known issues
 
