@@ -70,7 +70,8 @@ jobs:
           mkdir -p "$RUNNER_TEMP/b" && cd "$RUNNER_TEMP/b"
           supabase db dump --db-url "$URL" -f roles.sql --role-only
           supabase db dump --db-url "$URL" -f schema.sql
-          supabase db dump --db-url "$URL" -f data.sql --data-only --use-copy
+          # Data from our own tables and the logins only: the app doesn't use Supabase's file storage, realtime or vault.
+          supabase db dump --db-url "$URL" -f data.sql --data-only --use-copy --schema public,auth
           ls -l
 
       - name: Check the copy looks complete (row counts only, no content)

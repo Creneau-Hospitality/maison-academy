@@ -110,7 +110,7 @@ To add a reviewer or the kitchen checker: invite them in Supabase (Authenticatio
 
 ## Database backups
 
-- **What:** `.github/workflows/backup.yml` on GitHub Actions. Every night at 03:00 Dubai it dumps roles, structure and data (Supabase's own method, `supabase db dump`), encrypts the three files with `BACKUP_PASSPHRASE` (gpg, AES-256) and keeps them as a download on that run's page: 30 days, Sunday copies 90 days. Nothing goes into the repository.
+- **What:** `.github/workflows/backup.yml` on GitHub Actions. Every night at 03:00 Dubai it dumps roles, structure and data (Supabase's own method, `supabase db dump`; data from the `public` and `auth` schemas only, because the app uses no file storage, realtime or vault), encrypts the three files with `BACKUP_PASSPHRASE` (gpg, AES-256) and keeps them as a download on that run's page: 30 days, Sunday copies 90 days. Nothing goes into the repository.
 - **Secrets** (GitHub > repository > Settings > Secrets and variables > Actions): `SUPABASE_DB_PASSWORD` and `BACKUP_PASSPHRASE`. Both live in David's password manager. Lose the passphrase and the backups can't be opened.
 - **Check it's working:** GitHub > Actions > Database backup: a green tick every morning. A red cross means GitHub emails the owner; look at the step that failed.
 - **Restore test:** "Run workflow" with "Also test restoring the backup" ticked (and automatically on the 1st of each month) loads the backup into a throwaway local Supabase and compares row counts table by table.
