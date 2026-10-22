@@ -78,6 +78,7 @@
 - 21 Oct: the GitHub repository was found public and made private again (David approved and confirmed with his code). Nothing secret was ever in it.
 
 - 21 Oct: roster import checked against David's Bayzat export (headings only): now reads the Excel file directly, picks "Employee Id" as the staff number, ignores leave-cycle dates, sets one role for everyone, and lets first names be edited. Tested with a made-up file of the same layout.
+- 22 Oct: David's Bayzat attendance export (46 FOH staff, one row per person per day, Employee Id) is the reference list for FOH staff numbers. The import now merges repeated rows for the same staff number, so it can be used as is. Nothing imported yet (real staff wait for go-live).
 
 ## Next
 

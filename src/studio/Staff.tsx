@@ -222,9 +222,9 @@ function RosterImport({ venue, venueName, realAllowed, onDone }: { venue: string
     setCols(next); setTable(t); setRoles({}); setNames({}); setRoleForRest(''); setAsTest(true);
   };
 
-  const people = useMemo(() => {
-    if (!table) return [];
-    return table.slice(1).map((r, i) => {
+  const { people, merged } = useMemo(() => {
+    if (!table) return { people: [], merged: 0 };
+    const all = table.slice(1).map((r, i) => {
       const get = (f: Field) => (cols[f] >= 0 ? (r[cols[f]] ?? '').trim() : '');
       let first = get('first_name'); let last = get('last_name');
       if ((!first || !last) && get('full_name')) {
@@ -235,6 +235,15 @@ function RosterImport({ venue, venueName, realAllowed, onDone }: { venue: string
       return { i, staff_number: get('staff_number'), first_name: (names[i] ?? first).trim(), last_initial: last.slice(0, 1).toUpperCase(),
                role, raw_role: get('role'), start_month: toMonth(get('start')) };
     });
+    // Exports such as attendance reports list a person once per day: keep each staff number once.
+    const seen = new Set<string>();
+    const people = all.filter((p) => {
+      const k = p.staff_number.toUpperCase();
+      if (!k) return true;
+      if (seen.has(k)) return false;
+      seen.add(k); return true;
+    });
+    return { people, merged: all.length - people.length };
   }, [table, cols, roles, names, roleForRest]);
   const ready = people.filter((p) => p.staff_number && p.first_name && p.last_initial && p.role);
 
@@ -294,7 +303,7 @@ function RosterImport({ venue, venueName, realAllowed, onDone }: { venue: string
                 </tr>))}</tbody>
             </table>
           </div>
-          <p className="info">{ready.length} of {people.length} rows ready. Rows in pink need a staff number, name or role; they'll be skipped and listed.</p>
+          <p className="info">{merged > 0 && `${people.length} people (${merged} repeated rows for the same staff number merged). `}{ready.length} of {people.length} rows ready. Rows in pink need a staff number, name or role; they'll be skipped and listed.</p>
           <label className="check"><input type="checkbox" checked={asTest || !realAllowed} disabled={!realAllowed} onChange={(e) => setAsTest(e.target.checked)} /> Import as test accounts{!realAllowed && ' (until go-live)'}</label><br />
           <label className="check"><input type="checkbox" checked={markLeft} onChange={(e) => setMarkLeft(e.target.checked)} /> Mark people at {venueName} who aren't in this file as left</label>
           <div className="actions" style={{ marginTop: 12 }}>
