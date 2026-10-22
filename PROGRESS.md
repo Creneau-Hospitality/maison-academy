@@ -82,7 +82,7 @@
 
 ## Next
 
-1. David: confirm staff know their Bayzat Employee Id (M-number); reminder time set to 16:00 (22 October); and the venue's map point if the location check will ever be used.
+1. Staff log in with their Bayzat Employee Id (confirmed 22 October); reminder time 16:00 (22 October); David to send and the venue's map point if the location check will ever be used.
 2. `phase-3` release: published by David on 21 October.
 3. Watch the nightly backup for its first few nights (GitHub > Actions > Database backup).
 4. Go-live checklist (see `reports/2026-10-21-pilot-checklist.md`): shared mailbox as owner (Netlify: the account's email); no paid plans; final privacy notice from counsel; Netlify protection off; remove the demo venue; turn on go-live; reminders "all"; soft test with 3 to 5 staff in mid-December.
