@@ -9,7 +9,7 @@ Everything in the app is built. What's left is mostly accounts and paperwork. Ru
 ## 1. Send Claude three small things
 
 - [x] **Roster headings:** checked against the Bayzat export on 21 October; the import reads that Excel file directly.
-- [ ] **Reminder time:** 10:00 is set for now. Pick a time before most shifts start.
+- [x] **Reminder time:** 16:00 daily (David, 22 October).
 - [ ] **Venue map point:** only if you may ever use the on-site check. Drop a pin on the Arabian Ranches entrance in Google Maps and send the link.
 
 ## 2. Accounts (before any real staff data)
