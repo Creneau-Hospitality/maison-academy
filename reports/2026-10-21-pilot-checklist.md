@@ -20,7 +20,7 @@ Everything in the app is built. What's left is mostly accounts and paperwork. Ru
 - [x] **No paid plans** (decided 21 October): Supabase and Netlify stay free. Backups run nightly from GitHub instead of Supabase Pro.
 - [x] Backup secrets added in GitHub; first backup and restore test passed (21 October).
 - [ ] Give Gerard (or the shared mailbox's password vault) a copy of the backup passphrase.
-- [ ] Check the GitHub repository still shows **Private** (it was found public on 21 October and fixed).
+- [ ] The GitHub repository is **public** (David, 22 October; Netlify free needs it). Before real staff data, move the nightly backups to a separate private repository.
 
 ## 3. Privacy
 
