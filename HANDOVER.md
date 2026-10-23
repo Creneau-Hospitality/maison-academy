@@ -29,7 +29,8 @@ How Maison Academy fits together and where everything lives. Names only, never p
   13. `0016_dashboard.sql`: the manager dashboard, sign-offs, leave weeks, "new on the menu" sets, venue managers, and the demo-venue loader.
   14. `0017_pilot_ready.sql`: go-live switch, roster import, activation codes in bulk, reminders tables, location check (off), error log.
   15. `0018_reminder_schedule.sql`: runs the reminders function every 15 minutes (pg_cron and pg_net).
-  0001 to 0006 were run on 16 October 2026, 0007 to 0010 on 17 October, 0011 to 0016 on 20 October, 0017 and 0018 on 21 October. (For a restore into an empty database, run 0001 to 0003, then 0004; 0005 only matters if the export predates it.)
+  16. `0019_exams.sql`: exams scheduled by managers (table `exams`, `sets.kind = 'exam'`).
+  0001 to 0006 were run on 16 October 2026, 0007 to 0010 on 17 October, 0011 to 0016 on 20 October, 0017 and 0018 on 21 October, 0019 on 23 October. (For a restore into an empty database, run 0001 to 0003, then 0004; 0005 only matters if the export predates it.)
 
 ### Staff app
 
@@ -52,6 +53,12 @@ How Maison Academy fits together and where everything lives. Names only, never p
 - **Reminders:** `supabase/functions/reminders/index.ts`, deployed as the Edge Function `reminders` with **Verify JWT turned off** (the scheduler calls it without a login). To redeploy: Supabase > Edge Functions > reminders > Code, paste, Deploy; check Settings still shows Verify JWT off. It makes its own push keys on the first call (kept in `push_keys`, server-only). The schedule (`maison-reminders` in `cron.job`) calls it every 15 minutes; the database decides who is due (`svc_due_reminders`), at most one a day per person. To pause, set `reminders_mode` to "off". Staff turn reminders on from Home; test accounts get a "Send test reminder" button.
 - **Location check:** `start_daily_set` and `start_readiness` take the phone's position only when the check is on, compare it with the venue's point (`_check_on_site`), and keep only `sets.on_site`.
 - **Error log:** `client_errors`, written by `log_client_error` from `src/lib/errors.ts`; the latest show in Settings > Recent app errors. Kept 90 days.
+
+### Exams
+
+- **Where:** Studio > Dashboard > Exams (`/studio/dashboard/exams`), for the admin and venue managers. Schedule, edit, stop or resume an exam; see results by date with CSV.
+- **Database functions:** `exam_topics` (live cards per role for each topic and part), `save_exam`, `set_exam_active`, `dash_exams`, `dash_exam_results` (managers); `start_exam` (staff). Internals: `_exam_today` (which exam a person has on a day; none if their role has no cards in it), `_pick_exam` (missed, then not yet known, then the rest), `_exam_last` / `_exam_next` (weekly dates).
+- **Rules:** the exam replaces the daily set that day (`start_daily_set` refuses with `exam_today`); answers never move a card up, a "not yet" puts it back in box 1 due for the next daily set; exam sets don't count toward the weekly target; reminders name the exam (`svc_due_reminders` returns `exam`, the function words the message).
 
 ### Manager dashboard
 

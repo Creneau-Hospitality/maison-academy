@@ -79,6 +79,7 @@
 
 - 21 Oct: roster import checked against David's Bayzat export (headings only): now reads the Excel file directly, picks "Employee Id" as the staff number, ignores leave-cycle dates, sets one role for everyone, and lets first names be edited. Tested with a made-up file of the same layout.
 - 22 Oct: David's Bayzat attendance export (46 FOH staff, one row per person per day, Employee Id) is the reference list for FOH staff numbers. The import now merges repeated rows for the same staff number, so it can be used as is. Nothing imported yet (real staff wait for go-live).
+- 23 Oct: **Exams** (David). Managers schedule an exam in Studio > Dashboard > Exams: topic (or one part of it), roles, venue, cards each (default 20), one date or every week. That day it replaces the person's 5 cards; each person gets their own cards (missed first, then not yet known). Scored separately, not part of the weekly target; results per person and per part of the topic, with CSV. Exam-day reminders name the exam. Migration 0019 applied 23 October; reminders function redeployed. Tests: 38 database checks on a local copy (plus the earlier ones again), a live check rolled back, and screen tests on phone and desktop.
 
 ## Next
 
