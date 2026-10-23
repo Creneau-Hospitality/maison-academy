@@ -42,6 +42,7 @@ export default function StaffApp({ path }: { path: string }) {
   if (state === 'out') return <Login notice={notice} />;
   if (route === '/set') return <Practice mode="daily" onNeedLogin={needLogin} />;
   if (route === '/readiness') return <Practice mode="readiness" onNeedLogin={needLogin} />;
+  if (route === '/exam') return <Practice mode="exam" onNeedLogin={needLogin} />;
   if (route === '/misses') return <Practice mode="misses" onNeedLogin={needLogin} />;
   if (route === '/progress') return <Progress onNeedLogin={needLogin} />;
   return <Home onNeedLogin={needLogin} />;
@@ -210,7 +211,7 @@ function Home({ onNeedLogin }: { onNeedLogin: () => void }) {
       setHome(h); setOffline(false); store.set('ma-home', h);
       // Keep today's set on the phone, so it still opens on low signal
       // (not when the location check is on: the set starts at the venue).
-      if (h.cards_available && !h.set_today?.finished && !h.location_required) {
+      if (h.cards_available && !h.set_today?.finished && !h.location_required && !h.exam_today) {
         rpc('start_daily_set').then((s) => store.set('ma-set', s)).catch(() => {});
       }
     } catch (e) {
@@ -226,7 +227,8 @@ function Home({ onNeedLogin }: { onNeedLogin: () => void }) {
     : <div className="loading">Loading…</div>;
 
   const st = home.set_today;
-  const setLabel = !home.cards_available ? null
+  const ex = home.exam_today;
+  const setLabel = ex ? null : !home.cards_available ? null
     : !st ? `Start today's set · 5 cards`
     : st.finished ? null
     : st.answered > 0 ? `Continue today's set · ${st.answered} of ${st.total}` : `Start today's set · ${st.total} cards`;
@@ -240,7 +242,16 @@ function Home({ onNeedLogin }: { onNeedLogin: () => void }) {
       {offline && <p className="note cream">You're offline. Your answers are saved on this phone and sent when you're back online.</p>}
       {pending > 0 && !offline && <p className="info">Sending saved answers…</p>}
 
-      {setLabel
+      {ex && (ex.finished
+        ? <div className="panel done-panel"><span className="label">Today's exam · {ex.topic}</span><p className="big">Done: {ex.right} of {ex.total}.</p><p className="info">See you next shift.</p></div>
+        : <>
+            <p className="label exam-label">Today: {ex.name}</p>
+            <button className="wide hero" onClick={() => navigate('/exam')}>
+              {ex.answered > 0 ? `Continue the exam · ${ex.answered} of ${ex.cards}` : `Start the exam · ${ex.topic} · ${ex.cards} cards`}
+            </button>
+            <p className="info">It replaces today's 5 cards. About {Math.max(5, Math.round(ex.cards / 2))} minutes.</p>
+          </>)}
+      {ex ? null : setLabel
         ? <button className="wide hero" onClick={() => navigate('/set')}>{setLabel}</button>
         : st?.finished
           ? <div className="panel done-panel"><span className="label">Today</span><p className="big">Today's set is done.</p><p className="info">See you next shift.</p></div>

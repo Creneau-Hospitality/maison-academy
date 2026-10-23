@@ -20,7 +20,8 @@ export interface StaffCard {
   explanation: string; why_it_matters: string; is_allergen: boolean; version: number;
 }
 export interface PracticeSet {
-  set: { id: string; kind: 'daily' | 'readiness'; local_date: string; finished: boolean } | null;
+  set: { id: string; kind: 'daily' | 'readiness' | 'exam'; local_date: string; finished: boolean } | null;
+  exam?: { name: string; topic: string };
   cards: StaffCard[];
   answered: { card_id: string; correct: boolean }[];
 }
@@ -30,12 +31,14 @@ export interface HomeData {
   first_name: string; role: string; level: number; level_name: string; next_level_name: string | null;
   level1_pct: number; today: string; test: { offset: number } | null;
   set_today: { id: string; finished: boolean; total: number; answered: number } | null;
+  exam_today?: { name: string; topic: string; cards: number; started: boolean; finished: boolean; answered: number; right: number | null; total: number | null } | null;
   cards_available: boolean; misses: number; rhythm: Rhythm; team: Team;
   location_required?: boolean;
   reminders?: { available: boolean; time: string; subscriptions: number; sets_done: number };
 }
 export interface SetResult {
-  kind: 'daily' | 'readiness'; learned: number; strengthened: number; practised: number;
+  kind: 'daily' | 'readiness' | 'exam'; learned: number; strengthened: number; practised: number;
+  right?: number; total?: number; exam?: { name: string; topic: string } | null;
   passed: boolean | null; practise: { track: string; unit: string; cards: number }[] | null;
   level: number; level_name: string; level_up: boolean; rhythm: Rhythm; team: Team;
 }

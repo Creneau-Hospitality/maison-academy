@@ -121,9 +121,13 @@ async function send(sub: Sub, message: Record<string, unknown>, k: { publicKey: 
 }
 
 // Kind words only: no guilt, no streak warnings (brief section 3).
-const MESSAGE = (first: string) => ({
+// On an exam day the reminder names the exam's topic instead.
+type Exam = { topic: string; cards: number } | null;
+const MESSAGE = (first: string, exam: Exam) => ({
   title: 'Maison Academy',
-  body: first + ", today's 5 cards are ready. About 3 minutes.",
+  body: exam
+    ? first + ', today is your ' + exam.topic + ' exam: ' + exam.cards + ' cards, about ' + Math.max(5, Math.round(exam.cards / 2)) + ' minutes.'
+    : first + ", today's 5 cards are ready. About 3 minutes.",
   url: '/',
 });
 
@@ -147,7 +151,7 @@ Deno.serve(async (req) => {
       let sent = 0;
       for (const person of due ?? []) {
         let ok = false;
-        for (const sub of person.subs ?? []) ok = (await send(sub, MESSAGE(person.first_name), k)) || ok;
+        for (const sub of person.subs ?? []) ok = (await send(sub, MESSAGE(person.first_name, person.exam ?? null), k)) || ok;
         // Marked as done for today either way, so nobody gets more than one a day.
         await admin.rpc('svc_reminder_sent', { p_staff: person.staff_id, p_local_date: person.local_date });
         if (ok) sent++;

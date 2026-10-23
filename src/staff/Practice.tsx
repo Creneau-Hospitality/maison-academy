@@ -1,4 +1,4 @@
-// The card player: daily set, readiness check and "Review my misses".
+// The card player: daily set, readiness check, exam and "Review my misses".
 // Copyright © 2026 Creneau Hospitality. All rights reserved.
 import { useEffect, useMemo, useState } from 'react';
 import { navigate } from '../lib/router';
@@ -8,7 +8,7 @@ import {
   type HomeData, type PracticeSet, type SetResult, type StaffCard,
 } from './api';
 
-type Mode = 'daily' | 'readiness' | 'misses';
+type Mode = 'daily' | 'readiness' | 'exam' | 'misses';
 type Phase = 'loading' | 'card' | 'feedback' | 'done' | 'empty' | 'offline' | 'location';
 
 
@@ -23,6 +23,7 @@ export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogi
   const [savedOffline, setSavedOffline] = useState(false);
   const [placeMsg, setPlaceMsg] = useState('');
   const [attempt, setAttempt] = useState(0);
+  const [examName, setExamName] = useState('');
 
   useEffect(() => {
     let live = true;
@@ -36,6 +37,10 @@ export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogi
           data = { set: null, cards: list, answered: [] };
         } else if (mode === 'readiness') {
           data = await rpc<PracticeSet>('start_readiness', await whereAmI());
+        } else if (mode === 'exam') {
+          await flush();
+          data = await rpc<PracticeSet>('start_exam', await whereAmI());
+          if (data.exam) setExamName(data.exam.name);
         } else {
           try {
             await flush();
@@ -104,7 +109,7 @@ export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogi
     else { setPhase('loading'); void finish(setInfo); }
   }
 
-  const title = mode === 'daily' ? "Today's set" : mode === 'readiness' ? 'Readiness check' : 'Review my misses';
+  const title = mode === 'daily' ? "Today's set" : mode === 'readiness' ? 'Readiness check' : mode === 'exam' ? (examName || 'Exam') : 'Review my misses';
 
   if (phase === 'loading') return <div className="loading">Loading…</div>;
   if (phase === 'offline') return (
@@ -126,7 +131,7 @@ export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogi
       <button className="wide" onClick={() => navigate('/')}>Back to home</button>
     </Shell>
   );
-  if (phase === 'done') return <Done mode={mode} summary={summary} savedOffline={savedOffline} count={results.length || cards.length} />;
+  if (phase === 'done') return <Done mode={mode} title={title} summary={summary} savedOffline={savedOffline} count={results.length || cards.length} />;
 
   const card = cards[i];
   return (
@@ -227,13 +232,13 @@ function Feedback({ card, right, chosen, mode, last, onNext }: {
       )}
       <p>{card.explanation}</p>
       <div className="why"><span className="label">Why it matters</span><p>{card.why_it_matters}</p></div>
-      {!right && mode === 'daily' && <p className="info">This card comes back next set.</p>}
+      {!right && (mode === 'daily' || mode === 'exam') && <p className="info">This card comes back next set.</p>}
       <button className="wide" onClick={onNext}>{last ? 'Finish' : 'Next card'}</button>
     </div>
   );
 }
 
-function Done({ mode, summary, savedOffline, count }: { mode: Mode; summary: SetResult | null; savedOffline: boolean; count: number }) {
+function Done({ mode, title, summary, savedOffline, count }: { mode: Mode; title: string; summary: SetResult | null; savedOffline: boolean; count: number }) {
   let headline = 'Set done.';
   let lines: React.ReactNode = null;
   if (mode === 'misses') {
@@ -241,6 +246,16 @@ function Done({ mode, summary, savedOffline, count }: { mode: Mode; summary: Set
     lines = <p>These don't count toward anything, so practise as often as you like.</p>;
   } else if (savedOffline || !summary) {
     lines = <p className="note cream">{count} cards practised. Saved on this phone: it will be sent when you're back online.</p>;
+  } else if (summary.kind === 'exam') {
+    headline = 'Exam done.';
+    const right = summary.right ?? 0, total = summary.total ?? 0;
+    lines = (<>
+      <p className="big">{right} of {total} right{total ? ` · ${Math.round((100 * right) / total)}%` : ''}.</p>
+      {(summary.practise ?? []).length > 0
+        ? <><p>Worth another look (they'll come back in your next sets):</p>
+            <ul className="answer-list plain">{(summary.practise ?? []).map((p) => <li key={p.unit}>{p.unit} · {p.cards} {p.cards === 1 ? 'card' : 'cards'}</li>)}</ul></>
+        : <p>Every card right. Well done.</p>}
+    </>);
   } else if (summary.kind === 'readiness') {
     headline = summary.passed ? 'Ready.' : 'Not yet.';
     lines = summary.passed
@@ -257,11 +272,11 @@ function Done({ mode, summary, savedOffline, count }: { mode: Mode; summary: Set
   }
   return (
     <div className="app">
-      <div className="app-top"><span className="label">{mode === 'readiness' ? 'Readiness check' : mode === 'misses' ? 'Review my misses' : "Today's set"}</span></div>
+      <div className="app-top"><span className="label">{title}</span></div>
       <h1>{headline}</h1>
       {lines}
       {summary?.level_up && <p className="note sky">You've reached Level {summary.level}: {summary.level_name}.</p>}
-      {summary && <RhythmLine r={summary.rhythm} />}
+      {summary && summary.kind !== 'exam' && <RhythmLine r={summary.rhythm} />}
       {summary && <TeamLine t={summary.team} />}
       <button className="wide" onClick={() => navigate('/')}>Back to home</button>
     </div>

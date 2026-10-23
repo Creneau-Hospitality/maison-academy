@@ -408,3 +408,12 @@ ul.picked { margin: 0 0 12px; padding-left: 18px; font-size: 14px; }
   @page { size: A4; margin: 10mm; }
   .sheet.print-area { right: 0; padding: 0; }
 }
+
+/* Exams (dashboard tab and staff home) */
+.dash-intro { display: flex; gap: 16px; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; margin-bottom: 16px; }
+.dash-intro p { flex: 1 1 360px; margin: 0; max-width: 70ch; }
+td.actions-cell { white-space: nowrap; text-align: right; }
+td.actions-cell button + button { margin-left: 4px; }
+.app .exam-label { margin: 20px 0 6px; }
+.dash-tabs { flex-wrap: wrap; column-gap: 20px; row-gap: 0; }
+@media (max-width: 520px) { .dash-tabs { column-gap: 14px; } .dash-tabs a { font-size: 18px; line-height: 40px; } }

@@ -1,4 +1,4 @@
-// Studio · Manager dashboard (brief section 8): Overview, Team, Person, Questions.
+// Studio · Manager dashboard (brief section 8): Overview, Team, Person, Questions, Exams.
 // Copyright © 2026 Creneau Hospitality. All rights reserved.
 // Every figure comes from a database function that checks who is asking:
 // a venue manager sees their venue only; the admin sees everything.
@@ -7,6 +7,7 @@ import { supabase } from '../lib/supabase';
 import { download, toCsv } from '../lib/csv';
 import { linkProps, navigate } from '../lib/router';
 import { fmtDate, type Access } from '../lib/types';
+import ExamsView from './Exams';
 
 const TRACKS = [
   { id: 'service', short: 'Service', name: 'Sequence of service' },
@@ -58,6 +59,7 @@ export default function Dashboard({ access, path }: { access: Access; path: stri
     { to: '/studio/dashboard', label: 'Overview', on: sub === '' },
     { to: '/studio/dashboard/team', label: 'Team', on: sub === 'team' || sub.startsWith('person') },
     { to: '/studio/dashboard/questions', label: 'Questions', on: sub === 'questions' },
+    { to: '/studio/dashboard/exams', label: 'Exams', on: sub === 'exams' },
   ];
   const q = venue ? `?venue=${venue}` : '';
 
@@ -87,6 +89,7 @@ export default function Dashboard({ access, path }: { access: Access; path: stri
       {sub === 'team' && <TeamView venue={venue || null} withTest={withTest} />}
       {sub === 'questions' && <QuestionsView venue={venue || null} withTest={withTest} access={access} />}
       {sub.startsWith('person/') && <PersonView id={decodeURIComponent(sub.slice(7))} />}
+      {sub === 'exams' && <ExamsView venue={venue || null} withTest={withTest} venues={venues} admin={access.admin} />}
     </div>
   );
 }
