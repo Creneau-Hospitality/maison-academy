@@ -132,7 +132,7 @@ export default function People({ ctx }: { ctx: StudioData }) {
           {form.role !== 'venue_manager' && (
           <label className="check" style={{ marginBottom: 12 }}>
             <input type="checkbox" checked={form.checker} onChange={(e) => setForm({ ...form, checker: e.target.checked })} />
-            Can record the kitchen allergen check (head chef or Gerard only)
+            Can record the kitchen allergen check (head chef only)
           </label>
           )}
           {msg && <p className={'note ' + msg.kind}>{msg.text}</p>}

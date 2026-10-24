@@ -15,11 +15,11 @@ Everything in the app is built. What's left is mostly accounts and paperwork. Ru
 ## 2. Accounts (before any real staff data)
 
 - [ ] Create the shared Creneau mailbox (for example academy@...).
-- [ ] Add it as an **owner** on GitHub and Supabase. Gerard accepts his invitations.
+- [ ] Add it as an **owner** on GitHub and Supabase.
 - [ ] Netlify allows one owner on the free plan: change the Netlify account's email to the shared mailbox.
 - [x] **No paid plans** (decided 21 October): Supabase and Netlify stay free. Backups run nightly from GitHub instead of Supabase Pro.
 - [x] Backup secrets added in GitHub; first backup and restore test passed (21 October).
-- [ ] Give Gerard (or the shared mailbox's password vault) a copy of the backup passphrase.
+- [ ] Put a copy of the backup passphrase in the shared mailbox's password vault (or with a second trusted person).
 - [ ] The GitHub repository is **public while the build continues** (David, 22 October; Netlify free needs it). Before real staff data: decide how it's published from then on, and move the nightly backups to a separate private repository.
 
 ## 3. Privacy
@@ -45,7 +45,7 @@ Everything in the app is built. What's left is mostly accounts and paperwork. Ru
 
 ## 6. Still open, not blocking the soft test
 
-- Kitchen check of the 31 allergen cards (head chef or Gerard, from a one-page list). Allergen cards stay hidden until then.
+- Kitchen check of the 31 allergen cards (head chef, from a one-page list). Allergen cards stay hidden until then.
 - Cards still in review.
 - Defaults to confirm: weekly target (4 sets), level targets, what Level 3 earns, English only, the app's name.
 

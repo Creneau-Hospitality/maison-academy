@@ -139,7 +139,7 @@ export function About() {
   return (
     <footer className="about">
       Maison Academy. Copyright © 2026 Creneau Hospitality. All rights reserved. Proprietary and confidential.<br />
-      Concept and foundational design: Gerard McCormick, Head of Culinary, Creneau Hospitality, October 2026. Build lead: David, Operations Manager.
+      Build lead: David, Operations Manager.
     </footer>
   );
 }

@@ -4,7 +4,6 @@ How Maison Academy fits together and where everything lives. Names only, never p
 
 ## People
 
-- Concept and foundational design: Gerard McCormick, Head of Culinary (owner on every account).
 - Build lead and product owner: David, Operations Manager.
 
 ## How it fits together
@@ -98,8 +97,8 @@ All three are set up on David's email for now. The shared Creneau mailbox is add
 
 | Account | Name | Owners | Notes |
 | --- | --- | --- | --- |
-| GitHub | Organisation `Creneau-Hospitality`, private repository `maison-academy` | David (David-SWR); Gerard invited as Owner | The Claude GitHub app is installed on this one repository so Claude can push. |
-| Supabase | Organisation `Creneau Hospitality`, project `maison-academy` | David; Gerard invited as Owner | Project URL `https://dxipjlkledacoabdhrdg.supabase.co`. Region Central EU (Frankfurt). Free plan, kept for the pilot (decision 21 October); backed up nightly by GitHub Actions (see "Database backups"). The database password is in David's password manager, never in files. |
+| GitHub | Organisation `Creneau-Hospitality`, private repository `maison-academy` | David (David-SWR) | The Claude GitHub app is installed on this one repository so Claude can push. |
+| Supabase | Organisation `Creneau Hospitality`, project `maison-academy` | David | Project URL `https://dxipjlkledacoabdhrdg.supabase.co`. Region Central EU (Frankfurt). Free plan, kept for the pilot (decision 21 October); backed up nightly by GitHub Actions (see "Database backups"). The database password is in David's password manager, never in files. |
 | Netlify | Team `Creneau Hospitality`, project `maison-academy`, https://maison-academy.netlify.app | David (only owner on the Free plan) | Builds from `main` on GitHub (`netlify.toml`: `npm run build`, publishes `dist`). Linked through the Netlify GitHub app, which has access to this one repository (set up by David on 16 October after the repository went private; deploys between 20:56 and 22:15 failed with "Unsupported repository type" until then). Team protection is on: only signed-in team members can view. Turn it off before the soft test. Stays on Free; make the shared mailbox the owner (decision 21 October). |
 
 ### Studio logins
@@ -108,7 +107,7 @@ All three are set up on David's email for now. The shared Creneau mailbox is add
 | --- | --- | --- |
 | David (david@swrhospitality.com) | Admin | David created the login in Supabase (Authentication > Users > Add user) on 16 October; `0003_first_admin.sql` made it admin. |
 
-To add a reviewer or the kitchen checker: invite them in Supabase (Authentication > Users > Invite user), then add them on the studio's **People** screen with the same email. Tick "Can record the kitchen allergen check" only for the head chef or Gerard.
+To add a reviewer or the kitchen checker: invite them in Supabase (Authentication > Users > Invite user), then add them on the studio's **People** screen with the same email. Tick "Can record the kitchen allergen check" only for the head chef.
 
 ### Keys
 

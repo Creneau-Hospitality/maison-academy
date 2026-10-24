@@ -8,7 +8,7 @@
 - Week-1 decisions recorded in `DECISIONS.md`: sequence of service and timings, card approval, practice time, pilot dates and champion.
 - Project folder set up at `5. OPERATIONS/maison-academy`.
 - Content check done: `content/CONTENT_CHECK.md` lists what we have, 14 missing files with owners, and 5 points still to confirm.
-- Accounts: GitHub organisation `Creneau-Hospitality` with private repository `maison-academy`; Supabase organisation `Creneau Hospitality` with project `maison-academy` in Frankfurt; Netlify team `Creneau Hospitality`. Gerard invited as owner on GitHub and Supabase.
+- Accounts: GitHub organisation `Creneau-Hospitality` with private repository `maison-academy`; Supabase organisation `Creneau Hospitality` with project `maison-academy` in Frankfurt; Netlify team `Creneau Hospitality`. Gerard invited as owner on GitHub and Supabase (withdrawn 24 October).
 - Repository set up with LICENSE, README credit, reports and exports folders.
 - Hello page live at https://maison-academy.netlify.app (private for now), connected to Supabase in Frankfurt. Checked by David on 16 October.
 - Arabian Ranches menus received; allergen flags written for Gerard (`content/MENU_ALLERGEN_FLAGS.md`).
@@ -81,6 +81,8 @@
 - 22 Oct: David's Bayzat attendance export (46 FOH staff, one row per person per day, Employee Id) is the reference list for FOH staff numbers. The import now merges repeated rows for the same staff number, so it can be used as is. Nothing imported yet (real staff wait for go-live).
 - 23 Oct: **Exams** (David). Managers schedule an exam in Studio > Dashboard > Exams: topic (or one part of it), roles, venue, cards each (default 20), one date or every week. That day it replaces the person's 5 cards; each person gets their own cards (missed first, then not yet known). Scored separately, not part of the weekly target; results per person and per part of the topic, with CSV. Exam-day reminders name the exam. Migration 0019 applied 23 October; reminders function redeployed. Tests: 38 database checks on a local copy (plus the earlier ones again), a live check rolled back, and screen tests on phone and desktop.
 
+- 24 Oct: Gerard taken out of the app credits and the accounts (David). Footer, README and studio wording updated; card notes now say the kitchen checks (migration 0020, applied 24 October; no card changed status). His GitHub and Supabase owner invitations had expired unaccepted; the Supabase one was cancelled. He never had a studio login.
+
 ## Next
 
 1. Staff log in with their Bayzat Employee Id (confirmed 22 October); reminder time 16:00 (22 October); David to send the venue's map point only if the location check will ever be used.
@@ -98,5 +100,5 @@
 
 
 - No allergen matrix yet. Allergen cards are drafted from menu ingredients only and wait for a kitchen check.
-- Netlify is on Free with one owner; move to Pro and add Gerard in Phase 4.
+- Netlify stays on Free with one owner (decision 21 October).
 - Accounts use David's email for now. The shared Creneau mailbox must be added as owner on all three before Phase 4.

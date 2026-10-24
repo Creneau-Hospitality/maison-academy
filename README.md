@@ -2,7 +2,7 @@
 
 Copyright © 2026 Creneau Hospitality. All rights reserved. Proprietary and confidential. Not for use, copying or distribution outside Creneau Hospitality without written permission.
 
-Concept and foundational design: Gerard McCormick, Head of Culinary, Creneau Hospitality, October 2026. Build lead: David, Operations Manager.
+Build lead: David, Operations Manager.
 
 A phone-first training app for Maison Mathis front-of-house teams, with a manager dashboard. Each shift, a team member answers five short questions; missed cards come back sooner and known cards space out.
 

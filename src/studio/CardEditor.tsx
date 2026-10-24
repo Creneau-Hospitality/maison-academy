@@ -365,7 +365,7 @@ export default function CardEditor({ ctx, id, path }: { ctx: StudioData; id: str
                 {saved!.is_allergen && !saved!.allergen_check_by && saved!.status !== 'retired' && (
                   access.allergen_checker
                     ? <div className="actions" style={{ marginBottom: 12 }}><button className="outline" disabled={busy} onClick={kitchenCheck}>Record kitchen check</button></div>
-                    : <p className="info">The kitchen check is recorded by the head chef or Gerard, signed in with their own login.</p>
+                    : <p className="info">The kitchen check is recorded by the head chef, signed in with their own login.</p>
                 )}
                 {saved!.status !== 'live' && saved!.status !== 'retired' && (
                   <div className="actions" style={{ marginBottom: 12 }}>

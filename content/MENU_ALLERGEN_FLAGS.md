@@ -1,6 +1,6 @@
 # Allergen flags from the Arabian Ranches menus
 
-**For:** Gerard, as the allergen check.
+**For:** the head chef, as the allergen check.
 **Checked:** 16 October 2026.
 **Menus:** breakfast `20260914_MM-AR-BREAKFAST53.pdf` and lunch and dinner `20260922_MM-AR-LUNCHDINNER39.pdf`.
 
@@ -66,6 +66,6 @@ The fish items include:
 ## What the cards will do until the matrix arrives
 
 - Food cards teach what the menu states: components, dietary marks, what each code means, and which dishes are raw.
-- "Contains" allergen cards are drafted only from listed ingredients, marked [TO CONFIRM]. None goes live without Gerard's check.
+- "Contains" allergen cards are drafted only from listed ingredients, marked [TO CONFIRM]. None goes live without the kitchen check.
 - No card says a dish is free from any allergen.
 - The allergen SOP cards teach "ask the head chef, every time", not "check the menu".
