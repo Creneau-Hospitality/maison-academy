@@ -85,6 +85,8 @@
 
 - 29 Oct: David is now an allergen checker in the studio, so he can record the kitchen check and put allergen cards live (31 waiting).
 
+- 29 Oct: **New-joiner programme and ranking** (David). Programme: 18 default steps from the basics up (house standards, safety, allergen protocol, your role's sequence, service steps, timing, menus, allergens, guest recovery, opening and closing, controls); each person sees the steps for their role (14 for a server or host). Per step: study the cards, pass the step exam (10 cards, 80%), manager signs off on the floor, next step opens. Managers add people and sign off in Dashboard > Programme; the admin edits the steps there. Ranking: points for programme steps (20), finishing the programme (100), levels (100 each), practical sign-offs (20), exams (up to 10), weeks on target (10) and cards known (1); tiers Bronze 0, Silver 250, Gold 600, Platinum 1200 [TO CONFIRM]. Staff see only their own tier and points (home and My progress); managers see the full ranking in Dashboard > Ranking with CSV. Migration 0021 applied 29 October. Tests: 41 database checks on a local copy plus all earlier checks, a live check rolled back, screen tests on phone and desktop.
+
 ## Next
 
 1. Staff log in with their Bayzat Employee Id (confirmed 22 October); reminder time 16:00 (22 October); David to send the venue's map point only if the location check will ever be used.

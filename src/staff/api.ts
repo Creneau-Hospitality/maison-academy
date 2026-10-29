@@ -20,8 +20,8 @@ export interface StaffCard {
   explanation: string; why_it_matters: string; is_allergen: boolean; version: number;
 }
 export interface PracticeSet {
-  set: { id: string; kind: 'daily' | 'readiness' | 'exam'; local_date: string; finished: boolean } | null;
-  exam?: { name: string; topic: string };
+  set: { id: string; kind: 'daily' | 'readiness' | 'exam' | 'step'; local_date: string; finished: boolean } | null;
+  exam?: { name: string; topic: string; pass_pct?: number };
   cards: StaffCard[];
   answered: { card_id: string; correct: boolean }[];
 }
@@ -31,14 +31,17 @@ export interface HomeData {
   first_name: string; role: string; level: number; level_name: string; next_level_name: string | null;
   level1_pct: number; today: string; test: { offset: number } | null;
   set_today: { id: string; finished: boolean; total: number; answered: number } | null;
+  programme?: { total: number; done: number; completed_on: string | null; current: { step_id: string; n: number; name: string; status: string } | null } | null;
+  points?: { points: number; tier: string; next_tier: string | null; to_next: number | null };
   exam_today?: { name: string; topic: string; cards: number; started: boolean; finished: boolean; answered: number; right: number | null; total: number | null } | null;
   cards_available: boolean; misses: number; rhythm: Rhythm; team: Team;
   location_required?: boolean;
   reminders?: { available: boolean; time: string; subscriptions: number; sets_done: number };
 }
 export interface SetResult {
-  kind: 'daily' | 'readiness' | 'exam'; learned: number; strengthened: number; practised: number;
+  kind: 'daily' | 'readiness' | 'exam' | 'step'; learned: number; strengthened: number; practised: number;
   right?: number; total?: number; exam?: { name: string; topic: string } | null;
+  step?: { id: string; name: string; pass_pct: number; signoff_note: string | null } | null;
   passed: boolean | null; practise: { track: string; unit: string; cards: number }[] | null;
   level: number; level_name: string; level_up: boolean; rhythm: Rhythm; team: Team;
 }

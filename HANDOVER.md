@@ -29,7 +29,9 @@ How Maison Academy fits together and where everything lives. Names only, never p
   14. `0017_pilot_ready.sql`: go-live switch, roster import, activation codes in bulk, reminders tables, location check (off), error log.
   15. `0018_reminder_schedule.sql`: runs the reminders function every 15 minutes (pg_cron and pg_net).
   16. `0019_exams.sql`: exams scheduled by managers (table `exams`, `sets.kind = 'exam'`).
-  0001 to 0006 were run on 16 October 2026, 0007 to 0010 on 17 October, 0011 to 0016 on 20 October, 0017 and 0018 on 21 October, 0019 on 23 October. (For a restore into an empty database, run 0001 to 0003, then 0004; 0005 only matters if the export predates it.)
+  17. `0020_kitchen_check_wording.sql`: card notes say the kitchen checks.
+  18. `0021_programme_ranking.sql`: new-joiner programme (`programme_steps`, `programme_enrolments`, `programme_progress`, `sets.kind = 'step'`) and ranking points.
+  0001 to 0006 were run on 16 October 2026, 0007 to 0010 on 17 October, 0011 to 0016 on 20 October, 0017 and 0018 on 21 October, 0019 on 23 October, 0020 on 24 October, 0021 on 29 October. (For a restore into an empty database, run 0001 to 0003, then 0004; 0005 only matters if the export predates it.)
 
 ### Staff app
 
@@ -58,6 +60,12 @@ How Maison Academy fits together and where everything lives. Names only, never p
 - **Where:** Studio > Dashboard > Exams (`/studio/dashboard/exams`), for the admin and venue managers. Schedule, edit, stop or resume an exam; see results by date with CSV.
 - **Database functions:** `exam_topics` (live cards per role for each topic and part), `save_exam`, `set_exam_active`, `dash_exams`, `dash_exam_results` (managers); `start_exam` (staff). Internals: `_exam_today` (which exam a person has on a day; none if their role has no cards in it), `_pick_exam` (missed, then not yet known, then the rest), `_exam_last` / `_exam_next` (weekly dates).
 - **Rules:** the exam replaces the daily set that day (`start_daily_set` refuses with `exam_today`); answers never move a card up, a "not yet" puts it back in box 1 due for the next daily set; exam sets don't count toward the weekly target; reminders name the exam (`svc_due_reminders` returns `exam`, the function words the message).
+
+### New-joiner programme and ranking
+
+- **Where:** Studio > Dashboard > Programme (add people, sign off steps, admin edits steps) and Dashboard > Ranking (managers only, CSV). Staff: Home shows the current step and their tier; `/programme` lists the steps; My progress shows how points are made up.
+- **Database functions:** staff `my_programme`, `study_step`, `start_step_exam`; managers `programme_enrol`, `programme_sign_off` (undo allowed), `dash_programme`, `dash_ranking`; admin `programme_steps_admin`, `save_programme_step`, `move_programme_step`. Internals: `_programme_steps` (statuses done / signoff / current / locked), `_programme`, `_points`, `_tier`, `_weeks_met`.
+- **Rules:** steps unlock in order; a step needs its exam passed before a manager can sign it off; finishing every step sets `completed_on`; step exams never move a card up. Staff never see other people's points. Points and tiers: settings `ranking_points` and `ranking_tiers`.
 
 ### Manager dashboard
 

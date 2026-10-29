@@ -8,6 +8,7 @@ import {
   type HomeData,
 } from './api';
 import Practice, { RhythmLine, TeamLine } from './Practice';
+import { ProgrammePage, TierDetail, TierPanel } from './Programme';
 import { PrivacyText } from './Privacy';
 
 // Android offers an install prompt; keep it for the Install help screen.
@@ -45,6 +46,9 @@ export default function StaffApp({ path }: { path: string }) {
   if (route === '/exam') return <Practice mode="exam" onNeedLogin={needLogin} />;
   if (route === '/misses') return <Practice mode="misses" onNeedLogin={needLogin} />;
   if (route === '/progress') return <Progress onNeedLogin={needLogin} />;
+  if (route === '/programme') return <ProgrammePage onNeedLogin={needLogin} />;
+  if (route.startsWith('/programme/study/')) return <Practice key={route} mode="study" stepId={route.split('/')[3]} onNeedLogin={needLogin} />;
+  if (route.startsWith('/programme/exam/')) return <Practice key={route} mode="step" stepId={route.split('/')[3]} onNeedLogin={needLogin} />;
   return <Home onNeedLogin={needLogin} />;
 }
 
@@ -257,6 +261,14 @@ function Home({ onNeedLogin }: { onNeedLogin: () => void }) {
           ? <div className="panel done-panel"><span className="label">Today</span><p className="big">Today's set is done.</p><p className="info">See you next shift.</p></div>
           : <p className="note cream">No cards are ready for you yet. Check back soon.</p>}
 
+      {home.programme && !home.programme.completed_on && home.programme.current && (
+        <button className="panel level-link prog-home" onClick={() => navigate('/programme')}>
+          <span className="label">New-joiner programme · step {home.programme.current.n} of {home.programme.total}</span>
+          <span className="big">{home.programme.current.name}</span>
+          <span className="info">{home.programme.current.status === 'signoff' ? 'Exam passed. Ask your manager to sign you off ›' : 'Study, then take the step exam ›'}</span>
+        </button>
+      )}
+
       <Reminders home={home} />
 
       <RhythmLine r={home.rhythm} />
@@ -275,9 +287,12 @@ function Home({ onNeedLogin }: { onNeedLogin: () => void }) {
 
       <TeamLine t={home.team} />
 
+      {home.points && <TierPanel points={home.points} />}
+
       <div className="list-links">
         <button className="outline wide" onClick={() => navigate('/misses')}>Review my misses{home.misses ? ` · ${home.misses}` : ''}</button>
         <button className="outline wide" onClick={() => navigate('/progress')}>My progress</button>
+        {home.programme && <button className="outline wide" onClick={() => navigate('/programme')}>My programme{home.programme.completed_on ? ' · done' : ''}</button>}
         {home.level === 0 && <button className="outline wide" onClick={() => navigate('/readiness')}>Readiness check</button>}
       </div>
       <p className="center info footer-links">
@@ -419,6 +434,8 @@ function Progress({ onNeedLogin }: { onNeedLogin: () => void }) {
         ))}
         <p className="info">A card counts once you've answered it right three times in a row, spaced out over days.</p>
       </div>
+
+      <TierDetail onNeedLogin={onNeedLogin} />
 
       <div className="panel">
         <h3>Next focus</h3>

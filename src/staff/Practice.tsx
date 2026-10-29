@@ -1,4 +1,4 @@
-// The card player: daily set, readiness check, exam and "Review my misses".
+// The card player: daily set, readiness check, exam, programme study and step exam, and "Review my misses".
 // Copyright © 2026 Creneau Hospitality. All rights reserved.
 import { useEffect, useMemo, useState } from 'react';
 import { navigate } from '../lib/router';
@@ -8,11 +8,11 @@ import {
   type HomeData, type PracticeSet, type SetResult, type StaffCard,
 } from './api';
 
-type Mode = 'daily' | 'readiness' | 'exam' | 'misses';
+type Mode = 'daily' | 'readiness' | 'exam' | 'study' | 'step' | 'misses';
 type Phase = 'loading' | 'card' | 'feedback' | 'done' | 'empty' | 'offline' | 'location';
 
 
-export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogin: () => void }) {
+export default function Practice({ mode, stepId, onNeedLogin }: { mode: Mode; stepId?: string; onNeedLogin: () => void }) {
   const [phase, setPhase] = useState<Phase>('loading');
   const [setInfo, setSetInfo] = useState<PracticeSet['set']>(null);
   const [cards, setCards] = useState<StaffCard[]>([]);
@@ -37,6 +37,14 @@ export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogi
           data = { set: null, cards: list, answered: [] };
         } else if (mode === 'readiness') {
           data = await rpc<PracticeSet>('start_readiness', await whereAmI());
+        } else if (mode === 'study') {
+          const r = await rpc<{ step: { id: string; name: string }; cards: StaffCard[] }>('study_step', { p_step: stepId });
+          setExamName(r.step.name);
+          data = { set: null, cards: r.cards, answered: [] };
+        } else if (mode === 'step') {
+          await flush();
+          data = await rpc<PracticeSet>('start_step_exam', { p_step: stepId, ...(await whereAmI()) });
+          if (data.exam) setExamName(data.exam.name);
         } else if (mode === 'exam') {
           await flush();
           data = await rpc<PracticeSet>('start_exam', await whereAmI());
@@ -69,6 +77,7 @@ export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogi
         if (place) { setPlaceMsg(place); setPhase('location'); }
         else if (e instanceof NeedLogin) onNeedLogin();
         else if (e instanceof Offline) setPhase('offline');
+        else if ((mode === 'study' || mode === 'step') && e instanceof Error && e.message) { setPlaceMsg(e.message); setPhase('location'); }
         else { console.error(e); setPhase('offline'); }
       }
     })();
@@ -83,7 +92,7 @@ export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogi
   }
 
   async function finish(s: PracticeSet['set']) {
-    if (mode === 'misses' || !s) { setPhase('done'); return; }
+    if (mode === 'misses' || mode === 'study' || !s) { setPhase('done'); return; }
     if (!queued().some((q) => q.kind === 'finish' && q.set_id === s.id)) enqueue({ kind: 'finish', set_id: s.id });
     const r = await flush();
     if (r.results[s.id]) { setSummary(r.results[s.id]); store.del('ma-home'); }
@@ -94,7 +103,7 @@ export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogi
   function answer(chosen: string[]) {
     const card = cards[i];
     const right = isRight(card, chosen);
-    if (mode !== 'misses' && setInfo) {
+    if (mode !== 'misses' && mode !== 'study' && setInfo) {
       enqueue({ kind: 'answer', client_event_id: newEventId(), set_id: setInfo.id, card_id: card.id, chosen, confidence: null, answered_at: new Date().toISOString() });
       void flush();
     }
@@ -109,7 +118,8 @@ export default function Practice({ mode, onNeedLogin }: { mode: Mode; onNeedLogi
     else { setPhase('loading'); void finish(setInfo); }
   }
 
-  const title = mode === 'daily' ? "Today's set" : mode === 'readiness' ? 'Readiness check' : mode === 'exam' ? (examName || 'Exam') : 'Review my misses';
+  const title = mode === 'daily' ? "Today's set" : mode === 'readiness' ? 'Readiness check' : mode === 'exam' ? (examName || 'Exam')
+    : mode === 'study' ? `Study · ${examName}` : mode === 'step' ? `Step exam · ${examName}` : 'Review my misses';
 
   if (phase === 'loading') return <div className="loading">Loading…</div>;
   if (phase === 'offline') return (
@@ -232,7 +242,7 @@ function Feedback({ card, right, chosen, mode, last, onNext }: {
       )}
       <p>{card.explanation}</p>
       <div className="why"><span className="label">Why it matters</span><p>{card.why_it_matters}</p></div>
-      {!right && (mode === 'daily' || mode === 'exam') && <p className="info">This card comes back next set.</p>}
+      {!right && (mode === 'daily' || mode === 'exam' || mode === 'step') && <p className="info">This card comes back next set.</p>}
       <button className="wide" onClick={onNext}>{last ? 'Finish' : 'Next card'}</button>
     </div>
   );
@@ -244,6 +254,23 @@ function Done({ mode, title, summary, savedOffline, count }: { mode: Mode; title
   if (mode === 'misses') {
     headline = 'Practice done.';
     lines = <p>These don't count toward anything, so practise as often as you like.</p>;
+  } else if (mode === 'study') {
+    headline = 'Study done.';
+    lines = <p>Study as often as you like. When you're ready, take the step exam from your programme.</p>;
+  } else if (summary && summary.kind === 'step') {
+    const right = summary.right ?? 0, total = summary.total ?? 0;
+    headline = summary.passed ? 'Passed.' : 'Not yet.';
+    lines = summary.passed
+      ? (<>
+          <p className="big">{right} of {total} right · {total ? Math.round((100 * right) / total) : 0}%.</p>
+          <p>Next, your manager signs you off on the floor{summary.step?.signoff_note ? ':' : '.'}</p>
+          {summary.step?.signoff_note && <p className="note sky">{summary.step.signoff_note}</p>}
+        </>)
+      : (<>
+          <p className="big">{right} of {total} right. {summary.step?.pass_pct ?? 80}% opens the sign-off.</p>
+          <p>Study the cards and try again any time. Nothing is lost.</p>
+          {(summary.practise ?? []).length > 0 && <ul className="answer-list plain">{(summary.practise ?? []).map((p) => <li key={p.unit}>{p.unit} · {p.cards} {p.cards === 1 ? 'card' : 'cards'}</li>)}</ul>}
+        </>);
   } else if (savedOffline || !summary) {
     lines = <p className="note cream">{count} cards practised. Saved on this phone: it will be sent when you're back online.</p>;
   } else if (summary.kind === 'exam') {
@@ -276,9 +303,10 @@ function Done({ mode, title, summary, savedOffline, count }: { mode: Mode; title
       <h1>{headline}</h1>
       {lines}
       {summary?.level_up && <p className="note sky">You've reached Level {summary.level}: {summary.level_name}.</p>}
-      {summary && summary.kind !== 'exam' && <RhythmLine r={summary.rhythm} />}
+      {summary && summary.kind !== 'exam' && summary.kind !== 'step' && <RhythmLine r={summary.rhythm} />}
       {summary && <TeamLine t={summary.team} />}
-      <button className="wide" onClick={() => navigate('/')}>Back to home</button>
+      {(mode === 'study' || mode === 'step') && <button className="wide" onClick={() => navigate('/programme')}>Back to my programme</button>}
+      <button className={mode === 'study' || mode === 'step' ? 'wide outline' : 'wide'} onClick={() => navigate('/')}>Back to home</button>
     </div>
   );
 }
