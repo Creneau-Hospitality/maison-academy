@@ -86,9 +86,9 @@ function CurrentStep({ s }: { s: ProgStep }) {
           <ol className="steps">
             <li><span>Study the cards ({s.pool})</span><button className="small outline" onClick={() => navigate(`/programme/study/${s.step_id}`)}>Study</button></li>
             <li><span>Take the step exam: {s.exam_cards} cards, {s.pass_pct}% to pass.
-              {s.tries_left !== undefined && ` Tries left: ${s.tries_left} of ${(s.tries_used ?? 0) + s.tries_left}.`}</span>
+              {s.tries_left !== undefined && ((s.tries_used ?? 0) + s.tries_left === 1 ? ' One try: your manager can allow a retry if you need one.' : ` Tries left: ${s.tries_left} of ${(s.tries_used ?? 0) + s.tries_left}.`)}</span>
               {s.tries_left === 0 && !s.open_attempt
-                ? <span className="note sky" style={{ display: 'block', marginTop: 8 }}>You've used your tries for this step. Keep studying; your manager can open another round when you're ready.</span>
+                ? <span className="note sky" style={{ display: 'block', marginTop: 8 }}>You've had your try for this step. Keep studying; your manager can allow a retry when you're ready.</span>
                 : <button className="small" onClick={() => navigate(`/programme/exam/${s.step_id}`)}>{s.open_attempt ? 'Finish the exam' : 'Take the exam'}</button>}</li>
             <li><span>Your manager signs you off on the floor</span></li>
           </ol>

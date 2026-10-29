@@ -265,7 +265,7 @@ function Home({ onNeedLogin }: { onNeedLogin: () => void }) {
         <button className="panel level-link prog-home" onClick={() => navigate('/programme')}>
           <span className="label">New-joiner programme · step {home.programme.current.n} of {home.programme.total}</span>
           <span className="big">{home.programme.current.name}</span>
-          <span className="info">{home.programme.current.status === 'signoff' ? 'Exam passed. Ask your manager to sign you off ›' : home.programme.current.tries_left === 0 && !home.programme.current.open_attempt ? 'Tries used. Keep studying; ask your manager for another round ›' : 'Study, then take the step exam ›'}</span>
+          <span className="info">{home.programme.current.status === 'signoff' ? 'Exam passed. Ask your manager to sign you off ›' : home.programme.current.tries_left === 0 && !home.programme.current.open_attempt ? 'Keep studying; ask your manager for a retry ›' : 'Study, then take the step exam ›'}</span>
         </button>
       )}
 

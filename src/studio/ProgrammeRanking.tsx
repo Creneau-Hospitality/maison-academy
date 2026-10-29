@@ -9,6 +9,7 @@ import { ROLES } from '../lib/types';
 
 type Status = 'done' | 'signoff' | 'current' | 'locked';
 interface Step { step_id: string; n: number; name: string; topic: string; status: Status; best_pct: number | null; signoff_note: string | null; signed_by: string | null; signed_at: string | null; tries_used?: number; tries_left?: number; open_attempt?: boolean }
+const tries = (n: number | undefined) => `${n ?? 0} ${n === 1 ? 'try' : 'tries'}`;
 const triesOut = (s: Step | null) => !!s && s.status === 'current' && s.tries_left === 0 && !s.open_attempt;
 interface Person { staff_id: string; name: string; role: string; is_test: boolean; venue: string; enrolled_on: string; completed_on: string | null; total: number; done: number; current: Step | null; steps: Step[] }
 interface Other { staff_id: string; name: string; role: string; is_test: boolean; venue: string }
@@ -79,12 +80,12 @@ export function ProgrammeView({ venue, withTest, admin }: { venue: string | null
 
       {retry.length > 0 && (
         <div className="panel" style={{ marginBottom: 16 }}>
-          <span className="label">Tries used: allow another round?</span>
+          <span className="label">Exam not passed: allow a retry?</span>
           <ul className="plain">{retry.map((p) => (
             <li key={p.staff_id} className="signoff-row">
               <div><strong>{p.name}</strong> · {p.role} · step {p.current!.n}: {p.current!.name}
-                <br /><span className="note-s">{p.current!.tries_used} tries used, best {p.current!.best_pct ?? 0}%. Worth a quick chat before opening more.</span></div>
-              <button className="small outline" onClick={() => void allow(p, p.current!)}>Allow {p.current!.tries_used} more tries</button>
+                <br /><span className="note-s">{tries(p.current!.tries_used)} used, best {p.current!.best_pct ?? 0}%. Worth a quick chat before allowing a retry.</span></div>
+              <button className="small outline" onClick={() => void allow(p, p.current!)}>{p.current!.tries_used === 1 ? 'Allow a retry' : `Allow ${p.current!.tries_used} more tries`}</button>
             </li>))}
           </ul>
         </div>
@@ -100,7 +101,7 @@ export function ProgrammeView({ venue, withTest, admin }: { venue: string | null
                 <td style={{ minWidth: 140 }}><span className="bar" aria-hidden><span style={{ width: `${p.total ? (100 * p.done) / p.total : 0}%` }} /></span>
                   <span className="note-s">{p.done} of {p.total}</span></td>
                 <td>{p.completed_on ? <>Complete<br /><span className="note-s">{day(p.completed_on)}</span></>
-                  : p.current ? <>{p.current.name}<br /><span className="note-s">{p.current.status === 'signoff' ? 'Exam passed, sign-off due' : triesOut(p.current) ? 'Tries used, waiting for you' : p.current.best_pct != null ? `Best ${p.current.best_pct}% · ${p.current.tries_used ?? 0} tries used` : 'Studying'}</span></> : ''}</td>
+                  : p.current ? <>{p.current.name}<br /><span className="note-s">{p.current.status === 'signoff' ? 'Exam passed, sign-off due' : triesOut(p.current) ? 'Not passed, retry needs you' : p.current.best_pct != null ? `Best ${p.current.best_pct}% · ${tries(p.current.tries_used)} used` : 'Studying'}</span></> : ''}</td>
                 <td className="note-s">{day(p.enrolled_on)}</td>
                 <td className="actions-cell">
                   <button className="small outline" onClick={() => setOpen(open === p.staff_id ? null : p.staff_id)}>{open === p.staff_id ? 'Hide' : 'Steps'}</button>
@@ -123,8 +124,8 @@ export function ProgrammeView({ venue, withTest, admin }: { venue: string | null
                 <span className="prog-name">{s.name} <span className="note-s">· {s.topic}</span><br /><span className="note-s">{
                   s.status === 'done' ? `Signed off by ${s.signed_by ?? ''} ${day(s.signed_at)}`
                   : s.status === 'signoff' ? `Exam passed (${s.best_pct}%), sign-off due`
-                  : s.status === 'current' ? (s.best_pct != null ? `Best exam so far ${s.best_pct}% · ${s.tries_used ?? 0} tries used` : 'Now') : 'Opens after the step before'}</span></span>
-                {triesOut(s) && <button className="small outline" onClick={() => void allow(p, s)}>Allow more tries</button>}
+                  : s.status === 'current' ? (s.best_pct != null ? `Best exam so far ${s.best_pct}% · ${tries(s.tries_used)} used` : 'Now') : 'Opens after the step before'}</span></span>
+                {triesOut(s) && <button className="small outline" onClick={() => void allow(p, s)}>Allow a retry</button>}
                 {s.status === 'signoff' && <button className="small" onClick={() => void sign(p, s)}>Sign off</button>}
                 {s.status === 'done' && <button className="small text" onClick={() => void sign(p, s, true)}>Undo</button>}
               </li>))}

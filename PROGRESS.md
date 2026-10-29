@@ -89,6 +89,8 @@
 
 - 29 Oct: step exams limited to 3 tries (David). After 3, the exam stays closed (studying stays open) until a manager clicks "Allow 3 more tries" in Dashboard > Programme. Migration 0022 applied 29 October; 16 new database checks, screen test.
 
+- 29 Oct (afternoon): change of plan, step exams are **one try** (David). If not passed, a manager clicks "Allow a retry" (one more try each time). Migration 0023 applied 29 October.
+
 ## Next
 
 1. Staff log in with their Bayzat Employee Id (confirmed 22 October); reminder time 16:00 (22 October); David to send the venue's map point only if the location check will ever be used.
