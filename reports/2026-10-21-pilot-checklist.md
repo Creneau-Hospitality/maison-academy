@@ -45,7 +45,7 @@ Everything in the app is built. What's left is mostly accounts and paperwork. Ru
 
 ## 6. Still open, not blocking the soft test
 
-- Kitchen check of the 31 allergen cards (head chef, from a one-page list). Allergen cards stay hidden until then.
+- Kitchen check of the 31 allergen cards: David can now record it himself (29 October), ideally against the kitchen's allergen matrix. Allergen cards stay hidden until then.
 - Cards still in review.
 - Defaults to confirm: weekly target (4 sets), level targets, what Level 3 earns, English only, the app's name.
 

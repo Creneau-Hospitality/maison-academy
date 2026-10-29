@@ -105,7 +105,7 @@ All three are set up on David's email for now. The shared Creneau mailbox is add
 
 | Who | Role | How it was made |
 | --- | --- | --- |
-| David (david@swrhospitality.com) | Admin | David created the login in Supabase (Authentication > Users > Add user) on 16 October; `0003_first_admin.sql` made it admin. |
+| David (david@swrhospitality.com) | Admin; allergen checker (from 29 October) | David created the login in Supabase (Authentication > Users > Add user) on 16 October; `0003_first_admin.sql` made it admin. |
 
 To add a reviewer or the kitchen checker: invite them in Supabase (Authentication > Users > Invite user), then add them on the studio's **People** screen with the same email. Tick "Can record the kitchen allergen check" only for the head chef.
 

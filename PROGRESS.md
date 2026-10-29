@@ -83,6 +83,8 @@
 
 - 24 Oct: Gerard taken out of the app credits and the accounts (David). Footer, README and studio wording updated; card notes now say the kitchen checks (migration 0020, applied 24 October; no card changed status). His GitHub and Supabase owner invitations had expired unaccepted; the Supabase one was cancelled. He never had a studio login.
 
+- 29 Oct: David is now an allergen checker in the studio, so he can record the kitchen check and put allergen cards live (31 waiting).
+
 ## Next
 
 1. Staff log in with their Bayzat Employee Id (confirmed 22 October); reminder time 16:00 (22 October); David to send the venue's map point only if the location check will ever be used.
