@@ -31,7 +31,7 @@ export interface HomeData {
   first_name: string; role: string; level: number; level_name: string; next_level_name: string | null;
   level1_pct: number; today: string; test: { offset: number } | null;
   set_today: { id: string; finished: boolean; total: number; answered: number } | null;
-  programme?: { total: number; done: number; completed_on: string | null; current: { step_id: string; n: number; name: string; status: string } | null } | null;
+  programme?: { total: number; done: number; completed_on: string | null; current: { step_id: string; n: number; name: string; status: string; tries_left?: number; open_attempt?: boolean } | null } | null;
   points?: { points: number; tier: string; next_tier: string | null; to_next: number | null };
   exam_today?: { name: string; topic: string; cards: number; started: boolean; finished: boolean; answered: number; right: number | null; total: number | null } | null;
   cards_available: boolean; misses: number; rhythm: Rhythm; team: Team;
@@ -41,7 +41,7 @@ export interface HomeData {
 export interface SetResult {
   kind: 'daily' | 'readiness' | 'exam' | 'step'; learned: number; strengthened: number; practised: number;
   right?: number; total?: number; exam?: { name: string; topic: string } | null;
-  step?: { id: string; name: string; pass_pct: number; signoff_note: string | null } | null;
+  step?: { id: string; name: string; pass_pct: number; signoff_note: string | null; tries?: number; tries_left?: number | null } | null;
   passed: boolean | null; practise: { track: string; unit: string; cards: number }[] | null;
   level: number; level_name: string; level_up: boolean; rhythm: Rhythm; team: Team;
 }

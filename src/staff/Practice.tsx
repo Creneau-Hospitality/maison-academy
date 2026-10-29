@@ -268,7 +268,9 @@ function Done({ mode, title, summary, savedOffline, count }: { mode: Mode; title
         </>)
       : (<>
           <p className="big">{right} of {total} right. {summary.step?.pass_pct ?? 80}% opens the sign-off.</p>
-          <p>Study the cards and try again any time. Nothing is lost.</p>
+          <p>{summary.step?.tries_left === 0
+            ? "That was your last try for now. Keep studying; your manager can open another round when you're ready."
+            : `Study the cards and try again. ${summary.step?.tries_left ?? ''} ${summary.step?.tries_left === 1 ? 'try' : 'tries'} left.`}</p>
           {(summary.practise ?? []).length > 0 && <ul className="answer-list plain">{(summary.practise ?? []).map((p) => <li key={p.unit}>{p.unit} · {p.cards} {p.cards === 1 ? 'card' : 'cards'}</li>)}</ul>}
         </>);
   } else if (savedOffline || !summary) {

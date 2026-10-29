@@ -31,7 +31,8 @@ How Maison Academy fits together and where everything lives. Names only, never p
   16. `0019_exams.sql`: exams scheduled by managers (table `exams`, `sets.kind = 'exam'`).
   17. `0020_kitchen_check_wording.sql`: card notes say the kitchen checks.
   18. `0021_programme_ranking.sql`: new-joiner programme (`programme_steps`, `programme_enrolments`, `programme_progress`, `sets.kind = 'step'`) and ranking points.
-  0001 to 0006 were run on 16 October 2026, 0007 to 0010 on 17 October, 0011 to 0016 on 20 October, 0017 and 0018 on 21 October, 0019 on 23 October, 0020 on 24 October, 0021 on 29 October. (For a restore into an empty database, run 0001 to 0003, then 0004; 0005 only matters if the export predates it.)
+  19. `0022_step_exam_tries.sql`: step exams limited to 3 tries; `programme_allow_retry` opens another round.
+  0001 to 0006 were run on 16 October 2026, 0007 to 0010 on 17 October, 0011 to 0016 on 20 October, 0017 and 0018 on 21 October, 0019 on 23 October, 0020 on 24 October, 0021 and 0022 on 29 October. (For a restore into an empty database, run 0001 to 0003, then 0004; 0005 only matters if the export predates it.)
 
 ### Staff app
 
@@ -65,7 +66,7 @@ How Maison Academy fits together and where everything lives. Names only, never p
 
 - **Where:** Studio > Dashboard > Programme (add people, sign off steps, admin edits steps) and Dashboard > Ranking (managers only, CSV). Staff: Home shows the current step and their tier; `/programme` lists the steps; My progress shows how points are made up.
 - **Database functions:** staff `my_programme`, `study_step`, `start_step_exam`; managers `programme_enrol`, `programme_sign_off` (undo allowed), `dash_programme`, `dash_ranking`; admin `programme_steps_admin`, `save_programme_step`, `move_programme_step`. Internals: `_programme_steps` (statuses done / signoff / current / locked), `_programme`, `_points`, `_tier`, `_weeks_met`.
-- **Rules:** steps unlock in order; a step needs its exam passed before a manager can sign it off; finishing every step sets `completed_on`; step exams never move a card up. Staff never see other people's points. Points and tiers: settings `ranking_points` and `ranking_tiers`.
+- **Rules:** 3 tries per step exam (setting `programme_exam_tries`), then a manager opens another round with `programme_allow_retry`; steps unlock in order; a step needs its exam passed before a manager can sign it off; finishing every step sets `completed_on`; step exams never move a card up. Staff never see other people's points. Points and tiers: settings `ranking_points` and `ranking_tiers`.
 
 ### Manager dashboard
 
