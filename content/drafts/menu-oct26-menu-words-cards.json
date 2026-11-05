@@ -1,0 +1,642 @@
+{
+ "unit": {
+  "id": "menu-words",
+  "track_id": "food",
+  "name": "Menu words",
+  "sort": 6
+ },
+ "source": "Full menu descriptions, MM-AR, October 2026",
+ "cards": [
+  {
+   "n": 1,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Confit Duck Leg",
+   "prompt": "On our menu, what does \"confit\" mean?",
+   "options": [
+    "Cooked slowly, submerged in fat",
+    "Cured in salt and sugar",
+    "Smoked over wood",
+    "Grilled over charcoal"
+   ],
+   "answer": [
+    "Cooked slowly, submerged in fat"
+   ],
+   "explanation": "Confit means cooked slowly submerged in fat, originally a way of preserving food in south-west France. Our Confit Duck Leg is cooked this way until it comes off the bone, then crisped up to order. Confit garlic is cooked slowly in oil until soft and sweet.",
+   "why": "Guests often ask, and \"cooked slowly in its own fat\" sells the dish."
+  },
+  {
+   "n": 2,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Seabream Ceviche",
+   "prompt": "What is \"leche de tigre\"?",
+   "options": [
+    "The citrus marinade a ceviche is cured in",
+    "A Peruvian tiger prawn sauce",
+    "A coconut milk dressing",
+    "A spicy mayonnaise"
+   ],
+   "answer": [
+    "The citrus marinade a ceviche is cured in"
+   ],
+   "explanation": "Leche de tigre (tiger's milk) is the citrus marinade a ceviche is cured in: lime juice, chili, onion and the juices from the fish. In Peru it's also drunk on its own as a shot.",
+   "why": "Lets you explain the ceviche in plain words."
+  },
+  {
+   "n": 3,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Crispy calamari, seabream",
+   "prompt": "What is aioli?",
+   "options": [
+    "A garlic mayonnaise",
+    "A tomato salsa",
+    "A yoghurt and cucumber dip",
+    "A basil sauce"
+   ],
+   "answer": [
+    "A garlic mayonnaise"
+   ],
+   "explanation": "Aioli is a garlic mayonnaise. Ours comes with the Crispy Calamari and Patatas Bravas; the seabream has a saffron aioli.",
+   "why": "One of the most common words on our menu."
+  },
+  {
+   "n": 4,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Lamb Chops",
+   "prompt": "What's the difference between potato boulangère and gratin dauphinois?",
+   "options": [
+    "Boulangère is baked in stock; dauphinois is baked in cream",
+    "Boulangère is mashed; dauphinois is roasted",
+    "Boulangère has cheese; dauphinois doesn't",
+    "They're the same dish"
+   ],
+   "answer": [
+    "Boulangère is baked in stock; dauphinois is baked in cream"
+   ],
+   "explanation": "Potato boulangère is layered sliced potato and caramelised onion baked in stock, the lighter cousin of gratin dauphinois, which is baked in cream. The name comes from villagers taking the dish to the baker (boulanger) to cook in his oven. It comes with our Lamb Chops.",
+   "why": "A nice story to tell, and it tells a guest the dish is lighter than they might expect."
+  },
+  {
+   "n": 5,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Chimichurri Beef Skewers, Tuna Steak",
+   "prompt": "What is chimichurri?",
+   "options": [
+    "An Argentinian herb sauce of parsley, garlic, oregano, vinegar and oil",
+    "A Mexican chili salsa",
+    "A Spanish garlic mayonnaise",
+    "An Italian basil pesto"
+   ],
+   "answer": [
+    "An Argentinian herb sauce of parsley, garlic, oregano, vinegar and oil"
+   ],
+   "explanation": "Chimichurri is an Argentinian herb sauce, usually parsley, garlic, oregano, vinegar and oil. Our version has roasted red pepper in it, which makes it sweeter and milder. It's on the Chimichurri Beef Skewers and the Tuna Steak.",
+   "why": "Helps you describe two of our dishes."
+  },
+  {
+   "n": 6,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Fish taco, nachos, wrap",
+   "prompt": "What is pico de gallo?",
+   "options": [
+    "A fresh, uncooked salsa of chopped tomato, onion and lime",
+    "A cooked chili sauce",
+    "A smashed avocado dip",
+    "A sour cream and chive dip"
+   ],
+   "answer": [
+    "A fresh, uncooked salsa of chopped tomato, onion and lime"
+   ],
+   "explanation": "Pico de gallo is a fresh uncooked salsa of chopped tomato, onion and lime (ours also has green capsicum on the nachos). The name translates as \"rooster's beak\". It's on the M/M Fish Taco, M/M Nacho's and Chicken Avocado Wrap.",
+   "why": "A word guests see on three dishes."
+  },
+  {
+   "n": 7,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Tuna Tartare & Stracciatella",
+   "prompt": "What is stracciatella, the cheese?",
+   "options": [
+    "The soft, creamy inside of a burrata: torn mozzarella mixed with cream",
+    "A hard aged cheese for grating",
+    "A goat cheese from France",
+    "A blue cheese"
+   ],
+   "answer": [
+    "The soft, creamy inside of a burrata: torn mozzarella mixed with cream"
+   ],
+   "explanation": "Stracciatella is the soft, creamy inside of a burrata: torn mozzarella mixed with cream. It's served with our Tuna Tartare.",
+   "why": "Guests often know burrata but not stracciatella."
+  },
+  {
+   "n": 8,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Rigatoni Amatriciana",
+   "prompt": "What is guanciale?",
+   "options": [
+    "Cured pork cheek",
+    "Cured beef",
+    "A sheep's milk cheese",
+    "A spicy sausage"
+   ],
+   "answer": [
+    "Cured pork cheek"
+   ],
+   "explanation": "Guanciale is cured pork cheek, fattier and more delicate than bacon. It's in the Rigatoni Amatriciana, marked (P).",
+   "why": "A pork ingredient with an Italian name: guests who don't eat pork may not recognise it."
+  },
+  {
+   "n": 9,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "'Nduja & Fennel Stuffed Porchetta",
+   "prompt": "What is 'nduja?",
+   "options": [
+    "A soft, spreadable, spicy salami from Calabria",
+    "A mild Italian ham",
+    "A fennel sausage",
+    "A sweet pepper paste"
+   ],
+   "answer": [
+    "A soft, spreadable, spicy salami from Calabria"
+   ],
+   "explanation": "'Nduja is a soft, spreadable, spicy salami from Calabria. In our porchetta it melts into the pork as it roasts and carries real heat. The Caliente pizza uses a beef 'nduja.",
+   "why": "Warns guests about the heat."
+  },
+  {
+   "n": 10,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Charcuterie, porchetta",
+   "prompt": "What is porchetta?",
+   "options": [
+    "Italian pork belly, rolled and slow roasted",
+    "Cured pork neck",
+    "A pork sausage from Bologna",
+    "Cured ham from the leg"
+   ],
+   "answer": [
+    "Italian pork belly, rolled and slow roasted"
+   ],
+   "explanation": "Porchetta is Italian pork belly rolled around a seasoned filling and slow roasted so the skin crisps up. It's on the charcuterie platter and is the main of the 'Nduja & Fennel Stuffed Porchetta.",
+   "why": "Lets you explain a pork dish clearly."
+  },
+  {
+   "n": 11,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "M/M Pork Charcuterie Platter",
+   "prompt": "What is pane carasau?",
+   "options": [
+    "A very thin, crisp flatbread from Sardinia",
+    "A soft focaccia",
+    "A breadstick from Turin",
+    "A rye cracker from Belgium"
+   ],
+   "answer": [
+    "A very thin, crisp flatbread from Sardinia"
+   ],
+   "explanation": "Pane carasau is a very thin crisp flatbread from Sardinia, sometimes called \"carta da musica\" (sheet music) because it's thin enough to read through. It comes with the charcuterie platter.",
+   "why": "A lovely detail to share at the table."
+  },
+  {
+   "n": 12,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "M/M Pork Charcuterie Platter",
+   "prompt": "What is coppa?",
+   "options": [
+    "Cured pork neck, marbled and sweeter than Parma ham",
+    "Cured beef",
+    "A finely ground pork sausage",
+    "Smoked turkey"
+   ],
+   "answer": [
+    "Cured pork neck, marbled and sweeter than Parma ham"
+   ],
+   "explanation": "Coppa is cured pork neck: marbled, and sweeter than Parma ham. Mortadella is a large, finely ground pork sausage from Bologna. Both are on the charcuterie platter.",
+   "why": "Helps you describe the platter item by item."
+  },
+  {
+   "n": 13,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Pulled Beef Mac & Cheese",
+   "prompt": "What is gremolata?",
+   "options": [
+    "Chopped parsley, garlic and lemon zest",
+    "Grated Grana Padano",
+    "Crispy breadcrumbs",
+    "A truffle paste"
+   ],
+   "answer": [
+    "Chopped parsley, garlic and lemon zest"
+   ],
+   "explanation": "Gremolata is chopped parsley, garlic and lemon zest, added at the end to cut through the richness of the cheese on the Pulled Beef Mac & Cheese.",
+   "why": "Explains why the dish isn't too heavy."
+  },
+  {
+   "n": 14,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Pulled Beef Mac & Cheese",
+   "prompt": "What is béchamel?",
+   "options": [
+    "A white sauce of butter, flour and milk",
+    "A brown sauce made from stock",
+    "An egg yolk and butter sauce",
+    "A tomato sauce"
+   ],
+   "answer": [
+    "A white sauce of butter, flour and milk"
+   ],
+   "explanation": "Béchamel is a white sauce made from butter, flour and milk. Our mac & cheese uses a six-cheese béchamel.",
+   "why": "A basic sauce that comes up often."
+  },
+  {
+   "n": 15,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Chocolate French Toast",
+   "prompt": "What is ganache?",
+   "options": [
+    "A filling made from chocolate, cream and butter",
+    "A meringue topping",
+    "A caramel sauce",
+    "A sponge cake"
+   ],
+   "answer": [
+    "A filling made from chocolate, cream and butter"
+   ],
+   "explanation": "Ganache is a classic pastry filling made from chocolate, cream and butter. It's on the Chocolate French Toast.",
+   "why": "Helps you describe a dessert-style breakfast."
+  },
+  {
+   "n": 16,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Profiteroles",
+   "prompt": "What is choux pastry?",
+   "options": [
+    "A light baked dough used for éclairs and profiteroles",
+    "A flaky layered pastry",
+    "A shortcrust tart base",
+    "A fried dough"
+   ],
+   "answer": [
+    "A light baked dough used for éclairs and profiteroles"
+   ],
+   "explanation": "Choux pastry is a light baked dough, used for éclairs, Paris-Brest and profiteroles.",
+   "why": "Guests sharing the Profiteroles may ask."
+  },
+  {
+   "n": 17,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Tarte Tatin",
+   "prompt": "What is a Tarte Tatin?",
+   "options": [
+    "An upside-down tart of caramelised apples on puff pastry",
+    "A lemon meringue tart",
+    "A chocolate tart",
+    "A tart filled with custard"
+   ],
+   "answer": [
+    "An upside-down tart of caramelised apples on puff pastry"
+   ],
+   "explanation": "Tarte Tatin is an upside-down tart of caramelised apples (Royal Gala) with a crispy puff pastry base. Good for sharing.",
+   "why": "A French classic many guests have heard of but can't describe."
+  },
+  {
+   "n": 18,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Mediterranean Power Bowl",
+   "prompt": "What is tzatziki?",
+   "options": [
+    "A dip of Greek yoghurt, cucumber, garlic and green herbs",
+    "A chickpea dip",
+    "A smoked eggplant dip",
+    "A feta and olive spread"
+   ],
+   "answer": [
+    "A dip of Greek yoghurt, cucumber, garlic and green herbs"
+   ],
+   "explanation": "Tzatziki is a dip made from Greek yoghurt, cucumber, garlic and green herbs. It's in the Mediterranean Power Bowl.",
+   "why": "Vegetarian guests often ask what's in the bowl."
+  },
+  {
+   "n": 19,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "M/M Nacho's",
+   "prompt": "What is guacamole?",
+   "options": [
+    "Crushed ripe avocado seasoned with lime, tabasco, pepper and salt",
+    "A green chili sauce",
+    "Mashed peas with mint",
+    "A green herb mayonnaise"
+   ],
+   "answer": [
+    "Crushed ripe avocado seasoned with lime, tabasco, pepper and salt"
+   ],
+   "explanation": "Guacamole is a dip made by crushing ripe avocados and seasoning them with lime juice, tabasco, pepper and salt. It's on the M/M Nacho's.",
+   "why": "A common question at the table."
+  },
+  {
+   "n": 20,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Roasted Beetroot and Feta",
+   "prompt": "What is feta?",
+   "options": [
+    "A soft, slightly salty cheese made from sheep's milk",
+    "A hard cow's milk cheese",
+    "A blue cheese",
+    "A fresh goat cheese"
+   ],
+   "answer": [
+    "A soft, slightly salty cheese made from sheep's milk"
+   ],
+   "explanation": "Feta is a soft cheese made from sheep's milk, with a slightly salty flavour. It's on the Roasted Beetroot and Feta salad and the Mediterranean Power Bowl.",
+   "why": "Helps guests choose between our cheese salads."
+  },
+  {
+   "n": 21,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Crispy Halloumi",
+   "prompt": "What is miso?",
+   "options": [
+    "A fermented soybean paste",
+    "A Japanese mustard",
+    "A seaweed seasoning",
+    "A rice vinegar"
+   ],
+   "answer": [
+    "A fermented soybean paste"
+   ],
+   "explanation": "Miso is a fermented soybean paste. In the Crispy Halloumi it makes the mayonnaise savoury and deep rather than sweet.",
+   "why": "Explains an unfamiliar word on the menu."
+  },
+  {
+   "n": 22,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Steak sauces, breakfast",
+   "prompt": "What makes béarnaise different from hollandaise?",
+   "options": [
+    "Béarnaise has tarragon and shallots",
+    "Béarnaise has no egg yolk",
+    "Béarnaise is made with cream instead of butter",
+    "Béarnaise is spicy"
+   ],
+   "answer": [
+    "Béarnaise has tarragon and shallots"
+   ],
+   "explanation": "Both are egg yolk and butter sauces. Béarnaise adds shallots and tarragon; our hollandaise has cream, vinegar or lemon juice and a dash of cayenne. The Belgian Benedict is the only benedict with béarnaise.",
+   "why": "Guests choosing a steak sauce or a benedict often ask."
+  },
+  {
+   "n": 23,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Fish taco, wrap, crab omelet",
+   "prompt": "What is sriracha?",
+   "options": [
+    "A chili sauce of red chili, garlic and vinegar, moderate heat with some sweetness",
+    "A sweet soy glaze",
+    "A smoked paprika oil",
+    "A very hot habanero sauce"
+   ],
+   "answer": [
+    "A chili sauce of red chili, garlic and vinegar, moderate heat with some sweetness"
+   ],
+   "explanation": "Sriracha is a chili sauce made from red chili, garlic and vinegar. It brings a moderate heat with some sweetness.",
+   "why": "Guests who avoid spicy food will want to know."
+  },
+  {
+   "n": 24,
+   "type": "multi",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "'Nduja & Fennel Stuffed Porchetta",
+   "prompt": "What are peas à la française cooked with? Pick all that apply.",
+   "options": [
+    "White wine",
+    "Lettuce",
+    "Pearl onion",
+    "Pork bacon",
+    "Mint",
+    "Cream"
+   ],
+   "answer": [
+    "White wine",
+    "Lettuce",
+    "Pearl onion",
+    "Pork bacon"
+   ],
+   "explanation": "Peas à la française are peas cooked with white wine, lettuce, pearl onion and pork bacon. They come with the 'Nduja & Fennel Stuffed Porchetta (P, A).",
+   "why": "The side itself contains pork and alcohol."
+  },
+  {
+   "n": 25,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Cod Fillet, Red Shrimp Linguini",
+   "prompt": "What is a bisque?",
+   "options": [
+    "A rich, creamy sauce made from roasted shellfish shells",
+    "A clear vegetable broth",
+    "A cheese sauce",
+    "A white wine butter sauce"
+   ],
+   "answer": [
+    "A rich, creamy sauce made from roasted shellfish shells"
+   ],
+   "explanation": "A bisque is a rich creamy sauce made from shellfish shells (shrimp), roasted, simmered and strained. It's why the Cod Fillet carries the (S) mark, and it's the base of the Red Shrimp Linguini sauce.",
+   "why": "A guest with a shellfish allergy can't have a dish with bisque.",
+   "allergen": true
+  }
+ ]
+}

@@ -1,0 +1,261 @@
+{
+ "unit": {
+  "id": "allergens-lunch-dinner",
+  "track_id": "food",
+  "name": "Allergens: lunch and dinner",
+  "sort": 5
+ },
+ "source": "Full menu descriptions, MM-AR, October 2026",
+ "cards": [
+  {
+   "n": 100,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "From the sea",
+   "prompt": "A guest with a shellfish allergy wants the Cod Fillet. What do you tell them?",
+   "options": [
+    "Not as it's served: the bisque sauce is made from shrimp shells, so the kitchen would need to change the sauce",
+    "It's fine: cod is a fish, not shellfish",
+    "It's fine if they leave the sauce on the side",
+    "Only the pak choy needs to come off"
+   ],
+   "answer": [
+    "Not as it's served: the bisque sauce is made from shrimp shells, so the kitchen would need to change the sauce"
+   ],
+   "explanation": "The Cod Fillet (A, S) is finished with a bisque, made from shrimp shells. A guest with a shellfish allergy can't have it unless the kitchen changes the sauce. Always tell the kitchen about an allergy.",
+   "why": "A fish dish that contains shellfish is easy to miss.",
+   "allergen": true
+  },
+  {
+   "n": 101,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "The Chimichurri Beef Skewers list which allergen, and why?",
+   "options": [
+    "Fish, from the Worcestershire sauce",
+    "Nuts, from the chimichurri",
+    "Gluten, from the marinade",
+    "Milk, from a butter glaze"
+   ],
+   "answer": [
+    "Fish, from the Worcestershire sauce"
+   ],
+   "explanation": "The menu lists fish for the Chimichurri Beef Skewers because of the Worcestershire sauce, which contains anchovy.",
+   "why": "A beef dish with a fish allergen: a guest with a fish allergy wouldn't expect it.",
+   "allergen": true
+  },
+  {
+   "n": 102,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Salads",
+   "prompt": "A guest wants the Classic Caesar but can't have anchovy. What can you tell them?",
+   "options": [
+    "The kitchen also makes a batch of dressing without anchovy",
+    "The dressing can't be changed",
+    "Leave out the croutons instead",
+    "Swap to the French dressing only"
+   ],
+   "answer": [
+    "The kitchen also makes a batch of dressing without anchovy"
+   ],
+   "explanation": "Our Caesar dressing contains anchovy, egg and Grana Padano. The kitchen also makes a batch without anchovy. Always tell the kitchen about the allergy.",
+   "why": "Lets a guest with a fish allergy still order the Caesar, safely.",
+   "allergen": true
+  },
+  {
+   "n": 103,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sides",
+   "prompt": "Can the Maison Mash be made dairy free?",
+   "options": [
+    "No: it's made with milk and butter",
+    "Yes, with olive oil instead",
+    "Yes, with oat milk",
+    "Only the large portion"
+   ],
+   "answer": [
+    "No: it's made with milk and butter"
+   ],
+   "explanation": "The Maison Mash is made with milk and butter for a rich, creamy texture and can't be made dairy free. The oven roasted potatoes are roasted in butter and can't be made dairy free either.",
+   "why": "Offer a different side to a guest who can't have dairy.",
+   "allergen": true
+  },
+  {
+   "n": 104,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sides",
+   "prompt": "A guest who can't have dairy wants the Sautéed Seasonal Vegetables. What do you say?",
+   "options": [
+    "They can be cooked in olive oil instead of butter",
+    "They can't be made dairy free",
+    "They're already dairy free",
+    "Only the carrots are dairy free"
+   ],
+   "answer": [
+    "They can be cooked in olive oil instead of butter"
+   ],
+   "explanation": "The vegetables (usually French beans, broccoli and carrot) are sautéed in butter as standard; the butter can be changed to olive oil to make them dairy free. Tell the kitchen.",
+   "why": "A simple change that lets the guest have a side safely.",
+   "allergen": true
+  },
+  {
+   "n": 105,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Soups and starters",
+   "prompt": "Why does the parsley butter on the Escargots de Bourgogne contain gluten?",
+   "options": [
+    "It's mixed with our sourdough bread",
+    "It's thickened with flour",
+    "It contains beer",
+    "It doesn't: only the toast does"
+   ],
+   "answer": [
+    "It's mixed with our sourdough bread"
+   ],
+   "explanation": "The parsley butter is made by mixing butter with our sourdough bread, garlic and parsley, then piped into the shells with the snails. So gluten is in the butter, not only in the toast on the side.",
+   "why": "Leaving the toast off doesn't make the dish gluten free.",
+   "allergen": true
+  },
+  {
+   "n": 106,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Seasonal autumn menu",
+   "prompt": "Which allergen does the Lamb Chops' dry rub add?",
+   "options": [
+    "Sesame",
+    "Nuts",
+    "Mustard",
+    "Celery"
+   ],
+   "answer": [
+    "Sesame"
+   ],
+   "explanation": "The Lamb Chops (SE) are rubbed with a dry spice marinade that includes sesame. The menu lists sesame and dairy for the dish.",
+   "why": "Sesame in a spice rub is easy to miss.",
+   "allergen": true
+  },
+  {
+   "n": 107,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Seasonal autumn menu",
+   "prompt": "The Butternut Pumpkin Salad lists sesame. Where does it come from?",
+   "options": [
+    "The yoghurt and tahini dressing",
+    "The toasted almonds",
+    "The goat cheese",
+    "The mixed leaves"
+   ],
+   "answer": [
+    "The yoghurt and tahini dressing"
+   ],
+   "explanation": "The salad is dressed with a Greek yoghurt and tahini dressing; tahini is made from sesame. The menu lists dairy, nuts (toasted almonds) and sesame.",
+   "why": "Helps you answer allergy questions about each part of the dish.",
+   "allergen": true
+  },
+  {
+   "n": 108,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sorbets and ice creams",
+   "prompt": "A guest with a dairy allergy asks for a dessert. Which one does the menu list as free of allergens?",
+   "options": [
+    "The sorbets: lemon, mango and raspberry",
+    "The ice creams",
+    "The Crème Brûlée",
+    "The Dame Blanche"
+   ],
+   "answer": [
+    "The sorbets: lemon, mango and raspberry"
+   ],
+   "explanation": "Our sorbets are made only with fresh fruit purée, water and sugar, so the menu lists no allergens. One scoop of each: lemon, mango and raspberry. Always tell the kitchen about the allergy.",
+   "why": "A safe suggestion for guests with a dairy allergy.",
+   "allergen": true
+  },
+  {
+   "n": 109,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Salads",
+   "prompt": "The Superfood Salad is vegan. Which allergen does it list?",
+   "options": [
+    "Sesame",
+    "Nuts",
+    "Milk",
+    "Gluten"
+   ],
+   "answer": [
+    "Sesame"
+   ],
+   "explanation": "The Superfood Salad (VG, GF) lists sesame, from the toasted seeds.",
+   "why": "Vegan doesn't mean free of allergens.",
+   "allergen": true
+  }
+ ]
+}

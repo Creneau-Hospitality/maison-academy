@@ -1,0 +1,999 @@
+{
+ "unit": {
+  "id": "dish-photos-breakfast",
+  "track_id": "food",
+  "name": "Dish photos: breakfast",
+  "sort": 7
+ },
+ "source": "Full menu descriptions, MM-AR, October 2026",
+ "cards": [
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Omelets and Eggs",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/simply-your-way.jpg",
+   "options": [
+    "Simply Your Way",
+    "Crab Omelet",
+    "Huevos Estrellados",
+    "Perfect Scrambled"
+   ],
+   "answer": [
+    "Simply Your Way"
+   ],
+   "explanation": "This is the Simply Your Way, listed under Breakfast: Omelets and Eggs. On the plate: 2 free range eggs fried, sunny side up, boiled, poached or over easy, sourdough toast.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 1
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Omelets and Eggs",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/perfect-scrambled.jpg",
+   "options": [
+    "Perfect Scrambled",
+    "Huevos Estrellados",
+    "Yoghurt and Eggs",
+    "Simply Your Way"
+   ],
+   "answer": [
+    "Perfect Scrambled"
+   ],
+   "explanation": "This is the Perfect Scrambled, listed under Breakfast: Omelets and Eggs.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 2
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Omelets and Eggs",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/smoked-salmon-and-asparagus-omelet.jpg",
+   "options": [
+    "Smoked Salmon and Asparagus Omelet",
+    "Huevos Estrellados",
+    "Breakfast Bun",
+    "Smoked Salmon Croissant"
+   ],
+   "answer": [
+    "Smoked Salmon and Asparagus Omelet"
+   ],
+   "explanation": "This is the Smoked Salmon and Asparagus Omelet, listed under Breakfast: Omelets and Eggs. On the plate: 3 free range eggs, green asparagus, smoked salmon, green herbs, lemon.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 3
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Omelets and Eggs",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/farmers-omelet.jpg",
+   "options": [
+    "Farmers Omelet",
+    "Simply Your Way",
+    "M/M Steak Breakfast Stack",
+    "Crab Omelet"
+   ],
+   "answer": [
+    "Farmers Omelet"
+   ],
+   "explanation": "This is the Farmers Omelet, listed under Breakfast: Omelets and Eggs. On the plate: 3 free range eggs, pork bacon, tomato, potato, mushrooms, caramelized onion.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 4
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Omelets and Eggs",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/m-m-steak-breakfast-stack.jpg",
+   "options": [
+    "M/M Steak Breakfast Stack",
+    "Perfect Scrambled",
+    "Breakfast Bun",
+    "Crab Omelet"
+   ],
+   "answer": [
+    "M/M Steak Breakfast Stack"
+   ],
+   "explanation": "This is the M/M Steak Breakfast Stack, listed under Breakfast: Omelets and Eggs. On the plate: homemade hashbrown, minute steak, poached egg, sautéed spinach, mushroom, caramelized onion, béarnaise.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 5
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Omelets and Eggs",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/bacon-and-eggs-skillet.jpg",
+   "options": [
+    "Bacon and Eggs Skillet",
+    "Bacon Egg Cheese Bagel",
+    "Huevos Estrellados",
+    "Smoked Salmon Croissant"
+   ],
+   "answer": [
+    "Bacon and Eggs Skillet"
+   ],
+   "explanation": "This is the Bacon and Eggs Skillet, listed under Breakfast: Omelets and Eggs. On the plate: streaky pork/beef bacon, 3 free range eggs, sourdough toast.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 6
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Omelets and Eggs",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/huevos-estrellados.jpg",
+   "options": [
+    "Huevos Estrellados",
+    "M/M Steak Breakfast Stack",
+    "Yoghurt and Eggs",
+    "Crab Omelet"
+   ],
+   "answer": [
+    "Huevos Estrellados"
+   ],
+   "explanation": "This is the Huevos Estrellados, listed under Breakfast: Omelets and Eggs. On the plate: 3 eggs, potatoes, caramelized onion, garlic, parsley.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 7
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Omelets and Eggs",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/shakshuka.jpg",
+   "options": [
+    "Shakshuka",
+    "Smoked Salmon and Asparagus Omelet",
+    "Smoked Salmon Croissant",
+    "Breakfast Bun"
+   ],
+   "answer": [
+    "Shakshuka"
+   ],
+   "explanation": "This is the Shakshuka, listed under Breakfast: Omelets and Eggs. On the plate: cherry tomato, 2 free range eggs, chili, blend of spices, coriander, caramelized onion.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 8
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Omelets and Eggs",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/crab-omelet.jpg",
+   "options": [
+    "Crab Omelet",
+    "Shakshuka",
+    "Perfect Scrambled",
+    "Breakfast Bun"
+   ],
+   "answer": [
+    "Crab Omelet"
+   ],
+   "explanation": "This is the Crab Omelet, listed under Breakfast: Omelets and Eggs. On the plate: 3 eggs, crab meat, shallot, ginger, spring onion, chili, sriracha, sourdough toast.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 9
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Omelets and Eggs",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/smoked-salmon-croissant.jpg",
+   "options": [
+    "Smoked Salmon Croissant",
+    "Breakfast Bun",
+    "Huevos Estrellados",
+    "Crab Omelet"
+   ],
+   "answer": [
+    "Smoked Salmon Croissant"
+   ],
+   "explanation": "This is the Smoked Salmon Croissant, listed under Breakfast: Omelets and Eggs. On the plate: butter croissant, scrambled eggs, smoked salmon, fresh dill.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 10
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Omelets and Eggs",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/bacon-egg-cheese-bagel.jpg",
+   "options": [
+    "Bacon Egg Cheese Bagel",
+    "Farmers Omelet",
+    "Smoked Salmon and Asparagus Omelet",
+    "Smoked Salmon Croissant"
+   ],
+   "answer": [
+    "Bacon Egg Cheese Bagel"
+   ],
+   "explanation": "This is the Bacon Egg Cheese Bagel, listed under Breakfast: Omelets and Eggs. On the plate: whole grain bagel, pork bacon, cheddar, sunny side up egg.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 11
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Omelets and Eggs",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/yoghurt-and-eggs.jpg",
+   "options": [
+    "Yoghurt and Eggs",
+    "Perfect Scrambled",
+    "Smoked Salmon and Asparagus Omelet",
+    "Simply Your Way"
+   ],
+   "answer": [
+    "Yoghurt and Eggs"
+   ],
+   "explanation": "This is the Yoghurt and Eggs, listed under Breakfast: Omelets and Eggs. On the plate: poached eggs, dukkah, chili butter, fresh mint, feta, chili crisp, roasted zucchini and capsicum.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 12
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Omelets and Eggs",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/breakfast-bun.jpg",
+   "options": [
+    "Breakfast Bun",
+    "Smoked Salmon and Asparagus Omelet",
+    "Huevos Estrellados",
+    "M/M Steak Breakfast Stack"
+   ],
+   "answer": [
+    "Breakfast Bun"
+   ],
+   "explanation": "This is the Breakfast Bun, listed under Breakfast: Omelets and Eggs. On the plate: brioche bun, hash brown, streaky bacon, avocado, bacon mayo.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 13
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Benedicts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/classic-benedict.jpg",
+   "options": [
+    "Classic Benedict",
+    "Benedict Forestière",
+    "Benedict Royal",
+    "Belgian Benedict"
+   ],
+   "answer": [
+    "Classic Benedict"
+   ],
+   "explanation": "This is the Classic Benedict, listed under Breakfast: Benedicts. On the plate: beef/pork bacon, brioche, hollandaise.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 14
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Benedicts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/pulled-beef-benedict.jpg",
+   "options": [
+    "Pulled Beef Benedict",
+    "Classic Benedict",
+    "Belgian Benedict",
+    "Benedict San Daniele"
+   ],
+   "answer": [
+    "Pulled Beef Benedict"
+   ],
+   "explanation": "This is the Pulled Beef Benedict, listed under Breakfast: Benedicts. On the plate: 6-hour slow-cooked BBQ pulled beef, brioche, M/M chili beans, spicy hollandaise.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 15
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Benedicts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/benedict-forestiere.jpg",
+   "options": [
+    "Benedict Forestière",
+    "Benedict San Daniele",
+    "Belgian Benedict",
+    "Benedict Royal"
+   ],
+   "answer": [
+    "Benedict Forestière"
+   ],
+   "explanation": "This is the Benedict Forestière, listed under Breakfast: Benedicts. On the plate: mushrooms, truffle oil, spinach, herbs, brioche, hollandaise.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 16
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Benedicts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/belgian-benedict.jpg",
+   "options": [
+    "Belgian Benedict",
+    "Benedict Forestière",
+    "Pulled Beef Benedict",
+    "Classic Benedict"
+   ],
+   "answer": [
+    "Belgian Benedict"
+   ],
+   "explanation": "This is the Belgian Benedict, listed under Breakfast: Benedicts. On the plate: pork bacon, sourdough, caramelized onion, béarnaise.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 17
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Benedicts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/benedict-royal.jpg",
+   "options": [
+    "Benedict Royal",
+    "Benedict San Daniele",
+    "Pulled Beef Benedict",
+    "Belgian Benedict"
+   ],
+   "answer": [
+    "Benedict Royal"
+   ],
+   "explanation": "This is the Benedict Royal, listed under Breakfast: Benedicts. On the plate: smoked salmon and spinach, brioche, hollandaise.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 18
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Benedicts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/benedict-san-daniele.jpg",
+   "options": [
+    "Benedict San Daniele",
+    "Benedict Royal",
+    "Benedict Forestière",
+    "Belgian Benedict"
+   ],
+   "answer": [
+    "Benedict San Daniele"
+   ],
+   "explanation": "This is the Benedict San Daniele, listed under Breakfast: Benedicts. On the plate: prosciutto ham, sundried tomato pesto, roquette, brioche, hollandaise.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 19
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Traditional Breakfast",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/m-m-breakfast.jpg",
+   "options": [
+    "M/M Breakfast",
+    "The Full English",
+    "Double Full English",
+    "Simply Your Way"
+   ],
+   "answer": [
+    "M/M Breakfast"
+   ],
+   "explanation": "This is the M/M Breakfast, listed under Breakfast: Traditional Breakfast. On the plate: ham, Gouda, smoked salmon, salami, fruit salad, scrambled eggs, jam, sourdough toast, plain or chocolate croissant.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 20
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Traditional Breakfast",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/the-full-english.jpg",
+   "options": [
+    "The Full English",
+    "M/M Breakfast",
+    "Double Full English",
+    "Classic Benedict"
+   ],
+   "answer": [
+    "The Full English"
+   ],
+   "explanation": "This is The Full English, listed under Breakfast: Traditional Breakfast. On the plate: sunny-side-up eggs, sourdough toast, bacon, sausage, grilled tomato, sautéed mushrooms, Heinz baked beans, black pudding, hash brown.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 21
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Traditional Breakfast",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/double-full-english.jpg",
+   "options": [
+    "Double Full English",
+    "M/M Breakfast",
+    "The Full English",
+    "Belgian Chocolate Waffle"
+   ],
+   "answer": [
+    "Double Full English"
+   ],
+   "explanation": "This is the Double Full English, listed under Breakfast: Traditional Breakfast. On the plate: extra bacon, sausage, black pudding, hashbrown.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 22
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Healthy Section",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/sourdough-avocado.jpg",
+   "options": [
+    "Sourdough Avocado",
+    "Greek Yoghurt Crème",
+    "Vegan Breakfast",
+    "Smoked Salmon Bagel"
+   ],
+   "answer": [
+    "Sourdough Avocado"
+   ],
+   "explanation": "This is the Sourdough Avocado, listed under Breakfast: Healthy Section. On the plate: avocado, tomato, cucumber, pomegranate, coriander, spring onion, sprouts, sourdough.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 23
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Healthy Section",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/beetroot-toast.jpg",
+   "options": [
+    "Beetroot Toast",
+    "Toast Champignon",
+    "Chia Pudding",
+    "Smoked Salmon Bagel"
+   ],
+   "answer": [
+    "Beetroot Toast"
+   ],
+   "explanation": "This is the Beetroot Toast, listed under Breakfast: Healthy Section. On the plate: brown toast, beetroot hummus, avocado, feta, spice mix, toasted seeds.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 24
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Healthy Section",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/chia-pudding.jpg",
+   "options": [
+    "Chia Pudding",
+    "Smoked Salmon Bagel",
+    "Sourdough Avocado",
+    "Tropical Acai Bowl"
+   ],
+   "answer": [
+    "Chia Pudding"
+   ],
+   "explanation": "This is the Chia Pudding, listed under Breakfast: Healthy Section. On the plate: berry compote, chia pudding, coconut milk, vanilla, fresh fruit.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 25
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Healthy Section",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/tropical-acai-bowl.jpg",
+   "options": [
+    "Tropical Acai Bowl",
+    "Chia Pudding",
+    "Greek Yoghurt Crème",
+    "Sourdough Avocado"
+   ],
+   "answer": [
+    "Tropical Acai Bowl"
+   ],
+   "explanation": "This is the Tropical Acai Bowl, listed under Breakfast: Healthy Section. On the plate: acai, passion fruit, mango, banana, dragon fruit, strawberry, mint, granola.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 26
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Healthy Section",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/vegan-breakfast.jpg",
+   "options": [
+    "Vegan Breakfast",
+    "Greek Yoghurt Crème",
+    "Signature Granola",
+    "Chia Pudding"
+   ],
+   "answer": [
+    "Vegan Breakfast"
+   ],
+   "explanation": "This is the Vegan Breakfast, listed under Breakfast: Healthy Section. On the plate: scrambled tofu, tomato, mushroom, avocado, toast, beans, hashbrown.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 27
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Healthy Section",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/toast-champignon.jpg",
+   "options": [
+    "Toast Champignon",
+    "Tropical Acai Bowl",
+    "Signature Granola",
+    "Greek Yoghurt Crème"
+   ],
+   "answer": [
+    "Toast Champignon"
+   ],
+   "explanation": "This is the Toast Champignon, listed under Breakfast: Healthy Section. On the plate: button and portobello mushrooms, baby spinach, herbs, cream, roquette, sourdough.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 28
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Healthy Section",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/signature-granola.jpg",
+   "options": [
+    "Signature Granola",
+    "Beetroot Toast",
+    "Greek Yoghurt Crème",
+    "Chia Pudding"
+   ],
+   "answer": [
+    "Signature Granola"
+   ],
+   "explanation": "This is the Signature Granola, listed under Breakfast: Healthy Section. On the plate: Greek yoghurt or soy yoghurt, seasonal fruits.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 29
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Healthy Section",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/smoked-salmon-bagel.jpg",
+   "options": [
+    "Smoked Salmon Bagel",
+    "Beetroot Toast",
+    "Tropical Acai Bowl",
+    "Sourdough Avocado"
+   ],
+   "answer": [
+    "Smoked Salmon Bagel"
+   ],
+   "explanation": "This is the Smoked Salmon Bagel, listed under Breakfast: Healthy Section. On the plate: whole grain bagel, smoked salmon, cream cheese and herbs, red onion, capers, cucumber, roquette.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 30
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Healthy Section",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/greek-yoghurt-creme.jpg",
+   "options": [
+    "Greek Yoghurt Crème",
+    "Toast Champignon",
+    "Chia Pudding",
+    "Tropical Acai Bowl"
+   ],
+   "answer": [
+    "Greek Yoghurt Crème"
+   ],
+   "explanation": "This is the Greek Yoghurt Crème, listed under Breakfast: Healthy Section. On the plate: fresh mango and passionfruit, granola.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 31
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Pancakes & Sweets",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/plain-pancakes.jpg",
+   "options": [
+    "Plain Pancakes",
+    "Banoffee & Pecan Pancakes",
+    "Belgian Chocolate Waffle",
+    "Chocolate French Toast"
+   ],
+   "answer": [
+    "Plain Pancakes"
+   ],
+   "explanation": "This is the Plain Pancakes, listed under Breakfast: Pancakes & Sweets. On the plate: 3 pancakes, cream, icing sugar.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 32
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Pancakes & Sweets",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/blueberry-pancakes.jpg",
+   "options": [
+    "Blueberry Pancakes",
+    "Chocolate French Toast",
+    "Strawberries and Cream Waffle",
+    "Belgian Chocolate Waffle"
+   ],
+   "answer": [
+    "Blueberry Pancakes"
+   ],
+   "explanation": "This is the Blueberry Pancakes, listed under Breakfast: Pancakes & Sweets. On the plate: 3 pancakes, blueberry jam, fresh blueberries, cream, icing sugar.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 33
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Pancakes & Sweets",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/banoffee-pecan-pancakes.jpg",
+   "options": [
+    "Banoffee & Pecan Pancakes",
+    "Chocolate French Toast",
+    "Strawberries and Cream Waffle",
+    "Vanilla French Toast"
+   ],
+   "answer": [
+    "Banoffee & Pecan Pancakes"
+   ],
+   "explanation": "This is the Banoffee & Pecan Pancakes, listed under Breakfast: Pancakes & Sweets. On the plate: 3 pancakes, banana, salted caramel sauce, whipped cream, pecans, chocolate crumble.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 34
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Pancakes & Sweets",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/strawberries-and-cream-waffle.jpg",
+   "options": [
+    "Strawberries and Cream Waffle",
+    "Blueberry Pancakes",
+    "Banoffee & Pecan Pancakes",
+    "Vanilla French Toast"
+   ],
+   "answer": [
+    "Strawberries and Cream Waffle"
+   ],
+   "explanation": "This is the Strawberries and Cream Waffle, listed under Breakfast: Pancakes & Sweets. On the plate: Brussels waffle, fresh strawberries, whipped cream, powdered sugar.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 35
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Pancakes & Sweets",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/belgian-chocolate-waffle.jpg",
+   "options": [
+    "Belgian Chocolate Waffle",
+    "Banoffee & Pecan Pancakes",
+    "Plain Pancakes",
+    "Vanilla French Toast"
+   ],
+   "answer": [
+    "Belgian Chocolate Waffle"
+   ],
+   "explanation": "This is the Belgian Chocolate Waffle, listed under Breakfast: Pancakes & Sweets. On the plate: Brussels waffle, chocolate sauce, chocolate crumble, whipped cream, powdered sugar.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 36
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Pancakes & Sweets",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/vanilla-french-toast.jpg",
+   "options": [
+    "Vanilla French Toast",
+    "Banoffee & Pecan Pancakes",
+    "Strawberries and Cream Waffle",
+    "Belgian Chocolate Waffle"
+   ],
+   "answer": [
+    "Vanilla French Toast"
+   ],
+   "explanation": "This is the Vanilla French Toast, listed under Breakfast: Pancakes & Sweets. On the plate: vanilla mascarpone crème, rhubarb compote, pistachio.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 37
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: Pancakes & Sweets",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/chocolate-french-toast.jpg",
+   "options": [
+    "Chocolate French Toast",
+    "Strawberries and Cream Waffle",
+    "Blueberry Pancakes",
+    "Plain Pancakes"
+   ],
+   "answer": [
+    "Chocolate French Toast"
+   ],
+   "explanation": "This is the Chocolate French Toast, listed under Breakfast: Pancakes & Sweets. On the plate: chocolate ganache, raspberry compote, whipped cream, chocolate crumble, toasted almonds.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 38
+  }
+ ]
+}

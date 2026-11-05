@@ -1,0 +1,1168 @@
+{
+ "unit": {
+  "id": "lunch-dinner",
+  "track_id": "food",
+  "name": "Lunch and dinner",
+  "sort": 3
+ },
+ "source": "Full menu descriptions, MM-AR, October 2026",
+ "cards": [
+  {
+   "n": 100,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "Our oysters are now No. 3 instead of No. 4. What does that mean for the guest?",
+   "options": [
+    "A larger oyster: the lower the number, the bigger the oyster",
+    "A smaller oyster: the lower the number, the smaller the oyster",
+    "The same size, from a different farm",
+    "A milder oyster from Dibba Bay"
+   ],
+   "answer": [
+    "A larger oyster: the lower the number, the bigger the oyster"
+   ],
+   "explanation": "French oysters are graded by number and the scale runs backwards: the lower the number, the bigger the oyster. Moving from No. 4 to No. 3 means a noticeably larger oyster. They're Normandy oysters from the farmer Hervé again, instead of Dibba Bay.",
+   "why": "Guests who know oysters will ask, and \"bigger than before\" is a good reason to order them."
+  },
+  {
+   "n": 101,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "How many pieces come in the M/M Fish Taco now?",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "1"
+   ],
+   "answer": [
+    "2"
+   ],
+   "explanation": "From now on the M/M Fish Taco is 2 pieces instead of 3: wheat tortilla, battered cod, pico de gallo, avocado, sriracha and sour cream.",
+   "why": "Telling the guest the right number avoids disappointment when the plate arrives."
+  },
+  {
+   "n": 102,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "How many people is the M/M Pork Charcuterie Platter good for?",
+   "options": [
+    "2 to 3",
+    "1",
+    "4 to 5",
+    "6 or more"
+   ],
+   "answer": [
+    "2 to 3"
+   ],
+   "explanation": "A smaller sharing plate, good for 2 to 3 guests: porchetta, Parma ham, mortadella and coppa with olives, Belgian pickles and cornichons, served with pane carasau. It's (P): every meat on it is pork.",
+   "why": "Helps you suggest the right amount for the table."
+  },
+  {
+   "n": 103,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "How many cheeses come on the M/M Cheese Selection?",
+   "options": [
+    "5: soft, creamy, goat, hard and blue",
+    "3: soft, hard and blue",
+    "4: goat, hard, blue and smoked",
+    "6, all from the same farm"
+   ],
+   "answer": [
+    "5: soft, creamy, goat, hard and blue"
+   ],
+   "explanation": "Five cheeses from the affineur \"Van Tricht\": soft, creamy, goat, hard and blue. The exact cheeses can change, but the variety stays the same. Served with chutney, grapes, crackers and walnuts.",
+   "why": "You can describe the board with confidence even when the cheeses change."
+  },
+  {
+   "n": 104,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "What gives the Crispy Calamari its extra crispy coating?",
+   "options": [
+    "Flour and semolina flour",
+    "Panko breadcrumbs",
+    "Beer batter",
+    "Cornflour and egg white"
+   ],
+   "answer": [
+    "Flour and semolina flour"
+   ],
+   "explanation": "Argentinian baby squid coated in flour and semolina flour and fried crispy. Semolina is a rough flour that gives an extra crisp coating. Served with garlic aioli and lemon.",
+   "why": "Guests often ask what makes it so crisp."
+  },
+  {
+   "n": 105,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "How many \"Van Tricht\" cheese croquettes come in a portion?",
+   "options": [
+    "7",
+    "5",
+    "6",
+    "9"
+   ],
+   "answer": [
+    "7"
+   ],
+   "explanation": "Seven small croquettes made with our own cheese blend, including \"OG Krystal\", an aged gouda. With fried parsley and a whole grain mustard dip.",
+   "why": "Knowing the count helps you suggest it for the right number of guests."
+  },
+  {
+   "n": 106,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "How many Pigs in Blankets come in a portion?",
+   "options": [
+    "12",
+    "6",
+    "8",
+    "10"
+   ],
+   "answer": [
+    "12"
+   ],
+   "explanation": "Twelve small pork sausages wrapped in pork bacon and oven cooked, with a whole grain mustard mayo dip. Marked (P).",
+   "why": "A good sharing number to mention for a group."
+  },
+  {
+   "n": 107,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "What size are the Glazed Pork Rib Bites?",
+   "options": [
+    "6 ribs (200 g), a snack to share with drinks",
+    "600 g, a main course",
+    "3 ribs (100 g), a starter for one",
+    "10 ribs (400 g), for the table"
+   ],
+   "answer": [
+    "6 ribs (200 g), a snack to share with drinks"
+   ],
+   "explanation": "Six BBQ-glazed pork ribs (200 g), a smaller version of the full rib portion, made to be eaten with the hands alongside a drink. The full M/M Glazed Pork Ribs main is 600 g.",
+   "why": "Stops a guest ordering the snack expecting a main course, or the other way round."
+  },
+  {
+   "n": 108,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "What dip comes with the BBQ Chicken Wings?",
+   "options": [
+    "Blue cheese dip",
+    "Garlic aioli",
+    "Whole grain mustard mayo",
+    "Sour cream and chive"
+   ],
+   "answer": [
+    "Blue cheese dip"
+   ],
+   "explanation": "Six homemade wings with our own spice mix, floured, fried and tossed in our homemade BBQ sauce. Served with a blue cheese dip (blue cheese, mayo and sour cream) and celery crudités.",
+   "why": "Guests who don't like blue cheese may want to know before ordering."
+  },
+  {
+   "n": 109,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "A guest asks if the Padron Peppers are spicy. What do you say?",
+   "options": [
+    "No: Padron peppers are a non-spicy green pepper, eaten whole",
+    "Yes, they're very hot",
+    "Only the seeds are hot, so they're served deseeded",
+    "They're medium, like a jalapeño"
+   ],
+   "answer": [
+    "No: Padron peppers are a non-spicy green pepper, eaten whole"
+   ],
+   "explanation": "Padron peppers are a non-spicy green pepper with a crunchy bite. They're blistered, finished with Maldon salt and eaten whole. Vegan and gluten free.",
+   "why": "A clear answer gets a hesitant guest to try them."
+  },
+  {
+   "n": 110,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "How many skewers come in the Chimichurri Beef Skewers?",
+   "options": [
+    "4",
+    "2",
+    "3",
+    "6"
+   ],
+   "answer": [
+    "4"
+   ],
+   "explanation": "Four skewers of marinated Angus beef, grilled, with a roasted red pepper chimichurri, which is sweeter and milder than the classic herb version.",
+   "why": "Helps you size the order for the table."
+  },
+  {
+   "n": 111,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "What tops the Patatas Bravas?",
+   "options": [
+    "Spicy tomato sauce and aioli",
+    "Cheese sauce and bacon",
+    "Truffle oil and Grana Padano",
+    "Guacamole and sour cream"
+   ],
+   "answer": [
+    "Spicy tomato sauce and aioli"
+   ],
+   "explanation": "Fried potatoes topped with a spiced tomato sauce, smoked paprika and aioli: a classic Spanish tapa, made for sharing.",
+   "why": "A good suggestion for a table ordering drinks and small plates."
+  },
+  {
+   "n": 112,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "On the Sardines Toast, what is escalivada?",
+   "options": [
+    "Slow-roasted eggplant, onion and capsicum",
+    "A garlic mayonnaise",
+    "Pickled fennel",
+    "A Spanish anchovy paste"
+   ],
+   "answer": [
+    "Slow-roasted eggplant, onion and capsicum"
+   ],
+   "explanation": "Escalivada is a Spanish dish of slow-roasted eggplant, onion and capsicum. Two sourdough toasts with escalivada and \"Espinaler\" baby sardines (about 4 cm long), topped with aioli and shaved fennel.",
+   "why": "Lets you describe the dish properly instead of just \"sardines on toast\"."
+  },
+  {
+   "n": 113,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Soups and starters",
+   "prompt": "How many shrimps come in the Garlic Shrimps?",
+   "options": [
+    "8",
+    "6",
+    "10",
+    "12"
+   ],
+   "answer": [
+    "8"
+   ],
+   "explanation": "Eight shrimps cooked in garlic butter with a hint of chili, with tomato cubes and lemon, served with sourdough toast.",
+   "why": "Guests often ask how big the portion is."
+  },
+  {
+   "n": 114,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Soups and starters",
+   "prompt": "A guest says their Vitello Tonnato is cold. What do you explain?",
+   "options": [
+    "It's a cold dish by design",
+    "It has waited at the pass too long",
+    "It can be warmed in the oven",
+    "Only the sauce should be cold"
+   ],
+   "answer": [
+    "It's a cold dish by design"
+   ],
+   "explanation": "Vitello tonnato is a classic cold dish from Piedmont in northern Italy: thin slices of slow-roasted veal under a creamy tuna sauce with anchovy and capers. It's served cold on purpose.",
+   "why": "A confident explanation turns a complaint into a good story about the dish."
+  },
+  {
+   "n": 115,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Soups and starters",
+   "prompt": "A pregnant guest asks for the Tuna Tartare to be cooked. What do you say?",
+   "options": [
+    "It's served raw and can't be cooked to order; suggest a cooked dish instead",
+    "The kitchen can sear it for her",
+    "It's fine because the tuna is very fresh",
+    "Offer it without the stracciatella"
+   ],
+   "answer": [
+    "It's served raw and can't be cooked to order; suggest a cooked dish instead"
+   ],
+   "explanation": "The Tuna Tartare & Stracciatella (R) is hand-cut raw tuna loin. It's not suitable for pregnant guests and can't be cooked to order.",
+   "why": "Guiding the guest to a suitable dish is part of looking after them."
+  },
+  {
+   "n": 116,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Soups and starters",
+   "prompt": "Why does the Seabream Ceviche look cooked when it isn't?",
+   "options": [
+    "The lime in the leche de tigre firms up the fish without heat",
+    "It's lightly steamed",
+    "It's smoked",
+    "It's seared for a few seconds"
+   ],
+   "answer": [
+    "The lime in the leche de tigre firms up the fish without heat"
+   ],
+   "explanation": "The seabream is raw, cured in leche de tigre (lime juice, chili, onion and the juices from the fish). The acid firms up the surface of the fish without any heat, so it looks cooked but isn't.",
+   "why": "Guests who avoid raw fish need to know it's raw, even if it looks cooked."
+  },
+  {
+   "n": 117,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sandwiches and toasts",
+   "prompt": "A guest wants the Butcher's Ciabatta without pork. What do you tell them?",
+   "options": [
+    "It can't be made pork free: the chorizo and the mortadella are both pork",
+    "Leave out the chorizo and it's pork free",
+    "Swap the turkey ham for beef",
+    "It's already pork free"
+   ],
+   "answer": [
+    "It can't be made pork free: the chorizo and the mortadella are both pork"
+   ],
+   "explanation": "The Butcher's Ciabatta (P) has turkey ham, pork chorizo and pork mortadella, with provolone, tomato, lettuce, mayonnaise and olive tapenade. Leaving out one item doesn't make it pork free.",
+   "why": "A guest who doesn't eat pork must never get pork by mistake."
+  },
+  {
+   "n": 118,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sandwiches and toasts",
+   "prompt": "Is the chipotle mayo on the Smoked Pork Belly sandwich hot?",
+   "options": [
+    "No: chipotle gives smokiness more than heat",
+    "Yes, it's the hottest sauce we have",
+    "Only if the guest asks for extra",
+    "It's sweet, like a honey mayo"
+   ],
+   "answer": [
+    "No: chipotle gives smokiness more than heat"
+   ],
+   "explanation": "Chipotle is a smoked, dried jalapeño, so it brings smokiness more than heat. Smoked pork belly in a toasted brioche bun with Monterey Jack, slow-roasted tomato, gherkins and chipotle mayo.",
+   "why": "Guests who avoid spicy food can order it with confidence."
+  },
+  {
+   "n": 119,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sandwiches and toasts",
+   "prompt": "Why does halloumi work so well in the Crispy Halloumi sandwich?",
+   "options": [
+    "It has a very high melting point, so it crisps instead of melting",
+    "It melts like mozzarella",
+    "It's smoked first",
+    "It's a soft cheese that spreads"
+   ],
+   "answer": [
+    "It has a very high melting point, so it crisps instead of melting"
+   ],
+   "explanation": "Halloumi, a cheese from Cyprus, crisps and chars on the outside instead of melting. Here it's coated in panko and fried, in a brioche bun with tomato relish, pickled cabbage slaw and miso mayo. A vegetarian sandwich.",
+   "why": "A good line for vegetarian guests choosing a sandwich."
+  },
+  {
+   "n": 120,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sandwiches and toasts",
+   "prompt": "Is the Chicken Avocado Wrap spicy?",
+   "options": [
+    "Slightly: the chicken is marinated with chili powder and there's sriracha",
+    "No, it's completely mild",
+    "Very spicy",
+    "Only the side salad is spicy"
+   ],
+   "answer": [
+    "Slightly: the chicken is marinated with chili powder and there's sriracha"
+   ],
+   "explanation": "A wheat wrap with avocado, iceberg, pico de gallo, sour cream, sriracha and chicken marinated in olive oil and chili powder. Slightly spicy.",
+   "why": "Guests who don't like heat should know before ordering."
+  },
+  {
+   "n": 121,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M burgers",
+   "prompt": "How heavy is the patty in the M/M Black Angus Burger?",
+   "options": [
+    "180 g",
+    "120 g",
+    "150 g",
+    "250 g"
+   ],
+   "answer": [
+    "180 g"
+   ],
+   "explanation": "A classic burger with a thick 180 g prime Angus patty, tomato, grilled onion, gherkins, cheddar and BBQ sauce in a fresh brioche bun.",
+   "why": "Guests comparing burgers often ask about the patty size."
+  },
+  {
+   "n": 122,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M burgers",
+   "prompt": "What is the Veggie Burger patty made from?",
+   "options": [
+    "Quinoa and vegetables, homemade",
+    "Chickpeas, like falafel",
+    "Beetroot and lentils",
+    "A plant-based meat substitute"
+   ],
+   "answer": [
+    "Quinoa and vegetables, homemade"
+   ],
+   "explanation": "A homemade patty of quinoa and vegetables, fried for a crispy bite, with burger sauce, gherkins and iceberg. Marked (V).",
+   "why": "Vegetarian guests often ask what's in a veggie patty."
+  },
+  {
+   "n": 123,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "For the love of pork",
+   "prompt": "What is the mash in the Bangers and Mash made of?",
+   "options": [
+    "Potatoes and carrots",
+    "Sweet potato",
+    "Potatoes only",
+    "Celeriac"
+   ],
+   "answer": [
+    "Potatoes and carrots"
+   ],
+   "explanation": "Three English pork sausages in a caramelised onion gravy, topped with crispy onion and kale, with a mash of potatoes and carrots.",
+   "why": "Small details like this make your description sound like you've tasted it."
+  },
+  {
+   "n": 124,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "For the love of pork",
+   "prompt": "How much is a portion of the M/M Glazed Pork Ribs?",
+   "options": [
+    "600 g",
+    "300 g",
+    "400 g",
+    "800 g"
+   ],
+   "answer": [
+    "600 g"
+   ],
+   "explanation": "600 g of homemade slow-cooked pork back ribs, glazed with a smoky BBQ sauce, with coleslaw and roasted potatoes.",
+   "why": "A big portion: useful when a guest asks if it's enough or too much."
+  },
+  {
+   "n": 125,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "For the love of pork",
+   "prompt": "What is the Prager Schnitzel fried in?",
+   "options": [
+    "Clarified butter",
+    "Sunflower oil",
+    "Olive oil",
+    "Beef dripping"
+   ],
+   "answer": [
+    "Clarified butter"
+   ],
+   "explanation": "The schnitzel is fried in clarified butter for flavour. The breadcrumbs are seasoned with smoked paprika, onion powder and garlic powder. With caper butter, lemon, rocket, cherry tomato, Grana Padano and potato salad. Marked (P).",
+   "why": "A detail that helps you sell it."
+  },
+  {
+   "n": 126,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "For the love of pork",
+   "prompt": "What are the Beer-Braised Pork Cheeks braised in?",
+   "options": [
+    "Dark Belgian beer (Leffe Brune)",
+    "Red wine",
+    "Apple cider",
+    "Pork stock only"
+   ],
+   "answer": [
+    "Dark Belgian beer (Leffe Brune)"
+   ],
+   "explanation": "Pork cheeks braised slowly in Leffe Brune until they fall apart, with mashed potato, pearl onions, baby carrot and green peas. Marked (P, A).",
+   "why": "Guests who avoid alcohol, even in cooking, need to know."
+  },
+  {
+   "n": 127,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Meat specials",
+   "prompt": "What is the Cordon Blue Deluxe filled with?",
+   "options": [
+    "Pork ham and Comté cheese",
+    "Turkey ham and gouda",
+    "Beef bacon and mozzarella",
+    "Spinach and feta"
+   ],
+   "answer": [
+    "Pork ham and Comté cheese"
+   ],
+   "explanation": "A chicken breast schnitzel filled with pork ham and Comté, with a truffle cheese sauce, mashed potatoes, broccolini and baby carrot. Marked (P) because of the ham.",
+   "why": "A chicken dish that contains pork: guests who don't eat pork must be told."
+  },
+  {
+   "n": 128,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Meat specials",
+   "prompt": "The Comté in the Cordon Blue Deluxe is made from what kind of milk?",
+   "options": [
+    "Unpasteurised milk",
+    "Pasteurised goat's milk",
+    "Sheep's milk",
+    "Buffalo milk"
+   ],
+   "answer": [
+    "Unpasteurised milk"
+   ],
+   "explanation": "Comté is a cheese from the Alps with a mild, slightly sweet taste, made from unpasteurised milk. It's in the Cordon Blue Deluxe.",
+   "why": "Some guests, such as pregnant guests, avoid unpasteurised cheese."
+  },
+  {
+   "n": 129,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Meat specials",
+   "prompt": "How is the Belgian Steak Tartare served?",
+   "options": [
+    "Raw: 180 g of beef with cocktail sauce and egg yolk, with Belgian fries",
+    "Seared on the outside, with mash",
+    "Cooked medium, with a fried egg",
+    "Raw, on its own without a side"
+   ],
+   "answer": [
+    "Raw: 180 g of beef with cocktail sauce and egg yolk, with Belgian fries"
+   ],
+   "explanation": "180 g of raw beef cut in cubes, seasoned with a cocktail sauce and egg yolk, with cherry tomato, rocket and a thin sourdough toast, served with Belgian fries. Marked (R).",
+   "why": "Guests must know it's raw before ordering."
+  },
+  {
+   "n": 130,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "From the farm",
+   "prompt": "A guest wants a steak that's lean and very tender. Which do you recommend?",
+   "options": [
+    "Black Angus Grilled Tenderloin",
+    "Grilled Rib Eye",
+    "Grilled Wagyu Striploin",
+    "Steak and Fries (rump)"
+   ],
+   "answer": [
+    "Black Angus Grilled Tenderloin"
+   ],
+   "explanation": "The tenderloin is very lean and very tender. The rib eye and Wagyu striploin have more fat for flavour. The rump in Steak and Fries is lean too, but not the most tender cut.",
+   "why": "Matching the cut to the guest's taste gets the steak right first time."
+  },
+  {
+   "n": 131,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "From the farm",
+   "prompt": "A guest orders the tenderloin well done. What do you tell them?",
+   "options": [
+    "It's a thick cut, so well done may take at least 25 minutes",
+    "Well done isn't possible on the tenderloin",
+    "It takes the same time as medium",
+    "It will be cut in half to cook faster"
+   ],
+   "answer": [
+    "It's a thick cut, so well done may take at least 25 minutes"
+   ],
+   "explanation": "The Black Angus tenderloin is a thick piece of meat. For well done, tell the guest it may take at least 25 minutes.",
+   "why": "Setting the time up front avoids a long, unexplained wait."
+  },
+  {
+   "n": 132,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "From the farm",
+   "prompt": "What is Wagyu known for?",
+   "options": [
+    "High fat marbling through the meat, for flavour and a soft texture",
+    "Being very lean",
+    "Being grass fed only",
+    "Being dry aged for 60 days"
+   ],
+   "answer": [
+    "High fat marbling through the meat, for flavour and a soft texture"
+   ],
+   "explanation": "Our Grilled Wagyu Striploin is Australian \"Westholme\" Wagyu, marbling 4 to 5. Wagyu is known for its fat marbling, which adds flavour and a soft texture. It comes with red wine shallots and a Padron pepper.",
+   "why": "Explains the price difference to a guest choosing a steak."
+  },
+  {
+   "n": 133,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "From the farm",
+   "prompt": "Which steak comes in the Steak and Fries?",
+   "options": [
+    "200 g Australian grain-fed Angus rump",
+    "Black Angus tenderloin",
+    "Prime Angus rib eye",
+    "Wagyu striploin"
+   ],
+   "answer": [
+    "200 g Australian grain-fed Angus rump"
+   ],
+   "explanation": "Steak and Fries is a grilled 200 g Australian Angus rump, grain fed for 250 days: a simple steak without fat, with good flavour, though not the softest cut.",
+   "why": "Helps you set the right expectation for the guest."
+  },
+  {
+   "n": 134,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sides",
+   "prompt": "What's the difference between Belgian fries and skinny fries?",
+   "options": [
+    "Belgian fries are thick (13 mm) and double cooked; skinny fries are thin (7 mm)",
+    "Belgian fries are thin; skinny fries are thick",
+    "Belgian fries are made from sweet potato",
+    "Only the cooking oil is different"
+   ],
+   "answer": [
+    "Belgian fries are thick (13 mm) and double cooked; skinny fries are thin (7 mm)"
+   ],
+   "explanation": "Belgian fries are a thick 13 mm cut, double cooked. Skinny fries are a crispy 7 mm cut. Both are always served with mayo and ketchup on the side.",
+   "why": "Guests often ask which to choose."
+  },
+  {
+   "n": 135,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "From the sea",
+   "prompt": "A guest who doesn't take alcohol wants the Fish and Chips. What can you offer?",
+   "options": [
+    "A batter without alcohol, which takes about 30 minutes",
+    "Nothing: the batter always has beer",
+    "The alcohol cooks off, so it's fine",
+    "A grilled cod, ready at the same time"
+   ],
+   "answer": [
+    "A batter without alcohol, which takes about 30 minutes"
+   ],
+   "explanation": "The Fish and Chips (A) has a beer batter. A batter without alcohol can be made, but it takes about 30 minutes.",
+   "why": "Offer the option and the timing, so the guest can decide."
+  },
+  {
+   "n": 136,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "From the sea",
+   "prompt": "What is the sauce on the Salmon Fillet?",
+   "options": [
+    "Beurre blanc, a white wine butter sauce",
+    "Hollandaise",
+    "Béarnaise",
+    "Bisque"
+   ],
+   "answer": [
+    "Beurre blanc, a white wine butter sauce"
+   ],
+   "explanation": "Skin-on salmon with a beurre blanc (white wine butter sauce), parsley potatoes, leeks, asparagus and cherry tomato. Marked (A) because of the wine.",
+   "why": "Guests who avoid alcohol need to know about the sauce."
+  },
+  {
+   "n": 137,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "From the sea",
+   "prompt": "What should you ask a guest ordering the Tuna Steak?",
+   "options": [
+    "How they'd like it cooked: it's best pink in the middle",
+    "Nothing: it's always cooked through",
+    "Whether they want it raw",
+    "Which sauce they want from the steak list"
+   ],
+   "answer": [
+    "How they'd like it cooked: it's best pink in the middle"
+   ],
+   "explanation": "Tuna is at its best pink in the middle; cooked all the way through it goes dry. Ask how the guest wants it. With red pepper chimichurri, lemon and a fennel citrus salad.",
+   "why": "Asking first gets the dish right for the guest."
+  },
+  {
+   "n": 138,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Mussels",
+   "prompt": "Can the mussels be made without white wine?",
+   "options": [
+    "Yes, the white wine can be left out on request",
+    "No, it's part of every sauce",
+    "Only the Thai Curry",
+    "Only for the 1 kg portion"
+   ],
+   "answer": [
+    "Yes, the white wine can be left out on request"
+   ],
+   "explanation": "All our mussels are made with white wine as standard, which is why they're marked (A), but it can be left out on request.",
+   "why": "Lets guests who avoid alcohol still enjoy the mussels."
+  },
+  {
+   "n": 139,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Pasta",
+   "prompt": "How many cheeses are in the béchamel of the Pulled Beef Mac & Cheese?",
+   "options": [
+    "6",
+    "3",
+    "4",
+    "5"
+   ],
+   "answer": [
+    "6"
+   ],
+   "explanation": "Chifferi pasta in a six-cheese béchamel (Emmental, Comté, Grana Padano, Old Farmdal, mature cheddar and gorgonzola) with pulled beef, finished with gremolata and truffle oil.",
+   "why": "A strong selling point for cheese lovers."
+  },
+  {
+   "n": 140,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Pasta",
+   "prompt": "Why are the Argentinian red shrimp in the linguini red before cooking?",
+   "options": [
+    "They're naturally red, unlike most prawns",
+    "They're marinated in paprika",
+    "They're smoked",
+    "They're cooked before delivery"
+   ],
+   "answer": [
+    "They're naturally red, unlike most prawns"
+   ],
+   "explanation": "Argentinian red shrimp are red before cooking, and sweeter and softer than tiger prawns. The bisque is made from their shells, so the whole sauce carries the shrimp flavour.",
+   "why": "A detail guests remember, and a reason to try the dish."
+  },
+  {
+   "n": 141,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Vegetarian",
+   "prompt": "What makes the Green Risotto green?",
+   "options": [
+    "A spinach and green herb paste",
+    "Basil pesto",
+    "Pea purée",
+    "Matcha"
+   ],
+   "answer": [
+    "A spinach and green herb paste"
+   ],
+   "explanation": "A new version of our risotto, made green with a spinach and green herb paste, with asparagus, green peas and zucchini, topped with soft goat cheese and half-dried cherry tomatoes. Marked (V, GF).",
+   "why": "Helps you describe a vegetarian main with confidence."
+  },
+  {
+   "n": 142,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M stone baked pizzas",
+   "prompt": "What does \"Quatro Stagione\" mean?",
+   "options": [
+    "Four seasons",
+    "Four cheeses",
+    "Four meats",
+    "Four corners"
+   ],
+   "answer": [
+    "Four seasons"
+   ],
+   "explanation": "Quattro stagioni is Italian for four seasons: mozzarella, tomato sauce, artichokes, mushrooms, onion, turkey ham and olives. Quattro formaggi means four cheeses.",
+   "why": "Guests often mix the two up."
+  },
+  {
+   "n": 143,
+   "type": "multi",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M stone baked pizzas",
+   "prompt": "Which of these pizzas contain pork? Pick all that apply.",
+   "options": [
+    "Prosciutto & Rocket",
+    "Meat Lover",
+    "Diavola",
+    "Pepperoni",
+    "Figs and Bacon",
+    "Quatro Stagione"
+   ],
+   "answer": [
+    "Prosciutto & Rocket",
+    "Meat Lover"
+   ],
+   "explanation": "Prosciutto & Rocket and Meat Lover have pork prosciutto, marked (P). Diavola has beef chorizo, Pepperoni has beef salami, Figs and Bacon has beef bacon and Quatro Stagione has turkey ham.",
+   "why": "A guest who doesn't eat pork must never get pork by mistake."
+  },
+  {
+   "n": 144,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M stone baked pizzas",
+   "prompt": "Which pizza is made to be quite spicy?",
+   "options": [
+    "Caliente",
+    "Margarita",
+    "Alla Pollo",
+    "Quatro Formaggi"
+   ],
+   "answer": [
+    "Caliente"
+   ],
+   "explanation": "The Caliente has beef 'nduja (a spiced beef mince mix), beef pepperoni, Roquito chilies, tomato sauce, mozzarella and rocket. It's meant to be quite spicy.",
+   "why": "Warn guests who don't like heat, and point spice lovers to it."
+  },
+  {
+   "n": 145,
+   "type": "multi",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sourdough and crispy pizzas",
+   "prompt": "Which pizzas come with cold, fresh toppings? Pick all that apply.",
+   "options": [
+    "Crispy Carpaccio",
+    "Burrata",
+    "Tartuffo",
+    "Figs and Bacon",
+    "Pescatore"
+   ],
+   "answer": [
+    "Crispy Carpaccio",
+    "Burrata"
+   ],
+   "explanation": "The Crispy Carpaccio (raw beef carpaccio, tomato, rocket, Grana Padano) and the Burrata (burrata, tomatoes, basil oil, olive tapenade) have cold toppings on a crispy base.",
+   "why": "Guests expecting a hot pizza should know before ordering."
+  },
+  {
+   "n": 146,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Desserts",
+   "prompt": "How long does Le Moelleux au Chocolat take?",
+   "options": [
+    "About 15 minutes: it's made to order",
+    "2 minutes: it's ready to serve",
+    "30 minutes",
+    "It's served cold, straight away"
+   ],
+   "answer": [
+    "About 15 minutes: it's made to order"
+   ],
+   "explanation": "Our moelleux, a hot soft-centred chocolate cake, is made to order and takes about 15 minutes. Served with vanilla ice cream and red fruit.",
+   "why": "Offer it early, or let the guest know about the wait."
+  },
+  {
+   "n": 147,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Desserts",
+   "prompt": "What ice cream comes with the Profiteroles?",
+   "options": [
+    "Salted caramel",
+    "Vanilla",
+    "Chocolate",
+    "Speculoos"
+   ],
+   "answer": [
+    "Salted caramel"
+   ],
+   "explanation": "Choux pastry profiteroles filled with vanilla pastry cream, with salted caramel ice cream and Valrhona chocolate sauce. Good for sharing.",
+   "why": "A good dessert to suggest for the table to share."
+  }
+ ]
+}

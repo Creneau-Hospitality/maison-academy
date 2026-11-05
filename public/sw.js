@@ -3,6 +3,7 @@
 // Answers are queued by the app itself (localStorage) and sent when back online;
 // this file only caches the app's own files. Database calls are never cached.
 const CACHE = 'ma-shell-v2';
+const PHOTOS = 'ma-photos-v1';
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(['/', '/manifest.webmanifest', '/icon-192.png'])));
@@ -10,7 +11,7 @@ self.addEventListener('install', (e) => {
 });
 
 self.addEventListener('activate', (e) => {
-  e.waitUntil(caches.keys().then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))));
+  e.waitUntil(caches.keys().then((keys) => Promise.all(keys.filter((k) => k !== CACHE && k !== PHOTOS).map((k) => caches.delete(k)))));
   self.clients.claim();
 });
 
@@ -25,6 +26,15 @@ self.addEventListener('fetch', (e) => {
       caches.open(CACHE).then((c) => c.put('/', copy));
       return res;
     }).catch(() => caches.match('/')));
+    return;
+  }
+  if (url.pathname.startsWith('/menu/')) {
+    // Dish photos on cards: kept once seen, so photo cards open on low signal.
+    // New photos get a new folder name (e.g. /menu/2026-10/), so cached copies never go stale.
+    e.respondWith(caches.match(req).then((hit) => hit || fetch(req).then((res) => {
+      if (res.ok) { const copy = res.clone(); caches.open(PHOTOS).then((c) => c.put(req, copy)); }
+      return res;
+    })));
     return;
   }
   if (url.pathname.startsWith('/assets/') || /\.(png|webmanifest|woff2?)$/.test(url.pathname)) {

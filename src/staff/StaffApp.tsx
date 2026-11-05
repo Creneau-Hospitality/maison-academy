@@ -216,7 +216,11 @@ function Home({ onNeedLogin }: { onNeedLogin: () => void }) {
       // Keep today's set on the phone, so it still opens on low signal
       // (not when the location check is on: the set starts at the venue).
       if (h.cards_available && !h.set_today?.finished && !h.location_required && !h.exam_today) {
-        rpc('start_daily_set').then((s) => store.set('ma-set', s)).catch(() => {});
+        rpc<{ cards?: { media: string | null }[] }>('start_daily_set').then((s) => {
+          store.set('ma-set', s);
+          // Fetch today's photos now, so the service worker keeps them for low signal.
+          (s.cards ?? []).forEach((c) => { if (c.media) void fetch(c.media).catch(() => {}); });
+        }).catch(() => {});
       }
     } catch (e) {
       if (e instanceof NeedLogin) onNeedLogin();

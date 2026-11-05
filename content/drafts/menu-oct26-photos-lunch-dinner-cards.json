@@ -1,0 +1,2861 @@
+{
+ "unit": {
+  "id": "dish-photos-lunch-dinner",
+  "track_id": "food",
+  "name": "Dish photos: lunch and dinner",
+  "sort": 8
+ },
+ "source": "Full menu descriptions, MM-AR, October 2026",
+ "cards": [
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Seasonal: Autumn Menu",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/butternut-pumpkin-salad.jpg",
+   "options": [
+    "Butternut Pumpkin Salad",
+    "Wild Mushroom Ravioli",
+    "Confit Duck Leg",
+    "Crispy-Skin Grilled Seabream"
+   ],
+   "answer": [
+    "Butternut Pumpkin Salad"
+   ],
+   "explanation": "This is the Butternut Pumpkin Salad, listed under Seasonal: Autumn Menu. On the plate: mixed leaves, roasted butternut pumpkin, goat cheese, semi-dried tomatoes, yoghurt dressing, pomegranate, red onion, toasted almonds.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 1
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Seasonal: Autumn Menu",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/goulash.jpg",
+   "options": [
+    "Goulash",
+    "Butternut Pumpkin Salad",
+    "Lamb Chops",
+    "Crispy-Skin Grilled Seabream"
+   ],
+   "answer": [
+    "Goulash"
+   ],
+   "explanation": "This is the Goulash, listed under Seasonal: Autumn Menu. On the plate: Hungarian beef stew, red peppers, paprika, tomato, potato, toasted sourdough, sour cream.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 2
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Seasonal: Autumn Menu",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/wild-mushroom-ravioli.jpg",
+   "options": [
+    "Wild Mushroom Ravioli",
+    "Goulash",
+    "Lamb Chops",
+    "Confit Duck Leg"
+   ],
+   "answer": [
+    "Wild Mushroom Ravioli"
+   ],
+   "explanation": "This is the Wild Mushroom Ravioli, listed under Seasonal: Autumn Menu. On the plate: truffle butter sauce, ricotta, shimeji, king oyster, Grana Padano.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 3
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Seasonal: Autumn Menu",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/crispy-skin-grilled-seabream.jpg",
+   "options": [
+    "Crispy-Skin Grilled Seabream",
+    "Goulash",
+    "Lamb Chops",
+    "Wild Mushroom Ravioli"
+   ],
+   "answer": [
+    "Crispy-Skin Grilled Seabream"
+   ],
+   "explanation": "This is the Crispy-Skin Grilled Seabream, listed under Seasonal: Autumn Menu. On the plate: Spanish rice, calamari, saffron aioli, bell pepper, green asparagus, cherry tomato.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 4
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Seasonal: Autumn Menu",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/lamb-chops.jpg",
+   "options": [
+    "Lamb Chops",
+    "Wild Mushroom Ravioli",
+    "Goulash",
+    "Butternut Pumpkin Salad"
+   ],
+   "answer": [
+    "Lamb Chops"
+   ],
+   "explanation": "This is the Lamb Chops, listed under Seasonal: Autumn Menu. On the plate: dry-rub marinated, confit garlic lamb jus, potato boulangère, sautéed seasonal vegetables.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 5
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Seasonal: Autumn Menu",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/confit-duck-leg.jpg",
+   "options": [
+    "Confit Duck Leg",
+    "Butternut Pumpkin Salad",
+    "Wild Mushroom Ravioli",
+    "Goulash"
+   ],
+   "answer": [
+    "Confit Duck Leg"
+   ],
+   "explanation": "This is the Confit Duck Leg, listed under Seasonal: Autumn Menu. On the plate: slow-cooked duck leg, lentil stew, carrot purée, sautéed spinach, green beans, radicchio.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 6
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/huitres-herve-3-oysters.jpg",
+   "options": [
+    "Huitres Hervé #3 Oysters",
+    "Padron Peppers",
+    "Patatas Bravas",
+    "\"Espinaler\" Spanish Olives"
+   ],
+   "answer": [
+    "Huitres Hervé #3 Oysters"
+   ],
+   "explanation": "This is the Huitres Hervé #3 Oysters, listed under Sharing. On the plate: france, Normandy.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 7
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/espinaler-spanish-olives.jpg",
+   "options": [
+    "\"Espinaler\" Spanish Olives",
+    "Sardines Toast",
+    "Patatas Bravas",
+    "M/M Pork Charcuterie Platter"
+   ],
+   "answer": [
+    "\"Espinaler\" Spanish Olives"
+   ],
+   "explanation": "This is the \"Espinaler\" Spanish Olives, listed under Sharing.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 8
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/m-m-pork-charcuterie-platter.jpg",
+   "options": [
+    "M/M Pork Charcuterie Platter",
+    "Sardines Toast",
+    "M/M Nacho's",
+    "Pork Lovers Platter"
+   ],
+   "answer": [
+    "M/M Pork Charcuterie Platter"
+   ],
+   "explanation": "This is the M/M Pork Charcuterie Platter, listed under Sharing. On the plate: porchetta, Parma ham, mortadella, coppa, olives, Belgian pickles, pane carasau, cornichons.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 9
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/pork-lovers-platter.jpg",
+   "options": [
+    "Pork Lovers Platter",
+    "Sardines Toast",
+    "M/M Pork Charcuterie Platter",
+    "Patatas Bravas"
+   ],
+   "answer": [
+    "Pork Lovers Platter"
+   ],
+   "explanation": "This is the Pork Lovers Platter, listed under Sharing. On the plate: pork ribs, pigs in blankets, kasekraner sausage, smoked pork belly bites, pork salami, gherkins, balsamic marinated shallots.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 10
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/m-m-cheese-selection.jpg",
+   "options": [
+    "M/M Cheese Selection",
+    "Chimichurri Beef Skewers",
+    "\"Espinaler\" Spanish Olives",
+    "Glazed Pork Rib Bites"
+   ],
+   "answer": [
+    "M/M Cheese Selection"
+   ],
+   "explanation": "This is the M/M Cheese Selection, listed under Sharing. On the plate: selection of cheeses by affineur \"Van Tricht\", chutney, grapes, crackers, walnuts.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 11
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/crispy-calamari.jpg",
+   "options": [
+    "Crispy Calamari",
+    "BBQ Chicken Wings",
+    "Sardines Toast",
+    "Patatas Bravas"
+   ],
+   "answer": [
+    "Crispy Calamari"
+   ],
+   "explanation": "This is the Crispy Calamari, listed under Sharing. On the plate: aioli, lemon.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 12
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/van-tricht-cheese-croquettes.jpg",
+   "options": [
+    "\"Van Tricht\" Cheese Croquettes",
+    "Patatas Bravas",
+    "Huitres Hervé #3 Oysters",
+    "Chimichurri Beef Skewers"
+   ],
+   "answer": [
+    "\"Van Tricht\" Cheese Croquettes"
+   ],
+   "explanation": "This is the \"Van Tricht\" Cheese Croquettes, listed under Sharing. On the plate: signature recipe with aged gouda \"Farmdal OG Krystal\", fried parsley, whole grain mustard dip.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 13
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/pigs-in-blankets.jpg",
+   "options": [
+    "Pigs in Blankets",
+    "Sardines Toast",
+    "Padron Peppers",
+    "Huitres Hervé #3 Oysters"
+   ],
+   "answer": [
+    "Pigs in Blankets"
+   ],
+   "explanation": "This is the Pigs in Blankets, listed under Sharing.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 14
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/glazed-pork-rib-bites.jpg",
+   "options": [
+    "Glazed Pork Rib Bites",
+    "Sardines Toast",
+    "Pigs in Blankets",
+    "\"Van Tricht\" Cheese Croquettes"
+   ],
+   "answer": [
+    "Glazed Pork Rib Bites"
+   ],
+   "explanation": "This is the Glazed Pork Rib Bites, listed under Sharing.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 15
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/bbq-chicken-wings.jpg",
+   "options": [
+    "BBQ Chicken Wings",
+    "M/M Fish Taco",
+    "Patatas Bravas",
+    "M/M Nacho's"
+   ],
+   "answer": [
+    "BBQ Chicken Wings"
+   ],
+   "explanation": "This is the BBQ Chicken Wings, listed under Sharing. On the plate: chicken wings tossed in BBQ sauce, blue cheese dip, celery crudités.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 16
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/m-m-nacho-s.jpg",
+   "options": [
+    "M/M Nacho's",
+    "M/M Cheese Selection",
+    "Pork Lovers Platter",
+    "\"Espinaler\" Spanish Olives"
+   ],
+   "answer": [
+    "M/M Nacho's"
+   ],
+   "explanation": "This is the M/M Nacho's, listed under Sharing. On the plate: homemade crispy tortilla, guacamole, pico de gallo, chilli beans, cheddar, sour cream, jalapeño, sriracha.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 17
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/padron-peppers.jpg",
+   "options": [
+    "Padron Peppers",
+    "Pigs in Blankets",
+    "Huitres Hervé #3 Oysters",
+    "M/M Fish Taco"
+   ],
+   "answer": [
+    "Padron Peppers"
+   ],
+   "explanation": "This is the Padron Peppers, listed under Sharing. On the plate: blistered Padron peppers, Maldon salt.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 18
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/m-m-fish-taco.jpg",
+   "options": [
+    "M/M Fish Taco",
+    "\"Espinaler\" Spanish Olives",
+    "Padron Peppers",
+    "Melted Camembert"
+   ],
+   "answer": [
+    "M/M Fish Taco"
+   ],
+   "explanation": "This is the M/M Fish Taco, listed under Sharing. On the plate: 2 pieces, wheat tortilla, battered cod fillet, pico de gallo, avocado, sriracha, sour cream.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 19
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/chimichurri-beef-skewers.jpg",
+   "options": [
+    "Chimichurri Beef Skewers",
+    "\"Van Tricht\" Cheese Croquettes",
+    "Glazed Pork Rib Bites",
+    "\"Espinaler\" Spanish Olives"
+   ],
+   "answer": [
+    "Chimichurri Beef Skewers"
+   ],
+   "explanation": "This is the Chimichurri Beef Skewers, listed under Sharing. On the plate: marinated Angus beef, roasted pepper chimichurri.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 20
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/patatas-bravas.jpg",
+   "options": [
+    "Patatas Bravas",
+    "M/M Fish Taco",
+    "M/M Cheese Selection",
+    "Sardines Toast"
+   ],
+   "answer": [
+    "Patatas Bravas"
+   ],
+   "explanation": "This is the Patatas Bravas, listed under Sharing. On the plate: fried potatoes, spicy tomato sauce, smoked paprika, aioli.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 21
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/melted-camembert.jpg",
+   "options": [
+    "Melted Camembert",
+    "M/M Fish Taco",
+    "Huitres Hervé #3 Oysters",
+    "M/M Pork Charcuterie Platter"
+   ],
+   "answer": [
+    "Melted Camembert"
+   ],
+   "explanation": "This is the Melted Camembert, listed under Sharing. On the plate: sourdough bread, honey, thyme, gherkins.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 22
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sharing",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/sardines-toast.jpg",
+   "options": [
+    "Sardines Toast",
+    "Patatas Bravas",
+    "Glazed Pork Rib Bites",
+    "Padron Peppers"
+   ],
+   "answer": [
+    "Sardines Toast"
+   ],
+   "explanation": "This is the Sardines Toast, listed under Sharing. On the plate: sourdough, escalivada, \"Espinaler\" baby sardines, aioli, shaved fennel, extra virgin olive oil.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 23
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Soups & Starters",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/wagyu-beef-carpaccio.jpg",
+   "options": [
+    "Wagyu Beef Carpaccio",
+    "Garlic Shrimps",
+    "Seabream Ceviche",
+    "Vitello Tonnato"
+   ],
+   "answer": [
+    "Wagyu Beef Carpaccio"
+   ],
+   "explanation": "This is the Wagyu Beef Carpaccio, listed under Soups & Starters. On the plate: raw thinly sliced, signature caper dressing, Grana Padano PDO, roquette.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 24
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Soups & Starters",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/burrata.jpg",
+   "options": [
+    "Burrata",
+    "Garlic Shrimps",
+    "Escargots de Bourgogne",
+    "Seabream Ceviche"
+   ],
+   "answer": [
+    "Burrata"
+   ],
+   "explanation": "This is the Burrata, listed under Soups & Starters. On the plate: heirloom tomatoes, peach, basil emulsion, balsamic vinegar, crispy basil.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 25
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Soups & Starters",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/escargots-de-bourgogne.jpg",
+   "options": [
+    "Escargots de Bourgogne",
+    "Garlic Shrimps",
+    "Wagyu Tartare",
+    "Burrata"
+   ],
+   "answer": [
+    "Escargots de Bourgogne"
+   ],
+   "explanation": "This is the Escargots de Bourgogne, listed under Soups & Starters. On the plate: 12 pcs Burgundy snails, garlic and parsley butter, sourdough.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 26
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Soups & Starters",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/wagyu-tartare.jpg",
+   "options": [
+    "Wagyu Tartare",
+    "Wagyu Beef Carpaccio",
+    "Vitello Tonnato",
+    "Garlic Shrimps"
+   ],
+   "answer": [
+    "Wagyu Tartare"
+   ],
+   "explanation": "This is the Wagyu Tartare, listed under Soups & Starters. On the plate: raw Wagyu beef, classic Belgian dressing, toasted sourdough, crispy potato.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 27
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Soups & Starters",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/garlic-shrimps.jpg",
+   "options": [
+    "Garlic Shrimps",
+    "Escargots de Bourgogne",
+    "Soup of the Day",
+    "Tuna Tartare & Stracciatella"
+   ],
+   "answer": [
+    "Garlic Shrimps"
+   ],
+   "explanation": "This is the Garlic Shrimps, listed under Soups & Starters. On the plate: shrimps, garlic butter, chili, parsley, tomato, lemon, sourdough toast.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 28
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Soups & Starters",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/vitello-tonnato.jpg",
+   "options": [
+    "Vitello Tonnato",
+    "Tuna Tartare & Stracciatella",
+    "Soup of the Day",
+    "Wagyu Beef Carpaccio"
+   ],
+   "answer": [
+    "Vitello Tonnato"
+   ],
+   "explanation": "This is the Vitello Tonnato, listed under Soups & Starters. On the plate: slow-roasted veal tenderloin, tuna, anchovy, capers, Grana Padano.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 29
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Soups & Starters",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/tuna-tartare-stracciatella.jpg",
+   "options": [
+    "Tuna Tartare & Stracciatella",
+    "Burrata",
+    "Soup of the Day",
+    "Wagyu Tartare"
+   ],
+   "answer": [
+    "Tuna Tartare & Stracciatella"
+   ],
+   "explanation": "This is the Tuna Tartare & Stracciatella, listed under Soups & Starters. On the plate: raw tuna loin, sun-dried tomato, capers, stracciatella, basil pesto, cherry tomato, pistachio, toast.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 30
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Soups & Starters",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/seabream-ceviche.jpg",
+   "options": [
+    "Seabream Ceviche",
+    "Wagyu Tartare",
+    "Escargots de Bourgogne",
+    "Burrata"
+   ],
+   "answer": [
+    "Seabream Ceviche"
+   ],
+   "explanation": "This is the Seabream Ceviche, listed under Soups & Starters. On the plate: ají amarillo \"leche de tigre\", fresh corn salsa, avocado, sweet potato, nachos.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 31
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Salads",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/classic-caesar.jpg",
+   "options": [
+    "Classic Caesar",
+    "Superfood Salad",
+    "Roasted Beetroot and Feta",
+    "Mediterranean Power Bowl"
+   ],
+   "answer": [
+    "Classic Caesar"
+   ],
+   "explanation": "This is the Classic Caesar, listed under Salads. On the plate: lettuce, Caesar dressing, Grana Padano PDO, croutons, pork bacon.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 32
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Salads",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/chefs-salad.jpg",
+   "options": [
+    "Chefs Salad",
+    "Classic Caesar",
+    "Mediterranean Power Bowl",
+    "Roasted Beetroot and Feta"
+   ],
+   "answer": [
+    "Chefs Salad"
+   ],
+   "explanation": "This is the Chefs Salad, listed under Salads. On the plate: lettuce, avocado, tomato, cucumber, soft boiled egg, pork bacon, Gorgonzola, roasted potatoes, crispy onion, pine nuts, goat cheese toast, French dressing.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 33
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Salads",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/superfood-salad.jpg",
+   "options": [
+    "Superfood Salad",
+    "Baked Goat Cheese Salad",
+    "Classic Caesar",
+    "Roasted Beetroot and Feta"
+   ],
+   "answer": [
+    "Superfood Salad"
+   ],
+   "explanation": "This is the Superfood Salad, listed under Salads. On the plate: avocado, quinoa, kale, radish, lettuce, pomegranate, sprouts, toasted seeds, coriander, cucumber.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 34
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Salads",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/baked-goat-cheese-salad.jpg",
+   "options": [
+    "Baked Goat Cheese Salad",
+    "Roasted Beetroot and Feta",
+    "Classic Caesar",
+    "Chefs Salad"
+   ],
+   "answer": [
+    "Baked Goat Cheese Salad"
+   ],
+   "explanation": "This is the Baked Goat Cheese Salad, listed under Salads. On the plate: warm goat cheese, sourdough toast, pork bacon, cherry tomato, honey mustard dressing, fig.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 35
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Salads",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/roasted-beetroot-and-feta.jpg",
+   "options": [
+    "Roasted Beetroot and Feta",
+    "Baked Goat Cheese Salad",
+    "Mediterranean Power Bowl",
+    "Superfood Salad"
+   ],
+   "answer": [
+    "Roasted Beetroot and Feta"
+   ],
+   "explanation": "This is the Roasted Beetroot and Feta, listed under Salads. On the plate: marinated beetroot, charred orange, balsamic emulsion, hazelnuts, spinach, rocket, feta.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 36
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Salads",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/mediterranean-power-bowl.jpg",
+   "options": [
+    "Mediterranean Power Bowl",
+    "Roasted Beetroot and Feta",
+    "Superfood Salad",
+    "Classic Caesar"
+   ],
+   "answer": [
+    "Mediterranean Power Bowl"
+   ],
+   "explanation": "This is the Mediterranean Power Bowl, listed under Salads. On the plate: Greek seasoned rice, cherry tomato, cucumber, tzatziki, red onion, kalamata olives, feta, chickpeas, avocado, EVOO.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 37
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sandwiches and Toasts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/chicken-avocado-wrap.jpg",
+   "options": [
+    "Chicken Avocado Wrap",
+    "Grilled Chicken Sandwich",
+    "Butcher's Ciabatta",
+    "Crispy Halloumi"
+   ],
+   "answer": [
+    "Chicken Avocado Wrap"
+   ],
+   "explanation": "This is the Chicken Avocado Wrap, listed under Sandwiches and Toasts. On the plate: chicken fillet, avocado, pico de gallo, sour cream, sriracha, iceberg.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 38
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sandwiches and Toasts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/roasted-beef-sandwich.jpg",
+   "options": [
+    "Roasted Beef Sandwich",
+    "Crispy Halloumi",
+    "Chicken Avocado Wrap",
+    "Butcher's Ciabatta"
+   ],
+   "answer": [
+    "Roasted Beef Sandwich"
+   ],
+   "explanation": "This is the Roasted Beef Sandwich, listed under Sandwiches and Toasts. On the plate: ciabatta, Russian dressing, sliced roasted beef, gouda, rocket, tomato, red onion.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 39
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sandwiches and Toasts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/grilled-chicken-sandwich.jpg",
+   "options": [
+    "Grilled Chicken Sandwich",
+    "Roasted Beef Sandwich",
+    "Smoked Pork Belly",
+    "Chicken Avocado Wrap"
+   ],
+   "answer": [
+    "Grilled Chicken Sandwich"
+   ],
+   "explanation": "This is the Grilled Chicken Sandwich, listed under Sandwiches and Toasts. On the plate: sourdough, Cajun chicken, tomato relish, gouda, potato crisps, spicy mayo.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 40
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sandwiches and Toasts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/smoked-pork-belly.jpg",
+   "options": [
+    "Smoked Pork Belly",
+    "Butcher's Ciabatta",
+    "Grilled Chicken Sandwich",
+    "Crispy Halloumi"
+   ],
+   "answer": [
+    "Smoked Pork Belly"
+   ],
+   "explanation": "This is the Smoked Pork Belly, listed under Sandwiches and Toasts. On the plate: toasted brioche, smoked pork belly, Monterey Jack, slow-roasted tomato, gherkins, chipotle mayo, crispy onions, English mustard.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 41
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sandwiches and Toasts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/butcher-s-ciabatta.jpg",
+   "options": [
+    "Butcher's Ciabatta",
+    "Grilled Chicken Sandwich",
+    "Smoked Pork Belly",
+    "Roasted Beef Sandwich"
+   ],
+   "answer": [
+    "Butcher's Ciabatta"
+   ],
+   "explanation": "This is the Butcher's Ciabatta, listed under Sandwiches and Toasts. On the plate: ciabatta, turkey ham, pork chorizo, pork mortadella, provolone, tomato, lettuce, mayonnaise, olive tapenade.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 42
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sandwiches and Toasts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/crispy-halloumi.jpg",
+   "options": [
+    "Crispy Halloumi",
+    "Grilled Chicken Sandwich",
+    "Smoked Pork Belly",
+    "Roasted Beef Sandwich"
+   ],
+   "answer": [
+    "Crispy Halloumi"
+   ],
+   "explanation": "This is the Crispy Halloumi, listed under Sandwiches and Toasts. On the plate: brioche bun, panko-fried halloumi, tomato relish, pickled cabbage slaw, miso mayonnaise.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 43
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M Burgers",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/signature-burger.jpg",
+   "options": [
+    "Signature Burger",
+    "M/M Black Angus Burger",
+    "M/M Chicken Burger",
+    "Veggie Burger"
+   ],
+   "answer": [
+    "Signature Burger"
+   ],
+   "explanation": "This is the Signature Burger, listed under M/M Burgers. On the plate: Angus beef patty, peppercorn sauce, onion jam, camembert, roquette, mushrooms, M/M bun.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 44
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M Burgers",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/m-m-black-angus-burger.jpg",
+   "options": [
+    "M/M Black Angus Burger",
+    "Signature Burger",
+    "M/M Chicken Burger",
+    "Veggie Burger"
+   ],
+   "answer": [
+    "M/M Black Angus Burger"
+   ],
+   "explanation": "This is the M/M Black Angus Burger, listed under M/M Burgers. On the plate: Prime Angus beef patty, tomato, grilled onion, gherkins, cheddar, BBQ sauce, M/M bun.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 45
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M Burgers",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/m-m-chicken-burger.jpg",
+   "options": [
+    "M/M Chicken Burger",
+    "Signature Burger",
+    "M/M Black Angus Burger",
+    "Veggie Burger"
+   ],
+   "answer": [
+    "M/M Chicken Burger"
+   ],
+   "explanation": "This is the M/M Chicken Burger, listed under M/M Burgers. On the plate: fried breaded chicken fillet, lettuce, coleslaw, chili mayo, M/M bun.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 46
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M Burgers",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/veggie-burger.jpg",
+   "options": [
+    "Veggie Burger",
+    "Signature Burger",
+    "M/M Black Angus Burger",
+    "M/M Chicken Burger"
+   ],
+   "answer": [
+    "Veggie Burger"
+   ],
+   "explanation": "This is the Veggie Burger, listed under M/M Burgers. On the plate: quinoa patty, burger sauce, gherkins, iceberg, M/M bun.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 47
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "For the Love of Pork",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/bangers-and-mash.jpg",
+   "options": [
+    "Bangers and Mash",
+    "Pork Chop Blackwell",
+    "'Nduja & Fennel Stuffed Porchetta",
+    "Beer-Braised Pork Cheeks"
+   ],
+   "answer": [
+    "Bangers and Mash"
+   ],
+   "explanation": "This is the Bangers and Mash, listed under For the Love of Pork. On the plate: English pork sausages, carrot mash, onion gravy, crispy onion, kale.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 48
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "For the Love of Pork",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/m-m-glazed-pork-ribs.jpg",
+   "options": [
+    "M/M Glazed Pork Ribs",
+    "Prager Schnitzel",
+    "Bangers and Mash",
+    "Pork Chop Blackwell"
+   ],
+   "answer": [
+    "M/M Glazed Pork Ribs"
+   ],
+   "explanation": "This is the M/M Glazed Pork Ribs, listed under For the Love of Pork. On the plate: pork back ribs, spiced BBQ glaze, coleslaw, roasted potatoes.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 49
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "For the Love of Pork",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/nduja-fennel-stuffed-porchetta.jpg",
+   "options": [
+    "'Nduja & Fennel Stuffed Porchetta",
+    "Bangers and Mash",
+    "M/M Glazed Pork Ribs",
+    "Pork Chop Blackwell"
+   ],
+   "answer": [
+    "'Nduja & Fennel Stuffed Porchetta"
+   ],
+   "explanation": "This is the 'Nduja & Fennel Stuffed Porchetta, listed under For the Love of Pork. On the plate: cauliflower purée, peas à la française, pork gravy, roasted potato.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 50
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "For the Love of Pork",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/prager-schnitzel.jpg",
+   "options": [
+    "Prager Schnitzel",
+    "Beer-Braised Pork Cheeks",
+    "'Nduja & Fennel Stuffed Porchetta",
+    "Pork Chop Blackwell"
+   ],
+   "answer": [
+    "Prager Schnitzel"
+   ],
+   "explanation": "This is the Prager Schnitzel, listed under For the Love of Pork. On the plate: seasoned breadcrumbs, caper butter, lemon, roquette, cherry tomato, Grana Padano PDO, potato salad.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 51
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "For the Love of Pork",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/pork-chop-blackwell.jpg",
+   "options": [
+    "Pork Chop Blackwell",
+    "Prager Schnitzel",
+    "Beer-Braised Pork Cheeks",
+    "M/M Glazed Pork Ribs"
+   ],
+   "answer": [
+    "Pork Chop Blackwell"
+   ],
+   "explanation": "This is the Pork Chop Blackwell, listed under For the Love of Pork. On the plate: British \"Dingley Dell\" pork, Belgian pickle sauce, buttery mashed potato, carrots and peas.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 52
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "For the Love of Pork",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/beer-braised-pork-cheeks.jpg",
+   "options": [
+    "Beer-Braised Pork Cheeks",
+    "Bangers and Mash",
+    "M/M Glazed Pork Ribs",
+    "'Nduja & Fennel Stuffed Porchetta"
+   ],
+   "answer": [
+    "Beer-Braised Pork Cheeks"
+   ],
+   "explanation": "This is the Beer-Braised Pork Cheeks, listed under For the Love of Pork. On the plate: slow-cooked cheeks, mashed potato, pearl onions, baby carrot, green peas.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 53
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Meat Specials",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/classic-belgian-beef-stew-and-fries.jpg",
+   "options": [
+    "Classic Belgian Beef Stew and Fries",
+    "Belgian Steak Tartare",
+    "Cordon Blue Deluxe",
+    "Veggie Burger"
+   ],
+   "answer": [
+    "Classic Belgian Beef Stew and Fries"
+   ],
+   "explanation": "This is the Classic Belgian Beef Stew and Fries, listed under Meat Specials. On the plate: braised beef in Leffe Brune, Belgian fries, endive salad.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 54
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Meat Specials",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/belgian-steak-tartare.jpg",
+   "options": [
+    "Belgian Steak Tartare",
+    "Classic Belgian Beef Stew and Fries",
+    "Cordon Blue Deluxe",
+    "Sweet Potato Fries"
+   ],
+   "answer": [
+    "Belgian Steak Tartare"
+   ],
+   "explanation": "This is the Belgian Steak Tartare, listed under Meat Specials. On the plate: classic Belgian steak tartare, Belgian fries.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 55
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Meat Specials",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/cordon-blue-deluxe.jpg",
+   "options": [
+    "Cordon Blue Deluxe",
+    "Classic Belgian Beef Stew and Fries",
+    "Belgian Steak Tartare",
+    "Steak and Fries"
+   ],
+   "answer": [
+    "Cordon Blue Deluxe"
+   ],
+   "explanation": "This is the Cordon Blue Deluxe, listed under Meat Specials. On the plate: filled chicken schnitzel, pork ham, Comté, truffled cheese sauce, mashed potatoes, broccolini, baby carrot.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 56
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "From the Farm",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/steak-and-fries.jpg",
+   "options": [
+    "Steak and Fries",
+    "Black Angus Grilled Tenderloin",
+    "Corn-Fed Chicken Fillet",
+    "Grilled Rib Eye"
+   ],
+   "answer": [
+    "Steak and Fries"
+   ],
+   "explanation": "This is the Steak and Fries, listed under From the Farm. On the plate: Australian Angus rump, 250 days grain fed.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 57
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "From the Farm",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/black-angus-grilled-tenderloin.jpg",
+   "options": [
+    "Black Angus Grilled Tenderloin",
+    "Steak and Fries",
+    "Corn-Fed Chicken Fillet",
+    "Grilled Rib Eye"
+   ],
+   "answer": [
+    "Black Angus Grilled Tenderloin"
+   ],
+   "explanation": "This is the Black Angus Grilled Tenderloin, listed under From the Farm. On the plate: Black Angus prime tenderloin, grain fed, side of your choice.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 58
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "From the Farm",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/grilled-rib-eye.jpg",
+   "options": [
+    "Grilled Rib Eye",
+    "Black Angus Grilled Tenderloin",
+    "Corn-Fed Chicken Fillet",
+    "Grilled Wagyu Striploin"
+   ],
+   "answer": [
+    "Grilled Rib Eye"
+   ],
+   "explanation": "This is the Grilled Rib Eye, listed under From the Farm. On the plate: Prime Angus, grain fed, side of your choice.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 59
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "From the Farm",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/grilled-wagyu-striploin.jpg",
+   "options": [
+    "Grilled Wagyu Striploin",
+    "Steak and Fries",
+    "Grilled Rib Eye",
+    "Corn-Fed Chicken Fillet"
+   ],
+   "answer": [
+    "Grilled Wagyu Striploin"
+   ],
+   "explanation": "This is the Grilled Wagyu Striploin, listed under From the Farm. On the plate: Australian \"Westholme\" Wagyu MB 4-5, red wine shallots, Padron pepper, side of your choice.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 60
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "From the Farm",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/corn-fed-chicken-fillet.jpg",
+   "options": [
+    "Corn-Fed Chicken Fillet",
+    "Black Angus Grilled Tenderloin",
+    "Steak and Fries",
+    "Grilled Rib Eye"
+   ],
+   "answer": [
+    "Corn-Fed Chicken Fillet"
+   ],
+   "explanation": "This is the Corn-Fed Chicken Fillet, listed under From the Farm. On the plate: baby carrots, zucchini, sweet potato mash, king oyster mushrooms, chicken jus.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 61
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sides",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/belgian-fries.jpg",
+   "options": [
+    "Belgian Fries",
+    "Skinny Fries",
+    "Crispy Truffle Fries",
+    "Oven Roasted Potatoes"
+   ],
+   "answer": [
+    "Belgian Fries"
+   ],
+   "explanation": "This is the Belgian Fries, listed under Sides.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 62
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sides",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/skinny-fries.jpg",
+   "options": [
+    "Skinny Fries",
+    "Crispy Truffle Fries",
+    "Gratinated Cauliflower",
+    "Belgian Fries"
+   ],
+   "answer": [
+    "Skinny Fries"
+   ],
+   "explanation": "This is the Skinny Fries, listed under Sides.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 63
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sides",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/crispy-truffle-fries.jpg",
+   "options": [
+    "Crispy Truffle Fries",
+    "Gratinated Cauliflower",
+    "Belgian Fries",
+    "Maison Mash"
+   ],
+   "answer": [
+    "Crispy Truffle Fries"
+   ],
+   "explanation": "This is the Crispy Truffle Fries, listed under Sides.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 64
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sides",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/oven-roasted-potatoes.jpg",
+   "options": [
+    "Oven Roasted Potatoes",
+    "Sautéed Seasonal Vegetables",
+    "Crispy Truffle Fries",
+    "Garlic Butter Baguette"
+   ],
+   "answer": [
+    "Oven Roasted Potatoes"
+   ],
+   "explanation": "This is the Oven Roasted Potatoes, listed under Sides. On the plate: maris piper potato - butter - Mixed mediterranean herbs ( thyme , rosemary).",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 65
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sides",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/maison-mash.jpg",
+   "options": [
+    "Maison Mash",
+    "Crispy Truffle Fries",
+    "Garlic Butter Baguette",
+    "Garden Salad"
+   ],
+   "answer": [
+    "Maison Mash"
+   ],
+   "explanation": "This is the Maison Mash, listed under Sides.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 66
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sides",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/sweet-potato-fries.jpg",
+   "options": [
+    "Sweet Potato Fries",
+    "Garden Salad",
+    "Maison Mash",
+    "Garlic Butter Baguette"
+   ],
+   "answer": [
+    "Sweet Potato Fries"
+   ],
+   "explanation": "This is the Sweet Potato Fries, listed under Sides.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 67
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sides",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/sauteed-seasonal-vegetables.jpg",
+   "options": [
+    "Sautéed Seasonal Vegetables",
+    "Sweet Potato Fries",
+    "Garden Salad",
+    "Gratinated Cauliflower"
+   ],
+   "answer": [
+    "Sautéed Seasonal Vegetables"
+   ],
+   "explanation": "This is the Sautéed Seasonal Vegetables, listed under Sides.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 68
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sides",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/garden-salad.jpg",
+   "options": [
+    "Garden Salad",
+    "Oven Roasted Potatoes",
+    "Gratinated Cauliflower",
+    "Garlic Butter Baguette"
+   ],
+   "answer": [
+    "Garden Salad"
+   ],
+   "explanation": "This is the Garden Salad, listed under Sides.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 69
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sides",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/gratinated-cauliflower.jpg",
+   "options": [
+    "Gratinated Cauliflower",
+    "Oven Roasted Potatoes",
+    "Belgian Fries",
+    "Crispy Truffle Fries"
+   ],
+   "answer": [
+    "Gratinated Cauliflower"
+   ],
+   "explanation": "This is the Gratinated Cauliflower, listed under Sides.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 70
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "From the Sea",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/fish-and-chips.jpg",
+   "options": [
+    "Fish and Chips",
+    "Salmon Fillet",
+    "Tuna Steak",
+    "Sea Bass Fillet"
+   ],
+   "answer": [
+    "Fish and Chips"
+   ],
+   "explanation": "This is the Fish and Chips, listed under From the Sea. On the plate: beer battered flaky cod, mushy peas, tartare, fries.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 71
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "From the Sea",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/sea-bass-fillet.jpg",
+   "options": [
+    "Sea Bass Fillet",
+    "Cod Fillet",
+    "Salmon Fillet",
+    "Fish and Chips"
+   ],
+   "answer": [
+    "Sea Bass Fillet"
+   ],
+   "explanation": "This is the Sea Bass Fillet, listed under From the Sea. On the plate: roasted vegetables, couscous, asparagus, mint, capers, roasted tomato.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 72
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "From the Sea",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/salmon-fillet.jpg",
+   "options": [
+    "Salmon Fillet",
+    "Sea Bass Fillet",
+    "Fish and Chips",
+    "Tuna Steak"
+   ],
+   "answer": [
+    "Salmon Fillet"
+   ],
+   "explanation": "This is the Salmon Fillet, listed under From the Sea. On the plate: skin-on salmon, beurre blanc, parsley potatoes, leeks, asparagus, cherry tomato.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 73
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "From the Sea",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/tuna-steak.jpg",
+   "options": [
+    "Tuna Steak",
+    "Cod Fillet",
+    "Sea Bass Fillet",
+    "Fish and Chips"
+   ],
+   "answer": [
+    "Tuna Steak"
+   ],
+   "explanation": "This is the Tuna Steak, listed under From the Sea. On the plate: red pepper chimichurri, lemon, fennel citrus salad.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 74
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "From the Sea",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/cod-fillet.jpg",
+   "options": [
+    "Cod Fillet",
+    "Fish and Chips",
+    "Sea Bass Fillet",
+    "Salmon Fillet"
+   ],
+   "answer": [
+    "Cod Fillet"
+   ],
+   "explanation": "This is the Cod Fillet, listed under From the Sea. On the plate: mashed potato, creamy leeks, bisque sauce, broccolini, baby pak choy.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 75
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Mussels",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/classic-mussels.jpg",
+   "options": [
+    "Classic Mussels",
+    "Roquefort Mussels",
+    "Thai Curry Mussels",
+    "Garlic and Cream Mussels"
+   ],
+   "answer": [
+    "Classic Mussels"
+   ],
+   "explanation": "This is the Classic Mussels, listed under Mussels. On the plate: Fisherman's style, mirepoix, white wine, parsley.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 76
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Mussels",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/garlic-and-cream-mussels.jpg",
+   "options": [
+    "Garlic and Cream Mussels",
+    "Mediterranean Mussels",
+    "Classic Mussels",
+    "Roquefort Mussels"
+   ],
+   "answer": [
+    "Garlic and Cream Mussels"
+   ],
+   "explanation": "This is the Garlic and Cream Mussels, listed under Mussels. On the plate: cream, garlic, white wine, mirepoix.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 77
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Mussels",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/mediterranean-mussels.jpg",
+   "options": [
+    "Mediterranean Mussels",
+    "Classic Mussels",
+    "Roquefort Mussels",
+    "Thai Curry Mussels"
+   ],
+   "answer": [
+    "Mediterranean Mussels"
+   ],
+   "explanation": "This is the Mediterranean Mussels, listed under Mussels. On the plate: tomato sauce, Mediterranean herbs, white wine, cherry tomatoes, onion, garlic, basil, capsicum, mirepoix.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 78
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Mussels",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/roquefort-mussels.jpg",
+   "options": [
+    "Roquefort Mussels",
+    "Mediterranean Mussels",
+    "Garlic and Cream Mussels",
+    "Classic Mussels"
+   ],
+   "answer": [
+    "Roquefort Mussels"
+   ],
+   "explanation": "This is the Roquefort Mussels, listed under Mussels. On the plate: roquefort, cream, white wine, mirepoix.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 79
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Mussels",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/thai-curry-mussels.jpg",
+   "options": [
+    "Thai Curry Mussels",
+    "Roquefort Mussels",
+    "Classic Mussels",
+    "Mediterranean Mussels"
+   ],
+   "answer": [
+    "Thai Curry Mussels"
+   ],
+   "explanation": "This is the Thai Curry Mussels, listed under Mussels. On the plate: Thai curry, lemongrass, lime leaf, white wine, coconut milk, mirepoix.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 80
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Pasta",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/spaghetti-bolognese.jpg",
+   "options": [
+    "Spaghetti Bolognese",
+    "Red Shrimp Linguini",
+    "Pulled Beef Mac & Cheese",
+    "Rigatoni Amatriciana"
+   ],
+   "answer": [
+    "Spaghetti Bolognese"
+   ],
+   "explanation": "This is the Spaghetti Bolognese, listed under Pasta. On the plate: spaghetti, beef ragù, cherry tomato, Grana Padano.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 81
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Pasta",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/tuscan-chicken-pasta.jpg",
+   "options": [
+    "Tuscan Chicken Pasta",
+    "Rigatoni Amatriciana",
+    "Pulled Beef Mac & Cheese",
+    "Spaghetti Bolognese"
+   ],
+   "answer": [
+    "Tuscan Chicken Pasta"
+   ],
+   "explanation": "This is the Tuscan Chicken Pasta, listed under Pasta. On the plate: farfalle, grilled chicken, sundried tomato, cream, garlic, spinach, bell peppers, Grana Padano PDO.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 82
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Pasta",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/rigatoni-amatriciana.jpg",
+   "options": [
+    "Rigatoni Amatriciana",
+    "Red Shrimp Linguini",
+    "Spaghetti Bolognese",
+    "Pulled Beef Mac & Cheese"
+   ],
+   "answer": [
+    "Rigatoni Amatriciana"
+   ],
+   "explanation": "This is the Rigatoni Amatriciana, listed under Pasta. On the plate: rigatoni, tomato sauce, guanciale, chili, Pecorino Romano.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 83
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Pasta",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/pulled-beef-mac-cheese.jpg",
+   "options": [
+    "Pulled Beef Mac & Cheese",
+    "Rigatoni Amatriciana",
+    "Red Shrimp Linguini",
+    "Spaghetti Bolognese"
+   ],
+   "answer": [
+    "Pulled Beef Mac & Cheese"
+   ],
+   "explanation": "This is the Pulled Beef Mac & Cheese, listed under Pasta. On the plate: chifferi, six-cheese béchamel, pulled beef, gremolata, truffle oil.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 84
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Pasta",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/red-shrimp-linguini.jpg",
+   "options": [
+    "Red Shrimp Linguini",
+    "Pulled Beef Mac & Cheese",
+    "Spaghetti Bolognese",
+    "Tuscan Chicken Pasta"
+   ],
+   "answer": [
+    "Red Shrimp Linguini"
+   ],
+   "explanation": "This is the Red Shrimp Linguini, listed under Pasta. On the plate: linguini, Argentinian red shrimp, white wine, bisque, tomato, mascarpone.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 85
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Vegetarian",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/aubergine-schnitzel.jpg",
+   "options": [
+    "Aubergine Schnitzel",
+    "Green Risotto with Soft Goat Cheese",
+    "Parmigiana",
+    "Tarte Tatin"
+   ],
+   "answer": [
+    "Aubergine Schnitzel"
+   ],
+   "explanation": "This is the Aubergine Schnitzel, listed under Vegetarian. On the plate: crispy fried eggplant, sauce verte, capsicum coulis, fried capers, lemon.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 86
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Vegetarian",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/green-risotto-with-soft-goat-cheese.jpg",
+   "options": [
+    "Green Risotto with Soft Goat Cheese",
+    "Aubergine Schnitzel",
+    "Parmigiana",
+    "Meat Lover"
+   ],
+   "answer": [
+    "Green Risotto with Soft Goat Cheese"
+   ],
+   "explanation": "This is the Green Risotto with Soft Goat Cheese, listed under Vegetarian. On the plate: Arborio rice, green herbs, asparagus, green peas, zucchini, Grana Padano PDO, cherry tomatoes.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 87
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Vegetarian",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/parmigiana.jpg",
+   "options": [
+    "Parmigiana",
+    "Aubergine Schnitzel",
+    "Green Risotto with Soft Goat Cheese",
+    "Thai Curry Mussels"
+   ],
+   "answer": [
+    "Parmigiana"
+   ],
+   "explanation": "This is the Parmigiana, listed under Vegetarian. On the plate: eggplant, tomato, basil, mozzarella, garlic butter baguette.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 88
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M Stone Baked Pizzas",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/margarita.jpg",
+   "options": [
+    "Margarita",
+    "Pepperoni",
+    "Prosciutto & Rocket",
+    "Quatro Stagione"
+   ],
+   "answer": [
+    "Margarita"
+   ],
+   "explanation": "This is the Margarita, listed under M/M Stone Baked Pizzas. On the plate: mozzarella, tomato sauce, basil.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 89
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M Stone Baked Pizzas",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/napoletana.jpg",
+   "options": [
+    "Napoletana",
+    "Margarita",
+    "Caliente Pizza",
+    "Pepperoni"
+   ],
+   "answer": [
+    "Napoletana"
+   ],
+   "explanation": "This is the Napoletana, listed under M/M Stone Baked Pizzas. On the plate: mozzarella, tomato sauce, anchovies, capers.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 90
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M Stone Baked Pizzas",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/quatro-stagione.jpg",
+   "options": [
+    "Quatro Stagione",
+    "Alla Pollo",
+    "Meat Lover",
+    "Napoletana"
+   ],
+   "answer": [
+    "Quatro Stagione"
+   ],
+   "explanation": "This is the Quatro Stagione, listed under M/M Stone Baked Pizzas. On the plate: mozzarella, tomato sauce, artichokes, mushrooms, onion, turkey ham, olives.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 91
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M Stone Baked Pizzas",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/quatro-formaggi.jpg",
+   "options": [
+    "Quatro Formaggi",
+    "Quatro Stagione",
+    "Alla Pollo",
+    "Caliente Pizza"
+   ],
+   "answer": [
+    "Quatro Formaggi"
+   ],
+   "explanation": "This is the Quatro Formaggi, listed under M/M Stone Baked Pizzas. On the plate: mozzarella, Taleggio, Gorgonzola, Provolone.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 92
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M Stone Baked Pizzas",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/prosciutto-rocket.jpg",
+   "options": [
+    "Prosciutto & Rocket",
+    "Caliente Pizza",
+    "Napoletana",
+    "Pescatore"
+   ],
+   "answer": [
+    "Prosciutto & Rocket"
+   ],
+   "explanation": "This is the Prosciutto & Rocket, listed under M/M Stone Baked Pizzas. On the plate: mozzarella, tomato sauce, pork prosciutto, capers, rocket.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 93
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M Stone Baked Pizzas",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/alla-pollo.jpg",
+   "options": [
+    "Alla Pollo",
+    "Caliente Pizza",
+    "Diavola",
+    "Quatro Formaggi"
+   ],
+   "answer": [
+    "Alla Pollo"
+   ],
+   "explanation": "This is the Alla Pollo, listed under M/M Stone Baked Pizzas. On the plate: mozzarella, tomato sauce, capsicum mix, chicken breast, onion.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 94
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M Stone Baked Pizzas",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/diavola.jpg",
+   "options": [
+    "Diavola",
+    "Napoletana",
+    "Caliente Pizza",
+    "Margarita"
+   ],
+   "answer": [
+    "Diavola"
+   ],
+   "explanation": "This is the Diavola, listed under M/M Stone Baked Pizzas. On the plate: mozzarella, tomato sauce, spicy beef chorizo, olives, chili.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 95
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M Stone Baked Pizzas",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/pepperoni.jpg",
+   "options": [
+    "Pepperoni",
+    "Prosciutto & Rocket",
+    "Quatro Stagione",
+    "Pescatore"
+   ],
+   "answer": [
+    "Pepperoni"
+   ],
+   "explanation": "This is the Pepperoni, listed under M/M Stone Baked Pizzas. On the plate: mozzarella, olives, beef salami.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 96
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M Stone Baked Pizzas",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/caliente-pizza.jpg",
+   "options": [
+    "Caliente Pizza",
+    "Quatro Formaggi",
+    "Classic Calzone",
+    "Quatro Stagione"
+   ],
+   "answer": [
+    "Caliente Pizza"
+   ],
+   "explanation": "This is the Caliente Pizza, listed under M/M Stone Baked Pizzas. On the plate: beef 'nduja, tomato sauce, mozzarella, beef pepperoni, Roquito chilies, rocket.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 97
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M Stone Baked Pizzas",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/meat-lover.jpg",
+   "options": [
+    "Meat Lover",
+    "Pepperoni",
+    "Classic Calzone",
+    "Quatro Formaggi"
+   ],
+   "answer": [
+    "Meat Lover"
+   ],
+   "explanation": "This is the Meat Lover, listed under M/M Stone Baked Pizzas. On the plate: chicken breast, turkey ham, beef meatball, pork prosciutto, beef chorizo, BBQ sauce, red onion, tomato sauce, mozzarella.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 98
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M Stone Baked Pizzas",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/classic-calzone.jpg",
+   "options": [
+    "Classic Calzone",
+    "Pescatore",
+    "Quatro Formaggi",
+    "Quatro Stagione"
+   ],
+   "answer": [
+    "Classic Calzone"
+   ],
+   "explanation": "This is the Classic Calzone, listed under M/M Stone Baked Pizzas. On the plate: mozzarella, tomato sauce, provolone, Grana Padano PDO, turkey ham, mushrooms, artichokes, egg.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 99
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "M/M Stone Baked Pizzas",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/pescatore.jpg",
+   "options": [
+    "Pescatore",
+    "Diavola",
+    "Quatro Formaggi",
+    "Alla Pollo"
+   ],
+   "answer": [
+    "Pescatore"
+   ],
+   "explanation": "This is the Pescatore, listed under M/M Stone Baked Pizzas. On the plate: mozzarella, tomato sauce, fresh seafood, garlic.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 100
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sourdough and Crispy Pizzas",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/figs-and-bacon.jpg",
+   "options": [
+    "Figs and Bacon",
+    "Tartuffo",
+    "Crispy Carpaccio – Fresh Toppings",
+    "Burrata – Fresh Toppings"
+   ],
+   "answer": [
+    "Figs and Bacon"
+   ],
+   "explanation": "This is the Figs and Bacon, listed under Sourdough and Crispy Pizzas. On the plate: mozzarella, caramelized onions, confit figs, goat cheese, beef bacon.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 101
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sourdough and Crispy Pizzas",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/tartuffo.jpg",
+   "options": [
+    "Tartuffo",
+    "Figs and Bacon",
+    "Crispy Carpaccio – Fresh Toppings",
+    "Burrata – Fresh Toppings"
+   ],
+   "answer": [
+    "Tartuffo"
+   ],
+   "explanation": "This is the Tartuffo, listed under Sourdough and Crispy Pizzas. On the plate: mozzarella, caramelized onions, mushrooms, rocket, mascarpone, truffle cream.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 102
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sourdough and Crispy Pizzas",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/crispy-carpaccio-fresh-toppings.jpg",
+   "options": [
+    "Crispy Carpaccio – Fresh Toppings",
+    "Figs and Bacon",
+    "Tartuffo",
+    "Burrata – Fresh Toppings"
+   ],
+   "answer": [
+    "Crispy Carpaccio – Fresh Toppings"
+   ],
+   "explanation": "This is the Crispy Carpaccio – Fresh Toppings, listed under Sourdough and Crispy Pizzas. On the plate: Black Angus beef carpaccio, tomatoes, rocket, Grana Padano PDO, EVOO.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 103
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sourdough and Crispy Pizzas",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/burrata-fresh-toppings.jpg",
+   "options": [
+    "Burrata – Fresh Toppings",
+    "Figs and Bacon",
+    "Tartuffo",
+    "Crispy Carpaccio – Fresh Toppings"
+   ],
+   "answer": [
+    "Burrata – Fresh Toppings"
+   ],
+   "explanation": "This is the Burrata – Fresh Toppings, listed under Sourdough and Crispy Pizzas. On the plate: burrata, tomatoes, basil oil, olive tapenade, frisée.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 104
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Desserts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/profiteroles.jpg",
+   "options": [
+    "Profiteroles",
+    "Crème Brûlée",
+    "Sticky Toffee Pudding",
+    "Chef's Tiramisu"
+   ],
+   "answer": [
+    "Profiteroles"
+   ],
+   "explanation": "This is the Profiteroles, listed under Desserts. On the plate: good for sharing, filled with pastry cream, salted caramel ice cream, Valrhona chocolate sauce.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 105
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Desserts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/tarte-tatin.jpg",
+   "options": [
+    "Tarte Tatin",
+    "Le Moelleux au Chocolat",
+    "Sticky Toffee Pudding",
+    "Churros!"
+   ],
+   "answer": [
+    "Tarte Tatin"
+   ],
+   "explanation": "This is the Tarte Tatin, listed under Desserts. On the plate: good for sharing, Royal Gala, puff pastry, vanilla ice cream.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 106
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Desserts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/churros.jpg",
+   "options": [
+    "Churros!",
+    "Sticky Toffee Pudding",
+    "Tarte Tatin",
+    "Chef's Tiramisu"
+   ],
+   "answer": [
+    "Churros!"
+   ],
+   "explanation": "This is the Churros!, listed under Desserts. On the plate: good for sharing, crispy fried churros, dulce de leche.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 107
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Desserts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/le-moelleux-au-chocolat.jpg",
+   "options": [
+    "Le Moelleux au Chocolat",
+    "Crème Brûlée",
+    "Churros!",
+    "Profiteroles"
+   ],
+   "answer": [
+    "Le Moelleux au Chocolat"
+   ],
+   "explanation": "This is the Le Moelleux au Chocolat, listed under Desserts. On the plate: hot soft-centred chocolate cake, vanilla ice cream.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 108
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Desserts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/creme-brulee.jpg",
+   "options": [
+    "Crème Brûlée",
+    "Profiteroles",
+    "Sticky Toffee Pudding",
+    "Chef's Tiramisu"
+   ],
+   "answer": [
+    "Crème Brûlée"
+   ],
+   "explanation": "This is the Crème Brûlée, listed under Desserts. On the plate: caramelized custard, vanilla.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 109
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Desserts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/chef-s-tiramisu.jpg",
+   "options": [
+    "Chef's Tiramisu",
+    "Le Moelleux au Chocolat",
+    "Churros!",
+    "Sticky Toffee Pudding"
+   ],
+   "answer": [
+    "Chef's Tiramisu"
+   ],
+   "explanation": "This is the Chef's Tiramisu, listed under Desserts. On the plate: espresso, sponge cake, mascarpone mousse.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 110
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Desserts",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/sticky-toffee-pudding.jpg",
+   "options": [
+    "Sticky Toffee Pudding",
+    "Tarte Tatin",
+    "Crème Brûlée",
+    "Churros!"
+   ],
+   "answer": [
+    "Sticky Toffee Pudding"
+   ],
+   "explanation": "This is the Sticky Toffee Pudding, listed under Desserts. On the plate: date pudding, toffee sauce, natural vanilla ice cream.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 111
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sundaes (3 scoops)",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/belgian-speculoos.jpg",
+   "options": [
+    "Belgian Speculoos",
+    "Dame Blanche",
+    "Strawberry Summer",
+    "Chocolate Crush"
+   ],
+   "answer": [
+    "Belgian Speculoos"
+   ],
+   "explanation": "This is the Belgian Speculoos, listed under Sundaes (3 scoops). On the plate: cookies ice cream, Lotus speculoos, caramel sauce, whipped cream.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 112
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sundaes (3 scoops)",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/strawberry-summer.jpg",
+   "options": [
+    "Strawberry Summer",
+    "Dame Blanche",
+    "Belgian Speculoos",
+    "Chocolate Crush"
+   ],
+   "answer": [
+    "Strawberry Summer"
+   ],
+   "explanation": "This is the Strawberry Summer, listed under Sundaes (3 scoops). On the plate: strawberry and vanilla ice cream, fresh strawberries, strawberry coulis, meringue, whipped cream.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 113
+  },
+  {
+   "type": "image",
+   "level": 1,
+   "roles": [
+    "server",
+    "runner",
+    "bar",
+    "host"
+   ],
+   "step": "Sundaes (3 scoops)",
+   "prompt": "Which dish is this?",
+   "media": "/menu/2026-10/chocolate-crush.jpg",
+   "options": [
+    "Chocolate Crush",
+    "Dame Blanche",
+    "Belgian Speculoos",
+    "Strawberry Summer"
+   ],
+   "answer": [
+    "Chocolate Crush"
+   ],
+   "explanation": "This is the Chocolate Crush, listed under Sundaes (3 scoops). On the plate: vanilla and chocolate ice cream, brownie, chocolate sauce, meringue, almond.",
+   "why": "Recognising every dish on sight means the right plate reaches the right guest, and you can describe what they see.",
+   "n": 114
+  }
+ ]
+}

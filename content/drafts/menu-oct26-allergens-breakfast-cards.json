@@ -1,0 +1,40 @@
+{
+ "unit": {
+  "id": "allergens-breakfast",
+  "track_id": "food",
+  "name": "Allergens: breakfast",
+  "sort": 4
+ },
+ "source": "Full menu descriptions, MM-AR, October 2026",
+ "cards": [
+  {
+   "n": 110,
+   "type": "multi",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: healthy section",
+   "prompt": "Which nuts are in our homemade granola? Pick all that apply.",
+   "options": [
+    "Walnuts",
+    "Almonds",
+    "Hazelnuts",
+    "Pistachios",
+    "Pecans"
+   ],
+   "answer": [
+    "Walnuts",
+    "Almonds",
+    "Hazelnuts"
+   ],
+   "explanation": "Our homemade granola is made with oats, flour, linseed, walnuts, almonds, hazelnuts and honey. It's in the Signature Granola, the Greek Yoghurt Crème and the Tropical Açaí Bowl.",
+   "why": "Granola appears in several dishes, so a nut allergy affects all of them.",
+   "allergen": true
+  }
+ ]
+}

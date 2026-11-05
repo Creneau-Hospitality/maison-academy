@@ -1,0 +1,461 @@
+{
+ "unit": {
+  "id": "breakfast",
+  "track_id": "food",
+  "name": "Breakfast",
+  "sort": 2
+ },
+ "source": "Full menu descriptions, MM-AR, October 2026",
+ "cards": [
+  {
+   "n": 100,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: omelets and eggs",
+   "prompt": "Unless the guest asks otherwise, how are the eggs in Simply Your Way served?",
+   "options": [
+    "Sunny side up",
+    "Poached",
+    "Scrambled",
+    "Boiled"
+   ],
+   "answer": [
+    "Sunny side up"
+   ],
+   "explanation": "Simply Your Way comes with sunny side up eggs as standard. The guest can change to fried, boiled, poached or over easy.",
+   "why": "Ask the guest, but know the default if they don't mind."
+  },
+  {
+   "n": 101,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: omelets and eggs",
+   "prompt": "Do you ask how the minute steak should be cooked in the M/M Steak Breakfast Stack?",
+   "options": [
+    "No: it's sliced thin and grilled 1 minute each side",
+    "Yes, always ask for the doneness",
+    "Only if the guest is pregnant",
+    "Yes, it's cooked to order like a steak main"
+   ],
+   "answer": [
+    "No: it's sliced thin and grilled 1 minute each side"
+   ],
+   "explanation": "A minute steak is thinly sliced and grilled for 1 minute each side, so there's no need to ask for doneness. With a homemade hash brown, poached egg, spinach, mushroom, caramelised onion and béarnaise.",
+   "why": "Saves a question at the table and sets the right expectation."
+  },
+  {
+   "n": 102,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: omelets and eggs",
+   "prompt": "What are Huevos Estrellados?",
+   "options": [
+    "Fried potato cubes with caramelised onion, garlic and parsley, topped with 3 eggs",
+    "Scrambled eggs with chorizo on toast",
+    "Eggs baked in a spiced tomato sauce",
+    "A folded omelet with potato"
+   ],
+   "answer": [
+    "Fried potato cubes with caramelised onion, garlic and parsley, topped with 3 eggs"
+   ],
+   "explanation": "Huevos Estrellados are fried potato cubes sautéed with caramelised onion, garlic and parsley, topped with 3 eggs.",
+   "why": "A Spanish name guests often ask about."
+  },
+  {
+   "n": 103,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: omelets and eggs",
+   "prompt": "How are the eggs cooked in the Shakshuka?",
+   "options": [
+    "Inside the spiced tomato sauce, in an oven dish",
+    "Poached separately and placed on top",
+    "Scrambled into the sauce",
+    "Fried and served on the side"
+   ],
+   "answer": [
+    "Inside the spiced tomato sauce, in an oven dish"
+   ],
+   "explanation": "Two eggs are cooked inside spicy crushed cherry tomatoes in an oven dish, seasoned with coriander and cumin, served with sourdough toast and roasted cherry tomato.",
+   "why": "Helps you describe the dish to guests who don't know it."
+  },
+  {
+   "n": 104,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: omelets and eggs",
+   "prompt": "How much crab meat is in the Crab Omelet?",
+   "options": [
+    "60 g",
+    "30 g",
+    "100 g",
+    "150 g"
+   ],
+   "answer": [
+    "60 g"
+   ],
+   "explanation": "The Crab Omelet has 60 g of crab meat, with shallot, ginger, spring onion, chili and sriracha, served with sourdough toast. Its flavour leans towards an Asian breakfast dish.",
+   "why": "Guests paying for crab like to know how much is in it."
+  },
+  {
+   "n": 105,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: omelets and eggs",
+   "prompt": "What is the bacon mayo on the Breakfast Bun?",
+   "options": [
+    "Mayonnaise made with bacon fat instead of oil",
+    "Mayonnaise with chopped bacon pieces",
+    "A smoky vegan mayo",
+    "Mayonnaise with beef bacon flavouring"
+   ],
+   "answer": [
+    "Mayonnaise made with bacon fat instead of oil"
+   ],
+   "explanation": "Bacon mayo is a mayonnaise made with the fat from bacon instead of oil. The Breakfast Bun is a brioche bun with hash brown, streaky bacon, avocado and bacon mayo.",
+   "why": "The sauce itself is made with bacon fat, and the dish is listed as containing pork."
+  },
+  {
+   "n": 106,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: omelets and eggs",
+   "prompt": "Is the Smoked Salmon and Asparagus Omelet folded?",
+   "options": [
+    "No, it's an open omelet",
+    "Yes, folded in half",
+    "It's rolled like a crêpe",
+    "It's scrambled, not an omelet"
+   ],
+   "answer": [
+    "No, it's an open omelet"
+   ],
+   "explanation": "An open omelet with green asparagus and smoked salmon, topped with green herbs (dill, parsley, tarragon) and lemon. Bread is served on the side.",
+   "why": "Describes what the guest will see when it arrives."
+  },
+  {
+   "n": 107,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: traditional breakfast",
+   "prompt": "A guest wants The Full English without pork. What changes?",
+   "options": [
+    "The bacon and sausage switch to beef, and the black pudding comes off",
+    "Everything switches to beef, including the black pudding",
+    "Only the bacon changes",
+    "It can't be made without pork"
+   ],
+   "answer": [
+    "The bacon and sausage switch to beef, and the black pudding comes off"
+   ],
+   "explanation": "The pork can be changed to beef for the bacon and sausage only. For a beef Full English, the black pudding is removed.",
+   "why": "A guest who doesn't eat pork must never get pork by mistake."
+  },
+  {
+   "n": 108,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: traditional breakfast",
+   "prompt": "What's the general rule for changes to The Full English?",
+   "options": [
+    "Swap vegetable items for vegetable items, and meat for meat",
+    "Any item can be swapped for any other",
+    "No changes at all",
+    "Only the eggs can be changed"
+   ],
+   "answer": [
+    "Swap vegetable items for vegetable items, and meat for meat"
+   ],
+   "explanation": "Some adjustments are possible, but the general rule is that we only swap vegetable items for vegetable items and meat for meat.",
+   "why": "Lets you say yes quickly to fair requests."
+  },
+  {
+   "n": 109,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: traditional breakfast",
+   "prompt": "Which croissants can the guest choose with the M/M Breakfast?",
+   "options": [
+    "Butter croissant or pain au chocolat",
+    "Almond or butter croissant",
+    "Any croissant from the bakery",
+    "Butter croissant only"
+   ],
+   "answer": [
+    "Butter croissant or pain au chocolat"
+   ],
+   "explanation": "With the M/M Breakfast there's a choice of butter croissant or pain au chocolat. It's available in a pork or a halal version.",
+   "why": "Ask the guest so the right one goes out first time."
+  },
+  {
+   "n": 110,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: benedicts",
+   "prompt": "How is the spicy hollandaise on the Pulled Beef Benedict made?",
+   "options": [
+    "Hollandaise mixed with sriracha",
+    "Béarnaise with chili flakes",
+    "Hollandaise with jalapeño",
+    "Chipotle mayo"
+   ],
+   "answer": [
+    "Hollandaise mixed with sriracha"
+   ],
+   "explanation": "We mix our hollandaise with sriracha to make a chili hollandaise. With 6-hour slow-cooked BBQ pulled beef, brioche, poached eggs and M/M chili beans.",
+   "why": "Guests who don't like heat should know about the sauce."
+  },
+  {
+   "n": 111,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: healthy section",
+   "prompt": "How is the \"vegan scramble\" in the Vegan Breakfast made?",
+   "options": [
+    "Tofu pan-fried with spices and turmeric",
+    "Chickpea flour batter",
+    "Scrambled egg whites",
+    "Crushed avocado and beans"
+   ],
+   "answer": [
+    "Tofu pan-fried with spices and turmeric"
+   ],
+   "explanation": "We pan-fry tofu with spices and turmeric to make a vegan scramble, served with tomato, mushroom, avocado, toast, beans and hash brown.",
+   "why": "Vegan guests often ask what replaces the eggs."
+  },
+  {
+   "n": 112,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: healthy section",
+   "prompt": "What is açaí, in the Tropical Açaí Bowl?",
+   "options": [
+    "A small purple berry from the Amazon, served frozen as a purée",
+    "A Brazilian yoghurt",
+    "A type of granola",
+    "A dragon fruit purée"
+   ],
+   "answer": [
+    "A small purple berry from the Amazon, served frozen as a purée"
+   ],
+   "explanation": "Açaí is a small purple berry from the Amazon with a mild, slightly earthy flavour, usually served frozen as a smooth purée. Ours comes with passion fruit, mango, banana, dragon fruit, strawberry, mint and granola.",
+   "why": "Guests often ask what açaí is."
+  },
+  {
+   "n": 113,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: healthy section",
+   "prompt": "What is the Chia Pudding made with?",
+   "options": [
+    "Coconut milk and chia seeds",
+    "Greek yoghurt and chia seeds",
+    "Almond milk and oats",
+    "Cow's milk and rice"
+   ],
+   "answer": [
+    "Coconut milk and chia seeds"
+   ],
+   "explanation": "A coconut milk and chia seed pudding topped with berry compote and fresh fruit.",
+   "why": "Guests avoiding dairy often ask what it's made with."
+  },
+  {
+   "n": 114,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: healthy section",
+   "prompt": "What is the Greek Yoghurt Crème?",
+   "options": [
+    "Whipped cream flavoured with Greek yoghurt, with fresh mango, passion fruit and granola",
+    "Plain yoghurt with honey",
+    "Frozen yoghurt with berries",
+    "Greek yoghurt with garlic and mint"
+   ],
+   "answer": [
+    "Whipped cream flavoured with Greek yoghurt, with fresh mango, passion fruit and granola"
+   ],
+   "explanation": "Whipped cream flavoured with Greek yoghurt, with fresh mango and passion fruit, topped with our homemade granola.",
+   "why": "Lets you describe it properly: it's richer than plain yoghurt."
+  },
+  {
+   "n": 115,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: pancakes and sweets",
+   "prompt": "What's different about the brioche in the Chocolate French Toast?",
+   "options": [
+    "Cocoa is added to the brioche dough",
+    "It's dipped in melted chocolate",
+    "It's filled with chocolate spread",
+    "It's made with croissant dough"
+   ],
+   "answer": [
+    "Cocoa is added to the brioche dough"
+   ],
+   "explanation": "We add cocoa to our classic brioche dough, then make a French toast, served with chocolate ganache, raspberry compote, whipped cream, chocolate crumble and toasted almonds.",
+   "why": "A detail that makes the dish easy to sell."
+  },
+  {
+   "n": 116,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: pancakes and sweets",
+   "prompt": "What kind of waffle do we serve?",
+   "options": [
+    "Brussels waffle",
+    "Liège waffle",
+    "American waffle",
+    "Waffle cone"
+   ],
+   "answer": [
+    "Brussels waffle"
+   ],
+   "explanation": "Both the Strawberries and Cream Waffle and the Belgian Chocolate Waffle use a Brussels waffle.",
+   "why": "Guests from Belgium will ask."
+  },
+  {
+   "n": 117,
+   "type": "mcq",
+   "level": 1,
+   "roles": [
+    "server",
+    "host",
+    "runner",
+    "bar",
+    "barista"
+   ],
+   "step": "Breakfast: omelets and eggs",
+   "prompt": "On the Farmers Omelet, can the pork bacon be changed?",
+   "options": [
+    "Yes, to beef bacon",
+    "No, it's always pork",
+    "Yes, to turkey ham",
+    "Only by removing the bacon"
+   ],
+   "answer": [
+    "Yes, to beef bacon"
+   ],
+   "explanation": "The Farmers Omelet (P) has pork bacon, tomato, potato, mushrooms and caramelised onion. The pork bacon can be changed to beef bacon.",
+   "why": "Lets guests who don't eat pork still enjoy the dish."
+  }
+ ]
+}
