@@ -284,5 +284,9 @@ update public.cards set type = 'multi',
   review_note = 'Updated by Claude 2026-11-05: the October menu description lists pine nuts as well as pistachio; the earlier version had pine nuts as a wrong option. Back to review. Allergen card: needs the kitchen check.',
   updated_by = 'Claude (draft for David)'
 where id = 'food-allergens-lunch-dinner-0059' and status <> 'retired';
+-- Run from the SQL editor, a content change keeps the card's status, so send it back to review explicitly:
+-- changed content needs a fresh approval and kitchen check.
+update public.cards set status = 'review', reviewed_by = null, reviewed_at = null, allergen_check_by = null, allergen_checked_at = null
+where id = 'food-allergens-lunch-dinner-0059' and status = 'live' and answer = '["Pistachio", "Pine nuts"]'::jsonb;
 
 select unit_id, count(*) as cards from public.cards where unit_id in ('lunch-dinner', 'breakfast', 'menu-words', 'allergens-lunch-dinner', 'allergens-breakfast', 'dish-photos-breakfast', 'dish-photos-lunch-dinner') group by unit_id order by unit_id;
