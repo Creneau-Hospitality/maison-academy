@@ -91,6 +91,8 @@
 
 - 29 Oct (afternoon): change of plan, step exams are **one try** (David). If not passed, a manager clicks "Allow a retry" (one more try each time). Migration 0023 applied 29 October.
 
+- 5 Nov: **254 new food cards** from David's October 2026 menu file (Full Menu Descriptions MM-AR), all in review: 48 lunch and dinner and 18 breakfast dish-knowledge cards, 25 "Menu words" cards, 11 allergen cards (+1 menu-words allergen card; kitchen check needed), and 152 photo cards ("Which dish is this?", wrong options from the same menu section) in two new units, Dish photos: breakfast / lunch and dinner. Photos served from `/menu/2026-10/` (metadata stripped) and kept on the phone for low signal. The live Tuna Tartare nut card was corrected (pine nuts) and is back in review. Points the file contradicts are in `content/MENU_OCT26_FLAGS.md`; no card uses them. Migration 0024 applied 5 November; local checks, answer-vs-file cross-check, phone screen test.
+
 ## Next
 
 1. Staff log in with their Bayzat Employee Id (confirmed 22 October); reminder time 16:00 (22 October); David to send the venue's map point only if the location check will ever be used.
