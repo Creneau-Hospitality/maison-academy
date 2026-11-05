@@ -273,15 +273,16 @@ update public.card_versions set saved_by = 'Claude (draft for David)' where save
 update public.audit_log set actor = 'Claude (draft for David)' where actor = 'System' and action = 'card_created';
 
 -- The October file lists pine nuts as well as pistachio on the Tuna Tartare & Stracciatella:
--- the earlier card (still in review) had pine nuts as a wrong option. Content change: new version, stays in review.
+-- the earlier card had pine nuts as a wrong option. Content change: new version, back to review (off staff
+-- phones until re-approved and kitchen-checked).
 update public.cards set type = 'multi',
   prompt = 'Which nuts are listed on the Tuna Tartare & Stracciatella? Pick all that apply.',
   options = '["Pistachio", "Walnut", "Pine nuts", "Almond", "Hazelnut"]'::jsonb,
   answer = '["Pistachio", "Pine nuts"]'::jsonb,
   explanation = 'The October 2026 menu description lists pistachio and pine nuts for the Tuna Tartare & Stracciatella (R, N).',
   source_ref = 'Full menu descriptions, MM-AR, October 2026, Soups & Starters',
-  review_note = 'Updated by Claude 2026-11-05: the October menu description lists pine nuts as well as pistachio. Allergen card: needs the kitchen check.',
+  review_note = 'Updated by Claude 2026-11-05: the October menu description lists pine nuts as well as pistachio; the earlier version had pine nuts as a wrong option. Back to review. Allergen card: needs the kitchen check.',
   updated_by = 'Claude (draft for David)'
-where id = 'food-allergens-lunch-dinner-0059' and status = 'review';
+where id = 'food-allergens-lunch-dinner-0059' and status <> 'retired';
 
 select unit_id, count(*) as cards from public.cards where unit_id in ('lunch-dinner', 'breakfast', 'menu-words', 'allergens-lunch-dinner', 'allergens-breakfast', 'dish-photos-breakfast', 'dish-photos-lunch-dinner') group by unit_id order by unit_id;
