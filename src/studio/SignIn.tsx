@@ -4,7 +4,7 @@ import { supabase } from '../lib/supabase';
 
 const NO_SERVER = "Couldn't reach the server. Check the internet connection (or try mobile data or another Wi-Fi) and try again.";
 
-// Say what actually happened, so a connection problem doesn't look like a wrong password.
+// Say what actually happened, so a connection problem doesn't look like a password mix-up.
 function signInMessage(e: AuthError): string {
   const code = (e as AuthError & { code?: string }).code ?? '';
   if (e.name === 'AuthRetryableFetchError' || e.status === 0 || /fetch|network/i.test(e.message)) return NO_SERVER;

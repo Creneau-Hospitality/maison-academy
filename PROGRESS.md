@@ -93,6 +93,8 @@
 
 - 5 Nov: **254 new food cards** from David's October 2026 menu file (Full Menu Descriptions MM-AR), all in review: 48 lunch and dinner and 18 breakfast dish-knowledge cards, 25 "Menu words" cards, 11 allergen cards (+1 menu-words allergen card; kitchen check needed), and 152 photo cards ("Which dish is this?", wrong options from the same menu section) in two new units, Dish photos: breakfast / lunch and dinner. Photos served from `/menu/2026-10/` (metadata stripped) and kept on the phone for low signal. The live Tuna Tartare nut card was corrected (pine nuts) and is back in review. Points the file contradicts are in `content/MENU_OCT26_FLAGS.md`; no card uses them. Migration 0024 applied 5 November; local checks, answer-vs-file cross-check, phone screen test.
 
+- 11 Nov: David couldn't get into the studio. Checked: the site, sign-in service and database all answer, and a made-up login gets the normal "didn't match" reply. The studio used to sit on "Loading…" if the saved sign-in couldn't be checked (no connection to the server), and showed "didn't match" for every kind of problem. Now: after 8 seconds it shows the sign-in page with a note, and messages say which it is (no connection, too many tries, email not confirmed, password doesn't match). Screen tests for each case.
+
 ## Next
 
 1. Staff log in with their Bayzat Employee Id (confirmed 22 October); reminder time 16:00 (22 October); David to send the venue's map point only if the location check will ever be used.
