@@ -1,7 +1,21 @@
 import { useState } from 'react';
+import type { AuthError } from '@supabase/supabase-js';
 import { supabase } from '../lib/supabase';
 
-export default function SignIn() {
+const NO_SERVER = "Couldn't reach the server. Check the internet connection (or try mobile data or another Wi-Fi) and try again.";
+
+// Say what actually happened, so a connection problem doesn't look like a wrong password.
+function signInMessage(e: AuthError): string {
+  const code = (e as AuthError & { code?: string }).code ?? '';
+  if (e.name === 'AuthRetryableFetchError' || e.status === 0 || /fetch|network/i.test(e.message)) return NO_SERVER;
+  if (e.status === 429 || code.includes('rate_limit')) return 'Too many sign-in tries in a short time. Wait 5 minutes, then try again.';
+  if (code === 'email_not_confirmed') return "This email hasn't been confirmed yet. Use “Forgotten password?” to get a link that sets a password and confirms it.";
+  if (code === 'user_banned') return 'This login is switched off. Ask David to switch it back on.';
+  if (code === 'invalid_credentials' || e.status === 400) return "That email and password didn't match. Check them and try again, or use “Forgotten password?” to set a new one.";
+  return "Couldn't sign in just now (" + e.message + '). Try again in a minute.';
+}
+
+export default function SignIn({ slow = false }: { slow?: boolean }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [busy, setBusy] = useState(false);
@@ -12,8 +26,10 @@ export default function SignIn() {
     e.preventDefault();
     setBusy(true); setMsg(null);
     if (mode === 'in') {
-      const { error } = await supabase.auth.signInWithPassword({ email: email.trim(), password });
-      if (error) setMsg({ kind: 'blush', text: "That email and password didn't match. Check them and try again." });
+      try {
+        const { error } = await supabase.auth.signInWithPassword({ email: email.trim(), password });
+        if (error) setMsg({ kind: 'blush', text: signInMessage(error) });
+      } catch { setMsg({ kind: 'blush', text: NO_SERVER }); }
     } else {
       const { error } = await supabase.auth.resetPasswordForEmail(email.trim(), {
         redirectTo: location.origin + '/studio',
@@ -30,6 +46,7 @@ export default function SignIn() {
       <p className="label">Maison Academy</p>
       <h1>Content studio</h1>
       <p className="muted">For David and the content reviewers.</p>
+      {slow && !msg && <p className="note cream">Your saved sign-in couldn't be checked: the server isn't answering. If signing in below doesn't work either, check the internet connection.</p>}
       <form onSubmit={submit} className="panel" style={{ marginTop: 24 }}>
         <label className="field">
           <span className="label">Email</span>

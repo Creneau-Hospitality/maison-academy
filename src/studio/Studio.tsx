@@ -31,13 +31,21 @@ export default function Studio({ path }: { path: string }) {
   const [data, setData] = useState<Omit<StudioData, 'reload'> | null>(null);
   const [problem, setProblem] = useState('');
 
+  const [slow, setSlow] = useState(false);
+
   useEffect(() => {
-    supabase.auth.getSession().then(({ data }) => setSession(data.session));
+    // Never sit on "Loading…": if the saved sign-in can't be checked in 8 seconds
+    // (usually no connection to the server), show the sign-in page with a note.
+    const timer = setTimeout(() => { setSlow(true); setSession((s) => (s === undefined ? null : s)); }, 8000);
+    supabase.auth.getSession()
+      .then(({ data }) => setSession(data.session))
+      .catch(() => setSession(null))
+      .finally(() => clearTimeout(timer));
     const { data: sub } = supabase.auth.onAuthStateChange((event, s) => {
       setSession(s);
       if (event === 'PASSWORD_RECOVERY') setNeedsPassword(true);
     });
-    return () => sub.subscription.unsubscribe();
+    return () => { clearTimeout(timer); sub.subscription.unsubscribe(); };
   }, []);
 
   const reload = useCallback(async () => {
@@ -57,7 +65,7 @@ export default function Studio({ path }: { path: string }) {
 
   if (session === undefined) return <div className="loading">Loading…</div>;
   if (session && needsPassword) return <Shell><SetPassword onDone={() => { setNeedsPassword(false); history.replaceState(null, '', '/studio'); }} /></Shell>;
-  if (!session) return <Shell><SignIn /></Shell>;
+  if (!session) return <Shell><SignIn slow={slow} /></Shell>;
   if (problem) return <Shell><div className="narrow"><p className="note blush">Couldn't load the studio: {problem}</p><button onClick={reload}>Try again</button></div></Shell>;
   if (!data) return <div className="loading">Loading the card bank…</div>;
 
